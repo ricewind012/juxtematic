@@ -24,7 +24,7 @@ $-bar-colors: (
 
 	#AppActionSelected {
 		color: var(--color--fg-main);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		letter-spacing: 0;
 		text-transform: none;
 	}
@@ -40,7 +40,7 @@ $-bar-colors: (
 	}
 
 	#AppInfoItem {
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 		letter-spacing: 0;
 		text-transform: none;
 
@@ -51,12 +51,12 @@ $-bar-colors: (
 
 	#AppName {
 		color: var(--color--fg-main);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 	}
 
 	#AppSize {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		letter-spacing: 0;
 	}
 
@@ -71,8 +71,8 @@ $-bar-colors: (
 	}
 
 	#NoCheckboxSpacer {
-		width: var(--icon--size-lg);
-		height: var(--icon--size-lg);
+		width: var(--icon-size-lg);
+		height: var(--icon-size-lg);
 	}
 }
 
@@ -173,7 +173,7 @@ $-bar-colors: (
 }
 
 #DriveUsageDot {
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 
 	width: 1em;
 	height: 1em;
@@ -224,7 +224,7 @@ $-bar-colors: (
 
 	#DriveSize {
 		color: var(--item--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		letter-spacing: 0;
 		text-transform: none;
 	}

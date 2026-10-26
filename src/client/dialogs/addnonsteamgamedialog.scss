@@ -15,7 +15,7 @@
 }
 
 #AddNonSteamGameDialog {
-	--icon-column-size: calc(var(--icon--size-lg) + var(--spacing-sm) * 2);
+	--icon-column-size: calc(var(--icon-size-lg) + var(--spacing-sm) * 2);
 	--table-border-color: color-mix(in srgb, currentColor 20%, transparent);
 
 	.DialogInput {
@@ -24,13 +24,13 @@
 
 	#AppName {
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 	}
 
 	#ExePath {
 		opacity: 1;
 		color: var(--color--fg-dim);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 	}
 }
 
@@ -59,8 +59,8 @@
 		margin: 0;
 
 		img {
-			width: var(--icon--size-lg);
-			height: var(--icon--size-lg);
+			width: var(--icon-size-lg);
+			height: var(--icon-size-lg);
 		}
 	}
 }

@@ -12,25 +12,25 @@
 	border-radius: var(--avatar--border-radius);
 
 	position: relative;
-	width: var(--steamavatar_size);
-	height: var(--steamavatar_size);
+	width: var(--steamavatar--size);
+	height: var(--steamavatar--size);
 
 	&:where(.X-Small) {
 		--avatar--border-radius: var(--rounding-sm);
-		--steamavatar_size: var(--avatar--size-xs);
+		--steamavatar--size: var(--avatar--size-xs);
 	}
 
 	&:where(.Small) {
-		--steamavatar_size: var(--avatar--size-sm);
+		--steamavatar--size: var(--avatar--size-sm);
 	}
 
 	&:where(.Medium) {
-		--steamavatar_size: var(--avatar--size-md);
+		--steamavatar--size: var(--avatar--size-md);
 	}
 
 	&:where(.X-Large) {
 		--avatar--border-radius: var(--rounding-lg);
-		--steamavatar_size: var(--avatar--size-xl);
+		--steamavatar--size: var(--avatar--size-xl);
 	}
 }
 

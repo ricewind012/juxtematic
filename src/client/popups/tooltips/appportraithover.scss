@@ -10,7 +10,7 @@
 
 #AppStatus {
 	color: var(--color--primary);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	text-transform: none;
 	padding: 0;
 	margin: 0;
@@ -25,7 +25,7 @@
 
 #AppTitle {
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	text-shadow: none;
 	margin: 0;
 }
@@ -41,7 +41,7 @@
 
 #PlaytimeDetails {
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	letter-spacing: 0;
 	padding: 0;
 	margin: 0;

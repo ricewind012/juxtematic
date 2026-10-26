@@ -4,7 +4,7 @@
 
 %-right-side-text {
 	color: var(--color--primary);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	// Can't center it, don't care
 	line-height: 48px;
 	gap: var(--spacing-xxs);
@@ -117,7 +117,7 @@
 .discussionSearchTextSubmitImg {
 	visibility: hidden;
 
-	inset-block-start: calc(50% - var(--icon--size-md) / 2);
+	inset-block-start: calc(50% - var(--icon-size-md) / 2);
 	inset-inline-end: calc(var(--text-field--spacing-inline) / 2);
 }
 
@@ -130,7 +130,7 @@
 
 .forum_audit {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	margin-top: 20px;
 
 	position: unset;
@@ -194,7 +194,7 @@
 
 	a {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 	}
 }
 
@@ -233,7 +233,7 @@
 	all: unset;
 
 	color: var(--color--fg-dim);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	margin-bottom: var(--spacing-sm);
 
 	display: flex;
@@ -271,17 +271,17 @@
 
 	.content {
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 	}
 
 	.date {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 	}
 
 	.topic {
 		color: var(--color--fg-main);
-		font: var(--text--heading-large);
+		font: var(--text--heading-lg);
 		margin-block: 20px;
 	}
 
@@ -292,7 +292,7 @@
 
 .forum_op_author {
 	color: var(--color--primary);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 }
 
 .forum_op_avatar {
@@ -341,7 +341,7 @@
 }
 
 .forum_topic_details {
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	margin: 0;
 
 	float: right;
@@ -371,7 +371,7 @@
 
 .forum_topic_name {
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	padding: 0;
 
 	flex-grow: 1;
@@ -379,7 +379,7 @@
 
 .forum_topic_op {
 	color: var(--color--primary);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 }
 
 .forum_topic_reply_count {
@@ -419,7 +419,7 @@
 	}
 
 	.commentthread_comment_text {
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 	}
 
 	// #region TODO: move to commentthread ?
@@ -466,7 +466,7 @@
 }
 
 .topicstats {
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 }
 
 .topicstats_label {

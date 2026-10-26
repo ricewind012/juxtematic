@@ -43,7 +43,7 @@
 
 	.reaction_award_name {
 		color: var(--color--fg-main);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 	}
 }
 
@@ -59,7 +59,7 @@
 
 	.topic_hover_row {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		margin-block-start: var(--spacing-xs);
 	}
 
@@ -72,7 +72,7 @@
 .game_hover {
 	h4 {
 		color: var(--color--fg-main);
-		font: var(--text--heading-medium);
+		font: var(--text--heading-md);
 		letter-spacing: 0;
 		margin: 0;
 	}
@@ -110,7 +110,7 @@
 
 .hover_release {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 
 	& > div {
 		display: flex;
@@ -130,7 +130,7 @@
 }
 
 .hover_tag_row {
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	gap: var(--spacing-xxs);
 	margin: 0;
 
@@ -161,7 +161,7 @@
 
 	.hoverWorkshopItemTitle {
 		color: var(--color--fg-main);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 		margin-block-end: var(--spacing-sm);
 	}
 }

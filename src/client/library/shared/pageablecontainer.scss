@@ -13,17 +13,17 @@
 
 #Name {
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 
 	position: absolute;
-	inset-block-start: calc(var(--pageablecontainer_header-offset) * -1);
+	inset-block-start: calc(var(--pageablecontainer--header-offset) * -1);
 	inset-inline-start: 0;
 }
 
 #PageableContainer {
 	@include carousel.container;
 
-	margin-block-start: var(--pageablecontainer_header-offset);
+	margin-block-start: var(--pageablecontainer--header-offset);
 
 	position: relative;
 

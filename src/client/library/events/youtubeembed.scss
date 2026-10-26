@@ -1,6 +1,6 @@
 #DynamicLink_Author {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	margin: 0;
 
 	height: unset;
@@ -13,7 +13,7 @@
 #DynamicLinkBox {
 	background: var(--color--bg-hl);
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	border-radius: var(--rounding-lg);
 	padding: var(--spacing-md);
 	margin-block: var(--spacing-sm);
@@ -32,13 +32,13 @@
 
 #DynamicLink_Description {
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	padding-block: var(--spacing-sm) 0;
 }
 
 #DynamicLink_Name {
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	border: none;
 	margin: 0;
 }

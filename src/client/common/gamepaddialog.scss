@@ -6,7 +6,7 @@ $-others: ":where(#StandaloneFieldSeparator, .DialogControlsSection)";
 	--controls-child-max-width: 100%;
 	--controls-list-spacing: 0px;
 
-	gap: var(--gamepaddialog_field-spacing-block);
+	gap: var(--gamepaddialog--field-spacing-block);
 
 	flex-direction: column;
 }
@@ -15,10 +15,10 @@ $-others: ":where(#StandaloneFieldSeparator, .DialogControlsSection)";
 	--field-row-children-spacing: 0px;
 
 	background-color: var(--color--bg-main-50);
-	padding-block: var(--gamepaddialog_field-spacing-block);
-	padding-inline: var(--gamepaddialog_field-spacing-inline);
+	padding-block: var(--gamepaddialog--field-spacing-block);
+	padding-inline: var(--gamepaddialog--field-spacing-inline);
 	margin-inline-start: calc(
-		var(--gamepaddialog_field-spacing-inline) * var(--indent-level)
+		var(--gamepaddialog--field-spacing-inline) * var(--indent-level)
 	);
 
 	&:nth-child(-n + 1 of &) {
@@ -67,7 +67,7 @@ $-others: ":where(#StandaloneFieldSeparator, .DialogControlsSection)";
 
 #FieldDescription {
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	margin-block-start: var(--spacing-sm);
 }
 
@@ -80,7 +80,7 @@ $-others: ":where(#StandaloneFieldSeparator, .DialogControlsSection)";
 	color: var(--color--fg-main);
 	// Originally HeadingSmall, but it doesn't fit everywhere on the original
 	// settings dialog size.
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 
 	// For #accountsettings_EntryValue
 	overflow: hidden;

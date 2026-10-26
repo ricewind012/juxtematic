@@ -7,18 +7,18 @@
 
 #EventHeaderBlock {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 
 	height: calc(1lh + var(--spacing-xs));
 }
 
 #GamePlaySummaryContainer {
-	--pageablecontainer_header-offset: 0px;
+	--pageablecontainer--header-offset: 0px;
 }
 
 #GamePlaySummaryHeader {
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	letter-spacing: 0;
 	text-transform: none;
 	margin-block-end: var(--spacing-sm);

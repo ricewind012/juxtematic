@@ -31,14 +31,14 @@
 	background-color: var(--color--bg-hl);
 	border-radius: var(--rounding-md);
 
-	width: var(--achievementiconbase_size);
-	height: var(--achievementiconbase_size);
+	width: var(--achievementiconbase--size);
+	height: var(--achievementiconbase--size);
 }
 
 #RemainderText {
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
-	line-height: var(--achievementiconbase_size);
+	font: var(--text--body-lg);
+	line-height: var(--achievementiconbase--size);
 	letter-spacing: 0;
 	text-shadow: none;
 }
@@ -52,12 +52,12 @@
 
 	#Desc {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 	}
 
 	#Name {
 		color: var(--color--fg-main);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 	}
 }
 
@@ -66,7 +66,7 @@
 
 	#Label {
 		color: var(--color--fg-dim);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 		margin-block-end: var(--spacing-xs);
 	}
 }

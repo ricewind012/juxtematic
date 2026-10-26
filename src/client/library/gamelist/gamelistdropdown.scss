@@ -45,7 +45,7 @@
 #MenuHeader {
 	@include controls.dropdown;
 
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 
 	width: unset;
 	height: unset;

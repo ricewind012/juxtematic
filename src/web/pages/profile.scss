@@ -34,14 +34,14 @@
 	padding: var(--spacing-sm) var(--spacing-lg);
 
 	.profile_customization_header {
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 		color: var(--color--fg-main);
 		padding: 0;
 	}
 }
 
 .customization_edit_instructions_text {
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	padding: 0;
 }
 
@@ -59,11 +59,11 @@
 }
 
 .favoritegroup_name {
-	font: var(--text--heading-large);
+	font: var(--text--heading-lg);
 }
 
 .favoritegroup_namerow {
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	color: var(--color--fg-dim);
 }
 
@@ -175,7 +175,7 @@
 
 		display: block;
 		position: absolute;
-		left: calc(var(--icon--size-md) * -1 - var(--spacing-xxs));
+		left: calc(var(--icon-size-md) * -1 - var(--spacing-xxs));
 	}
 
 	&::before {
@@ -220,7 +220,7 @@
 }
 
 .game_name {
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	padding: 0;
 
 	display: flex;
@@ -284,7 +284,7 @@
 
 .profile_ban_status {
 	color: var(--color--accent-red);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	margin-top: var(--spacing-sm);
 	margin-bottom: 0;
 }
@@ -294,7 +294,7 @@
 }
 
 .profile_content {
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	padding: 40px;
 	padding-top: 0;
 
@@ -311,7 +311,7 @@
 .profile_comment_area,
 .profile_customization {
 	background-color: var(--color--bg-main-20);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	border-radius: var(--rounding-md);
 	padding: 0;
 	margin-bottom: 23px;
@@ -333,7 +333,7 @@
 	}
 
 	span {
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 	}
 
 	.count_link_label {
@@ -388,7 +388,7 @@
 }
 
 .profile_customization_block {
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	border-radius: 0;
 	padding: var(--spacing-sm);
 
@@ -404,7 +404,7 @@
 }
 
 .profile_customization_editlink {
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	line-height: inherit;
 	padding: var(--spacing-sm);
 
@@ -424,7 +424,7 @@
  * but primary is better for contrast. */
 .commentthread_header,
 .profile_customization_header {
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	color: var(--color--fg-main);
 	padding: var(--spacing-sm);
 	margin: 0;
@@ -456,7 +456,7 @@
 }
 
 .profile_group {
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 
 	height: unset;
 
@@ -485,7 +485,7 @@
 
 .profile_group_membercount {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 }
 
 .profile_header {
@@ -569,11 +569,11 @@
 		}
 
 		.name {
-			font: var(--text--body-medium);
+			font: var(--text--body-md);
 		}
 
 		.xp {
-			font: var(--text--body-small);
+			font: var(--text--body-sm);
 			color: var(--color--fg-dim);
 		}
 	}
@@ -582,7 +582,7 @@
 		@extend %-badge-info;
 
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 		margin: 0;
 
 		display: flex;
@@ -620,7 +620,7 @@
 
 	.persona_name {
 		color: var(--color--fg-main);
-		font: var(--text--heading-large);
+		font: var(--text--heading-lg);
 	}
 }
 
@@ -630,7 +630,7 @@
 
 .profile_header_content {
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	padding: 0;
 
 	grid-template-columns: auto 1fr var(--content--sidebar-width);
@@ -666,7 +666,7 @@
 }
 
 .profile_in_game_header {
-	font: var(--text--heading-medium);
+	font: var(--text--heading-md);
 }
 
 .profile_in_game_joingame {
@@ -678,7 +678,7 @@
 }
 
 .profile_in_game_name {
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	margin: 0;
 
 	.persona.offline & {
@@ -734,7 +734,7 @@
 
 .profile_private_info {
 	color: var(--color--fg-dim);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	padding: 0;
 }
 
@@ -756,13 +756,13 @@
 }
 
 .profile_summary {
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 
 	height: 4lh;
 }
 
 .profile_summary_footer {
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	margin-top: 13px;
 }
 
@@ -810,7 +810,7 @@
 
 .screenshot_showcase_stat {
 	color: var(--color--primary);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	gap: var(--spacing-xxs);
 	margin-inline-end: var(--spacing-lg);
 
@@ -845,7 +845,7 @@
 }
 
 .screenshot_showcase_stats {
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	margin-block-start: var(--spacing-xs);
 }
 
@@ -855,7 +855,7 @@
 }
 
 .showcase_bodylabel {
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	color: var(--color--fg-main);
 	display: none;
 }
@@ -883,7 +883,7 @@
 }
 
 .showcase_item_detail_title {
-	font: var(--text--heading-large);
+	font: var(--text--heading-lg);
 	padding-top: 0;
 
 	max-height: 69px;
@@ -905,12 +905,12 @@
 .showcase_stat {
 	.value {
 		color: var(--color--fg-main);
-		font: var(--text--heading-large);
+		font: var(--text--heading-lg);
 		padding: 0;
 	}
 
 	.label {
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 		color: var(--color--fg-dim);
 		padding: 0;
 	}

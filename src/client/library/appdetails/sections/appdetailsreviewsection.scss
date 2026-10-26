@@ -5,7 +5,7 @@
 }
 
 #CommentsContainer {
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 
 	svg {
 		@include utils.icon($remove: true);
@@ -37,7 +37,7 @@
 
 #PlayedForTime {
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	padding: 0;
 }
 
@@ -55,6 +55,6 @@
 
 #ReviewTextContainer {
 	color: var(--color--fg-main);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	padding-block-end: var(--spacing-sm);
 }

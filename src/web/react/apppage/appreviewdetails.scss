@@ -15,7 +15,7 @@
 
 		#Count {
 			color: var(--color--fg-dim);
-			font: var(--text--body-medium);
+			font: var(--text--body-md);
 			margin-inline-start: var(--spacing-sm);
 		}
 
@@ -25,17 +25,17 @@
 
 		#Name {
 			color: var(--color--fg-main);
-			font: var(--text--body-medium);
+			font: var(--text--body-md);
 			margin: 0;
 		}
 	}
 
 	#AvatarContainer {
 		--avatar--border-size: 0px;
-		--steamavatar_size: var(--icon--size-md);
+		--steamavatar--size: var(--icon-size-md);
 
-		width: var(--steamavatar_size);
-		height: var(--steamavatar_size);
+		width: var(--steamavatar--size);
+		height: var(--steamavatar--size);
 	}
 }
 
@@ -55,11 +55,9 @@
 		#ReviewSource {
 			opacity: 1;
 			color: var(--color--fg-dim);
-			font: var(--text--body-small);
+			font: var(--text--body-sm);
 			text-transform: none;
-			margin-block: calc(
-				var(--text--body-medium-size) - var(--text--body-small-size)
-			);
+			margin-block: calc(var(--text--body-md-size) - var(--text--body-sm-size));
 		}
 	}
 
@@ -98,7 +96,7 @@
 		#Text {
 			opacity: 1;
 			color: var(--color--fg-dim);
-			font: var(--text--body-small);
+			font: var(--text--body-sm);
 			border-block-start: var(--border-sm) solid var(--color--border);
 			padding-block-start: var(--spacing-sm);
 		}
@@ -123,7 +121,7 @@
 	}
 
 	#ReviewInfoHeader {
-		--thumb-size: var(--icon--size-md);
+		--thumb-size: var(--icon-size-md);
 
 		padding: 0;
 	}
@@ -159,16 +157,16 @@
 	#Headline,
 	#Persona {
 		color: var(--color--fg-main);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 	}
 
 	#Playtime {
 		color: var(--color--fg-dim);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 	}
 
 	#SteamDeckIcon {
-		height: var(--icon--size-md);
+		height: var(--icon-size-md);
 	}
 
 	#ThumbIcon {
@@ -211,7 +209,7 @@
 
 	#Text {
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 	}
 }
 

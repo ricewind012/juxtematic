@@ -13,13 +13,13 @@
 }
 
 #LeftColumn {
-	--appdetailssectionheader_color: var(--color--fg-main);
+	--appdetailssectionheader--color: var(--color--fg-main);
 
 	max-width: calc(67% - 32px);
 }
 
 #RightColumn {
-	--appdetailssectionheader_color: var(--color--fg-dim);
+	--appdetailssectionheader--color: var(--color--fg-dim);
 }
 
 #Spotlights {

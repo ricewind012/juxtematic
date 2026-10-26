@@ -18,7 +18,7 @@ body:is(.account, .account_preferences) {
 }
 
 .two_column {
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 
 	&.left {
 		background-color: var(--color--bg-main);
@@ -35,14 +35,14 @@ body:is(.account, .account_preferences) {
 
 .accountData {
 	--color--fg-main: var(--color--primary);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 
 	position: unset;
 }
 
 .accountRow {
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	margin: 0;
 
 	height: unset;
@@ -50,7 +50,7 @@ body:is(.account, .account_preferences) {
 
 .account_data_field {
 	color: var(--color--fg-dim);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 
 	&[href] {
 		color: var(--color--primary);
@@ -60,7 +60,7 @@ body:is(.account, .account_preferences) {
 .account_header_line {
 	background-color: var(--color--bg-main);
 	color: var(--color--fg-dim);
-	font: var(--text--heading-medium);
+	font: var(--text--heading-md);
 	border-radius: var(--rounding-lg) var(--rounding-lg) 0 0;
 	padding: var(--spacing-lg);
 	padding-bottom: 0;
@@ -78,7 +78,7 @@ body:is(.account, .account_preferences) {
 }
 
 .account_manage_label {
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	padding: 0;
 }
 
@@ -96,7 +96,7 @@ body:is(.account, .account_preferences) {
 	margin: 0;
 
 	& > [style="float: left"] {
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 	}
 }
 
@@ -113,7 +113,7 @@ body:is(.account, .account_preferences) {
 .account_settings_container {
 	@extend .account_setting_block;
 
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 
 	.h3_content {
 		margin: 0;
@@ -181,5 +181,5 @@ body:is(.account, .account_preferences) {
 
 .youraccount_steamid {
 	color: var(--color--fg-dim);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 }

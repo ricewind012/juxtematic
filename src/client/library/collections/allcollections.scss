@@ -57,7 +57,7 @@
 
 #CollectionLabel {
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	text-shadow: none;
 	text-transform: none;
 	letter-spacing: 0;
@@ -69,7 +69,7 @@
 
 #CollectionLabelCount {
 	color: var(--color--fg-main);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 }
 
 #Grid {
@@ -78,7 +78,7 @@
 
 #Header {
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	gap: 9px;
 
 	height: unset;

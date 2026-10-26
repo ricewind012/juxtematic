@@ -8,7 +8,7 @@
 
 #StandardNotificationDescription {
 	color: var(--color--fg-main);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 }
 
 #StandardTemplate {
@@ -30,12 +30,12 @@
 	#Timestamp {
 		opacity: var(--dim-opacity);
 		color: var(--color--primary);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 	}
 
 	#Title {
 		color: var(--color--primary);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		text-transform: uppercase;
 	}
 }

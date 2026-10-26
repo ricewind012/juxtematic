@@ -13,7 +13,7 @@
 	@include web.store--capsule-icon;
 
 	color: var(--color--accent-red);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	letter-spacing: 0;
 	box-shadow: none;
 	gap: var(--spacing-xxs);
@@ -145,7 +145,7 @@
 	@include web.store--capsule-icon;
 
 	opacity: 1;
-	font: var(--text--heading-large);
+	font: var(--text--heading-lg);
 	padding: 0;
 
 	display: none;

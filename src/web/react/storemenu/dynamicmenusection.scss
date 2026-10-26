@@ -3,13 +3,13 @@
 
 #HorizontalRule {
 	opacity: 1;
-	background-image: var(--storemenu_border-gradient);
+	background-image: var(--storemenu--border-gradient);
 	margin-block: var(--spacing-xxs);
 }
 
 #Link {
 	color: inherit;
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 }
 
 :where(#LinkColumn) {
@@ -28,7 +28,7 @@
 #ViewAllLink {
 	@include style.link;
 
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	gap: var(--spacing-xxs);
 	margin: 0;
 

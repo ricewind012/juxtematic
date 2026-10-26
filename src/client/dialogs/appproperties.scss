@@ -17,7 +17,7 @@
 #AppProperties {
 	.DialogBody {
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 		margin: 0;
 	}
 
@@ -36,7 +36,7 @@
 
 #BetaLabel {
 	color: var(--color--fg-main);
-	font: var(--text--heading-medium);
+	font: var(--text--heading-md);
 	margin-block-start: var(--spacing-lg);
 
 	& + div {
@@ -64,7 +64,7 @@
 
 	#BetaLastUpdated {
 		opacity: var(--dim-opacity);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 		// 6px = 18px (HeadingSmall) - 12px (BodySmall)
 		margin: 4px 0;
 
@@ -168,12 +168,12 @@
 
 	#NameText {
 		color: var(--color--fg-main);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 	}
 
 	#SortedColumn {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		margin: 8px;
 
 		flex-shrink: 0;
@@ -190,7 +190,7 @@
 
 #WorkshopItemTagsContainer {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	padding: 0;
 }
 
@@ -202,7 +202,7 @@
 	align-items: start;
 
 	.DialogLabel {
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 		margin-block: 0;
 		margin-inline-end: var(--spacing-sm);
 	}

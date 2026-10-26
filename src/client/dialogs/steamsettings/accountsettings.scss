@@ -2,7 +2,7 @@
 	gap: var(--spacing-sm);
 
 	#Avatar {
-		--steamavatar_size: var(--avatar--size-md);
+		--steamavatar--size: var(--avatar--size-md);
 
 		margin: 0;
 	}
@@ -13,12 +13,12 @@
 }
 
 #EntryLabel {
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 }
 
 #EntryValue {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 
 	display: block;
 }

@@ -3,7 +3,7 @@
 
 #Content {
 	color: var(--color--fg-main);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	padding: 0;
 
 	hr {
@@ -13,18 +13,18 @@
 }
 
 #DetailBlock {
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 
 	#Header {
 		color: var(--color--fg-dim);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 		letter-spacing: 0;
 		text-transform: none;
 	}
 
 	#Primary {
 		color: var(--color--primary);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 		margin-block-end: var(--spacing-xs);
 	}
 }
@@ -53,24 +53,24 @@
 
 	#File {
 		color: var(--color--fg-main);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 	}
 
 	#Path {
 		color: var(--color--fg-dim);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 	}
 }
 
 #SettingRow {
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 }
 
 #Slider {
 	#ResolutionNotchLabel {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		letter-spacing: 0;
 		padding-block-start: var(--spacing-xs);
 	}
@@ -91,7 +91,7 @@
 
 #SliderHeader {
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	padding-block-end: var(--spacing-sm);
 }
 

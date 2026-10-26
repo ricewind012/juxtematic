@@ -16,7 +16,7 @@
 		&:first-child {
 			background-color: transparent;
 			color: var(--color--fg-main);
-			font: var(--text--heading-medium);
+			font: var(--text--heading-md);
 			letter-spacing: 0;
 			text-transform: none;
 			padding: 0;
@@ -52,7 +52,7 @@
 	// #Body
 	p {
 		color: var(--color--fg-main);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 		letter-spacing: 0;
 		margin-block: var(--spacing-sm);
 	}
@@ -82,7 +82,7 @@
 
 	.friend_small_text {
 		color: inherit;
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 
 		& > * {
 			all: unset;
@@ -95,7 +95,7 @@
 }
 
 .friend_block_content {
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	padding: 0;
 	margin: 0;
 
@@ -155,7 +155,7 @@
 	.search_results_none {
 		@include web.section--container;
 
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 	}
 
 	.searchBarContainer {
@@ -179,7 +179,7 @@
 
 	.state_block {
 		color: var(--color--fg-main);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 		letter-spacing: 0;
 		text-transform: none;
 		padding-block: var(--spacing-lg) var(--spacing-xxs);
@@ -187,7 +187,7 @@
 
 	.title {
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 		letter-spacing: 0;
 		text-transform: none;
 
@@ -249,7 +249,7 @@
 }
 
 .friends_header_name {
-	font: var(--text--heading-large);
+	font: var(--text--heading-lg);
 	padding: 0;
 	margin-inline-start: var(--spacing-md);
 }
@@ -315,7 +315,7 @@
 
 	.memberRow {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		margin-block-start: var(--spacing-xxs);
 	}
 
@@ -343,5 +343,5 @@
 }
 
 .groupTitle {
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 }

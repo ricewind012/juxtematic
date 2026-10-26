@@ -16,7 +16,7 @@
 }
 
 #PlayIcon {
-	--icon--size-lg: 40px;
+	--icon-size-lg: 40px;
 	--size: 58px;
 
 	background: var(--color--bg-main-50);
@@ -31,7 +31,7 @@
 }
 
 #Strip {
-	--arrow-size: calc(var(--icon--size-lg) + var(--spacing-sm) * 2);
+	--arrow-size: calc(var(--icon-size-lg) + var(--spacing-sm) * 2);
 
 	position: relative;
 }

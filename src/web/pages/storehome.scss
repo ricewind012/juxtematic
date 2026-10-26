@@ -28,7 +28,7 @@ body.no_home_gutter.infinite_scrolling {
 	background-repeat: no-repeat;
 
 	h2 {
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 	}
 
 	.home_ctn.bottom_content,
@@ -63,7 +63,7 @@ body.no_home_gutter.infinite_scrolling {
 
 				.hours {
 					color: var(--color--fg-dim);
-					font: var(--text--body-small);
+					font: var(--text--body-sm);
 				}
 
 				.persona_name {
@@ -71,7 +71,7 @@ body.no_home_gutter.infinite_scrolling {
 
 					a {
 						color: var(--color--fg-main);
-						font: var(--text--body-small);
+						font: var(--text--body-sm);
 						margin: 0;
 					}
 				}
@@ -83,7 +83,7 @@ body.no_home_gutter.infinite_scrolling {
 
 			.content {
 				color: var(--color--fg-main);
-				font: var(--text--body-medium);
+				font: var(--text--body-md);
 
 				height: 4lh;
 			}
@@ -163,7 +163,7 @@ body.no_home_gutter.infinite_scrolling {
 
 	.title {
 		color: var(--color--fg-main);
-		font: var(--text--heading-medium);
+		font: var(--text--heading-md);
 		letter-spacing: 0;
 		text-transform: none;
 		margin-block-end: var(--carousel--section-spacing);
@@ -176,7 +176,7 @@ body.no_home_gutter.infinite_scrolling {
 		.arrow {
 			--top-offset: calc(1lh + var(--carousel--section-spacing));
 
-			font: var(--text--heading-medium);
+			font: var(--text--heading-md);
 
 			inset-block-start: var(--top-offset);
 			height: calc(var(--carousel--arrow-container-height) - var(--top-offset));
@@ -208,7 +208,7 @@ body.no_home_gutter.infinite_scrolling {
 
 		.spotlight_body {
 			color: var(--color--fg-dim);
-			font: var(--text--body-medium);
+			font: var(--text--body-md);
 		}
 
 		.spotlight_col {
@@ -251,7 +251,7 @@ body.no_home_gutter.infinite_scrolling {
 
 		.spotlight_title {
 			color: var(--color--fg-main);
-			font: var(--text--heading-medium);
+			font: var(--text--heading-md);
 			letter-spacing: 0;
 			text-transform: none;
 			padding: 0;
@@ -428,7 +428,7 @@ body.no_home_gutter.infinite_scrolling {
 				content: "";
 
 				position: absolute;
-				inset-block-start: calc(50% - var(--icon--size-md) / 2);
+				inset-block-start: calc(50% - var(--icon-size-md) / 2);
 
 				@include utils.icon($name: "arrow");
 			}
@@ -454,7 +454,7 @@ body.no_home_gutter.infinite_scrolling {
 
 	.home_content_reason {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		margin-block-end: var(--spacing-sm);
 	}
 }
@@ -610,7 +610,7 @@ body.no_home_gutter.infinite_scrolling {
 
 	.dailydeal_desc {
 		color: var(--color--fg-dim);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 		padding: 0;
 	}
 
@@ -626,7 +626,7 @@ body.no_home_gutter.infinite_scrolling {
 
 	.app_name {
 		color: var(--color--fg-main);
-		font: var(--text--heading-large);
+		font: var(--text--heading-lg);
 		padding: 0;
 		margin-block-end: 11px;
 		// For the button
@@ -696,7 +696,7 @@ body.no_home_gutter.infinite_scrolling {
 
 		.main {
 			color: var(--color--fg-main);
-			font: var(--text--body-medium);
+			font: var(--text--body-md);
 			padding: 0;
 
 			strong {
@@ -844,7 +844,7 @@ body.no_home_gutter.infinite_scrolling {
 
 		.release_date {
 			color: var(--color--fg-dim);
-			font: var(--text--body-small);
+			font: var(--text--body-sm);
 
 			inset-block-end: var(--tab--container-spacing);
 			inset-inline-end: var(--tab--container-spacing);
@@ -879,12 +879,12 @@ body.no_home_gutter.infinite_scrolling {
 
 	.tab_item_name {
 		color: var(--color--fg-main);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 	}
 
 	.tab_item_top_tags {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		margin-block-start: var(--spacing-xxs);
 
 		height: unset;
@@ -914,7 +914,7 @@ body.no_home_gutter.infinite_scrolling {
 
 		.tab_title {
 			color: var(--color--fg-main);
-			font: var(--text--heading-small);
+			font: var(--text--heading-sm);
 			padding: 0;
 			margin-block-end: var(--spacing-sm);
 
@@ -994,14 +994,14 @@ body.no_home_gutter.infinite_scrolling {
 
 		.dateline {
 			color: var(--color--fg-dim);
-			font: var(--text--body-medium);
+			font: var(--text--body-md);
 			letter-spacing: 0;
 			text-transform: none;
 		}
 
 		.title {
 			color: var(--color--fg-main);
-			font: var(--text--heading-medium);
+			font: var(--text--heading-md);
 			letter-spacing: 0;
 			text-shadow: none;
 			text-transform: none;

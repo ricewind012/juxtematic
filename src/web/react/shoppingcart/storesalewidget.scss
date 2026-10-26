@@ -1,6 +1,6 @@
 #StoreOriginalPrice {
 	color: var(--color--fg-dim);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 }
 
 #StoreSaleDiscountBox {
@@ -8,7 +8,7 @@
 }
 
 #StoreSalePriceBox {
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	padding: 0;
 
 	#StoreSaleDiscountedPriceCtn & {

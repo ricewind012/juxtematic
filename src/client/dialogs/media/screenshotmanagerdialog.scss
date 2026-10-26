@@ -30,7 +30,7 @@
 
 	&:where(#IconButton) {
 		--size: calc(
-			var(--text--body-large-size) * var(--text--line-height) +
+			var(--text--body-lg-size) * var(--text--line-height) +
 				var(--button--border-size) * 2 + var(--button--spacing-block-sm) * 2
 		);
 
@@ -42,8 +42,8 @@
 		svg {
 			color: inherit;
 
-			width: var(--icon--size-md);
-			height: var(--icon--size-md);
+			width: var(--icon-size-md);
+			height: var(--icon-size-md);
 		}
 	}
 
@@ -71,7 +71,7 @@
 
 	#Message {
 		color: inherit;
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 	}
 }
 
@@ -134,7 +134,7 @@
 
 #TopListTitle {
 	color: var(--color--fg-main);
-	font: var(--text--heading-large);
+	font: var(--text--heading-lg);
 	text-transform: none;
 	padding: 0;
 
@@ -179,6 +179,6 @@
 	color: var(--color--fg-main);
 	margin-inline-end: var(--spacing-xxs);
 
-	width: var(--icon--size-md);
-	height: var(--icon--size-md);
+	width: var(--icon-size-md);
+	height: var(--icon-size-md);
 }

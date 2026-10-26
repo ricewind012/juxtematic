@@ -9,7 +9,7 @@
 #StatsBlock {
 	background: color-mix(in srgb, currentColor 10%, transparent);
 	color: var(--color--primary);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	border-radius: var(--rounding-md);
 	padding: var(--spacing-md);
 
@@ -27,7 +27,7 @@
 
 #Title {
 	color: var(--color--fg-main);
-	font: var(--text--heading-large);
+	font: var(--text--heading-lg);
 
 	display: flex;
 	align-items: center;
@@ -35,7 +35,7 @@
 	#GameIcon {
 		margin-inline-end: var(--spacing-sm);
 
-		width: var(--icon--size-lg);
-		height: var(--icon--size-lg);
+		width: var(--icon-size-lg);
+		height: var(--icon-size-lg);
 	}
 }

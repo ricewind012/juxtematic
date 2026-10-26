@@ -14,17 +14,17 @@
 
 #BadgeName {
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 }
 
 #BadgeLevel {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 }
 
 #CardsLeft {
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	margin-block-end: var(--spacing-xs);
 }
 

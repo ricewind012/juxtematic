@@ -34,7 +34,7 @@
 		@include web.store--capsule-icon;
 
 		color: var(--color--accent-green);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 		letter-spacing: 0;
 		padding: var(--spacing-xxs);
 
@@ -64,12 +64,12 @@
 
 		#Description {
 			color: var(--color--fg-dim);
-			font: var(--text--body-medium);
+			font: var(--text--body-md);
 		}
 
 		#Title {
 			color: inherit;
-			font: var(--text--heading-small);
+			font: var(--text--heading-sm);
 		}
 	}
 }

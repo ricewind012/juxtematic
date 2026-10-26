@@ -26,8 +26,8 @@
 		box-shadow: 0 0 6px var(--color--bg-main);
 		margin-block-start: -4px;
 
-		width: var(--icon--size-sm);
-		height: var(--icon--size-sm);
+		width: var(--icon-size-sm);
+		height: var(--icon-size-sm);
 	}
 
 	.ui-widget-header {
@@ -76,7 +76,7 @@
 	margin-inline-start: calc(var(--content--sidebar-width) + var(--spacing-lg));
 
 	.flot-text {
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 	}
 
 	.flot-x-axis {
@@ -99,7 +99,7 @@
 
 .review_recent_events {
 	background-color: var(--color--bg-main-50);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	border-radius: var(--rounding-lg);
 	gap: var(--spacing-sm);
 	padding: var(--spacing-lg);
@@ -145,7 +145,7 @@
 
 	.title:where(#reviews_filter_title) {
 		color: var(--color--fg-main);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 		padding-block-end: var(--spacing-lg);
 
 		display: block;
@@ -164,7 +164,7 @@
 .user_reviews_offtopic_activity_explanation,
 .user_reviews_display_explanation {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	border: none;
 	padding: 0;
 	margin-block: var(--spacing-sm);
@@ -250,7 +250,7 @@
 		}
 
 		.tooltip {
-			--icon--size-md: var(--icon--size-sm);
+			--icon-size-md: var(--icon-size-sm);
 
 			margin-inline-start: auto;
 		}
@@ -271,7 +271,7 @@
 	);
 
 	background-color: var(--color--bg-main);
-	font-size: var(--text--body-large);
+	font-size: var(--text--body-lg);
 	border-radius: var(--rounding-lg);
 	padding: var(--spacing-md);
 

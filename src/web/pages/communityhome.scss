@@ -26,26 +26,26 @@
 	}
 
 	.appHubShortcut_Icon {
-		--size: calc(var(--icon--size-sm) * 2);
+		--size: calc(var(--icon-size-sm) * 2);
 
 		width: var(--size);
 		height: var(--size);
 	}
 
 	.appHubShortcut_Title {
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 	}
 
 	.new_items_num,
 	.new_items_text {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 	}
 }
 
 .community_home_app_shortcuts_list_header {
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	text-transform: none;
 }
 
@@ -99,7 +99,7 @@
 
 .community_home_search_title {
 	color: var(--color--fg-main);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	text-transform: none;
 	padding-bottom: var(--spacing-xxs);
 }
@@ -136,7 +136,7 @@
 
 .community_home_subtitle {
 	color: var(--color--fg-dim);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	padding: 0;
 }
 
@@ -146,5 +146,5 @@
 
 .community_home_title {
 	color: var(--color--fg-main);
-	font: var(--text--heading-large);
+	font: var(--text--heading-lg);
 }

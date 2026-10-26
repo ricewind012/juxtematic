@@ -33,9 +33,9 @@
 	--border-md: 2px;
 	--border-lg: 3px;
 
-	--icon--size-sm: 16px;
-	--icon--size-md: 20px;
-	--icon--size-lg: 24px;
+	--icon-size-sm: 16px;
+	--icon-size-md: 20px;
+	--icon-size-lg: 24px;
 
 	--rounding-sm: 2px;
 	--rounding-md: 3px;
@@ -57,33 +57,30 @@
 	--text--weight-bold: 700;
 	--text--weight-normal: 400;
 
-	--text--heading-large-size: 26px;
-	--text--heading-medium-size: 22px;
-	--text--heading-small-size: 18px;
+	--text--heading-lg-size: 26px;
+	--text--heading-md-size: 22px;
+	--text--heading-sm-size: 18px;
 
-	--text--body-large-size: 16px;
-	--text--body-medium-size: 14px;
-	--text--body-small-size: 12px;
+	--text--body-lg-size: 16px;
+	--text--body-md-size: 14px;
+	--text--body-sm-size: 12px;
 
-	--text--heading-large: normal var(--text--weight-bold)
-		var(--text--heading-large-size)/var(--text--line-height)
+	--text--heading-lg: normal var(--text--weight-bold)
+		var(--text--heading-lg-size)/var(--text--line-height)
 		var(--text--font-family);
-	--text--heading-medium: normal var(--text--weight-bold)
-		var(--text--heading-medium-size)/var(--text--line-height)
+	--text--heading-md: normal var(--text--weight-bold)
+		var(--text--heading-md-size)/var(--text--line-height)
 		var(--text--font-family);
-	--text--heading-small: normal var(--text--weight-bold)
-		var(--text--heading-small-size)/var(--text--line-height)
+	--text--heading-sm: normal var(--text--weight-bold)
+		var(--text--heading-sm-size)/var(--text--line-height)
 		var(--text--font-family);
 
-	--text--body-large: normal var(--text--weight-normal)
-		var(--text--body-large-size)/var(--text--line-height)
-		var(--text--font-family);
-	--text--body-medium: normal var(--text--weight-normal)
-		var(--text--body-medium-size)/var(--text--line-height)
-		var(--text--font-family);
-	--text--body-small: normal var(--text--weight-normal)
-		var(--text--body-small-size)/var(--text--line-height)
-		var(--text--font-family);
+	--text--body-lg: normal var(--text--weight-normal)
+		var(--text--body-lg-size)/var(--text--line-height) var(--text--font-family);
+	--text--body-md: normal var(--text--weight-normal)
+		var(--text--body-md-size)/var(--text--line-height) var(--text--font-family);
+	--text--body-sm: normal var(--text--weight-normal)
+		var(--text--body-sm-size)/var(--text--line-height) var(--text--font-family);
 
 	// Avatar
 	--avatar--border-radius: 4px;
@@ -171,7 +168,7 @@
 	--carousel--arrow-container-height: calc(
 		100% - var(--carousel--section-spacing) - var(--carousel--thumb-height)
 	);
-	--carousel--arrow-size: calc(var(--icon--size-lg) + var(--spacing-sm) * 3);
+	--carousel--arrow-size: calc(var(--icon-size-lg) + var(--spacing-sm) * 3);
 	--carousel--section-spacing: var(--spacing-xxl);
 	--carousel--thumb-height: 8px;
 
@@ -194,7 +191,7 @@
 	--header--button-spacing: var(--spacing-xs);
 	--header--control-bg: var(--color--bg-main-20);
 	--header--height: calc(
-		var(--text--body-large-size) * var(--text--line-height) +
+		var(--text--body-lg-size) * var(--text--line-height) +
 			var(--button--spacing-block-md) * 2 + var(--button--border-size) * 2 +
 			var(--header--spacing-block) * 2
 	);

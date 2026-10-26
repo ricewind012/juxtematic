@@ -8,7 +8,7 @@
 
 h2 {
 	color: var(--color--fg-main);
-	font: var(--text--heading-medium);
+	font: var(--text--heading-md);
 	letter-spacing: 0;
 	text-transform: none;
 	padding: 0;
@@ -23,7 +23,7 @@ h2 {
 
 	.header_inline {
 		color: var(--color--fg-dim);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 	}
 
 	& ~ p {
@@ -33,7 +33,7 @@ h2 {
 
 h3 {
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 }
 
 .bb_blockquote {
@@ -59,7 +59,7 @@ h3 {
 
 .bb_link_host {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 
 	position: relative;
 	inset-block-start: -1px;
@@ -159,7 +159,7 @@ h3 {
 
 .pageheader {
 	color: var(--color--fg-main);
-	font: var(--text--heading-large);
+	font: var(--text--heading-lg);
 	letter-spacing: 0;
 	text-shadow: none;
 	text-transform: none;
@@ -280,8 +280,8 @@ body:not(.game_bg) .rightcol {
 }
 
 .review_award_icon {
-	width: var(--icon--size-sm);
-	height: var(--icon--size-sm);
+	width: var(--icon-size-sm);
+	height: var(--icon-size-sm);
 }
 
 .shared_autocollapse_fade {

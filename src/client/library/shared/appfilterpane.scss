@@ -1,7 +1,7 @@
 @use "shared/controls";
 
 %-menu-item {
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	border-radius: var(--rounding-md);
 	padding: 6.5px 13px;
 
@@ -50,8 +50,8 @@
 	align-items: center;
 
 	svg {
-		width: var(--icon--size-md);
-		height: var(--icon--size-md);
+		width: var(--icon-size-md);
+		height: var(--icon-size-md);
 	}
 }
 
@@ -87,7 +87,7 @@
 
 #FilterBucketLabel {
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	text-transform: unset;
 	margin-bottom: var(--spacing-sm);
 }

@@ -51,7 +51,7 @@
 
 #StoreLinkWithPadding {
 	color: var(--color--fg-main);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	border: none;
 	padding: var(--spacing-md);
 
@@ -65,6 +65,6 @@
 
 	#ButtonDescription {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 	}
 }

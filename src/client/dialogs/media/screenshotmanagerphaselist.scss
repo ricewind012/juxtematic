@@ -8,7 +8,7 @@
 
 	#Date {
 		color: var(--color--fg-main);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 	}
 }
 
@@ -21,7 +21,7 @@
 
 #DateHeader {
 	color: var(--color--fg-dim);
-	font: var(--text--heading-medium);
+	font: var(--text--heading-md);
 	margin-block-start: var(--spacing-lg);
 
 	&:first-child {
@@ -31,7 +31,7 @@
 
 #GameHeader {
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	gap: var(--spacing-xs);
 	margin-block-start: var(--spacing-md);
 
@@ -85,7 +85,7 @@
 
 	#DurationText {
 		color: var(--color);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		font-family: var(--text--font-family-monospace);
 		font-weight: var(--text--weight-bold);
 	}
@@ -105,6 +105,6 @@
 	#OverflowItem {
 		background-color: var(--color--bg-main);
 		color: var(--color--fg-main);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 	}
 }

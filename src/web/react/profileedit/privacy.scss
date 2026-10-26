@@ -36,7 +36,7 @@
 	@include web.section--container;
 
 	color: var(--color--primary);
-	font: var(--text--heading-medium);
+	font: var(--text--heading-md);
 	border-end-start-radius: 0;
 	border-end-end-radius: 0;
 	padding-bottom: 0;
@@ -52,7 +52,7 @@
 
 .ProfilePrivacyRoot {
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 }
 
 .ProfilePrivacyRoot_Indent {
@@ -61,5 +61,5 @@
 
 .PrivacySaveNotice {
 	color: inherit;
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 }

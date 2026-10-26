@@ -9,13 +9,13 @@
 
 @mixin description {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	margin-block-start: var(--spacing-xxs);
 }
 
 @mixin item {
 	color: var(--color--fg-main);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	padding-block: var(--popup--spacing-block);
 	padding-inline: var(--popup--spacing-inline);
 

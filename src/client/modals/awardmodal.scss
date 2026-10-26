@@ -40,17 +40,17 @@
 
 	#Label {
 		color: var(--color--primary);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 		letter-spacing: 0;
 	}
 
 	#Points {
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 		letter-spacing: 0;
 	}
 
 	#PointsAmountIcon {
-		--icon-size: var(--icon--size-sm);
+		--icon-size: var(--icon-size-sm);
 		@extend %-points-icon;
 	}
 }
@@ -74,7 +74,7 @@
 
 	#BalanceAmount {
 		color: var(--color--primary);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 		letter-spacing: 0;
 	}
 
@@ -103,7 +103,7 @@
 }
 
 #Title {
-	font: var(--text--heading-large);
+	font: var(--text--heading-lg);
 	letter-spacing: 0;
 	text-transform: none;
 }

@@ -18,13 +18,13 @@
 	filter: drop-shadow(0px 1px 1px black);
 	color: var(--color--fg-main);
 
-	width: var(--icon--size-lg);
-	height: var(--icon--size-lg);
+	width: var(--icon-size-lg);
+	height: var(--icon-size-lg);
 }
 
 #PlaybackTime {
 	color: var(--color--fg-main);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	gap: var(--spacing-xxs);
 
 	#TimeDash {

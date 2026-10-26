@@ -26,7 +26,7 @@
 }
 
 #LinkInputLabel {
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	padding: 0;
 }
 
@@ -54,8 +54,8 @@
 		img {
 			all: unset;
 
-			width: var(--icon--size-md);
-			height: var(--icon--size-md);
+			width: var(--icon-size-md);
+			height: var(--icon-size-md);
 		}
 	}
 

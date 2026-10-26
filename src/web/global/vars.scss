@@ -1,14 +1,14 @@
 :root {
 	// React partials
-	--storemenu_border-gradient: linear-gradient(
+	--storemenu--border-gradient: linear-gradient(
 		90deg,
 		var(--color--fg-dim),
 		transparent
 	);
 
 	// Pages
-	--market_column-width: 150px;
-	--market_row-spacing-outer: 17px;
+	--market--column-width: 150px;
+	--market--row-spacing-outer: 17px;
 
 	// Content
 	--content--sidebar-width: 299px;

@@ -47,7 +47,7 @@
 	}
 
 	.user_info_text {
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 		gap: var(--spacing-sm);
 		margin: 0;
 
@@ -62,7 +62,7 @@
 
 .escrow_description_link {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 
 	a {
 		text-decoration: none;
@@ -100,8 +100,8 @@
 		border-radius: var(--rounding-sm);
 
 		position: unset;
-		width: var(--icon--size-sm);
-		height: var(--icon--size-sm);
+		width: var(--icon-size-sm);
+		height: var(--icon-size-sm);
 	}
 }
 
@@ -157,7 +157,7 @@
 .market_listing_action_buttons {
 	padding: 0;
 
-	width: var(--market_column-width);
+	width: var(--market--column-width);
 	height: unset;
 
 	&.market_listing_right_cell {
@@ -198,7 +198,7 @@
 
 .market_listing_game_name {
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 }
 
 .market_listing_header_namespacer {
@@ -214,7 +214,7 @@
 }
 
 .market_listing_item_name {
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 
 	&[style=""] {
 		color: var(--color--fg-main);
@@ -240,7 +240,7 @@
 .market_listing_their_price {
 	display: flex;
 	width: unset;
-	min-width: var(--market_column-width);
+	min-width: var(--market--column-width);
 }
 
 .market_listing_whoactedwith,
@@ -248,7 +248,7 @@
 .market_listing_price,
 .market_listing_num_listings_qty {
 	color: inherit;
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 }
 
 // In sell listings
@@ -269,7 +269,7 @@
 
 	transition: var(--transition);
 	background-color: var(--color--bg-main-50);
-	margin-top: var(--market_row-spacing-outer);
+	margin-top: var(--market--row-spacing-outer);
 
 	clear: unset;
 	width: 100%;
@@ -283,7 +283,7 @@
 
 		:is(.normal_price, .sale_price)[data-price] {
 			color: var(--color--fg-main);
-			font: var(--text--body-large);
+			font: var(--text--body-lg);
 		}
 	}
 }
@@ -295,9 +295,9 @@
 
 	background-color: var(--color--bg-main-20);
 	color: var(--color--fg-dim);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	margin: 0;
-	margin-block-end: var(--market_row-spacing-outer);
+	margin-block-end: var(--market--row-spacing-outer);
 
 	height: unset;
 
@@ -332,7 +332,7 @@
 .market_page_left {
 	padding: 0;
 	margin-inline-start: calc(
-		var(--content--sidebar-width) + var(--market_row-spacing-outer)
+		var(--content--sidebar-width) + var(--market--row-spacing-outer)
 	);
 
 	max-width: unset;
@@ -344,7 +344,7 @@
 	padding: var(--spacing-xxs);
 	padding-right: 0;
 	margin: 0;
-	margin-top: var(--market_row-spacing-outer);
+	margin-top: var(--market--row-spacing-outer);
 
 	display: flex;
 	flex-direction: row-reverse;
@@ -368,7 +368,7 @@
 }
 
 .market_paging_summary {
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 }
 
 .market_search_advanced_button {
@@ -429,8 +429,8 @@
 		img {
 			margin: 0;
 
-			width: var(--icon--size-md);
-			height: var(--icon--size-md);
+			width: var(--icon-size-md);
+			height: var(--icon-size-md);
 		}
 
 		.removeIcon {
@@ -466,7 +466,7 @@
 
 .market_subtitle_text {
 	color: var(--color--fg-dim);
-	font: var(--text--heading-medium);
+	font: var(--text--heading-md);
 }
 
 .market_tab_well_tab_contents {
@@ -484,7 +484,7 @@
 	border: none;
 	// Divide by 2 for whitespace
 	gap: calc(var(--spacing-xxs) / 2);
-	margin-block-end: var(--market_row-spacing-outer);
+	margin-block-end: var(--market--row-spacing-outer);
 
 	display: flex;
 	position: unset;
@@ -497,7 +497,7 @@
 
 .market_title_text {
 	color: var(--color--fg-main);
-	font: var(--text--heading-large);
+	font: var(--text--heading-lg);
 }
 
 .my_listing_section:not([style="display:none"]) {
@@ -510,7 +510,7 @@
 }
 
 .my_market_header_active {
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	color: var(--color--fg-main);
 }
 
@@ -549,7 +549,7 @@
 
 	& > div {
 		margin: 0;
-		margin-inline-end: var(--market_row-spacing-outer);
+		margin-inline-end: var(--market--row-spacing-outer);
 
 		position: sticky;
 		top: calc(var(--global-header-height) + var(--spacing-lg));

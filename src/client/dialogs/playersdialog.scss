@@ -24,7 +24,7 @@
 	padding-block-start: 6px;
 
 	.avatarHolder {
-		--steamavatar_size: var(--avatar--size-xs);
+		--steamavatar--size: var(--avatar--size-xs);
 	}
 
 	#AvatarAndName {
@@ -63,7 +63,7 @@
 }
 
 #PlayersListWrapper {
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 }
 
 #SortCaret {

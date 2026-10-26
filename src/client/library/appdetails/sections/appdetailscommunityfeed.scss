@@ -9,7 +9,7 @@
 
 #AuthorName {
 	color: var(--color--fg-main);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	margin-inline-start: var(--spacing-sm);
 }
 
@@ -33,7 +33,7 @@
 
 	#Title {
 		color: var(--color--fg-main);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 		text-transform: none;
 		margin-block-start: var(--spacing-sm);
 	}
@@ -86,14 +86,14 @@
 #Guide {
 	#Description {
 		color: var(--color--fg-dim);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 	}
 }
 
 #GuideTitle {
 	background: var(--color--bg-main-50);
 	color: var(--color--fg-main);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	text-transform: none;
 	border-radius: var(--rounding-md) var(--rounding-md) 0 0;
 	padding: var(--spacing-sm);
@@ -142,7 +142,7 @@
 	}
 
 	#PlayLogo {
-		--icon--size-lg: 30px;
+		--icon-size-lg: 30px;
 
 		@include utils.icon($img-el: true, $name: "play", $size: "lg");
 	}

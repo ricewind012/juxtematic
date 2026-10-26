@@ -1,18 +1,18 @@
 :root {
-	--achievementiconbase_size: 72px;
-	--appportrait_landscape-width: 363px;
-	--appportrait_landscape-height: 106px;
-	// --appportrait_portrait-width: 191px;
-	// --appportrait_portrait-height: 262px;
-	--downloads_top-bar-height: calc(
+	--achievementiconbase--size: 72px;
+	--appportrait--landscape-width: 363px;
+	--appportrait--landscape-height: 106px;
+	// --appportrait--portrait-width: 191px;
+	// --appportrait--portrait-height: 262px;
+	--downloads--top-bar-height: calc(
 		var(--spacing-sm) * 2 + 37px + var(--spacing-xl)
 	);
-	--gamepaddialog_field-spacing-block: var(--spacing-sm);
-	--gamepaddialog_field-spacing-inline: var(--spacing-lg);
-	--library_gamelist-bar-gap: var(--spacing-xl);
-	--pageablecontainer_header-offset: calc(
-		var(--text--heading-small-size) * var(--text--line-height) +
+	--gamepaddialog--field-spacing-block: var(--spacing-sm);
+	--gamepaddialog--field-spacing-inline: var(--spacing-lg);
+	--library--gamelist-bar-gap: var(--spacing-xl);
+	--pageablecontainer--header-offset: calc(
+		var(--text--heading-sm-size) * var(--text--line-height) +
 			var(--carousel--section-spacing)
 	);
-	--steamavatar_size: var(--avatar--size-xs);
+	--steamavatar--size: var(--avatar--size-xs);
 }

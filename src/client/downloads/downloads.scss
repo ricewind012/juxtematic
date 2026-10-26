@@ -3,7 +3,7 @@
 
 #DownloadItemName > #Name {
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	padding-block: var(--spacing-sm) 0;
 	margin: 0;
 }
@@ -51,7 +51,7 @@
 
 #Progress {
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	text-transform: uppercase;
 }
 
@@ -67,7 +67,7 @@
 #SectionItem {
 	background-color: var(--color--bg-main);
 	padding: var(--spacing-sm);
-	padding-left: calc(var(--icon--size-lg) + var(--spacing-sm) * 2);
+	padding-left: calc(var(--icon-size-lg) + var(--spacing-sm) * 2);
 	margin-bottom: var(--spacing-md);
 	border-radius: var(--rounding-lg);
 
@@ -112,7 +112,7 @@
 	#ProgressDetails {
 		all: unset;
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 
 		#Denominator {
 			color: inherit;
@@ -150,7 +150,7 @@
 #SectionItemStatus {
 	all: unset;
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 
 	flex-grow: 1;
 
@@ -184,7 +184,7 @@
 	&::before {
 		content: "Downloads Manager";
 
-		font: var(--text--heading-medium);
+		font: var(--text--heading-md);
 	}
 
 	.DialogButton {
@@ -205,14 +205,14 @@
 		margin: 0;
 
 		position: fixed;
-		top: var(--downloads_top-bar-height);
+		top: var(--downloads--top-bar-height);
 		right: var(--spacing-xl);
 		height: 44px;
 
 		#Throttle {
 			all: unset;
 			color: var(--color--fg-dim);
-			font: var(--text--body-large);
+			font: var(--text--body-lg);
 		}
 
 		#ThrottleValue {
@@ -222,7 +222,7 @@
 
 	#DownloadTimeRemaining {
 		color: var(--color--fg-main);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 	}
 
 	#SectionItemColumn {

@@ -46,7 +46,7 @@
 .blotter_group_announcement_header {
 	background-color: var(--color--bg-main-50);
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	border: none;
 	border-radius: var(--rounding-lg) var(--rounding-lg) 0 0;
 	padding: var(--spacing-sm);
@@ -96,7 +96,7 @@
 	.dynamiclink_author,
 	.dynamiclink_type {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 	}
 
 	.dynamiclink_author span {
@@ -106,7 +106,7 @@
 	.dynamiclink_box {
 		background: none;
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 		padding: 0;
 		margin: var(--spacing-sm);
 	}
@@ -117,7 +117,7 @@
 
 	.dynamiclink_name {
 		color: var(--color--fg-main);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 		border: none;
 		margin: 0;
 	}
@@ -184,7 +184,7 @@
 
 .blotter_day_header {
 	color: var(--color--primary);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	border-block-end: var(--border-md) solid var(--color--secondary);
 	padding: 0;
 	padding-block-end: 4px;
@@ -222,7 +222,7 @@
 
 .blotter_gamepurchase_details {
 	color: var(--color--fg-dim);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	padding: var(--spacing-sm);
 	padding-block-end: 0;
 }
@@ -233,7 +233,7 @@
 
 .blotter_group_announcement_content {
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	padding: var(--spacing-sm);
 }
 
@@ -242,7 +242,7 @@
 }
 
 .blotter_group_announcement_headline {
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 }
 
 .blotter_group_container {
@@ -268,12 +268,12 @@
 
 	h1 {
 		color: var(--color--fg-main);
-		font: var(--text--heading-large);
+		font: var(--text--heading-lg);
 	}
 
 	span {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		margin: 0;
 	}
 }
@@ -321,7 +321,7 @@
 
 .blotter_screenshot_title {
 	color: var(--color--primary);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	padding: var(--spacing-sm);
 }
 
@@ -347,7 +347,7 @@
 
 .blotter_voters_names {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	padding-inline-end: var(--spacing-sm);
 }
 
@@ -367,7 +367,7 @@
 
 .blotter_workshopitem_description {
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	padding: 0;
 }
 
@@ -376,7 +376,7 @@
 }
 
 .blotter_workshopitem_title {
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	padding-block-end: var(--spacing-sm);
 }
 
@@ -404,7 +404,7 @@
 	@include web.sidebar--container;
 
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 
 	display: flex;
 	flex-direction: column;

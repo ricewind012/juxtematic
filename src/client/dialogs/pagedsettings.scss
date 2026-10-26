@@ -84,12 +84,12 @@
 	@include web.layout--sidebar-item($active: "&#Active");
 
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 }
 
 #PagedSettingsDialog_Title {
 	color: var(--color--fg-main);
-	font: var(--text--heading-large);
+	font: var(--text--heading-lg);
 	text-transform: none;
 	padding: 0;
 	margin: var(--spacing-md);

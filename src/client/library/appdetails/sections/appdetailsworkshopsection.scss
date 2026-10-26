@@ -6,13 +6,13 @@
 
 	#FeaturedItemDesc {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		margin-block-end: var(--spacing-xs);
 	}
 
 	#FeaturedItemHeader {
 		color: var(--color--fg-dim);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 		text-transform: uppercase;
 	}
 
@@ -22,8 +22,8 @@
 
 		inset-block-start: 0;
 		inset-inline-end: 0;
-		width: var(--icon--size-md);
-		height: var(--icon--size-md);
+		width: var(--icon-size-md);
+		height: var(--icon-size-md);
 
 		&:hover {
 			color: var(--color--fg-main);
@@ -47,13 +47,13 @@
 	#FeaturedItemLink {
 		@include style.link;
 
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 		padding-block: var(--spacing-xs);
 	}
 
 	#FeaturedItemName {
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 		margin-block-end: var(--spacing-xs);
 	}
 }

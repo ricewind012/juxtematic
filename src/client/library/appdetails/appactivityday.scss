@@ -25,13 +25,13 @@
 
 	&_Title {
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 	}
 }
 
 #AppActivityDate {
 	color: var(--color--primary);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	letter-spacing: 0;
 	border-block-end: var(--border-md) solid var(--color--secondary);
 	text-transform: none;
@@ -60,7 +60,7 @@
 }
 
 #Event {
-	--steamavatar_size: var(--avatar--size-sm);
+	--steamavatar--size: var(--avatar--size-sm);
 
 	#EventActorAvatar {
 		width: unset;
@@ -69,7 +69,7 @@
 
 	#EventHeadline {
 		color: var(--color--fg-main);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 		padding: 0;
 		margin-block-end: var(--spacing-sm);
 
@@ -84,7 +84,7 @@
 
 	background-color: var(--color--bg-main-20);
 	border-radius: var(--rounding-lg);
-	margin-inline-start: calc(var(--steamavatar_size) + var(--spacing-sm));
+	margin-inline-start: calc(var(--steamavatar--size) + var(--spacing-sm));
 
 	#ActiveScreenshot {
 		margin: var(--spacing-md);
@@ -129,7 +129,7 @@
 
 		#TimeStamp {
 			color: var(--color--fg-dim);
-			font: var(--text--body-small);
+			font: var(--text--body-sm);
 			margin-block-start: var(--spacing-xs);
 			margin-inline: 0;
 		}
@@ -144,7 +144,7 @@
 	padding: 0;
 
 	#EventBody:has(> &) {
-		--pageablecontainer_header-offset: 0px;
+		--pageablecontainer--header-offset: 0px;
 
 		background: none;
 	}
@@ -163,7 +163,7 @@
 
 #PartnerEventFeaturedHeader {
 	background: none;
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	letter-spacing: 0;
 	text-transform: none;
 	padding: 0;
@@ -204,7 +204,7 @@
 
 	&_Summary {
 		color: var(--color--fg-dim);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 		text-shadow: none;
 		padding: 0;
 	}
@@ -258,12 +258,12 @@
 	}
 
 	&_Icon {
-		--icon--size-lg: 40px;
+		--icon-size-lg: 40px;
 
 		margin: 0;
 
-		width: var(--icon--size-lg);
-		height: var(--icon--size-lg);
+		width: var(--icon-size-lg);
+		height: var(--icon-size-lg);
 
 		svg {
 			@include utils.icon($remove: true, $size: "lg");
@@ -273,7 +273,7 @@
 
 #PartnerEventType {
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	text-transform: none;
 
 	#DayPosted {

@@ -61,7 +61,7 @@
 
 .guideAuthors {
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 }
 
 .guideInfo {
@@ -87,7 +87,7 @@
 }
 
 .guide_categories.collapsed {
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 
 	height: calc(
 		var(--spacing-xl) + var(--spacing-xxl) + var(--spacing-sm) + 1lh + 56px
@@ -112,7 +112,7 @@
 
 .guide_home_category_name {
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	padding: 0;
 
 	// Some names are too large for ~200px
@@ -153,7 +153,7 @@
 	all: unset;
 
 	a {
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 		text-transform: none;
 		padding: 0;
 	}
@@ -204,7 +204,7 @@
 
 	.numRatings {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		margin-block-start: var(--spacing-xxs);
 	}
 
@@ -230,7 +230,7 @@
 
 .guideTopDescription {
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	padding: 0;
 	margin-block-start: var(--spacing-md);
 }

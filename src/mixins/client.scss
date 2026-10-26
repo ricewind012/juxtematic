@@ -23,7 +23,7 @@
 
 @mixin gamelist--icon-button($icon: "name", $active-selector) {
 	--percentage: 5%;
-	--icon--size-lg: 30px;
+	--icon-size-lg: 30px;
 
 	background-color: color-mix(
 		in srgb,
@@ -55,14 +55,14 @@
 	@include style.header;
 
 	gap: var(--header--button-spacing);
-	padding-inline-start: var(--library_gamelist-bar-gap);
+	padding-inline-start: var(--library--gamelist-bar-gap);
 }
 
 @mixin settings--info {
-	--offset: calc(var(--icon--size-lg) + var(--spacing-md));
+	--offset: calc(var(--icon-size-lg) + var(--spacing-md));
 
 	color: var(--color--fg-main);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	margin-block-end: var(--spacing-sm);
 	margin-inline-start: var(--offset);
 
@@ -82,7 +82,7 @@
 
 @mixin settings--header {
 	color: var(--color--fg-dim);
-	font: var(--text--heading-medium);
+	font: var(--text--heading-md);
 	letter-spacing: 0;
 	text-transform: none;
 

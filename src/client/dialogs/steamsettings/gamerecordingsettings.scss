@@ -10,7 +10,7 @@
 
 #BackgroundSettingRow {
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	border-block-end: var(--border-sm) solid var(--color--border);
 	padding-block-end: var(--spacing-sm);
 	margin-block-start: var(--spacing-sm);
@@ -40,7 +40,7 @@
 
 	#Label {
 		color: inherit;
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 		letter-spacing: 0;
 		text-transform: none;
 	}
@@ -48,7 +48,7 @@
 	#Value {
 		opacity: var(--dim-opacity);
 		color: inherit;
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 		margin-block-start: var(--spacing-xxs);
 	}
 }

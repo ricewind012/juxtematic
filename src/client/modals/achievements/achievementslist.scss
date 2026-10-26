@@ -2,13 +2,13 @@
 
 #AchievementDescription {
 	color: var(--color--fg-main);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 }
 
 #AchievementGlobalPercentage,
 #UnlockDate {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 }
 
 #AchievementList {
@@ -21,7 +21,7 @@
 
 #AchievementListItemBase {
 	// Virtual list
-	--achievementiconbase_size: 48px;
+	--achievementiconbase--size: 48px;
 
 	background-color: var(--color--bg-main);
 	border-radius: var(--rounding-md);
@@ -29,7 +29,7 @@
 
 #AchievementTitle {
 	color: var(--color--primary);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 }
 
 #ComparisonAchieverInfo {
@@ -37,7 +37,7 @@
 
 	#ProgressLabel {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 	}
 }
 
@@ -50,7 +50,7 @@
 
 	#Percent {
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 	}
 
 	#ProgressFill {
@@ -68,7 +68,7 @@
 
 #HeaderText {
 	color: var(--color--fg-main);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	letter-spacing: 0;
 	text-transform: none;
 }
@@ -76,7 +76,7 @@
 #ListTitle {
 	opacity: 1;
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	letter-spacing: 0;
 	text-transform: none;
 
@@ -87,7 +87,7 @@
 	color: var(--color--primary);
 	padding: 0;
 
-	width: calc(var(--icon--size-md) + var(--spacing-xxs) * 2);
+	width: calc(var(--icon-size-md) + var(--spacing-xxs) * 2);
 
 	svg {
 		@include utils.icon($name: "check", $remove: true);

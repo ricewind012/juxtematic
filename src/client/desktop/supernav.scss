@@ -21,7 +21,7 @@
 }
 
 #SuperNavMenu {
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	padding: 0;
 	margin-right: 66px;
 
@@ -32,7 +32,7 @@
 		&::before {
 			content: "Profile";
 
-			font: var(--text--heading-small);
+			font: var(--text--heading-sm);
 		}
 	}
 

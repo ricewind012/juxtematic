@@ -3,7 +3,7 @@
 
 @mixin -button($icon) {
 	--icon-name: var(--icon-#{$icon});
-	--icon--size-lg: var(--dialog--window-control-size);
+	--icon-size-lg: var(--dialog--window-control-size);
 
 	@include client.titlebarcontrols--button;
 }
@@ -41,7 +41,7 @@
 
 	#Status {
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 	}
 }
 
@@ -53,8 +53,8 @@
 	color: var(--color--fg-dim);
 
 	display: flex;
-	width: var(--icon--size-lg);
-	height: var(--icon--size-lg);
+	width: var(--icon-size-lg);
+	height: var(--icon-size-lg);
 }
 
 #IconBevel,

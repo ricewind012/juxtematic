@@ -9,7 +9,7 @@
 
 #EventTime {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	padding-block-end: 8px;
 }
 
@@ -17,7 +17,7 @@
 	@include style.link;
 
 	background-color: transparent;
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	margin-block-start: var(--spacing-xxs);
 
 	align-items: center;
@@ -26,8 +26,8 @@
 		border-radius: var(--rounding-md);
 		margin-inline-end: var(--spacing-xxs);
 
-		width: var(--icon--size-lg);
-		height: var(--icon--size-lg);
+		width: var(--icon-size-lg);
+		height: var(--icon-size-lg);
 	}
 
 	#GameName {
@@ -59,7 +59,7 @@
 	--height: 2lh;
 
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 
 	max-height: var(--height);
 	min-height: var(--height);

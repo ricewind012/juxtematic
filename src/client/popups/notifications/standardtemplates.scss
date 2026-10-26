@@ -14,7 +14,7 @@
 
 	#Title {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		text-transform: uppercase;
 	}
 }
@@ -81,11 +81,11 @@
 
 	#StandardNotificationDescription {
 		color: var(--color--fg-main);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 	}
 
 	#StandardNotificationSubText {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 	}
 }

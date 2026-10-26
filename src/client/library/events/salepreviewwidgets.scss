@@ -19,7 +19,7 @@
 	@include web.store--capsule-icon;
 
 	color: var(--color--primary);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	text-transform: none;
 	box-shadow: none;
 	padding: var(--spacing-xxs);
@@ -47,7 +47,7 @@
 	}
 
 	#ContentsCount {
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		text-transform: none;
 		margin-block-end: var(--spacing-xxs);
 	}
@@ -138,7 +138,7 @@
 
 #StoreSaleWidgetShortDesc {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	padding: 0;
 	margin-block-end: var(--spacing-sm);
 }
@@ -151,7 +151,7 @@
 
 #StoreSaleWidgetTitle {
 	color: var(--color--fg-main);
-	font: var(--text--heading-medium);
+	font: var(--text--heading-md);
 	margin: 0;
 	margin-block-end: var(--spacing-xxs);
 }
@@ -167,7 +167,7 @@
 #TagBox {
 	--tag-height: calc(1lh + 6.5px * 2);
 
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 
 	max-height: var(--tag-height);
 	height: var(--tag-height);

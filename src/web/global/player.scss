@@ -15,7 +15,7 @@
 	}
 
 	.friendBlockContent {
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 
 		flex-grow: 1;
 	}
@@ -30,7 +30,7 @@
 	}
 
 	.friendSmallText {
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 	}
 
 	.playerAvatar {
@@ -46,7 +46,7 @@
 }
 
 .friendPlayerLevel {
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	margin: 0;
 
 	display: inline-flex;

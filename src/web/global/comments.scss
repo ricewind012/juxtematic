@@ -5,7 +5,7 @@
 // TODO: unify with commentthread in client
 
 .commentthread_allcommentslink {
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 }
 
 .commentthread_area {
@@ -51,7 +51,7 @@
 
 .commentthread_comment_author {
 	/* HeadingSmall is too large */
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	font-weight: var(--text--weight-bold);
 }
 
@@ -73,12 +73,12 @@
 
 	background-image: none;
 
-	inset-inline-start: calc(var(--avatar-size) - var(--icon--size-md) / 3);
-	inset-block-start: calc(var(--avatar-size) - var(--icon--size-md) / 3);
+	inset-inline-start: calc(var(--avatar-size) - var(--icon-size-md) / 3);
+	inset-block-start: calc(var(--avatar-size) - var(--icon-size-md) / 3);
 }
 
 .commentthread_comment_text {
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	color: var(--color--fg-main);
 }
 
@@ -177,7 +177,7 @@
 }
 
 .commentthread_subscribe_ctn {
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	gap: var(--spacing-xs);
 
 	display: flex;
@@ -195,7 +195,7 @@
 }
 
 .commentthread_textarea {
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	color: var(--color--fg-main);
 	padding: 0;
 	margin: 0;

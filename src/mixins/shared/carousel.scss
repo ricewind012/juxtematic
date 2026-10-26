@@ -38,7 +38,7 @@
 @mixin button($child, $icon) {
 	--size: 1lh;
 
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	border-radius: var(--rounding-md);
 
 	width: var(--size);
@@ -52,13 +52,13 @@
 		@include utils.icon($name: #{$icon}, $size: "lg");
 
 		color: var(--color--fg-dim);
-		margin: calc((var(--size) - var(--icon--size-lg)) / 2);
+		margin: calc((var(--size) - var(--icon-size-lg)) / 2);
 	}
 }
 
 @mixin container {
 	background-color: var(--color--bg-main-20);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	border-radius: var(--rounding-lg);
 	padding-block: var(--spacing-lg);
 	padding-inline: var(--carousel--arrow-size);

@@ -27,7 +27,7 @@
 .newmodal_close {
 	all: unset;
 
-	--icon--size-lg: var(--dialog--window-control-size);
+	--icon-size-lg: var(--dialog--window-control-size);
 
 	position: absolute;
 	inset-block-start: var(--spacing-md);
@@ -42,7 +42,7 @@
 
 .newmodal_content {
 	color: var(--color--fg-main);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	gap: var(--dialog--spacing-content);
 	padding: var(--dialog--spacing-container);
 	padding-block-start: 0;
@@ -61,7 +61,7 @@
 
 .newmodal_header {
 	color: var(--color--fg-dim);
-	font: var(--text--heading-large);
+	font: var(--text--heading-lg);
 
 	.title_text {
 		color: var(--color--fg-main);

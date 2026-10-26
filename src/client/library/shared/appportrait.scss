@@ -15,7 +15,7 @@
 
 #LibraryItemActionButton {
 	--icon-name: icon("download");
-	--icon--size-lg: 50px;
+	--icon-size-lg: 50px;
 
 	background: color-mix(in srgb, currentColor 20%, transparent);
 	color: var(--color--primary);
@@ -56,18 +56,18 @@
 	&#InRecentGames {
 		border-radius: var(--rounding-lg);
 
-		// width: var(--appportrait_portrait-width);
-		// height: var(--appportrait_portrait-height);
+		// width: var(--appportrait--portrait-width);
+		// height: var(--appportrait--portrait-height);
 	}
 
 	&#InDownloads {
 		border-radius: var(--rounding-md);
 
-		width: var(--appportrait_landscape-width);
-		height: var(--appportrait_landscape-height);
+		width: var(--appportrait--landscape-width);
+		height: var(--appportrait--landscape-height);
 
 		#PortraitImage {
-			padding-top: var(--appportrait_landscape-height);
+			padding-top: var(--appportrait--landscape-height);
 		}
 	}
 
@@ -82,7 +82,7 @@
 
 #PlaytimeDetails {
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	gap: var(--spacing-xxs);
 	padding: 0;
 

@@ -1,6 +1,6 @@
 #DialogBody {
-	--gamepaddialog_field-spacing-block: 0;
-	--gamepaddialog_field-spacing-inline: 0;
+	--gamepaddialog--field-spacing-block: 0;
+	--gamepaddialog--field-spacing-inline: 0;
 }
 
 #GameInfoDialogContents {
@@ -24,7 +24,7 @@
 
 		background-color: transparent;
 		color: inherit;
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 		letter-spacing: 0;
 		text-transform: none;
 		border-block-end: var(--border-sm) solid var(--table-border-color);

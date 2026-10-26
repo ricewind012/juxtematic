@@ -1,11 +1,11 @@
 #PhaseAttribute {
 	color: var(--color--fg-main);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 }
 
 #PhaseListIcon {
-	width: var(--icon--size-md);
-	height: var(--icon--size-md);
+	width: var(--icon-size-md);
+	height: var(--icon-size-md);
 
 	svg {
 		width: inherit;

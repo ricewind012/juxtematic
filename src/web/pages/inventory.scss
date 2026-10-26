@@ -35,7 +35,7 @@
 
 .econ_tag_filter_category_label {
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	margin-bottom: var(--spacing-sm);
 }
 
@@ -157,8 +157,8 @@
 	img {
 		border-radius: var(--rounding-sm);
 
-		width: var(--icon--size-lg);
-		height: var(--icon--size-lg);
+		width: var(--icon-size-lg);
+		height: var(--icon-size-lg);
 	}
 }
 
@@ -253,7 +253,7 @@ body.inventory_page {
 
 	.pagecontrol_element.pagecounts {
 		color: var(--color--fg-main);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 		padding-inline: var(--spacing-xs);
 	}
 

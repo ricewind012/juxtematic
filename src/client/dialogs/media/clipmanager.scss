@@ -8,7 +8,7 @@
 	#BackgroundRecordingLabel {
 		background-color: var(--color--bg-main);
 		color: var(--color--fg-main);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 		border-radius: 0 0 var(--rounding-md) var(--rounding-md);
 	}
 }
@@ -28,8 +28,8 @@
 		var(--text-height-large) + var(--button--spacing-block-sm) * 2 +
 			var(--button--border-size) * 2
 	);
-	--text-height-large: var(--text--body-large-size) * var(--text--line-height);
-	--text-height-medium: var(--text--body-medium-size) * var(--text--line-height);
+	--text-height-large: var(--text--body-lg-size) * var(--text--line-height);
+	--text-height-medium: var(--text--body-md-size) * var(--text--line-height);
 
 	--offset-top: calc(var(--spacing-sm) * 2 + var(--button-height));
 	--offset-bottom: calc(
@@ -63,8 +63,8 @@
 
 	inset-inline-start: 0;
 	inset-block-start: 0;
-	width: var(--icon--size-lg);
-	height: var(--icon--size-lg);
+	width: var(--icon-size-lg);
+	height: var(--icon-size-lg);
 
 	&:empty {
 		display: none;
@@ -93,7 +93,7 @@
 
 	#DurationText {
 		color: var(--color--primary);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		font-family: var(--text--font-family-monospace);
 		font-weight: var(--text--weight-bold);
 		gap: var(--spacing-xxs);
@@ -113,7 +113,7 @@
 
 	#AppName {
 		color: var(--color--fg-main);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 	}
 
 	#AppNameHeader {

@@ -8,7 +8,7 @@ body.ShoppingCart {
 
 #CartNoteText {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 }
 
 #CartRightColStickyCtn {
@@ -26,7 +26,7 @@ body.ShoppingCart {
 #EstimatedTotalFlex {
 	& > div {
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 	}
 }
 
@@ -41,12 +41,12 @@ body.ShoppingCart {
 
 #LicenseLink {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 }
 
 #LicenseTitle {
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	margin-bottom: var(--spacing-sm);
 }
 
@@ -60,7 +60,7 @@ body.ShoppingCart {
 
 #ShoppingCartHeader {
 	color: var(--color--fg-main);
-	font: var(--text--heading-large);
+	font: var(--text--heading-lg);
 	margin-block: var(--content--spacing-block-start) 46px;
 }
 

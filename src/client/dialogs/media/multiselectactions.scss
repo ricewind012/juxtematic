@@ -27,13 +27,13 @@
 
 	#ExplainerText {
 		color: var(--color--fg-main);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 		margin-block: var(--dialog--spacing-content);
 	}
 
 	#Title {
 		color: var(--color--fg-main);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 		margin: 0;
 	}
 }

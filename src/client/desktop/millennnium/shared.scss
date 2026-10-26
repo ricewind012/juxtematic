@@ -1,12 +1,12 @@
 @use "shared/controls";
 
 :root[data-millennium-plugin] {
-	--MillenniumText-HeadingLarge: var(--text--heading-large);
-	--MillenniumText-HeadingMedium: var(--text--heading-medium);
-	--MillenniumText-HeadingSmall: var(--text--heading-small);
-	--MillenniumText-BodyLarge: var(--text--body-large);
-	--MillenniumText-BodyMedium: var(--text--body-medium);
-	--MillenniumText-BodySmall: var(--text--body-small);
+	--MillenniumText-HeadingLarge: var(--text--heading-lg);
+	--MillenniumText-HeadingMedium: var(--text--heading-md);
+	--MillenniumText-HeadingSmall: var(--text--heading-sm);
+	--MillenniumText-BodyLarge: var(--text--body-lg);
+	--MillenniumText-BodyMedium: var(--text--body-md);
+	--MillenniumText-BodySmall: var(--text--body-sm);
 
 	--MillenniumTextColor-Normal: var(--color--fg-main);
 	--MillenniumTextColor-Muted: var(--color--fg-dim);
@@ -19,7 +19,7 @@
 	--MillenniumSpacing-Large: var(--spacing-lg);
 
 	--MillenniumControls-BorderRadius: var(--rounding-md);
-	--MillenniumControls-IconSize: var(--icon--size-md);
+	--MillenniumControls-IconSize: var(--icon-size-md);
 }
 
 button.MillenniumIconButton {

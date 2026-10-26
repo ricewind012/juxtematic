@@ -115,12 +115,12 @@
 
 .tradeoffer_privacy_secondary {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	margin-block-end: var(--spacing-xxs);
 }
 
 .tradeoffer_welcome_ctn {
 	@include web.section--container;
 
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 }

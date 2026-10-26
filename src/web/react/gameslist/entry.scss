@@ -11,7 +11,7 @@
 	border-radius: var(--rounding-md);
 	gap: var(--spacing-lg);
 	padding: var(--spacing-md);
-	padding-left: calc(var(--spacing-md) + var(--icon--size-lg) + 16px);
+	padding-left: calc(var(--spacing-md) + var(--icon-size-lg) + 16px);
 
 	position: relative;
 
@@ -28,7 +28,7 @@
 }
 
 #AchievementsFraction {
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	margin-top: 0.125em;
 
 	min-width: 3rem;
@@ -69,12 +69,12 @@
 #GameLinksButton {
 	padding: 2px;
 
-	width: var(--icon--size-md);
-	height: var(--icon--size-md);
+	width: var(--icon-size-md);
+	height: var(--icon-size-md);
 }
 
 #GameName {
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	padding: 0;
 }
 
@@ -98,7 +98,7 @@
 	--offset: calc(var(--spacing-md) * 4 + var(--spacing-xl));
 
 	color: var(--color--fg-main);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	gap: var(--spacing-sm);
 
 	position: absolute;

@@ -56,7 +56,7 @@
 
 	#DropdownLabel {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 	}
 
 	#FilterOptionsCheckboxesCtr {
@@ -192,7 +192,7 @@
 
 		transition: var(--transition);
 		background-color: var(--color--bg-hl);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 		padding: var(--spacing-sm) var(--spacing-md);
 
 		&:nth-child(-n + 1 of &) {

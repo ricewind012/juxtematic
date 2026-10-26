@@ -3,7 +3,7 @@
 #ActiveNow,
 #AuthorizedDevicesRecentHeader {
 	color: var(--color--fg-main);
-	font: var(--text--heading-medium);
+	font: var(--text--heading-md);
 	margin-top: var(--spacing-lg);
 }
 
@@ -35,7 +35,7 @@
 }
 
 #DeviceHeaderRow {
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 }
 
 #DeviceLogo {
@@ -55,7 +55,7 @@
 
 #LastSeenRow {
 	color: var(--color--fg-dim);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 }
 
 #RemoveDevicesRow {

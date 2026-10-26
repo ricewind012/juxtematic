@@ -163,7 +163,7 @@ body.game_bg {
 }
 
 .franchise_notice {
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	border-radius: var(--rounding-lg);
 }
 
@@ -172,11 +172,11 @@ body.game_bg {
 
 	background-image: none;
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 
 	h1 {
 		color: var(--color--fg-main);
-		font: var(--text--heading-medium);
+		font: var(--text--heading-md);
 	}
 
 	.content {
@@ -204,7 +204,7 @@ body.game_bg {
 
 .game_area_description {
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	margin: 0;
 
 	h2:not(:first-child) {
@@ -280,7 +280,7 @@ body.game_bg {
 
 	#dlc_footer {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		text-transform: none;
 		gap: var(--spacing-sm);
 		margin-block-start: var(--spacing-xs);
@@ -332,7 +332,7 @@ body.game_bg {
 
 	.game_area_dlc_name {
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 		padding: 0;
 	}
 
@@ -365,16 +365,16 @@ body.game_bg {
 }
 
 .game_area_features_list_ctn {
-	--icon--size-md: 1lh;
+	--icon-size-md: 1lh;
 
 	& ~ [data-featuretarget] {
-		--icon--size-md: 1lh;
+		--icon-size-md: 1lh;
 	}
 }
 
 #game_area_legal {
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	margin: 0;
 }
 
@@ -384,7 +384,7 @@ body.game_bg {
 	.score {
 		background-color: color-mix(in srgb, currentColor 20%, transparent);
 		color: var(--color--fg-main);
-		font: var(--text--heading-large);
+		font: var(--text--heading-lg);
 		line-height: 50px;
 
 		&.low {
@@ -441,10 +441,10 @@ body.game_bg {
 
 .game_area_purchase_game {
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 
 	min-height: calc(
-		var(--button--spacing-block-md) * 2 + var(--text--body-large-size) *
+		var(--button--spacing-block-md) * 2 + var(--text--body-lg-size) *
 			var(--text--line-height) + var(--spacing-xl) * 2
 	);
 
@@ -472,7 +472,7 @@ body.game_bg {
 
 	.title {
 		color: var(--color--fg-main);
-		font: var(--text--heading-medium);
+		font: var(--text--heading-md);
 		margin-block-end: 0;
 
 		width: 50%;
@@ -503,7 +503,7 @@ body.game_bg {
 
 .game_description_column {
 	color: var(--color--fg-dim);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	margin-block-start: var(--spacing-sm);
 
 	width: unset;
@@ -512,7 +512,7 @@ body.game_bg {
 	h2 {
 		background: none;
 		color: var(--color--fg-dim);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 		margin-block-end: var(--carousel--section-spacing);
 	}
 
@@ -551,7 +551,7 @@ body.game_bg {
 
 	.sysreq_content {
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 		gap: var(--spacing-lg);
 
 		&.active {
@@ -584,7 +584,7 @@ body.game_bg {
 
 		strong {
 			color: var(--color--fg-dim);
-			font: var(--text--body-large);
+			font: var(--text--body-lg);
 			text-transform: none;
 			margin: 0;
 		}
@@ -626,7 +626,7 @@ body.game_bg {
 }
 
 .game_description_snippet {
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	padding: 0;
 }
 
@@ -654,7 +654,7 @@ body.game_bg {
 	.dev_row,
 	.release_date,
 	.user_reviews_summary_row {
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 		padding: 0;
 
 		a {
@@ -697,7 +697,7 @@ body.game_bg {
 
 	.glance_tags_label {
 		color: var(--color--fg-dim);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 		margin-block-end: var(--spacing-md);
 	}
 
@@ -711,7 +711,7 @@ body.game_bg {
 
 	.subtitle {
 		color: var(--color--fg-dim);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 		text-transform: none;
 		padding-inline-end: var(--spacing-md);
 	}
@@ -722,13 +722,13 @@ body.game_bg {
 
 	td {
 		color: inherit;
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 		padding-block: 0;
 	}
 
 	th {
 		color: var(--color--fg-dim);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 	}
 
 	tr:not([style="display: none;"]) {
@@ -777,7 +777,7 @@ body.game_bg {
 	.block {
 		background: var(--color--bg-main);
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 		border-radius: var(--rounding-lg);
 		padding: var(--spacing-xl);
 		margin-block-end: var(--spacing-sm);
@@ -795,7 +795,7 @@ body.game_bg {
 
 		.all_languages {
 			color: var(--color--secondary);
-			font: var(--text--body-medium);
+			font: var(--text--body-md);
 			margin-block-start: var(--spacing-xs);
 
 			&:hover {
@@ -852,7 +852,7 @@ body.game_bg {
 
 	.block_title {
 		color: var(--color--fg-dim);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 		margin-block-end: var(--spacing-xs);
 	}
 
@@ -866,7 +866,7 @@ body.game_bg {
 		}
 
 		> :not(.reason) {
-			margin-inline-start: calc(var(--icon--size-md) + var(--spacing-xxs));
+			margin-inline-start: calc(var(--icon-size-md) + var(--spacing-xxs));
 
 			&:not(:last-of-type) {
 				margin-block-end: calc(var(--spacing-xs) * 2);
@@ -875,7 +875,7 @@ body.game_bg {
 
 		.reason {
 			color: var(--color--fg-main);
-			font: var(--text--body-large);
+			font: var(--text--body-lg);
 			gap: var(--spacing-xxs);
 			margin-block-end: var(--spacing-xs);
 
@@ -913,7 +913,7 @@ body.game_bg {
 			margin-block-start: 0;
 
 			& > a {
-				font: var(--text--body-small);
+				font: var(--text--body-sm);
 
 				&:not(:hover) {
 					color: var(--color--fg-dim);
@@ -941,7 +941,7 @@ body.game_bg {
 	.communitylink_achivement_plusmore {
 		background-color: var(--color--bg-hl);
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 
 		&:hover {
 			background: var(--color--bg-hover);
@@ -1079,7 +1079,7 @@ body.game_bg {
 
 .game_purchase_options_editions_header_title {
 	color: var(--color--fg-main);
-	font: var(--text--heading-medium);
+	font: var(--text--heading-md);
 	letter-spacing: 0;
 	text-transform: none;
 }
@@ -1087,7 +1087,7 @@ body.game_bg {
 .game_purchase_price {
 	background-color: transparent;
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	padding: 0;
 
 	height: unset;
@@ -1109,11 +1109,11 @@ body.game_bg {
 
 .shared_game_rating {
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 
 	.descriptorText.descriptorText {
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 	}
 
 	.game_rating_title {
@@ -1162,7 +1162,7 @@ body.game_bg {
 
 	padding-inline: 0;
 
-	min-width: calc(var(--spacing-sm) * 2 + var(--icon--size-md));
+	min-width: calc(var(--spacing-sm) * 2 + var(--icon-size-md));
 
 	& > span {
 		@include utils.icon($name: "arrow");

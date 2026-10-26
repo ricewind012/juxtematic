@@ -4,7 +4,7 @@
 @mixin alert($color: "yellow") {
 	background: color-mix(in srgb, currentColor 20%, transparent);
 	color: var(--color--accent-#{$color});
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	border-radius: var(--rounding-lg);
 	padding: var(--spacing-md);
 }
@@ -32,14 +32,14 @@
 	align-items: center;
 	justify-content: center;
 	position: absolute;
-	min-width: var(--icon--size-sm);
-	height: var(--icon--size-sm);
+	min-width: var(--icon-size-sm);
+	height: var(--icon-size-sm);
 	inset-block-start: -2px;
 	inset-inline-end: -3px;
 
 	background-color: var(--color--primary);
 	color: var(--color--bg-main);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	border-radius: 1337px;
 }
 
@@ -49,7 +49,7 @@
 @mixin text-tag($size: "md") {
 	background-color: color-mix(in srgb, currentColor 20%, transparent);
 	border-radius: var(--rounding-sm);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	padding: var(--text-tag--spacing-block-#{$size}) var(--spacing-xxs);
 }
 

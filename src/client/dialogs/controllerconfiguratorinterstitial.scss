@@ -1,7 +1,7 @@
 @use "shared/controls";
 
 #ButtonRow {
-	--gamepaddialog_field-spacing-block: 0px;
+	--gamepaddialog--field-spacing-block: 0px;
 
 	#OKButton {
 		@include controls.button-vars($variant: "primary");

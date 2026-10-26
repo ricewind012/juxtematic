@@ -3,7 +3,7 @@
 @mixin apphub--card-metadata-button {
 	background: var(--color--bg-main);
 	color: var(--color--primary);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	border-radius: var(--rounding-md);
 	padding: 8px;
 
@@ -67,7 +67,7 @@
 
 @mixin paging--link($selected) {
 	background-color: var(--color--bg-hl);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	color: inherit;
 	text-decoration: none;
 	border-radius: var(--rounding-md);
@@ -99,7 +99,7 @@
 
 @mixin section--header {
 	color: var(--color--fg-dim);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	margin-block-end: var(--spacing-xxl);
 }
 
@@ -113,7 +113,7 @@
 
 @mixin sidebar--header {
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	text-transform: uppercase;
 	border-block-start: var(--border-sm) solid var(--color--bg-hl);
 	padding-block-start: var(--spacing-sm);
@@ -122,7 +122,7 @@
 
 @mixin sidebar--list-item {
 	background-color: color-mix(in srgb, var(--color--bg-hl) 39%, transparent);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	border-radius: var(--rounding-md);
 	gap: var(--spacing-sm);
 	padding: 4px 13px;
@@ -198,7 +198,7 @@
 	#{$label} {
 		transform: none;
 		color: var(--color--fg-main);
-		font: var(--text--heading-medium);
+		font: var(--text--heading-md);
 		// Not in the original design, but a bit of visibility...
 		text-shadow: 0 1px 4px black;
 		padding: var(--spacing-lg);
@@ -226,7 +226,7 @@
 		var(--text--line-height) - (var(--text--line-height) - 1) / 2
 	);
 
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	gap: var(--spacing-sm);
 
 	height: calc(1lh + var(--discount-pct-padding-block) * 2);
@@ -274,7 +274,7 @@
 @mixin store--tag {
 	background: var(--color--bg-hl);
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	border-radius: var(--rounding-md);
 	padding: 6.5px 13px;
 

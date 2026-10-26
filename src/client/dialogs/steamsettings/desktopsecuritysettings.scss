@@ -1,10 +1,10 @@
 #EntryLabel {
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 }
 
 #EntryValue {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 
 	display: block;
 }
@@ -12,8 +12,8 @@
 #SteamGuardIcon {
 	color: var(--color--accent-red);
 
-	width: var(--icon--size-md);
-	height: var(--icon--size-md);
+	width: var(--icon-size-md);
+	height: var(--icon-size-md);
 
 	&#EnabledTwoFactor {
 		color: var(--color--accent-green);

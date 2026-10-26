@@ -90,14 +90,14 @@ body.apphub_blue.v6 {
 	// prettier-ignore
 	mask-position:
 		0,
-		var(--icon--size-lg),
-		calc(var(--icon--size-lg) * 2),
-		calc(var(--icon--size-lg) * 3),
-		calc(var(--icon--size-lg) * 4);
+		var(--icon-size-lg),
+		calc(var(--icon-size-lg) * 2),
+		calc(var(--icon-size-lg) * 3),
+		calc(var(--icon-size-lg) * 4);
 	mask-repeat: no-repeat;
 
-	width: calc(var(--icon--size-lg) * 5);
-	height: var(--icon--size-lg);
+	width: calc(var(--icon-size-lg) * 5);
+	height: var(--icon-size-lg);
 
 	// prettier-ignore
 	$-stars: (
@@ -150,7 +150,7 @@ body.apphub_blue.v6 {
 
 .flags_incompatible_desc {
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	margin: var(--spacing-xs) 0;
 }
 
@@ -169,7 +169,7 @@ body.apphub_blue.v6 {
 
 	& > h1 {
 		color: var(--color--fg-main);
-		font: var(--text--heading-medium);
+		font: var(--text--heading-md);
 
 		display: flex;
 		flex-direction: column-reverse;
@@ -177,7 +177,7 @@ body.apphub_blue.v6 {
 
 		span {
 			color: var(--color--fg-dim);
-			font: var(--text--body-medium);
+			font: var(--text--body-md);
 		}
 	}
 
@@ -337,7 +337,7 @@ body.apphub_blue.v6 {
 
 	background: color-mix(in srgb, var(--color--primary) 50%, transparent);
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	margin: 0;
 	margin-block-end: var(--spacing-lg);
 
@@ -376,7 +376,7 @@ body.apphub_blue.v6 {
 }
 
 .parentCollectionNumChildren {
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	padding-inline: var(--spacing-sm) 0;
 }
 
@@ -387,7 +387,7 @@ body.apphub_blue.v6 {
 
 .parentCollectionTitle {
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	text-transform: none;
 	padding: 0;
 
@@ -476,7 +476,7 @@ body.apphub_blue.v6 {
 
 .rightSectionMinorText {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	margin-bottom: var(--spacing-sm);
 }
 
@@ -531,7 +531,7 @@ body.apphub_blue.v6 {
 
 			.title {
 				color: var(--color--fg-main);
-				font: var(--text--body-large);
+				font: var(--text--body-lg);
 				text-transform: none;
 				margin-top: 0;
 			}
@@ -621,7 +621,7 @@ body.apphub_blue.v6 {
 		}
 
 		.workshop_item_title {
-			font: var(--text--heading-small);
+			font: var(--text--heading-sm);
 		}
 	}
 }
@@ -837,7 +837,7 @@ body.apphub_blue.v6 {
 
 		.current_player_workshop_title a {
 			color: var(--color--fg-main);
-			font: var(--text--heading-small);
+			font: var(--text--heading-sm);
 			padding: 0;
 		}
 
@@ -937,7 +937,7 @@ body.apphub_blue.v6 {
 
 .workshop_item_title {
 	color: var(--color--fg-main);
-	font: var(--text--heading-medium);
+	font: var(--text--heading-md);
 	padding: 0;
 }
 
@@ -949,7 +949,7 @@ body.apphub_blue.v6 {
 
 .workshopBrowsePaging {
 	color: var(--color--fg-dim);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	padding: 0;
 
 	align-items: center;
@@ -980,7 +980,7 @@ body.apphub_blue.v6 {
 .workshopBrowsePagingWithBG {
 	background-color: transparent;
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	padding: 0;
 	margin-block: var(--spacing-sm) var(--spacing-xxl);
 
@@ -1029,7 +1029,7 @@ body.apphub_blue.v6 {
 	}
 
 	.general_btn.subscribe {
-		--size: calc(var(--icon--size-md) + var(--spacing-lg));
+		--size: calc(var(--icon-size-md) + var(--spacing-lg));
 
 		background-color: var(--color--bg-main-50);
 
@@ -1054,7 +1054,7 @@ body.apphub_blue.v6 {
 
 .workshopItemAuthorName {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	margin-top: var(--spacing-xxs);
 }
 
@@ -1062,7 +1062,7 @@ body.apphub_blue.v6 {
 	@include -row;
 
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	box-shadow: none;
 
 	// BYE I'm too lazy for ts
@@ -1094,7 +1094,7 @@ body.apphub_blue.v6 {
 
 	.workshopItemShortDesc {
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 		padding: 0;
 		padding-block-start: var(--spacing-sm);
 	}
@@ -1169,7 +1169,7 @@ body.apphub_blue.v6 {
 
 .workshopItemDescription {
 	color: var(--color--fg-main);
-	font: var(--text--body-large);
+	font: var(--text--body-lg);
 	padding: 0;
 	margin: 0;
 }
@@ -1200,7 +1200,7 @@ body.apphub_blue.v6 {
 
 	.numRatings {
 		color: var(--color--fg-dim);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 	}
 
 	.ratingSection {
@@ -1259,7 +1259,7 @@ body.apphub_blue.v6 {
 
 .workshopItemTitle {
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	border: none;
 	padding: 0;
 	margin: 0;
@@ -1282,6 +1282,6 @@ body.apphub_blue.v6 {
 
 .workshopTagsTitle {
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	margin-right: 12px;
 }

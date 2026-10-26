@@ -4,7 +4,7 @@
 
 :where(.DialogBodyText) {
 	color: var(--color--fg-main);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	gap: var(--spacing-sm);
 	margin: 0;
 
@@ -51,7 +51,7 @@
 
 :where(.DialogContent) {
 	background: var(--color--bg-main);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	padding: var(--dialog--spacing-container);
 }
 
@@ -80,7 +80,7 @@
 
 :where(.DialogHeader) {
 	color: var(--color--fg-main);
-	font: var(--text--heading-large);
+	font: var(--text--heading-lg);
 	margin-block-end: var(--spacing-sm);
 }
 
@@ -106,7 +106,7 @@
 
 :where(.DialogLabel) {
 	color: var(--color--fg-dim);
-	font: var(--text--body-small);
+	font: var(--text--body-sm);
 	text-transform: none;
 	margin-bottom: var(--spacing-xxs);
 }
@@ -188,7 +188,7 @@
 }
 
 .ModalPosition_Dismiss {
-	--icon--size-lg: var(--dialog--window-control-size);
+	--icon-size-lg: var(--dialog--window-control-size);
 
 	inset-block-start: var(--spacing-md);
 	inset-inline-end: var(--spacing-md);
@@ -219,7 +219,7 @@
 }
 
 .title-area {
-	--icon--size-lg: var(--dialog--window-control-size);
+	--icon-size-lg: var(--dialog--window-control-size);
 
 	gap: var(--dialog--window-control-spacing);
 	padding-block-start: var(--spacing-md);

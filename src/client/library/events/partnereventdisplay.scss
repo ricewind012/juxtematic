@@ -4,18 +4,18 @@
 
 #EventDetailsBody {
 	color: var(--color--fg-main);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 }
 
 #EventDetailsSubTitle {
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	padding-block-end: var(--spacing-sm);
 	margin: 0;
 }
 
 #EventDetailTitle {
-	font: var(--text--heading-large);
+	font: var(--text--heading-lg);
 	margin: 0;
 }
 
@@ -32,7 +32,7 @@
 
 	#EventDetailTimeInfo {
 		color: var(--color--fg-main);
-		font: var(--text--body-medium);
+		font: var(--text--body-md);
 	}
 }
 

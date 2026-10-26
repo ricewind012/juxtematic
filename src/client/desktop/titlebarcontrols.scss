@@ -5,7 +5,7 @@
 #AccountMenu {
 	@include client.titlebarcontrols--button;
 
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	gap: 8px;
 	padding: 4px;
 	margin: 0;
@@ -40,7 +40,7 @@
 
 #NotificationButtonContainer {
 	--icon-name: icon("notifications");
-	--icon--size-lg: var(--dialog--window-control-size);
+	--icon-size-lg: var(--dialog--window-control-size);
 
 	margin-right: var(--spacing-sm);
 }

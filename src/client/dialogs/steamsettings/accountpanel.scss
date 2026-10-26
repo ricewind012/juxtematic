@@ -2,15 +2,15 @@
 	border: none;
 	border-radius: 0;
 	gap: 0;
-	padding-inline: var(--gamepaddialog_field-spacing-inline);
+	padding-inline: var(--gamepaddialog--field-spacing-inline);
 	margin-block: calc(var(--spacing-xxs) * -1);
-	margin-inline: calc(var(--gamepaddialog_field-spacing-inline) * -1);
+	margin-inline: calc(var(--gamepaddialog--field-spacing-inline) * -1);
 
 	flex-direction: column;
 	align-items: start;
 	justify-content: start;
 	position: relative;
-	width: calc(100% + var(--gamepaddialog_field-spacing-inline) * 2);
+	width: calc(100% + var(--gamepaddialog--field-spacing-inline) * 2);
 
 	&:not(:hover) {
 		background-color: transparent;
@@ -21,19 +21,19 @@
 		margin: 12px 0;
 
 		position: absolute;
-		inset-inline-end: var(--gamepaddialog_field-spacing-inline);
-		width: var(--icon--size-md);
-		height: var(--icon--size-md);
+		inset-inline-end: var(--gamepaddialog--field-spacing-inline);
+		width: var(--icon-size-md);
+		height: var(--icon-size-md);
 	}
 
 	#Label {
 		color: var(--color--fg-main);
-		font: var(--text--heading-small);
+		font: var(--text--heading-sm);
 	}
 
 	#Details {
 		color: var(--color--fg-dim);
-		font: var(--text--body-small);
+		font: var(--text--body-sm);
 	}
 }
 

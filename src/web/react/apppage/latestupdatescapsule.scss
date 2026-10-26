@@ -41,7 +41,7 @@
 
 #OtherEvents_TextCtn {
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 	padding: 0;
 	margin-block-start: var(--spacing-sm);
 
@@ -59,7 +59,7 @@
 #HorizontalTitle,
 #OtherEvents_TextTitle {
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	margin-block-end: var(--spacing-xxs);
 
 	max-height: unset;

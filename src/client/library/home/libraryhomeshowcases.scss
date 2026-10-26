@@ -4,19 +4,19 @@
 
 @keyframes attention {
 	0% {
-		--libraryhomeshowcases_drag-handle-pos-y: 0;
+		--libraryhomeshowcases--drag-handle-pos-y: 0;
 	}
 
 	50% {
-		--libraryhomeshowcases_drag-handle-pos-y: calc(var(--icon--size-md) / -2);
+		--libraryhomeshowcases--drag-handle-pos-y: calc(var(--icon-size-md) / -2);
 	}
 
 	100% {
-		--libraryhomeshowcases_drag-handle-pos-y: 0;
+		--libraryhomeshowcases--drag-handle-pos-y: 0;
 	}
 }
 
-@property --libraryhomeshowcases_drag-handle-pos-y {
+@property --libraryhomeshowcases--drag-handle-pos-y {
 	syntax: "<length>";
 	inherits: false;
 	initial-value: 0;
@@ -49,7 +49,7 @@
 	--header-height: 32px;
 
 	#Message {
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 		margin-block-start: calc(var(--header-height) / 2);
 
 		inset-inline-start: 100px;
@@ -79,16 +79,16 @@
 	}
 
 	#ChildrenContainer {
-		--pageablecontainer_header-offset: 0px;
+		--pageablecontainer--header-offset: 0px;
 
 		margin: 0;
 	}
 }
 
 #ShowcaseHeader {
-	--drag-handle-offset: calc(var(--icon--size-md) + var(--spacing-sm));
+	--drag-handle-offset: calc(var(--icon-size-md) + var(--spacing-sm));
 
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 	border: none;
 	gap: var(--spacing-sm);
 	padding: 0;
@@ -175,8 +175,8 @@
 	#PageButtons {
 		margin: 0;
 		margin-block-start: calc(
-			var(--pageablecontainer_header-offset) + var(--button--spacing-block-sm) *
-				2
+			var(--pageablecontainer--header-offset) +
+				var(--button--spacing-block-sm) * 2
 		);
 
 		justify-content: space-between;
@@ -216,7 +216,7 @@
 
 		width: 100%;
 		mask-repeat: no-repeat;
-		mask-position: 100% var(--libraryhomeshowcases_drag-handle-pos-y);
+		mask-position: 100% var(--libraryhomeshowcases--drag-handle-pos-y);
 	}
 
 	// Give attention to the handle, because IDK how else to do it here

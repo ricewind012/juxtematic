@@ -7,8 +7,8 @@
 	margin: 0;
 
 	position: absolute;
-	width: var(--icon--size-md);
-	height: var(--icon--size-md);
+	width: var(--icon-size-md);
+	height: var(--icon-size-md);
 
 	svg {
 		width: inherit;
@@ -29,12 +29,12 @@
 
 #AppName {
 	color: var(--color--fg-main);
-	font: var(--text--heading-small);
+	font: var(--text--heading-sm);
 }
 
 #AppSizeRequired {
 	color: var(--color--fg-dim);
-	font: var(--text--body-medium);
+	font: var(--text--body-md);
 }
 
 #AppToInstall {
@@ -88,7 +88,7 @@
 		@extend %-folder-icon;
 
 		inset-inline-end: calc(
-			var(--spacing-md) + var(--spacing-sm) + var(--icon--size-md)
+			var(--spacing-md) + var(--spacing-sm) + var(--icon-size-md)
 		);
 	}
 
@@ -108,7 +108,7 @@
 
 	#Header {
 		color: var(--color--fg-main);
-		font: var(--text--body-large);
+		font: var(--text--body-lg);
 		letter-spacing: 0;
 		text-transform: none;
 
