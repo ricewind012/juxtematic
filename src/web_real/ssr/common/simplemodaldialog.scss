@@ -34,16 +34,13 @@
 	margin-block-end: var(--spacing-sm);
 }
 
-
-
-
 #XButton {
 	--icon-size-lg: var(--dialog--window-control-size);
 
 	@include utils.icon($name: "close", $size: "lg");
 
 	color: var(--color--fg-dim);
-    flex-basis:unset;
+	flex-basis: unset;
 	padding: 0;
 
 	svg {
