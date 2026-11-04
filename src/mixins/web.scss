@@ -29,6 +29,18 @@
 	}
 }
 
+@mixin global--global-header-dropdown-menu {
+
+	// For "top" property calculation
+	font: var(--text--body-lg);
+	// TODO: 4px
+	inset-block-start: calc(
+		var(--header--spacing-block) + var(--button--spacing-block-md) * 2 + 1lh -
+			4px
+	);
+	position: absolute;
+}
+
 @mixin layout--sidebar-item($active) {
 	background: transparent;
 	border-radius: var(--rounding-md);

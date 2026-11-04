@@ -1,0 +1,56 @@
+@use "shared/controls";
+@use "shared/menu";
+@use "shared/style";
+@use "shared/utils";@use 'web';
+
+// It's in the account dropdown anyway
+#AccountBalance {
+	display: none;
+}
+
+#AccountMenu {
+	@include web.global--global-header-dropdown-menu;
+}
+
+#AccountMenuButton {
+	@include controls.dropdown;
+
+	padding-inline-start: calc(
+		var(--button--spacing-inline) + var(--avatar--size-xs) + var(--spacing-xxs)
+	);
+}
+
+#AccountMenuItemTextHighlight {
+	color: var(--color--primary);
+}
+
+#Avatar {
+	--size: var(--avatar--size-xs);
+
+	inset-inline-start: var(--button--spacing-inline);
+	margin: 0;
+	position: absolute;
+}
+
+#Container {
+	align-items: center;
+	flex-direction: row-reverse;
+	gap: var(--spacing-sm);
+	inset: 0;
+	position: relative;
+}
+
+[id="green_envelope_menu_root"] {
+	@include controls.button;
+
+	height: unset;
+	position: unset;
+	width: unset;
+
+	svg {
+		@include utils.icon($name: "notifications");
+
+		// Align with the account dropdown
+		margin-block: 1px;
+	}
+}
