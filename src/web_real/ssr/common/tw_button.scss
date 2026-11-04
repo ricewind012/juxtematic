@@ -1,0 +1,26 @@
+@use "shared/controls";
+
+:where(#Button) {
+	@include controls.button;
+
+	&:where(:disabled, [aria-disabled="true"]) {
+		// do I really not have a disabled variant?
+	}
+
+	&:where(#Icon) {
+		//@include controls.icon-button;
+	}
+
+	&:where(#Size-1) {
+		@include controls.button-vars($size: "sm");
+	}
+
+	// lol
+	&:where(#Variant-basic:not([data-accent-color="dull"])) {
+		@include controls.button-vars($variant: "primary");
+	}
+
+	&:where(#Variant-outline) {
+		@include controls.button-vars($variant: "tertiary");
+	}
+}

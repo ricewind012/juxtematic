@@ -1,7 +1,7 @@
 @use "shared/controls";
 @use "shared/menu";
-@use "shared/style";
-@use "shared/utils";@use 'web';
+@use "shared/utils";
+@use "web";
 
 // It's in the account dropdown anyway
 #AccountBalance {
@@ -9,15 +9,21 @@
 }
 
 #AccountMenu {
+	@include menu.container;
 	@include web.global--global-header-dropdown-menu;
 }
 
 #AccountMenuButton {
 	@include controls.dropdown;
 
+	height: unset;
 	padding-inline-start: calc(
 		var(--button--spacing-inline) + var(--avatar--size-xs) + var(--spacing-xxs)
 	);
+}
+
+#AccountMenuItem {
+	@include menu.item;
 }
 
 #AccountMenuItemTextHighlight {

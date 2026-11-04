@@ -1,0 +1,23 @@
+:root {
+	--radius-sm: var(--rounding-sm);
+	--radius-md: var(--rounding-md);
+	--radius-lg: var(--rounding-lg);
+
+	--spacing-0: 0px;
+	--spacing-1: var(--spacing-xxs);
+	--spacing-2: var(--spacing-xs);
+	--spacing-3: var(--spacing-sm);
+	--spacing-4: var(--spacing-md);
+	--spacing-5: var(--spacing-lg);
+	--spacing-6: var(--spacing-xl);
+	--spacing-7: var(--spacing-xxl);
+	--spacing-8: 48px;
+	--spacing-9: 64px;
+
+	--control-height-1: unset;
+	--control-height-2: unset;
+	--control-height-3: unset;
+
+	--default-font-size: var(--color--fg-main);
+  --default-line-height: var(--text--line-height);
+}

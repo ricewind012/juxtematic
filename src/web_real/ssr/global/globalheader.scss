@@ -1,7 +1,6 @@
 @use "shared/controls";
 @use "shared/menu";
 @use "shared/style";
-@use "shared/utils";
 @use "web";
 
 #Container {
@@ -69,4 +68,8 @@
 #SuperNavMenu {
 	@include menu.container;
 	@include web.global--global-header-dropdown-menu;
+}
+
+#SuperNavMenuItem {
+	@include menu.item;
 }

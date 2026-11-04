@@ -21,8 +21,8 @@ body {
 	font: var(--text--body-md);
 }
 
-a,
-.whiteLink {
+:where(a,
+.whiteLink) {
 	@include style.link;
 }
 
