@@ -7,26 +7,22 @@
 	border: var(--border-md) solid transparent;
 	border-radius: var(--rounding-lg);
 	box-shadow: none;
-
 	transition: var(--transition);
 
 	&:not(#NewCollection) {
 		background-color: var(--color--bg-hl);
 
 		&::before {
-			content: "";
-
-			position: absolute;
-			inset: 0;
-
-			opacity: var(--bg-opacity);
 			background-image: radial-gradient(
 				farthest-corner at -40px -40px,
 				color-mix(in srgb, var(--color--primary) 50%, var(--color--bg-hl)),
 				transparent
 			);
 			border-radius: var(--rounding-md);
-
+			content: "";
+			inset: 0;
+			opacity: var(--bg-opacity);
+			position: absolute;
 			transition: var(--transition);
 		}
 
@@ -58,9 +54,9 @@
 #CollectionLabel {
 	color: var(--color--fg-main);
 	font: var(--text--heading-sm);
+	letter-spacing: 0;
 	text-shadow: none;
 	text-transform: none;
-	letter-spacing: 0;
 
 	& > .tool-tip-source {
 		display: block;
@@ -80,7 +76,6 @@
 	color: var(--color--fg-main);
 	font: var(--text--heading-sm);
 	gap: 9px;
-
 	height: unset;
 
 	#Label {

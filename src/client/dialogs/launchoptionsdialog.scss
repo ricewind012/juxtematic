@@ -39,11 +39,10 @@
 	border: none;
 	border-radius: var(--rounding-md);
 	box-shadow: none;
-	padding: 0;
-	margin-block-end: auto;
-
-	overflow: auto;
 	flex-grow: 0;
+	margin-block-end: auto;
+	overflow: auto;
+	padding: 0;
 
 	#ListItem {
 		@include controls.radio($active: "&:has(> :checked)");

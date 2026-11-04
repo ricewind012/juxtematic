@@ -1,27 +1,25 @@
 #AchievementIconWrapper {
 	border-radius: var(--rounding-md);
-
-	width: var(--achievementiconbase--size);
 	height: var(--achievementiconbase--size);
+	width: var(--achievementiconbase--size);
 }
 
 #HiddenLabel {
+	align-items: center;
 	background: linear-gradient(
 		135deg,
 		var(--color--bg-hover),
 		var(--color--bg-main)
 	);
-	color: var(--color--fg-main);
-	font: var(--text--heading-lg);
 	border-radius: var(--rounding-md);
 	box-shadow: none;
-	margin: 0;
-
+	color: var(--color--fg-main);
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: var(--achievementiconbase--size);
+	font: var(--text--heading-lg);
 	height: var(--achievementiconbase--size);
+	justify-content: center;
+	margin: 0;
+	width: var(--achievementiconbase--size);
 }
 
 #Icon {

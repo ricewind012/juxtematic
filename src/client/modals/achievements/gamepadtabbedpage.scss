@@ -29,11 +29,10 @@
 	@include controls.tab($active: "&#Selected");
 
 	background-color: var(--color--bg-main-50);
-	letter-spacing: 0;
-	text-transform: none;
-	padding-block: var(--spacing-sm);
-
 	height: unset;
+	letter-spacing: 0;
+	padding-block: var(--spacing-sm);
+	text-transform: none;
 
 	&#Selected {
 		background-color: var(--color--bg-hl);
@@ -42,8 +41,8 @@
 
 #TabContentsScroll {
 	background: transparent;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 
 	#TabContents & {
 		padding-block-start: calc(
@@ -55,14 +54,13 @@
 #TabHeaderRowWrapper {
 	background-color: var(--color--bg-main-20);
 	backdrop-filter: var(--blur);
-	padding: var(--spacing-xxs) var(--spacing-sm);
-
 	inset-block-start: calc(
 		var(--text--heading-lg-size) * var(--text--line-height) +
 			var(--text--body-md-size) * var(--text--line-height) +
 			var(--dialog--spacing-container) * 2 + var(--spacing-md) * 3 +
 			var(--spacing-xs) + 6px + 2px * 2
 	);
+	padding: var(--spacing-xxs) var(--spacing-sm);
 
 	&::before {
 		display: none;

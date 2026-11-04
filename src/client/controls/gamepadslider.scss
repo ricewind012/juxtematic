@@ -1,13 +1,11 @@
 #DescriptionValue {
 	color: var(--color--fg-dim);
-
 	display: inline-flex;
 }
 
 #LabelText {
-	font: var(--text--heading-sm);
-
 	display: inline-flex;
+	font: var(--text--heading-sm);
 	width: calc(100% - 3ch);
 }
 
@@ -18,5 +16,6 @@
 
 #SliderTrack {
 	--left-track-color: var(--color--primary);
+
 	background-color: var(--color--bg-hl);
 }

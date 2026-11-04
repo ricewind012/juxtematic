@@ -2,8 +2,8 @@
 
 #PlayHeadAnnotation {
 	svg {
-		opacity: 1;
 		color: var(--color--fg-main);
+		opacity: 1;
 	}
 }
 
@@ -15,17 +15,15 @@
 }
 
 #ScrollThumb {
-	filter: none;
-	opacity: 1;
 	border: none;
 	box-shadow: none;
-
+	filter: none;
 	inset-block-start: 2px;
+	opacity: 1;
 }
 
 #ScrollTrack {
 	background: none;
 	box-shadow: none;
-
 	inset-block-end: 11px;
 }

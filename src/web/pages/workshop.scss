@@ -6,8 +6,8 @@
 @mixin -row {
 	background: var(--color--bg-main-50);
 	border-radius: var(--rounding-lg);
+	margin-block-end: var(--spacing-sm);
 	padding: var(--spacing-md);
-	margin-bottom: var(--spacing-sm);
 
 	&:hover {
 		background-color: var(--color--bg-main);
@@ -17,9 +17,9 @@
 @mixin -workshop-bg {
 	@include style.workshop-bg;
 
-	position: fixed;
-	inset: 0;
 	height: 100vh;
+	inset: 0;
+	position: fixed;
 	z-index: -999;
 }
 
@@ -32,8 +32,8 @@ body.apphub_blue.v6 {
 }
 
 .browseOption {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 
 	.browseOptionImage ~ & > a {
 		background-color: var(--color--bg-hover);
@@ -67,10 +67,9 @@ body.apphub_blue.v6 {
 .detailsStatNumChangeNotes {
 	color: var(--color--fg-dim);
 	font: inherit;
+	inset-block-start: calc(3lh + var(--spacing-sm) * 3);
 	padding-block-start: var(--spacing-sm);
-
 	position: absolute;
-	top: calc(3lh + var(--spacing-sm) * 3);
 
 	a {
 		font: inherit;
@@ -86,6 +85,7 @@ body.apphub_blue.v6 {
 .parentCollectionRating,
 .workshop_item_rating {
 	background-color: var(--color--secondary);
+	height: var(--icon-size-lg);
 	mask-image: var(--img);
 	// prettier-ignore
 	mask-position:
@@ -95,9 +95,7 @@ body.apphub_blue.v6 {
 		calc(var(--icon-size-lg) * 3),
 		calc(var(--icon-size-lg) * 4);
 	mask-repeat: no-repeat;
-
 	width: calc(var(--icon-size-lg) * 5);
-	height: var(--icon-size-lg);
 
 	// prettier-ignore
 	$-stars: (
@@ -123,10 +121,9 @@ body.apphub_blue.v6 {
 .filterOption {
 	@include web.sidebar--list-item;
 
-	margin-inline: 0;
-
-	display: flex;
 	align-items: center;
+	display: flex;
+	margin-inline: 0;
 
 	&.checked {
 		@include web.sidebar--list-item-primary;
@@ -141,10 +138,9 @@ body.apphub_blue.v6 {
 	label {
 		all: unset;
 
-		gap: var(--spacing-xxs);
-
-		display: flex;
 		align-items: center;
+		display: flex;
+		gap: var(--spacing-xxs);
 	}
 }
 
@@ -158,9 +154,8 @@ body.apphub_blue.v6 {
 .game_area_purchase_game {
 	@include web.section--container;
 
-	border: none;
-
 	align-items: center;
+	border: none;
 	justify-content: space-between;
 
 	br {
@@ -169,10 +164,9 @@ body.apphub_blue.v6 {
 
 	& > h1 {
 		color: var(--color--fg-main);
-		font: var(--text--heading-md);
-
 		display: flex;
 		flex-direction: column-reverse;
+		font: var(--text--heading-md);
 		width: unset;
 
 		span {
@@ -187,22 +181,20 @@ body.apphub_blue.v6 {
 
 	.subscribeOption.selected {
 		line-height: inherit;
-
 		text-align: center;
 	}
 }
 
 .game_area_purchase_margin {
-	margin-bottom: var(--spacing-sm);
+	margin-block-end: var(--spacing-sm);
 }
 
 .general_btn {
 	@include controls.button($variant: "primary");
 
-	margin-right: 0;
-
-	width: unset;
 	height: unset;
+	margin-inline-end: 0;
+	width: unset;
 
 	.favoriteOption.selected {
 		line-height: inherit;
@@ -215,7 +207,6 @@ body.apphub_blue.v6 {
 
 .highlight_overflow {
 	margin: 0;
-
 	max-width: unset;
 }
 
@@ -230,32 +221,29 @@ body.apphub_blue.v6 {
 #highlight_strip {
 	background-color: var(--color--bg-main-50);
 	border-radius: var(--rounding-md);
-	padding: var(--border-lg);
-
-	overflow: hidden;
-	inset: 0;
-	width: 100%;
 	height: calc(65px + var(--border-lg) * 4);
+	inset: 0;
+	overflow: hidden;
+	padding: var(--border-lg);
+	width: 100%;
 }
 
 #highlight_strip_bg {
 	background-color: transparent;
-	padding: 0;
 	margin-block: var(--spacing-sm) var(--spacing-lg);
+	padding: 0;
 
 	.slider {
 		background-color: var(--color--bg-main);
 		border-radius: 40px;
-		margin-block-start: var(--spacing-sm);
-
 		height: var(--carousel--thumb-height);
+		margin-block-start: var(--spacing-sm);
 
 		.handle {
 			background: var(--color--secondary);
 			border-radius: 40px;
-
-			width: 36px;
 			height: inherit;
+			width: 36px;
 		}
 	}
 }
@@ -264,13 +252,11 @@ body.apphub_blue.v6 {
 	margin: var(--border-lg);
 
 	&.focus::before {
-		content: "";
-
-		position: absolute;
-		inset: calc(var(--border-lg) * -1);
-
 		border: var(--border-lg) solid var(--color--secondary);
 		border-radius: var(--rounding-md);
+		content: "";
+		inset: calc(var(--border-lg) * -1);
+		position: absolute;
 	}
 
 	img {
@@ -279,9 +265,8 @@ body.apphub_blue.v6 {
 }
 
 #highlight_strip_scroll {
-	padding-inline: var(--border-lg);
-
 	display: flex;
+	padding-inline: var(--border-lg);
 	width: unset;
 }
 
@@ -335,15 +320,14 @@ body.apphub_blue.v6 {
 .just_added_to_list:not([style="display: none;"]) {
 	@include web.section--container;
 
+	align-items: center;
 	background: color-mix(in srgb, var(--color--primary) 50%, transparent);
 	color: var(--color--fg-main);
+	display: flex;
 	font: var(--text--body-lg);
+	justify-content: space-between;
 	margin: 0;
 	margin-block-end: var(--spacing-lg);
-
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 
 	.workshop_item_header & {
 		margin-block: var(--spacing-lg) 0;
@@ -363,8 +347,8 @@ body.apphub_blue.v6 {
 .parentCollection {
 	@include web.section--container;
 
-	display: flex;
 	align-items: center;
+	display: flex;
 
 	&:hover {
 		background-color: var(--color--bg-main);
@@ -381,17 +365,16 @@ body.apphub_blue.v6 {
 }
 
 .parentCollectionsNumOthers {
-	padding: 0;
 	color: var(--color--fg-dim);
+	padding: 0;
 }
 
 .parentCollectionTitle {
 	color: var(--color--fg-main);
-	font: var(--text--heading-sm);
-	text-transform: none;
-	padding: 0;
-
 	flex-grow: 1;
+	font: var(--text--heading-sm);
+	padding: 0;
+	text-transform: none;
 }
 
 .parentCollections {
@@ -403,9 +386,8 @@ body.apphub_blue.v6 {
 }
 
 #profileBlock {
-	margin: 0;
-
 	flex-grow: 1;
+	margin: 0;
 	max-width: unset;
 
 	#mainContents > & {
@@ -427,8 +409,8 @@ body.apphub_blue.v6 {
 .requiredItem {
 	background-color: var(--color--bg-hl);
 	border-radius: var(--rounding-lg);
+	margin-block-end: var(--spacing-sm);
 	padding: var(--spacing-sm);
-	margin-bottom: var(--spacing-sm);
 }
 
 .requiredItemSubscribed {
@@ -477,7 +459,7 @@ body.apphub_blue.v6 {
 .rightSectionMinorText {
 	color: var(--color--fg-dim);
 	font: var(--text--body-sm);
-	margin-bottom: var(--spacing-sm);
+	margin-block-end: var(--spacing-sm);
 }
 
 .rightSectionTitle {
@@ -507,23 +489,22 @@ body.apphub_blue.v6 {
 
 		// TODO: move to comments.scss if I see this again
 		background-color: transparent;
-		padding: var(--spacing-xl);
 		margin: calc(var(--spacing-xl) * -1);
 		margin-block-end: 0;
+		padding: var(--spacing-xl);
 	}
 
 	#rightContents {
 		background-color: transparent;
+		margin-inline-start: var(--spacing-md);
 		padding: 0;
-		margin-left: var(--spacing-md);
 
 		.panel {
 			background-color: var(--color--bg-main);
 			border-radius: var(--rounding-lg);
-			padding: var(--spacing-md);
-			margin-bottom: var(--spacing-md);
-
 			display: block;
+			margin-block-end: var(--spacing-md);
+			padding: var(--spacing-md);
 
 			.hr {
 				display: none;
@@ -532,29 +513,26 @@ body.apphub_blue.v6 {
 			.title {
 				color: var(--color--fg-main);
 				font: var(--text--body-lg);
+				margin-block-start: 0;
 				text-transform: none;
-				margin-top: 0;
 			}
 		}
 	}
 }
 
 .slider_container {
-	margin-block-start: var(--spacing-sm);
-
 	height: var(--carousel--thumb-height);
+	margin-block-start: var(--spacing-sm);
 
 	.handle {
 		background: var(--color--secondary);
 		border-radius: 40px;
-
-		width: 36px;
 		height: var(--carousel--thumb-height);
+		width: 36px;
 	}
 
 	.slider {
 		background-color: var(--color--bg-main);
-
 		inset: 0;
 	}
 
@@ -582,10 +560,9 @@ body.apphub_blue.v6 {
 	.workshop_item.square {
 		background-color: var(--color--bg-main-50);
 		border-radius: var(--rounding-md);
-
-		width: var(--image-size);
 		// 69px = footer height
 		height: calc(var(--image-size) + 69px);
+		width: var(--image-size);
 
 		&:hover {
 			background-color: var(--color--bg-main);
@@ -608,16 +585,14 @@ body.apphub_blue.v6 {
 		.preview_image {
 			border: none;
 			border-radius: var(--rounding-md) var(--rounding-md) 0 0;
-
-			width: var(--image-size);
 			height: var(--image-size);
+			width: var(--image-size);
 		}
 
 		.workshop_item_info {
-			padding: var(--spacing-sm);
-
 			display: flex;
 			flex-direction: column-reverse;
+			padding: var(--spacing-sm);
 		}
 
 		.workshop_item_title {
@@ -645,7 +620,7 @@ body.apphub_blue.v6 {
 
 	color: var(--color--fg-dim);
 	margin: 0;
-	margin-left: auto;
+	margin-inline-start: auto;
 
 	&:hover {
 		color: var(--color--fg-main);
@@ -666,9 +641,8 @@ body.apphub_blue.v6 {
 	@include controls.tabs-container;
 
 	background-image: none;
-
-	position: unset;
 	height: unset;
+	position: unset;
 }
 
 .workshop_browse_search {
@@ -677,10 +651,9 @@ body.apphub_blue.v6 {
 	margin-inline-start: auto;
 
 	&::after {
-		content: "";
-
 		@include controls.text-field-icon($name: "search");
 
+		content: "";
 		margin-inline-end: var(--tab--container-spacing);
 	}
 
@@ -699,8 +672,8 @@ body.apphub_blue.v6 {
 	.search_text_submit_img {
 		@include controls.text-field($variant: "search");
 
-		visibility: hidden;
 		margin-inline-end: var(--tab--container-spacing);
+		visibility: hidden;
 	}
 }
 
@@ -713,25 +686,23 @@ body.apphub_blue.v6 {
 	}
 
 	a {
-		background-color: transparent;
-		gap: var(--spacing-xxs);
-		padding: var(--spacing-xs) var(--spacing-lg);
-		margin: calc(var(--spacing-xs) * -1) calc(var(--spacing-lg) * -1);
-
-		vertical-align: middle;
-		display: flex;
 		align-items: center;
+		background-color: transparent;
+		display: flex;
+		gap: var(--spacing-xxs);
+		margin: calc(var(--spacing-xs) * -1) calc(var(--spacing-lg) * -1);
+		padding: var(--spacing-xs) var(--spacing-lg);
+		vertical-align: middle;
 	}
 
 	.dropdown {
 		background-image: none;
 
 		&::after {
-			content: "";
-
-			display: block;
-
 			@include utils.icon($name: "arrow");
+
+			content: "";
+			display: block;
 		}
 	}
 }
@@ -749,10 +720,9 @@ body.apphub_blue.v6 {
 .workshop_header {
 	background-image: none;
 	box-shadow: none;
-	margin: auto;
-
-	max-width: var(--content--width-sm);
 	height: unset;
+	margin: auto;
+	max-width: var(--content--width-sm);
 
 	&::before {
 		@include -workshop-bg;
@@ -766,13 +736,12 @@ body.apphub_blue.v6 {
 	#{controls.button-web-selector(".btnv6_blue_blue_innerfade")} {
 		@include controls.button-vars($variant: "primary", $size: "sm");
 
+		inset-block-start: anchor(start);
+		inset-inline-end: anchor(start);
 		margin: 0;
 		margin-inline-end: var(--spacing-sm);
-
 		position: fixed;
 		position-anchor: --apphub-top-right-buttons;
-		inset-block-start: anchor(top);
-		inset-inline-end: anchor(left);
 	}
 
 	.customBrowseText {
@@ -787,18 +756,15 @@ body.apphub_blue.v6 {
 
 .workshop_home_content {
 	margin: auto;
-
 	width: var(--content--width-sm);
 
 	& > div {
-		gap: var(--spacing-md);
-
 		display: flex;
+		gap: var(--spacing-md);
 	}
 
 	.left_column {
 		padding: 0;
-
 		width: unset;
 	}
 
@@ -893,8 +859,8 @@ body.apphub_blue.v6 {
 .workshop_item_header {
 	@include web.section--container;
 
-	gap: var(--spacing-xl);
 	box-shadow: none;
+	gap: var(--spacing-xl);
 
 	.col_right {
 		flex-shrink: 0;
@@ -919,10 +885,9 @@ body.apphub_blue.v6 {
 
 	.preview_image {
 		border-radius: var(--rounding-md);
-		margin-right: var(--spacing-md);
-
-		width: var(--image-size);
 		height: var(--image-size);
+		margin-inline-end: var(--spacing-md);
+		width: var(--image-size);
 	}
 
 	.workshop_item_rating {
@@ -943,17 +908,15 @@ body.apphub_blue.v6 {
 
 .workshopBrowseItems {
 	gap: var(--spacing-md);
-
 	grid-template-columns: repeat(4, 1fr);
 }
 
 .workshopBrowsePaging {
+	align-items: center;
 	color: var(--color--fg-dim);
 	font: var(--text--body-lg);
-	padding: 0;
-
-	align-items: center;
 	justify-content: space-between;
+	padding: 0;
 
 	.pagination_space {
 		display: none;
@@ -978,14 +941,13 @@ body.apphub_blue.v6 {
 }
 
 .workshopBrowsePagingWithBG {
+	align-items: center;
 	background-color: transparent;
 	color: var(--color--fg-dim);
 	font: var(--text--body-md);
-	padding: 0;
-	margin-block: var(--spacing-sm) var(--spacing-xxl);
-
-	align-items: center;
 	justify-content: space-between;
+	margin-block: var(--spacing-sm) var(--spacing-xxl);
+	padding: 0;
 
 	.dropdown {
 		@include controls.dropdown;
@@ -995,10 +957,9 @@ body.apphub_blue.v6 {
 }
 
 .workshopBrowseSortingControls {
-	gap: var(--spacing-xxs);
-
-	display: flex;
 	align-items: center;
+	display: flex;
+	gap: var(--spacing-xxs);
 }
 
 .workshopBrowseItems .workshopItem {
@@ -1006,21 +967,18 @@ body.apphub_blue.v6 {
 
 	background-color: var(--color--bg-main-50);
 	border-radius: var(--rounding-lg);
-	padding: var(--spacing-md);
 	margin: 0;
-
+	padding: var(--spacing-md);
 	width: calc(var(--image-size) + var(--spacing-md) * 2);
 
 	&:has(> .workshop_checkmark:not([style="display: none;"]))::before {
-		content: "";
-
-		position: absolute;
-		inset-block-end: var(--spacing-md);
-		inset-inline-end: var(--spacing-md);
+		@include utils.icon($name: "check", $size: "lg");
 
 		color: var(--color--accent-green);
-
-		@include utils.icon($name: "check", $size: "lg");
+		content: "";
+		inset-block-end: var(--spacing-md);
+		inset-inline-end: var(--spacing-md);
+		position: absolute;
 	}
 
 	// BYE I'm too lazy for ts
@@ -1032,9 +990,8 @@ body.apphub_blue.v6 {
 		--size: calc(var(--icon-size-md) + var(--spacing-lg));
 
 		background-color: var(--color--bg-main-50);
-
-		min-width: var(--size);
 		min-height: var(--size);
+		min-width: var(--size);
 
 		.subscribeIcon {
 			@include utils.icon($name: "plus");
@@ -1044,7 +1001,7 @@ body.apphub_blue.v6 {
 	}
 
 	.ugc {
-		margin-bottom: var(--spacing-sm);
+		margin-block-end: var(--spacing-sm);
 	}
 
 	.workshop_checkmark {
@@ -1055,15 +1012,15 @@ body.apphub_blue.v6 {
 .workshopItemAuthorName {
 	color: var(--color--fg-dim);
 	font: var(--text--body-sm);
-	margin-top: var(--spacing-xxs);
+	margin-block-start: var(--spacing-xxs);
 }
 
 .workshopItemCollection {
 	@include -row;
 
+	box-shadow: none;
 	color: var(--color--fg-dim);
 	font: var(--text--body-md);
-	box-shadow: none;
 
 	// BYE I'm too lazy for ts
 	.fileRating {
@@ -1073,8 +1030,8 @@ body.apphub_blue.v6 {
 	.workshopItem {
 		--image-size: 128px;
 
-		width: var(--image-size);
 		height: var(--image-size);
+		width: var(--image-size);
 	}
 
 	.workshopItemAuthorLine {
@@ -1105,15 +1062,15 @@ body.apphub_blue.v6 {
 }
 
 .workshopItemControls {
-	padding: 0;
 	margin-block-start: var(--spacing-md);
+	padding: 0;
 
 	.general_btn {
 		@include controls.icon-button($w: 44px, $child: "&::before");
 
 		color: var(--color--fg-main);
 		font-size: 0;
-		margin-right: var(--spacing-sm);
+		margin-inline-end: var(--spacing-sm);
 
 		&.toggled {
 			color: var(--color--primary);
@@ -1170,15 +1127,15 @@ body.apphub_blue.v6 {
 .workshopItemDescription {
 	color: var(--color--fg-main);
 	font: var(--text--body-lg);
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 .workshopItemDescriptionTitle {
 	@include web.section--header;
 
+	margin-block-start: 0;
 	text-transform: none;
-	margin-top: 0;
 
 	& > .detail {
 		font: inherit;
@@ -1187,12 +1144,11 @@ body.apphub_blue.v6 {
 }
 
 .workshopItemDetailsHeader {
-	margin-block-end: 12px;
-
+	align-items: center;
 	display: flex;
 	flex-direction: row-reverse;
-	align-items: center;
 	justify-content: space-between;
+	margin-block-end: 12px;
 
 	#detailsHeaderRight {
 		padding: 0;
@@ -1204,10 +1160,9 @@ body.apphub_blue.v6 {
 	}
 
 	.ratingSection {
-		gap: var(--spacing-sm);
-
-		display: flex;
 		align-items: center;
+		display: flex;
+		gap: var(--spacing-sm);
 	}
 }
 
@@ -1216,9 +1171,9 @@ body.apphub_blue.v6 {
 }
 
 .workshopItemPreviewImage {
-	width: inherit;
 	height: inherit;
 	max-height: unset;
+	width: inherit;
 }
 
 // TODO(js): image size
@@ -1229,10 +1184,9 @@ body.apphub_blue.v6 {
 
 .workshopItemPreviewImageMain {
 	border-radius: var(--rounding-lg);
-	padding: 0;
 	margin: 0;
-	margin-bottom: 12px;
-
+	margin-block-end: 12px;
+	padding: 0;
 	width: inherit;
 
 	& > a {
@@ -1243,37 +1197,35 @@ body.apphub_blue.v6 {
 .workshopItemPreviewHolder {
 	border-radius: var(--rounding-md);
 	box-shadow: none;
-
-	width: var(--image-size);
 	height: var(--image-size);
+	width: var(--image-size);
 }
 
 .workshopItemRatings {
-	padding-bottom: var(--spacing-sm);
+	padding-block-end: var(--spacing-sm);
 }
 
 .workshopItemSubscriptionControls {
-	right: var(--spacing-sm);
-	bottom: var(--spacing-sm);
+	inset-block-end: var(--spacing-sm);
+	inset-inline-end: var(--spacing-sm);
 }
 
 .workshopItemTitle {
+	border: none;
 	color: var(--color--fg-main);
 	font: var(--text--heading-sm);
-	border: none;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 .workshopTags {
-	font-size: 0;
-	gap: 4px;
-	padding: 0;
-	margin-bottom: 8px;
-
+	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	font-size: 0;
+	gap: 4px;
+	margin-block-end: 8px;
+	padding: 0;
 
 	a {
 		@include web.store--tag;
@@ -1283,5 +1235,5 @@ body.apphub_blue.v6 {
 .workshopTagsTitle {
 	color: var(--color--fg-dim);
 	font: var(--text--body-md);
-	margin-right: 12px;
+	margin-inline-end: 12px;
 }

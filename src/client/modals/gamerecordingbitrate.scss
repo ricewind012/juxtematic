@@ -16,11 +16,11 @@
 
 #BitRateTable {
 	background-color: transparent;
+	border-spacing: 0;
 	color: var(--color--fg-dim);
 	font: inherit;
-	border-spacing: 0;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 
 	th {
 		font: var(--text--heading-sm);

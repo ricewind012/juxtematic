@@ -6,13 +6,12 @@
 %-dropdown-menu {
 	// For "top" property calculation
 	font: var(--text--body-lg);
-
-	position: absolute;
 	// TODO: 4px
-	top: calc(
+	inset-block-start: calc(
 		var(--header--spacing-block) + var(--button--spacing-block-md) * 2 + 1lh -
 			4px
 	);
+	position: absolute;
 }
 
 #account_dropdown {
@@ -32,17 +31,16 @@
 #global_header {
 	@include style.header;
 
+	inset-block-start: 0;
 	position: sticky;
-	top: 0;
 	z-index: 999;
 
 	.content {
 		background-color: transparent;
-
 		display: flex;
 		justify-content: space-between;
-		max-width: unset;
 		height: unset;
+		max-width: unset;
 	}
 
 	.logo {
@@ -52,10 +50,9 @@
 	.menuitem {
 		@include controls.button;
 
-		text-transform: lowercase;
-
 		// For ::first-letter
 		display: block;
+		text-transform: lowercase;
 
 		&.supernav_active {
 			@include controls.button-vars($variant: "primary");
@@ -72,22 +69,20 @@
 }
 
 #global_action_menu {
+	display: flex;
 	// Remove signed out separator
 	font-size: 0;
 	gap: var(--header--button-spacing);
-
-	display: flex;
 }
 
 #global_actions {
-	gap: var(--spacing-sm);
-
+	align-items: center;
 	display: flex;
 	flex-direction: row-reverse;
-	align-items: center;
-	position: relative;
-	inset: 0;
+	gap: var(--spacing-sm);
 	height: unset;
+	inset: 0;
+	position: relative;
 
 	:where(& .global_action_link:not(.pulldown)) {
 		@include controls.button;
@@ -100,19 +95,18 @@
 	.user_avatar {
 		--size: var(--avatar--size-xs);
 
-		margin: 0;
-
-		position: absolute;
 		inset-inline-start: var(--button--spacing-inline);
+		margin: 0;
+		position: absolute;
 	}
 }
 
 #green_envelope_menu_root {
 	@include controls.button;
 
+	height: unset;
 	position: unset;
 	width: unset;
-	height: unset;
 
 	svg {
 		@include utils.icon($name: "notifications");
@@ -135,18 +129,18 @@
 
 // Use the mobile header for the notifications count
 .responsive_header {
-	top: -9999px;
-	z-index: 1000;
-	overflow: visible;
 	display: block;
+	inset-block-start: -9999px;
+	overflow: visible;
+	z-index: 1000;
 }
 
 .responsive_header_notification_badge {
 	@include style.notification-dot;
 
-	position: fixed;
 	margin-block-start: var(--header--spacing-block);
 	margin-inline-end: var(--header--spacing-inline);
+	position: fixed;
 
 	&.no_notifications {
 		display: none;
@@ -154,9 +148,8 @@
 }
 
 .supernav_container {
-	gap: var(--header--button-spacing);
-
 	display: flex;
+	gap: var(--header--button-spacing);
 	position: initial;
 }
 

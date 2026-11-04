@@ -6,10 +6,10 @@
 	@include controls.tab($active: "&#Active");
 
 	background: color-mix(in srgb, var(--color--bg-tertiary) 50%, transparent);
-	gap: var(--spacing-xs);
-	padding: var(--spacing-md) var(--spacing-lg);
 	border: none;
 	border-radius: 0;
+	gap: var(--spacing-xs);
+	padding: var(--spacing-md) var(--spacing-lg);
 
 	#BrowserTabs > & {
 		padding-inline: var(--spacing-sm);
@@ -39,11 +39,10 @@
 }
 
 #BrowserTabIcon {
-	padding: 0;
-	margin: 0;
-
-	width: var(--icon-size-sm);
 	height: var(--icon-size-sm);
+	margin: 0;
+	padding: 0;
+	width: var(--icon-size-sm);
 }
 
 #BrowserTabs {
@@ -70,10 +69,9 @@
 	svg {
 		// Not enough icons anyway lol
 		background: none;
+		display: flex;
 		mask: none;
 		padding: var(--spacing-xxs);
-
-		display: flex;
 
 		* {
 			display: initial;
@@ -103,9 +101,8 @@
 #URLBarText {
 	background-color: transparent;
 	border-radius: 0;
-	padding: 0;
-
 	overflow: hidden;
+	padding: 0;
 
 	&::after {
 		display: none;

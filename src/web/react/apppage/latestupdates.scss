@@ -10,11 +10,11 @@
 }
 
 #LatestUpdateButtonCtn {
+	inset-inline-end: calc(anchor(self-start) + var(--spacing-sm));
+	inset-block-start: anchor(start);
 	justify-content: end;
 	position: absolute;
 	position-anchor: --top-button;
-	right: calc(anchor(self-start) + var(--spacing-sm));
-	top: anchor(start);
 }
 
 #LatestUpdateIcon {
@@ -28,11 +28,9 @@
 }
 
 #SectionButtonCtn {
-	margin: 0;
-
-	position: absolute;
+	anchor-name: --top-button;
 	inset-block-start: var(--spacing-xl);
 	inset-inline-end: var(--spacing-xl);
-
-	anchor-name: --top-button;
+	margin: 0;
+	position: absolute;
 }

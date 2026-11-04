@@ -4,8 +4,8 @@
 body:not([id="hack"]) .visible.visible #DialogDropDownMenu {
 	@include menu.container;
 
-	padding: 0;
 	margin-block: var(--spacing-xxs);
+	padding: 0;
 }
 
 #DialogDropDownMenu_Item {

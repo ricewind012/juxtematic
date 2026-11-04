@@ -17,22 +17,20 @@
 
 #BG_top {
 	background-color: transparent;
-	gap: 24px;
-
 	display: flex;
+	gap: 24px;
+	height: unset;
 	justify-content: space-between;
 	width: var(--content--width-lg);
-	height: unset;
 
 	.user_info {
 		background-color: transparent;
 		border: none;
-		padding: 0;
-
-		position: unset;
-		min-width: unset;
-		max-width: unset;
 		height: unset;
+		max-width: unset;
+		min-width: unset;
+		padding: 0;
+		position: unset;
 
 		br,
 		& > span:nth-child(2) {
@@ -47,12 +45,11 @@
 	}
 
 	.user_info_text {
+		display: flex;
+		flex-direction: column;
 		font: var(--text--body-lg);
 		gap: var(--spacing-sm);
 		margin: 0;
-
-		display: flex;
-		flex-direction: column;
 	}
 }
 
@@ -80,7 +77,6 @@
 .game_button,
 .market_show_more_games {
 	margin: 0;
-
 	width: 100%;
 }
 
@@ -98,10 +94,9 @@
 
 	& > img {
 		border-radius: var(--rounding-sm);
-
+		height: var(--icon-size-sm);
 		position: unset;
 		width: var(--icon-size-sm);
-		height: var(--icon-size-sm);
 	}
 }
 
@@ -113,11 +108,10 @@
 .game_button_contents {
 	@include web.sidebar--list-item;
 
+	align-items: center;
 	background-image: none;
 	border: none;
-
 	display: flex;
-	align-items: center;
 	width: 100%;
 }
 
@@ -134,31 +128,27 @@
 
 .market_header_bg {
 	background-color: transparent;
-
 	margin-block: var(--content--spacing-block-start);
 }
 
 .market_header_logo {
 	background-image: none;
-
-	width: unset;
 	height: unset;
+	width: unset;
 }
 
 .market_header_text {
-	gap: 12px;
-	padding: 0;
-
 	display: flex;
 	flex-direction: column;
+	gap: 12px;
+	padding: 0;
 	width: unset;
 }
 
 .market_listing_action_buttons {
-	padding: 0;
-
-	width: var(--market--column-width);
 	height: unset;
+	padding: 0;
+	width: var(--market--column-width);
 
 	&.market_listing_right_cell {
 		order: 1;
@@ -175,10 +165,10 @@
 
 .market_listing_edit_buttons {
 	&.actual_content {
-		display: flex;
 		align-items: center;
-		justify-content: center;
+		display: flex;
 		height: 100%;
+		justify-content: center;
 	}
 
 	&.placeholder {
@@ -205,12 +195,11 @@
 	width: 62px;
 }
 
+// TODO(js): size can be changed
 .market_listing_item_img {
-	margin: 0;
-
-	// TODO(js): size can be changed
-	width: 62px;
 	height: 62px;
+	margin: 0;
+	width: 62px;
 }
 
 .market_listing_item_name {
@@ -222,18 +211,17 @@
 }
 
 .market_listing_item_name_block {
-	padding-inline-start: var(--spacing-lg);
 	margin-block: 8px;
+	padding-inline-start: var(--spacing-lg);
 }
 
 .market_listing_left_cell,
 .market_listing_right_cell {
-	color: var(--color--fg-dim);
-	line-height: unset;
 	border: none;
-
-	text-align: start;
+	color: var(--color--fg-dim);
 	height: unset;
+	line-height: unset;
+	text-align: start;
 }
 
 .market_listing_num_listings,
@@ -267,11 +255,10 @@
 
 	@extend %-row;
 
-	transition: var(--transition);
 	background-color: var(--color--bg-main-50);
-	margin-top: var(--market--row-spacing-outer);
-
 	clear: unset;
+	margin-block-start: var(--market--row-spacing-outer);
+	transition: var(--transition);
 	width: 100%;
 
 	&:hover {
@@ -296,26 +283,22 @@
 	background-color: var(--color--bg-main-20);
 	color: var(--color--fg-dim);
 	font: var(--text--body-lg);
+	height: unset;
 	margin: 0;
 	margin-block-end: var(--market--row-spacing-outer);
 
-	height: unset;
-
 	.market_sortable_column {
 		background-color: transparent;
-
 		overflow: visible;
 		position: relative;
 
 		&:hover::before {
+			background-color: var(--color--bg-main);
 			content: "";
-
-			position: absolute;
 			inset: calc(var(--spacing-block) * -1) calc(var(--spacing-lg) * -1);
+			position: absolute;
 			width: 100%;
 			z-index: -1;
-
-			background-color: var(--color--bg-main);
 		}
 	}
 }
@@ -330,27 +313,25 @@
 }
 
 .market_page_left {
-	padding: 0;
 	margin-inline-start: calc(
 		var(--content--sidebar-width) + var(--market--row-spacing-outer)
 	);
-
 	max-width: unset;
+	padding: 0;
 }
 
 .market_paging {
-	line-height: unset;
-	gap: var(--spacing-xxs);
-	padding: var(--spacing-xxs);
-	padding-right: 0;
-	margin: 0;
-	margin-top: var(--market--row-spacing-outer);
-
+	align-items: center;
 	display: flex;
 	flex-direction: row-reverse;
-	align-items: center;
-	justify-content: space-between;
+	gap: var(--spacing-xxs);
 	height: unset;
+	justify-content: space-between;
+	line-height: unset;
+	margin: 0;
+	margin-block-start: var(--market--row-spacing-outer);
+	padding: var(--spacing-xxs);
+	padding-inline-end: 0;
 
 	#searchResults_links {
 		@include web.paging--links-container;
@@ -413,9 +394,8 @@
 .market_search_results_header {
 	font: inherit;
 	gap: var(--spacing-xs);
-	padding: 0;
-
 	min-height: unset;
+	padding: 0;
 
 	& > div {
 		margin: 0;
@@ -427,10 +407,9 @@
 		border: none;
 
 		img {
-			margin: 0;
-
-			width: var(--icon-size-md);
 			height: var(--icon-size-md);
+			margin: 0;
+			width: var(--icon-size-md);
 		}
 
 		.removeIcon {
@@ -473,20 +452,18 @@
 	@include controls.tab($active: ".market_tab_well_tab_active > &");
 
 	background-image: none;
-
 	min-width: unset;
 }
 
 .market_tab_well_tabs {
 	@include controls.tabs-container;
 
-	font-size: 0;
 	border: none;
+	display: flex;
+	font-size: 0;
 	// Divide by 2 for whitespace
 	gap: calc(var(--spacing-xxs) / 2);
 	margin-block-end: var(--market--row-spacing-outer);
-
-	display: flex;
 	position: unset;
 }
 
@@ -510,25 +487,24 @@
 }
 
 .my_market_header_active {
-	font: var(--text--heading-sm);
 	color: var(--color--fg-main);
+	font: var(--text--heading-sm);
 }
 
 .my_market_header_count {
-	font: inherit;
 	color: var(--color--fg-dim);
+	font: inherit;
 }
 
 #myListings {
-	margin-bottom: 89px;
+	margin-block-end: 89px;
 }
 
 #myMarketTabs,
 .market_large_tab_well {
-	padding: 0;
-	margin: 0;
-
 	height: unset;
+	margin: 0;
+	padding: 0;
 }
 
 .market_large_tab_well img,
@@ -542,17 +518,16 @@
 }
 
 #sideBar {
-	position: absolute;
 	height: 100%;
+	position: absolute;
 	// For clickable "security requirements" link
 	z-index: 1;
 
 	& > div {
+		inset-block-start: calc(var(--global-header-height) + var(--spacing-lg));
 		margin: 0;
 		margin-inline-end: var(--market--row-spacing-outer);
-
 		position: sticky;
-		top: calc(var(--global-header-height) + var(--spacing-lg));
 		width: unset;
 	}
 }

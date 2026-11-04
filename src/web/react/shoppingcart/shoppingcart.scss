@@ -13,7 +13,6 @@ body.ShoppingCart {
 
 #CartRightColStickyCtn {
 	gap: var(--spacing-lg);
-
 	max-width: 445px;
 }
 
@@ -35,7 +34,7 @@ body.ShoppingCart {
 	padding: var(--spacing-lg);
 
 	img {
-		margin-bottom: var(--spacing-lg);
+		margin-block-end: var(--spacing-lg);
 	}
 }
 
@@ -47,7 +46,7 @@ body.ShoppingCart {
 #LicenseTitle {
 	color: var(--color--fg-main);
 	font: var(--text--body-lg);
-	margin-bottom: var(--spacing-sm);
+	margin-block-end: var(--spacing-sm);
 }
 
 #ShoppingCartBreadcrumbs {
@@ -66,12 +65,10 @@ body.ShoppingCart {
 
 #ShoppingCartLeftCol {
 	gap: var(--spacing-sm);
-
 	max-width: 1090px;
 }
 
 #ShoppingCartPage {
-	padding: 0;
-
 	max-width: var(--content--width-lg);
+	padding: 0;
 }

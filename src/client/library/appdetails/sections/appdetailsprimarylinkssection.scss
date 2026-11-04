@@ -17,9 +17,8 @@
 }
 
 #LinkInner {
-	padding: 0;
 	margin-inline-end: var(--spacing-sm);
-
+	padding: 0;
 	position: unset;
 }
 
@@ -29,10 +28,9 @@
 }
 
 #LinksSection {
-	padding: var(--spacing-xxs) var(--spacing-sm);
-	margin-inline: 16px var(--spacing-xxl);
 	margin-block: 27px;
-
+	margin-inline: 16px var(--spacing-xxl);
+	padding: var(--spacing-xxs) var(--spacing-sm);
 	// ?
 	width: calc(100% - 16px - var(--spacing-xxl));
 

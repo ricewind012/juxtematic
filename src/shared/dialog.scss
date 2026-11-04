@@ -4,12 +4,11 @@
 
 :where(.DialogBodyText) {
 	color: var(--color--fg-main);
+	display: flex;
+	flex-direction: column;
 	font: var(--text--body-md);
 	gap: var(--spacing-sm);
 	margin: 0;
-
-	display: flex;
-	flex-direction: column;
 }
 
 :where(.DialogButton) {
@@ -38,11 +37,10 @@
 }
 
 :where(.DialogCheckbox_Container) {
+	align-items: center;
+	display: flex;
 	padding: 0;
 	margin: 0;
-
-	display: flex;
-	align-items: center;
 
 	&:hover .DialogCheckbox {
 		color: var(--color--fg-main);
@@ -107,8 +105,8 @@
 :where(.DialogLabel) {
 	color: var(--color--fg-dim);
 	font: var(--text--body-sm);
+	margin-block-end: var(--spacing-xxs);
 	text-transform: none;
-	margin-bottom: var(--spacing-xxs);
 }
 
 :where(.DialogMenuPosition) {
@@ -129,14 +127,13 @@
 	@include controls.radio($active: "&.Active");
 
 	margin: 0;
-
 	width: 100%;
 }
 
 .DialogToggle_Description {
 	color: var(--color--fg-dim);
 	font: inherit;
-	padding-top: var(--spacing-sm);
+	padding-block-start: var(--spacing-sm);
 }
 
 .DialogToggle_Label {
@@ -175,16 +172,15 @@
 }
 
 .ModalOverlayBackground {
-	background: var(--color--bg-main-50);
 	backdrop-filter: var(--blur);
-
+	background: var(--color--bg-main-50);
 	// For the top line
-	top: 1px;
+	inset-block-start: 1px;
 }
 
 .ModalPosition_Content {
-	color: var(--color--fg-main);
 	box-shadow: var(--dialog--shadow);
+	color: var(--color--fg-main);
 }
 
 .ModalPosition_Dismiss {
@@ -203,11 +199,10 @@
 }
 
 .ModalPosition_TopBar {
-	transition: var(--transition);
 	backdrop-filter: var(--blur);
 	background-image: var(--dialog--top-bar);
-
 	height: var(--border-sm);
+	transition: var(--transition);
 
 	&.Destructive {
 		--color--primary: var(--color--accent-red);
@@ -222,11 +217,10 @@
 	--icon-size-lg: var(--dialog--window-control-size);
 
 	gap: var(--dialog--window-control-spacing);
+	height: min-content;
+	inset-inline-start: unset;
 	padding-block-start: var(--spacing-md);
 	padding-inline-end: var(--spacing-md);
-
-	inset-inline-start: unset;
-	height: min-content;
 	z-index: 1500;
 
 	html[browsertype="DirectHWND"] & {
@@ -272,6 +266,5 @@
 	color: var(--color--fg-dim);
 	gap: var(--dialog--window-control-spacing);
 	margin: 0;
-
 	max-height: unset;
 }

@@ -1,6 +1,6 @@
 #PanelSection {
-	padding: 0;
 	margin-block-end: var(--dialog--spacing-content);
+	padding: 0;
 }
 
 #PanelSectionRow {
@@ -11,6 +11,6 @@
 	color: var(--color--fg-main);
 	font: var(--text--heading-sm);
 	letter-spacing: 0;
-	text-transform: none;
 	padding-block-end: var(--spacing-sm);
+	text-transform: none;
 }

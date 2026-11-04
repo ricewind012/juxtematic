@@ -58,7 +58,6 @@ input[type="checkbox"] {
 
 	background-image: none;
 	margin-inline-start: var(--spacing-xxs);
-
 	vertical-align: center;
 }
 
@@ -79,7 +78,7 @@ input[type="checkbox"] {
 .sectionTabs {
 	@include controls.tabs-container;
 
-	margin-bottom: var(--spacing-sm);
+	margin-block-end: var(--spacing-sm);
 }
 
 .tabCount {

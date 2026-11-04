@@ -41,8 +41,8 @@ body.no_home_gutter.infinite_scrolling {
 	.community_recommendation_app {
 		@extend %-capsule;
 
-		gap: var(--capsule-info-gap);
 		box-shadow: none;
+		gap: var(--capsule-info-gap);
 
 		.right_col {
 			background-image: none;
@@ -53,10 +53,9 @@ body.no_home_gutter.infinite_scrolling {
 		all: unset;
 
 		.review_box {
-			padding: 0;
-
-			position: unset;
 			height: 100%;
+			padding: 0;
+			position: unset;
 
 			.author_block {
 				inset-block-end: var(--spacing-md);
@@ -84,7 +83,6 @@ body.no_home_gutter.infinite_scrolling {
 			.content {
 				color: var(--color--fg-main);
 				font: var(--text--body-md);
-
 				height: 4lh;
 			}
 
@@ -101,7 +99,6 @@ body.no_home_gutter.infinite_scrolling {
 	.community_recommendation_capsule {
 		background-color: transparent;
 		box-shadow: none;
-
 		flex-shrink: 0;
 
 		img,
@@ -111,8 +108,8 @@ body.no_home_gutter.infinite_scrolling {
 
 		.capsule {
 			display: flex;
-			width: 616px;
 			height: 353px;
+			width: 616px;
 		}
 
 		.ds_options {
@@ -121,11 +118,10 @@ body.no_home_gutter.infinite_scrolling {
 	}
 
 	.recommended_by_steam_labs_ctn {
-		margin-block-end: var(--carousel--section-spacing);
-
-		display: flex;
 		align-items: center;
+		display: flex;
 		justify-content: space-between;
+		margin-block-end: var(--carousel--section-spacing);
 
 		#community_recommendations_preferences_last_updated {
 			display: none;
@@ -141,14 +137,13 @@ body.no_home_gutter.infinite_scrolling {
 	.content_hub_capsule_ctn {
 		@include web.store--category($gradient: ".gradient", $label: ".label_ctn");
 
-		width: var(--carousel--image-width);
 		height: var(--carousel--image-width);
+		width: var(--carousel--image-width);
 
 		img {
-			filter: none;
 			box-shadow: none;
 			border-radius: var(--rounding-lg);
-
+			filter: none;
 			height: 100%;
 		}
 
@@ -165,8 +160,8 @@ body.no_home_gutter.infinite_scrolling {
 		color: var(--color--fg-main);
 		font: var(--text--heading-md);
 		letter-spacing: 0;
-		text-transform: none;
 		margin-block-end: var(--carousel--section-spacing);
+		text-transform: none;
 	}
 }
 
@@ -177,20 +172,17 @@ body.no_home_gutter.infinite_scrolling {
 			--top-offset: calc(1lh + var(--carousel--section-spacing));
 
 			font: var(--text--heading-md);
-
-			inset-block-start: var(--top-offset);
 			height: calc(var(--carousel--arrow-container-height) - var(--top-offset));
+			inset-block-start: var(--top-offset);
 		}
 	}
 
 	&.maincap {
-		margin: 0;
-
 		height: unset;
+		margin: 0;
 
 		.carousel_items {
 			box-shadow: none;
-
 			height: unset;
 		}
 	}
@@ -202,7 +194,6 @@ body.no_home_gutter.infinite_scrolling {
 			@extend %-capsule;
 
 			box-shadow: none;
-
 			height: unset;
 		}
 
@@ -212,32 +203,29 @@ body.no_home_gutter.infinite_scrolling {
 		}
 
 		.spotlight_col {
-			gap: var(--spacing-sm);
-
 			display: flex;
 			flex-direction: column;
+			gap: var(--spacing-sm);
 		}
 
 		.spotlight_content {
 			background-image: none;
-			padding: 0;
-
-			position: unset;
 			min-height: unset;
+			padding: 0;
+			position: unset;
 		}
 
 		.spotlight_img {
 			border-radius: var(--rounding-lg);
-			margin-block-end: var(--spacing-sm);
-
-			width: var(--carousel--image-width);
 			height: unset;
+			margin-block-end: var(--spacing-sm);
+			width: var(--carousel--image-width);
 
 			a {
 				// Fix some bullshit CSS behavior
 				display: flex;
-				position: relative;
 				height: unset;
+				position: relative;
 			}
 
 			img {
@@ -253,9 +241,9 @@ body.no_home_gutter.infinite_scrolling {
 			color: var(--color--fg-main);
 			font: var(--text--heading-md);
 			letter-spacing: 0;
-			text-transform: none;
-			padding: 0;
 			margin-block: 0 var(--spacing-xxs);
+			padding: 0;
+			text-transform: none;
 		}
 
 		.store_capsule {
@@ -270,16 +258,15 @@ body.no_home_gutter.infinite_scrolling {
 }
 
 .deep_dive_key_tags {
-	color: var(--color--fg-dim);
 	border: none;
-	gap: var(--spacing-xxs);
-	padding: 0;
-	margin-block-start: auto;
-
+	color: var(--color--fg-dim);
 	display: flex;
 	flex-wrap: wrap;
-	max-width: var(--carousel--image-width);
+	gap: var(--spacing-xxs);
 	height: unset;
+	margin-block-start: auto;
+	max-width: var(--carousel--image-width);
+	padding: 0;
 
 	& > br {
 		display: none;
@@ -297,9 +284,8 @@ body.no_home_gutter.infinite_scrolling {
 		display: flex;
 
 		& > a {
-			margin-inline-end: var(--spacing-xxs);
-
 			display: flex;
+			margin-inline-end: var(--spacing-xxs);
 		}
 
 		img {
@@ -323,8 +309,8 @@ body.no_home_gutter.infinite_scrolling {
 
 	&.single {
 		border-radius: var(--rounding-lg) var(--rounding-lg) 0 0;
-		padding-block-end: var(--spacing-sm);
 		margin-block-start: var(--store-home-section-gap);
+		padding-block-end: var(--spacing-sm);
 
 		.capsule {
 			border-radius: var(--rounding-lg);
@@ -338,13 +324,12 @@ body.no_home_gutter.infinite_scrolling {
 
 		.screenshot {
 			border-radius: var(--rounding-lg);
+			display: flex;
 			margin: 0;
 
-			display: flex;
-
 			&:hover img {
-				transition: var(--transition);
 				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+				transition: var(--transition);
 			}
 
 			img {
@@ -355,20 +340,19 @@ body.no_home_gutter.infinite_scrolling {
 		.screenshots {
 			--screenshots-gap: var(--spacing-xs);
 
+			display: inline-flex;
+			gap: var(--screenshots-gap);
 			// 17px = capsule height - screenshot height
 			margin-block: calc(17px / 2);
 			margin-inline-start: calc(var(--screenshots-gap) * 2);
-
-			display: inline-flex;
-			gap: var(--screenshots-gap);
 		}
 	}
 
 	&.single_buttonbar {
 		border: none;
 		border-radius: 0 0 var(--rounding-lg) var(--rounding-lg);
-		padding-block-start: 0;
 		margin: 0;
+		padding-block-start: 0;
 
 		.single_buttonbar_group {
 			gap: var(--spacing-sm);
@@ -378,8 +362,8 @@ body.no_home_gutter.infinite_scrolling {
 
 	&:not(.single, .single_buttonbar) {
 		background-color: transparent;
-		padding: 0;
 		border-radius: var(--rounding-lg);
+		padding: 0;
 
 		& + & {
 			margin-block-start: var(--store-home-section-gap);
@@ -401,12 +385,10 @@ body.no_home_gutter.infinite_scrolling {
 			@extend %-capsule;
 
 			margin: 0;
-
 			width: unset;
 
 			img {
 				border-radius: var(--rounding-lg);
-
 				display: flex;
 			}
 		}
@@ -415,34 +397,30 @@ body.no_home_gutter.infinite_scrolling {
 			@include carousel.container;
 
 			color: var(--color--fg-dim);
-			gap: var(--spacing-md);
-			margin-block-start: var(--carousel--section-spacing);
-
 			display: grid;
+			gap: var(--spacing-md);
 			grid-template-columns: repeat(var(--item-count), 1fr);
+			margin-block-start: var(--carousel--section-spacing);
 			position: relative;
 
 			// Make it consistent with the rest, emulating disabled arrows...
 			&::before,
 			&::after {
-				content: "";
-
-				position: absolute;
-				inset-block-start: calc(50% - var(--icon-size-md) / 2);
-
 				@include utils.icon($name: "arrow");
+
+				content: "";
+				inset-block-start: calc(50% - var(--icon-size-md) / 2);
+				position: absolute;
 			}
 
 			&::before {
-				transform: rotate(90deg);
-
 				inset-inline-start: var(--spacing-sm);
+				transform: rotate(90deg);
 			}
 
 			&::after {
-				transform: rotate(-90deg);
-
 				inset-inline-end: var(--spacing-sm);
+				transform: rotate(-90deg);
 			}
 		}
 
@@ -480,10 +458,9 @@ body.no_home_gutter.infinite_scrolling {
 }
 
 .home_page_content_title {
-	margin-block-end: var(--carousel--section-spacing);
-
 	display: flex;
 	justify-content: space-between;
+	margin-block-end: var(--carousel--section-spacing);
 
 	&.nonresponsive_hidden {
 		display: none;
@@ -504,11 +481,10 @@ body.no_home_gutter.infinite_scrolling {
 .home_page_takeunder {
 	--shadow-color: rgba(0, 0, 0, 0.5);
 
-	transition: var(--transition);
 	box-shadow: 0 2px 8px var(--shadow-color);
-
 	// im so sorry XDDD
 	max-width: unset;
+	transition: var(--transition);
 
 	&:hover {
 		box-shadow: 0 4px 16px var(--shadow-color);
@@ -535,8 +511,8 @@ body.no_home_gutter.infinite_scrolling {
 	}
 
 	.lower_left_block {
-		display: flex;
 		align-items: center;
+		display: flex;
 	}
 }
 
@@ -544,11 +520,10 @@ body.no_home_gutter.infinite_scrolling {
 	.recommended_creators_container {
 		background: none;
 		border: none;
-		padding: 0;
-		margin-block-start: auto;
-
-		position: relative;
 		height: var(--avatar--size-sm);
+		margin-block-start: auto;
+		padding: 0;
+		position: relative;
 	}
 
 	.actions {
@@ -557,22 +532,20 @@ body.no_home_gutter.infinite_scrolling {
 	}
 
 	.avatars {
-		display: flex;
 		align-items: end;
+		display: flex;
 		inset: 0;
 
 		& > a {
-			margin-inline-end: var(--spacing-sm);
-
 			height: var(--avatar--size-sm);
+			margin-inline-end: var(--spacing-sm);
 		}
 
 		img {
 			border-radius: var(--rounding-md);
 			box-shadow: none;
-
-			width: inherit;
 			height: inherit;
+			width: inherit;
 		}
 	}
 
@@ -584,27 +557,25 @@ body.no_home_gutter.infinite_scrolling {
 .store_capsule {
 	@extend %-capsule;
 
-	gap: var(--spacing-sm);
 	box-shadow: none;
-
 	display: flex;
 	flex-direction: column;
+	gap: var(--spacing-sm);
 	width: unset;
 
 	.capsule {
 		border-radius: var(--rounding-lg);
+		height: calc(var(--carousel--image-width) / 2);
 		// See below
 		padding: 0;
-
 		// Fix the live broadcast icon
 		position: unset;
 		width: var(--carousel--image-width);
-		height: calc(var(--carousel--image-width) / 2);
 
 		& > img {
+			height: 100%;
 			// See above
 			position: unset;
-			height: 100%;
 		}
 	}
 
@@ -627,12 +598,11 @@ body.no_home_gutter.infinite_scrolling {
 	.app_name {
 		color: var(--color--fg-main);
 		font: var(--text--heading-lg);
-		padding: 0;
+		height: unset;
 		margin-block-end: 11px;
 		// For the button
 		margin-inline-end: calc(1lh + var(--spacing-sm));
-
-		height: unset;
+		padding: 0;
 
 		& > div {
 			all: unset;
@@ -642,20 +612,18 @@ body.no_home_gutter.infinite_scrolling {
 	.capsule {
 		border-radius: var(--rounding-lg);
 		box-shadow: none;
-		margin: 0;
-
-		width: 766px;
 		height: 458px;
+		margin: 0;
+		width: 766px;
 
 		.screenshot {
-			width: inherit;
 			height: inherit;
+			width: inherit;
 		}
 	}
 
 	.discount_block {
 		margin-block-start: auto;
-
 		position: unset;
 	}
 
@@ -665,21 +633,19 @@ body.no_home_gutter.infinite_scrolling {
 	}
 
 	.platforms {
-		opacity: 1;
 		color: var(--color--fg-dim);
-		gap: var(--spacing-xxs);
-
 		// Fix some bullshit CSS behavior
 		display: flex;
-		inset-inline-end: var(--spacing-md);
+		gap: var(--spacing-xxs);
 		inset-block-end: var(--spacing-md);
+		inset-inline-end: var(--spacing-md);
+		opacity: 1;
 	}
 
 	.reason {
-		padding: 0;
 		margin: 0;
 		margin-block-start: var(--capsule-info-gap);
-
+		padding: 0;
 		width: unset;
 
 		.avatar > img {
@@ -687,11 +653,10 @@ body.no_home_gutter.infinite_scrolling {
 
 			border: none;
 			border-radius: var(--rounding-md);
+			height: var(--size);
 			margin: 0;
 			margin-inline-end: var(--spacing-sm);
-
 			width: var(--size);
-			height: var(--size);
 		}
 
 		.main {
@@ -707,10 +672,9 @@ body.no_home_gutter.infinite_scrolling {
 
 		.additional,
 		.tags {
+			display: flex;
 			gap: 4px;
 			margin-block-start: var(--capsule-info-gap);
-
-			display: flex;
 		}
 
 		.additional > div,
@@ -726,14 +690,13 @@ body.no_home_gutter.infinite_scrolling {
 	}
 
 	.screenshots {
-		gap: var(--spacing-xs);
-		margin: 0;
-
 		display: grid;
+		gap: var(--spacing-xs);
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, 1fr);
-		width: unset;
+		margin: 0;
 		max-height: unset;
+		width: unset;
 
 		& > div {
 			all: unset;
@@ -742,11 +705,10 @@ body.no_home_gutter.infinite_scrolling {
 			display: flex;
 
 			& > div {
-				opacity: 1;
 				border-radius: var(--rounding-lg);
-
-				width: 231px;
 				height: 111px;
+				opacity: 1;
+				width: 231px;
 			}
 		}
 	}
@@ -774,14 +736,13 @@ body.no_home_gutter.infinite_scrolling {
 	}
 
 	.tab_control {
-		padding: 0;
 		margin-inline-end: var(--spacing-lg);
+		padding: 0;
 
 		& > label {
-			gap: var(--spacing-xxs);
-
-			display: flex;
 			align-items: center;
+			display: flex;
+			gap: var(--spacing-xxs);
 		}
 	}
 
@@ -800,29 +761,26 @@ body.no_home_gutter.infinite_scrolling {
 	.tab_item {
 		@extend %-tab-item;
 
+		display: flex;
 		gap: var(--spacing-sm);
+		height: unset;
 		margin: 0;
 		margin-block-end: var(--spacing-sm);
-
-		display: flex;
-		height: unset;
 
 		&.focus {
 			background: var(--tab-item-focus-bg);
 
 			&::after {
+				background-color: var(--tab-item-focus-bg);
 				content: "";
-
-				position: absolute;
 				inset-block: 0;
 				inset-inline-end: calc(
 					var(--tab-right-col-spacing) * -1 - var(--tab-item-border-radius)
 				);
+				position: absolute;
 				width: calc(
 					var(--tab-right-col-spacing) + var(--tab-item-border-radius) * 2
 				);
-
-				background-color: var(--tab-item-focus-bg);
 			}
 		}
 
@@ -838,14 +796,13 @@ body.no_home_gutter.infinite_scrolling {
 		}
 
 		.platform_img {
-			opacity: 1;
 			margin-block-start: var(--spacing-xxs);
+			opacity: 1;
 		}
 
 		.release_date {
 			color: var(--color--fg-dim);
 			font: var(--text--body-sm);
-
 			inset-block-end: var(--tab--container-spacing);
 			inset-inline-end: var(--tab--container-spacing);
 		}
@@ -853,9 +810,8 @@ body.no_home_gutter.infinite_scrolling {
 
 	.tab_item_cap {
 		display: flex;
-
-		position: unset;
 		height: 73px;
+		position: unset;
 	}
 
 	.tab_item_cap_img {
@@ -863,18 +819,16 @@ body.no_home_gutter.infinite_scrolling {
 	}
 
 	.tab_item_content {
-		padding: 0;
-
 		flex-grow: 1;
+		padding: 0;
 	}
 
 	.tab_item_discount {
-		margin: 0;
-
-		order: 1;
-		justify-content: start;
-		width: 175px;
 		height: min-content;
+		justify-content: start;
+		margin: 0;
+		order: 1;
+		width: 175px;
 	}
 
 	.tab_item_name {
@@ -885,49 +839,44 @@ body.no_home_gutter.infinite_scrolling {
 	.tab_item_top_tags {
 		color: var(--color--fg-dim);
 		font: var(--text--body-sm);
-		margin-block-start: var(--spacing-xxs);
-
 		height: unset;
+		margin-block-start: var(--spacing-xxs);
 	}
 
 	.tab_preview {
 		@extend %-tab-item;
 
-		transition: var(--transition);
 		background-color: var(--tab-item-focus-bg);
-
 		inset: 0;
+		transition: var(--transition);
 
 		.screenshot {
 			border-radius: var(--rounding-lg);
-			margin-block-start: var(--spacing-xxs);
-
 			height: 205px;
+			margin-block-start: var(--spacing-xxs);
 		}
 
 		.tab_review_summary {
 			background-color: transparent;
 			color: var(--color--fg-dim);
-			padding: 0;
 			margin-block-start: var(--spacing-sm);
+			padding: 0;
 		}
 
 		.tab_title {
 			color: var(--color--fg-main);
 			font: var(--text--heading-sm);
-			padding: 0;
-			margin-block-end: var(--spacing-sm);
-
 			height: unset;
+			margin-block-end: var(--spacing-sm);
+			padding: 0;
 		}
 
 		.tags {
-			gap: var(--spacing-xxs);
-			margin-block: var(--spacing-sm);
-
 			display: flex;
 			flex-wrap: wrap;
+			gap: var(--spacing-xxs);
 			height: unset;
+			margin-block: var(--spacing-sm);
 
 			& > a {
 				@include web.store--tag;
@@ -944,21 +893,19 @@ body.no_home_gutter.infinite_scrolling {
 	}
 
 	.tab_see_more {
-		background-color: transparent;
-		gap: var(--spacing-sm);
-		padding: 0;
-
-		display: flex;
 		align-items: center;
+		background-color: transparent;
+		display: flex;
+		gap: var(--spacing-sm);
 		justify-content: end;
+		padding: 0;
 	}
 
 	.top_sellers_info {
 		@include utils.tooltip-icon;
 
-		margin-inline-start: auto;
-
 		flex-grow: 0;
+		margin-inline-start: auto;
 
 		& > img {
 			display: none;
@@ -966,10 +913,9 @@ body.no_home_gutter.infinite_scrolling {
 	}
 
 	.topsellers_see_more:not([style="display: none;"]) {
-		gap: var(--spacing-sm);
-
-		display: flex;
 		align-items: center;
+		display: flex;
+		gap: var(--spacing-sm);
 	}
 }
 
@@ -987,9 +933,8 @@ body.no_home_gutter.infinite_scrolling {
 		a {
 			background: transparent;
 			box-shadow: none;
-
-			text-align: start;
 			height: unset;
+			text-align: start;
 		}
 
 		.dateline {

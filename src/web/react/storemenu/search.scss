@@ -23,17 +23,15 @@
 }
 
 #SearchBar {
-	margin-inline: calc(var(--spacing-xs) + 5%);
-
 	justify-content: center;
+	margin-inline: calc(var(--spacing-xs) + 5%);
 }
 
 #SearchForm {
 	background-color: transparent;
-
-	position: relative;
 	height: unset;
 	max-width: 100%;
+	position: relative;
 }
 
 #SearchIcon {

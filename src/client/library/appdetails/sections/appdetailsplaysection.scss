@@ -3,9 +3,8 @@
 @use "shared/utils";
 
 #ActionSection {
-	margin-inline-end: var(--spacing-xxl);
-
 	height: unset;
+	margin-inline-end: var(--spacing-xxl);
 }
 
 #Container#StickyHeader {
@@ -30,9 +29,8 @@
 #DetailsProgressContainer {
 	@include controls.progress-bar($inner: "#DetailsProgressBar");
 
-	margin-inline-start: var(--spacing-xxs);
-
 	height: unset;
+	margin-inline-start: var(--spacing-xxs);
 
 	&#DownloadProgressBar {
 		display: none;
@@ -43,30 +41,27 @@
 	// No distinguishing class name
 	--icon-name: icon("play");
 
-	padding: 0;
-
-	flex-direction: row;
 	align-items: center;
+	flex-direction: row;
+	padding: 0;
 
 	&#Downloading {
 		--icon-name: icon("download");
 	}
 
 	&::before {
-		content: "";
-
 		@include utils.icon($size: "lg");
 
 		color: var(--color--fg-dim);
+		content: "";
 		margin-inline-end: 12px;
 	}
 }
 
 #GameStat {
-	padding: 0;
-	margin: 0;
-
 	align-items: center;
+	margin: 0;
+	padding: 0;
 
 	#PlayBarCloudStatusContainer &#Visible {
 		--icon-name: icon("cloud");
@@ -86,16 +81,15 @@
 	}
 
 	&::before {
-		content: "";
-
 		@include utils.icon($size: "lg");
 
 		color: var(--color--fg-dim);
+		content: "";
 	}
 
 	#ClickablePlayBarItem {
-		padding-block: 0;
 		margin: 0;
+		padding-block: 0;
 	}
 
 	#GameStatRight {
@@ -104,9 +98,8 @@
 }
 
 #GameStatsSection {
-	gap: var(--spacing-xl);
-
 	align-self: unset;
+	gap: var(--spacing-xl);
 }
 
 #GameStatIcon,
@@ -134,10 +127,9 @@
 		transparent
 	);
 	border-radius: var(--rounding-md);
-	margin-inline: 11px 0;
-
-	width: var(--size);
 	height: var(--size);
+	margin-inline: 11px 0;
+	width: var(--size);
 
 	&:hover {
 		--percentage: 20%;
@@ -190,7 +182,6 @@
 	--icon-size-lg: 30px;
 
 	gap: var(--spacing-xl);
-
 	height: unset;
 	max-height: unset;
 

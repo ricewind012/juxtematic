@@ -30,9 +30,9 @@
 }
 
 #OptionDesc {
-	text-align: start;
-	padding: 0;
 	margin-block-start: var(--spacing-sm);
+	padding: 0;
+	text-align: start;
 }
 
 #OptionSvg {
@@ -85,7 +85,7 @@
 
 	#RatingContainer {
 		background-color: transparent;
-		padding: 0;
 		margin-block: 0 var(--spacing-lg);
+		padding: 0;
 	}
 }

@@ -18,11 +18,10 @@
 #NotificationPrefDetails {
 	background-color: transparent;
 	box-shadow: none;
+	flex-direction: column;
 	gap: var(--spacing-sm);
 	padding: 0;
 	margin-inline-start: calc(var(--toggle--switch-size) + var(--spacing-sm));
-
-	flex-direction: column;
 }
 
 #NotificationSection {

@@ -6,11 +6,10 @@
 	--sidebar-content-spacing-inline: 0px;
 	--sidebar-width: 400px;
 
-	transition: none;
 	box-shadow: var(--dialog--shadow);
-
 	// For the top line
-	top: var(--border-sm);
+	inset-block-start: var(--border-sm);
+	transition: none;
 }
 
 .MillenniumDesktopSidebar_Content {
@@ -41,23 +40,21 @@ button.MillenniumDesktopSidebar_LibraryItemButton {
 }
 
 .MillenniumDesktopSidebar_Overlay {
-	transition: none;
 	backdrop-filter: var(--blur);
 	background-color: var(--color--bg-main-50);
-
 	// For the top line
-	top: var(--border-sm);
+	inset-block-start: var(--border-sm);
+	transition: none;
 }
 
 .MillenniumDesktopSidebar_Title {
-	color: var(--color--fg-main);
-	font: var(--text--heading-lg);
 	box-shadow: none;
+	color: var(--color--fg-main);
+	flex-direction: row;
+	font: var(--text--heading-lg);
+	justify-content: space-between;
 	padding-block: var(--spacing-sm);
 	padding-inline: var(--dialog--spacing-container);
-
-	flex-direction: row;
-	justify-content: space-between;
 
 	html:not([browsertype="DirectHWND"]) & {
 		padding-block-start: calc(

@@ -1,6 +1,5 @@
 #Container {
 	margin: var(--spacing-sm);
-
 	width: calc(100% - var(--spacing-sm) * 2);
 
 	.ReactVirtualized__Grid {
@@ -11,7 +10,6 @@
 		background-color: var(--color--bg-hover);
 		border: none;
 		border-radius: 0;
-
 		width: 9px;
 
 		&:hover {

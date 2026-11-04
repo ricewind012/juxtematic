@@ -6,7 +6,6 @@
 	@include controls.button($size: "sm");
 
 	box-shadow: none;
-
 	height: unset;
 
 	&#Active {
@@ -34,16 +33,14 @@
 				var(--button--border-size) * 2 + var(--button--spacing-block-sm) * 2
 		);
 
-		padding: 0;
-
-		width: var(--size);
 		height: var(--size);
+		padding: 0;
+		width: var(--size);
 
 		svg {
 			color: inherit;
-
-			width: var(--icon-size-md);
 			height: var(--icon-size-md);
+			width: var(--icon-size-md);
 		}
 	}
 
@@ -64,9 +61,8 @@
 		--size: 80px;
 
 		fill: currentColor;
-
-		width: var(--size);
 		height: var(--size);
+		width: var(--size);
 	}
 
 	#Message {
@@ -123,7 +119,6 @@
 		box-shadow: none;
 		gap: var(--spacing-sm);
 		padding: var(--dialog--spacing-container);
-
 		width: 100%;
 	}
 }
@@ -135,17 +130,15 @@
 #TopListTitle {
 	color: var(--color--fg-main);
 	font: var(--text--heading-lg);
-	text-transform: none;
-	padding: 0;
-
 	height: unset;
+	padding: 0;
+	text-transform: none;
 }
 
 #UGCCount {
+	align-items: center;
 	font: inherit;
 	gap: var(--spacing-xxs);
-
-	align-items: center;
 
 	&:nth-child(1) {
 		--icon-name: icon("thumb-up");
@@ -163,8 +156,8 @@
 #UGCCountIcon {
 	@include utils.icon($remove: true);
 
-	opacity: var(--dim-opacity);
 	color: inherit;
+	opacity: var(--dim-opacity);
 }
 
 #UGCCounts {
@@ -177,8 +170,7 @@
 
 #UploadedIcon {
 	color: var(--color--fg-main);
-	margin-inline-end: var(--spacing-xxs);
-
-	width: var(--icon-size-md);
 	height: var(--icon-size-md);
+	margin-inline-end: var(--spacing-xxs);
+	width: var(--icon-size-md);
 }

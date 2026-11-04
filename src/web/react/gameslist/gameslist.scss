@@ -13,8 +13,7 @@
 }
 
 #Gameslistapp {
-	margin-top: var(--content--spacing-block-start);
-
+	margin-block-start: var(--content--spacing-block-start);
 	max-width: var(--content--width-sm);
 }
 
@@ -27,12 +26,11 @@
 		@include controls.tab($active: "&.active");
 
 		background: none;
+		height: unset;
 		margin: 0;
-
 		// wishlist
 		position: unset;
 		transform: none;
-		height: unset;
 
 		& > span {
 			all: unset;

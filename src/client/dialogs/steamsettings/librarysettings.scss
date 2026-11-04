@@ -1,10 +1,9 @@
 @use "client";
 
 #ActionSection {
+	flex-direction: column;
 	gap: var(--spacing-sm);
 	margin-block-start: var(--spacing-lg);
-
-	flex-direction: column;
 }
 
 #DescriptionText {

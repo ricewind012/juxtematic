@@ -16,13 +16,12 @@
 	background-color: transparent;
 	box-shadow: none;
 	gap: var(--spacing-sm);
+	inset-block-start: anchor(start);
+	inset-inline-end: anchor(start);
+	margin-inline-end: var(--spacing-sm);
 	padding: 0;
-	margin-right: var(--spacing-sm);
-
 	position: absolute;
 	position-anchor: --titlebarcontrols;
-	top: anchor(top);
-	right: anchor(left);
 }
 
 #DetailedDownloadProgress {
@@ -35,7 +34,6 @@
 	#Icon {
 		border-radius: var(--rounding-md);
 		box-shadow: none;
-
 		overflow: hidden;
 	}
 
@@ -51,10 +49,9 @@
 
 #Icon {
 	color: var(--color--fg-dim);
-
 	display: flex;
-	width: var(--icon-size-lg);
 	height: var(--icon-size-lg);
+	width: var(--icon-size-lg);
 }
 
 #IconBevel,

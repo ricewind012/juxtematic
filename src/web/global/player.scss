@@ -1,32 +1,29 @@
 @use "shared/utils";
 
 .friendBlock {
+	align-items: center;
 	background-color: var(--color--bg-main);
 	border-radius: var(--rounding-md);
-	padding: var(--spacing-sm);
-	margin: 0;
-
 	display: flex;
-	align-items: center;
 	height: unset;
+	margin: 0;
+	padding: var(--spacing-sm);
 
 	&:hover {
 		background-color: var(--color--bg-hover);
 	}
 
 	.friendBlockContent {
-		font: var(--text--body-lg);
-
 		flex-grow: 1;
+		font: var(--text--body-lg);
 	}
 
 	.friendPlayerLevel {
-		margin: 0;
-		margin-left: 9px;
-
-		order: 2;
 		display: flex;
 		justify-content: center;
+		margin: 0;
+		margin-inline-start: 9px;
+		order: 2;
 	}
 
 	.friendSmallText {
@@ -35,7 +32,8 @@
 
 	.playerAvatar {
 		--size: var(--avatar--size-md);
-		margin-right: 9px;
+
+		margin-inline-end: 9px;
 	}
 }
 
@@ -46,12 +44,11 @@
 }
 
 .friendPlayerLevel {
-	font: var(--text--body-lg);
-	margin: 0;
-
-	display: inline-flex;
 	align-items: center;
+	display: inline-flex;
+	font: var(--text--body-lg);
 	justify-content: center;
+	margin: 0;
 }
 
 .friendPlayerLevelNum {
@@ -66,10 +63,9 @@
 
 	background: none var(--bg);
 	border-radius: var(--avatar--border-radius);
-	padding: var(--avatar--border-size);
-
-	width: var(--size);
 	height: var(--size);
+	padding: var(--avatar--border-size);
+	width: var(--size);
 
 	&.offline {
 		--bg: var(--avatar--color--offline);
@@ -101,10 +97,9 @@
 
 	img {
 		border-radius: calc(var(--avatar--border-radius) / 2);
-		padding: 0;
-
-		width: var(--img-size);
 		height: var(--img-size);
+		padding: 0;
+		width: var(--img-size);
 	}
 }
 

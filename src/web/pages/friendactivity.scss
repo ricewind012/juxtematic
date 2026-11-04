@@ -5,8 +5,8 @@
 @mixin -search($input, $icon) {
 	all: unset;
 
-	position: relative;
 	height: 100%;
+	position: relative;
 
 	#{$icon} {
 		@include controls.text-field-icon($img-el: true, $name: "search");
@@ -25,9 +25,8 @@
 .blotter_appselect {
 	@include controls.dropdown;
 
-	margin-inline-end: var(--spacing-sm);
-
 	height: unset;
+	margin-inline-end: var(--spacing-sm);
 }
 
 .blotter_appselect_activeoption {
@@ -45,13 +44,12 @@
 .blotter_author_block,
 .blotter_group_announcement_header {
 	background-color: var(--color--bg-main-50);
-	color: var(--color--fg-dim);
-	font: var(--text--body-md);
 	border: none;
 	border-radius: var(--rounding-lg) var(--rounding-lg) 0 0;
-	padding: var(--spacing-sm);
-
+	color: var(--color--fg-dim);
+	font: var(--text--body-md);
 	min-height: unset;
+	padding: var(--spacing-sm);
 }
 
 .blotter_avatar_holder {
@@ -67,8 +65,8 @@
 	// Review
 	.apphub_UserReviewCardContent {
 		background: var(--color--bg-main-50);
-		color: var(--color--fg-main);
 		border-radius: var(--rounding-lg) var(--rounding-lg) 0 0;
+		color: var(--color--fg-main);
 		padding: var(--spacing-sm);
 
 		.found_helpful {
@@ -107,8 +105,8 @@
 		background: none;
 		color: var(--color--fg-main);
 		font: var(--text--body-lg);
-		padding: 0;
 		margin: var(--spacing-sm);
+		padding: 0;
 	}
 
 	.dynamiclink_content {
@@ -116,9 +114,9 @@
 	}
 
 	.dynamiclink_name {
+		border: none;
 		color: var(--color--fg-main);
 		font: var(--text--heading-sm);
-		border: none;
 		margin: 0;
 	}
 
@@ -145,7 +143,6 @@
 
 #blotter_content {
 	margin: 0;
-
 	width: calc(
 		var(--content--width-sm) - var(--content--sidebar-width) - var(--spacing-md)
 	);
@@ -153,9 +150,9 @@
 
 .blotter_control_container {
 	border-block-start: var(--border-sm) solid var(--color--border);
+	margin: var(--spacing-sm);
 	padding: 0;
 	padding-block-start: var(--spacing-sm);
-	margin: var(--spacing-sm);
 }
 
 .blotter_daily_rollup {
@@ -164,13 +161,12 @@
 }
 
 .blotter_daily_rollup_line {
-	padding: 0;
+	align-items: center;
+	display: flex;
 	gap: var(--spacing-sm);
 	margin-block-end: var(--spacing-xxs);
-
-	display: flex;
-	align-items: center;
 	min-height: unset;
+	padding: 0;
 
 	& > span {
 		color: var(--color--fg-dim);
@@ -183,14 +179,13 @@
 }
 
 .blotter_day_header {
+	border-block-end: var(--border-md) solid var(--color--secondary);
 	color: var(--color--primary);
 	font: var(--text--body-lg);
-	border-block-end: var(--border-md) solid var(--color--secondary);
+	height: unset;
+	margin-block-end: var(--spacing-sm);
 	padding: 0;
 	padding-block-end: 4px;
-	margin-block-end: var(--spacing-sm);
-
-	height: unset;
 }
 
 .blotter_day_header_date {
@@ -203,8 +198,8 @@
 
 .blotter_eventsblock {
 	background-color: transparent;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 .blotter_eventsblock_title {
@@ -246,12 +241,12 @@
 }
 
 .blotter_group_container {
-	padding: 0;
 	margin-inline-end: var(--spacing-sm);
+	padding: 0;
 
 	img {
-		width: var(--avatar--size-xs);
 		height: var(--avatar--size-xs);
+		width: var(--avatar--size-xs);
 	}
 }
 
@@ -260,11 +255,10 @@
 }
 
 .blotter_page_title {
-	padding: 0;
-	margin: 0;
-
 	display: flex;
 	flex-direction: column-reverse;
+	margin: 0;
+	padding: 0;
 
 	h1 {
 		color: var(--color--fg-main);
@@ -298,9 +292,8 @@
 	.hr {
 		background-color: var(--color--border);
 		border: none;
-		margin-block: var(--spacing-sm);
-
 		height: var(--border-sm);
+		margin-block: var(--spacing-sm);
 	}
 }
 
@@ -353,10 +346,9 @@
 
 .blotter_workshopcollection {
 	background: none;
+	display: flex;
 	gap: var(--spacing-md);
 	margin: var(--spacing-sm);
-
-	display: flex;
 	width: 100%;
 }
 
@@ -381,11 +373,10 @@
 }
 
 .friend_activity_header {
-	padding-block: var(--content--spacing-block-start);
-
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-between;
+	padding-block: var(--content--spacing-block-start);
 }
 
 .friend_activity_header_search {
@@ -396,18 +387,17 @@
 
 .friends_add_block {
 	background-color: transparent;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 .friends_launch_area {
 	@include web.sidebar--container;
 
 	color: var(--color--fg-dim);
-	font: var(--text--body-md);
-
 	display: flex;
 	flex-direction: column;
+	font: var(--text--body-md);
 }
 
 #friendactivity_right_column {
@@ -429,12 +419,11 @@
 
 .profile_link_block {
 	background-color: transparent;
-	padding: 0;
-	margin: 0;
-
-	order: -1;
 	display: flex;
 	flex-direction: column;
+	margin: 0;
+	order: -1;
+	padding: 0;
 }
 
 .profile_menu_item {
@@ -456,9 +445,8 @@
 .profile_options_divider {
 	background-color: var(--color--border);
 	border: none;
-	margin-block: var(--spacing-sm);
-
 	height: var(--border-sm);
+	margin-block: var(--spacing-sm);
 }
 
 .profileFriendSearchBox {

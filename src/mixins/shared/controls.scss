@@ -12,29 +12,27 @@
 @mixin button($variant: "secondary", $size: "md") {
 	@include button-vars($variant, $size);
 
-	transition: var(--transition);
-	font: var(--text--body-lg);
-	border-radius: var(--rounding-md);
-	gap: var(--spacing-xxs);
-	padding-inline: var(--button--spacing-inline);
-
-	display: inline-flex;
 	align-items: center;
-	justify-content: center;
-
+	border-radius: var(--rounding-md);
 	cursor: pointer;
+	display: inline-flex;
+	font: var(--text--body-lg);
+	gap: var(--spacing-xxs);
+	justify-content: center;
+	padding-inline: var(--button--spacing-inline);
+	transition: var(--transition);
 }
 
 @mixin button-vars($variant: "secondary", $size: "md") {
 	background: var(--button--#{$variant}-bg);
-	color: var(--button--#{$variant}-fg);
 	border: var(--button--border-size) solid var(--button--#{$variant}-border);
+	color: var(--button--#{$variant}-fg);
 	padding-block: var(--button--spacing-block-#{$size});
 
 	&:hover {
 		background: var(--button--#{$variant}-bg-hover);
-		color: var(--button--#{$variant}-fg-hover);
 		border-color: var(--button--#{$variant}-border-hover);
+		color: var(--button--#{$variant}-fg-hover);
 	}
 }
 
@@ -86,10 +84,9 @@
 ) {
 	background-color: var(--color--bg-hl);
 	border-radius: var(--rounding-md);
-	padding: 0;
-
-	width: #{$w};
 	height: #{$h};
+	padding: 0;
+	width: #{$w};
 
 	&:hover {
 		background-color: var(--color--bg-hover);
@@ -109,17 +106,16 @@
 	#{$inner} {
 		background: none var(--color--primary);
 		border-radius: 10px;
-
 		height: 6px;
 	}
 }
 
 /// All args are selectors.
 @mixin radio($active) {
-	transition: var(--transition);
 	background-color: var(--color--bg-main-50);
 	font: var(--text--heading-sm);
 	padding: var(--spacing-md);
+	transition: var(--transition);
 
 	&:hover {
 		background-color: var(--color--bg-hover);
@@ -148,9 +144,8 @@
 	flex-direction: row;
 
 	& > * {
-		text-align: center;
-
 		flex: 1;
+		text-align: center;
 	}
 
 	& > :first-child {
@@ -163,25 +158,24 @@
 }
 
 @mixin radio-description {
-	opacity: var(--dim-opacity);
 	font: var(--text--body-md);
 	margin-block-start: var(--spacing-xxs);
+	opacity: var(--dim-opacity);
 }
 
 @mixin tabs-container {
 	background-color: var(--color--bg-main);
 	border-radius: var(--rounding-lg);
+	display: flex;
 	gap: var(--spacing-xxs);
 	padding: var(--tab--container-spacing);
-
-	display: flex;
 }
 
 /// All args are selectors.
 @mixin tab($active) {
+	border-radius: var(--rounding-md);
 	color: var(--color--fg-dim);
 	font: var(--text--body-lg);
-	border-radius: var(--rounding-md);
 	padding: var(--spacing-xs) var(--spacing-lg);
 
 	&:hover {
@@ -202,10 +196,10 @@
 	}
 
 	background-color: var(--text-field--#{$variant}-bg);
-	color: var(--color--fg-main);
-	font: var(--text--body-lg);
 	border: var(--border-sm) solid var(--text-field--#{$variant}-border);
 	border-radius: var(--rounding-md);
+	color: var(--color--fg-main);
+	font: var(--text--body-lg);
 	padding-block: var(--spacing-sm);
 	padding-inline-start: var(--text-field--spacing-inline);
 	padding-inline-end: calc(
@@ -219,10 +213,9 @@
 	@include utils.icon($img-el, $name, $remove: true);
 
 	color: var(--color--secondary);
-
-	position: absolute;
 	inset-block-start: calc(50% - var(--icon-size-md) / 2);
 	inset-inline-end: calc(var(--text-field--spacing-inline) / 2);
+	position: absolute;
 }
 
 /// All args are selectors.
@@ -234,10 +227,9 @@
 	appearance: none;
 	background-color: var(--switch-bg);
 	border-radius: var(--toggle--swatch-size);
-
+	height: calc(var(--toggle--swatch-size) + var(--toggle--switch-spacing) * 2);
 	position: relative;
 	width: var(--toggle--switch-size);
-	height: calc(var(--toggle--swatch-size) + var(--toggle--switch-spacing) * 2);
 
 	#{$checked} {
 		--swatch-bg: var(--toggle--swatch-bg-checked);
@@ -250,30 +242,27 @@
 	}
 
 	&::before {
-		content: "";
-
-		position: absolute;
-		inset-block: var(--toggle--switch-spacing);
-		inset-inline: var(--swatch-pos);
-		width: var(--toggle--swatch-size);
-		height: var(--toggle--swatch-size);
-
-		transition: var(--transition);
 		background-color: var(--swatch-bg);
 		border-radius: var(--toggle--swatch-size);
+		content: "";
+		height: var(--toggle--swatch-size);
+		inset-block: var(--toggle--switch-spacing);
+		inset-inline: var(--swatch-pos);
+		position: absolute;
+		transition: var(--transition);
+		width: var(--toggle--swatch-size);
 	}
 }
 
 @mixin tooltip {
 	backdrop-filter: var(--blur);
 	background: var(--color--bg-main-50);
-	color: var(--color--fg-main);
-	font: var(--text--body-md);
 	border-radius: var(--rounding-md);
 	box-shadow: var(--popup--container-shadow);
-	padding-block: var(--popup--spacing-block);
-	padding-inline: var(--popup--spacing-inline);
-
+	color: var(--color--fg-main);
+	font: var(--text--body-md);
 	// For rounding
 	overflow: hidden;
+	padding-block: var(--popup--spacing-block);
+	padding-inline: var(--popup--spacing-inline);
 }

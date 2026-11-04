@@ -8,10 +8,9 @@
 
 #EventSummaryContainer {
 	border-radius: var(--rounding-lg);
-
+	height: 276px;
 	inset: var(--spacing-md);
 	width: unset;
-	height: 276px;
 }
 
 #OtherEvents_BGImage {
@@ -42,17 +41,15 @@
 #OtherEvents_TextCtn {
 	color: var(--color--fg-dim);
 	font: var(--text--body-md);
-	padding: 0;
-	margin-block-start: var(--spacing-sm);
-
 	height: unset;
+	margin-block-start: var(--spacing-sm);
+	padding: 0;
 
 	@include -horizontal {
-		margin-block-start: 0;
-		margin-inline-start: var(--spacing-sm);
-
 		flex-direction: column-reverse;
 		justify-content: start;
+		margin-block-start: 0;
+		margin-inline-start: var(--spacing-sm);
 	}
 }
 
@@ -61,6 +58,5 @@
 	color: var(--color--fg-main);
 	font: var(--text--heading-sm);
 	margin-block-end: var(--spacing-xxs);
-
 	max-height: unset;
 }

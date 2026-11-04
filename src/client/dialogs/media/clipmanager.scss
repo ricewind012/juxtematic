@@ -7,9 +7,9 @@
 
 	#BackgroundRecordingLabel {
 		background-color: var(--color--bg-main);
+		border-radius: 0 0 var(--rounding-md) var(--rounding-md);
 		color: var(--color--fg-main);
 		font: var(--text--body-md);
-		border-radius: 0 0 var(--rounding-md) var(--rounding-md);
 	}
 }
 
@@ -37,9 +37,9 @@
 			var(--dialog--spacing-container) * 2 + var(--spacing-sm)
 	);
 
-	top: var(--offset-top);
-	width: unset;
 	height: calc(100% - var(--offset-top) - var(--offset-bottom));
+	inset-block-start: var(--offset-top);
+	width: unset;
 
 	svg {
 		margin: 0;
@@ -58,13 +58,12 @@
 
 #CheckboxContainer {
 	background-color: var(--color--fg-main);
-	color: var(--color--bg-main);
 	border-radius: 0;
-
-	inset-inline-start: 0;
-	inset-block-start: 0;
-	width: var(--icon-size-lg);
+	color: var(--color--bg-main);
 	height: var(--icon-size-lg);
+	inset-block-start: 0;
+	inset-inline-start: 0;
+	width: var(--icon-size-lg);
 
 	&:empty {
 		display: none;
@@ -118,8 +117,8 @@
 
 	#AppNameHeader {
 		gap: var(--spacing-sm);
-		padding-block: var(--spacing-sm);
 		margin-block: var(--spacing-xxs);
+		padding-block: var(--spacing-sm);
 	}
 }
 
@@ -131,10 +130,9 @@
 	#BackLabel {
 		@include controls.button($variant: "primary", $size: "sm");
 
-		transform: none;
-		letter-spacing: 0;
-
 		height: unset;
+		letter-spacing: 0;
+		transform: none;
 
 		svg {
 			display: none;
@@ -142,7 +140,7 @@
 	}
 
 	#GameIcon {
-		width: var(--icon-size);
 		height: var(--icon-size);
+		width: var(--icon-size);
 	}
 }

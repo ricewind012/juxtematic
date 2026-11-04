@@ -15,9 +15,8 @@
 #InfoRow {
 	@include web.sidebar--list-item;
 
-	color: var(--color--primary);
-
 	align-items: center;
+	color: var(--color--primary);
 }
 
 #LocSection {
@@ -36,18 +35,16 @@
 	margin-block: var(--spacing-xs) 0;
 
 	#PurchaseNoticeContainer {
-		margin: 0;
-
 		height: unset;
+		margin: 0;
 	}
 
 	#PurchaseNoticeImage {
+		flex-shrink: 0;
+		height: var(--icon-size);
 		margin-block: 0;
 		margin-inline: 13px var(--spacing-sm);
-
-		flex-shrink: 0;
 		width: var(--icon-size);
-		height: var(--icon-size);
 	}
 }
 

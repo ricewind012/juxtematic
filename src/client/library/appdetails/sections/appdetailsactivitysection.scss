@@ -12,18 +12,17 @@
 
 #NoActivity {
 	color: var(--color--fg-dim);
-	font: var(--text--body-lg);
 	border: var(--border-md) dashed;
 	border-radius: 0;
-	padding: var(--spacing-lg);
+	font: var(--text--body-lg);
 	margin: 0;
+	padding: var(--spacing-lg);
 }
 
 #ViewLastNews {
 	@include client.appdetails--button;
 
-	text-align: center;
-	margin-block-end: var(--spacing-lg);
-
 	align-self: start;
+	margin-block-end: var(--spacing-lg);
+	text-align: center;
 }

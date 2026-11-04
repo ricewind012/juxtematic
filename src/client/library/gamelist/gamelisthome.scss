@@ -4,9 +4,8 @@
 	@include controls.button;
 
 	background-color: transparent;
-	margin: 0;
-
 	height: unset;
+	margin: 0;
 
 	&#Selected {
 		@include controls.button-vars($variant: "primary");

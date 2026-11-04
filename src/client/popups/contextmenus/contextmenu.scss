@@ -4,8 +4,8 @@
 #Arrow {
 	@include utils.icon($name: "arrow", $remove: true);
 
-	transform: rotate(-90deg);
 	margin-inline-start: var(--spacing-xxs);
+	transform: rotate(-90deg);
 }
 
 #contextMenu {

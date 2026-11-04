@@ -3,12 +3,11 @@
 .profile_small_header_arrow {
 	@include utils.icon($name: "arrow", $size: "sm");
 
+	color: var(--color--fg-dim);
+	display: inline-block;
+	font-size: 0;
 	// TODO(icons):
 	transform: rotate(-90deg);
-	color: var(--color--fg-dim);
-	font-size: 0;
-
-	display: inline-block;
 	vertical-align: center;
 
 	&:nth-child(2) {
@@ -27,10 +26,9 @@
 
 .profile_small_header_bg {
 	background: none;
-	margin: var(--content--spacing-block-start) 0;
-
-	max-width: unset;
 	height: unset;
+	margin: var(--content--spacing-block-start) 0;
+	max-width: unset;
 }
 
 .profile_small_header_location {
@@ -39,25 +37,21 @@
 }
 
 .profile_small_header_texture {
-	background: none;
-
-	display: flex;
 	align-items: center;
-	max-width: var(--content--width-sm);
-	height: unset;
-
 	anchor-name: --profile-header;
+	background: none;
+	display: flex;
+	height: unset;
+	max-width: var(--content--width-sm);
 }
 
 .profile_small_header_name {
+	display: block;
 	font: var(--text--heading-lg);
 	padding: 0;
-
-	display: block;
 }
 
 .profile_small_header_text {
 	margin-inline-start: var(--spacing-md);
-
 	position: unset;
 }

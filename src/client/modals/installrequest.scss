@@ -4,23 +4,21 @@
 
 %-folder-icon {
 	color: inherit;
+	height: var(--icon-size-md);
 	margin: 0;
-
 	position: absolute;
 	width: var(--icon-size-md);
-	height: var(--icon-size-md);
 
 	svg {
-		width: inherit;
 		height: inherit;
+		width: inherit;
 	}
 }
 
 #AppLogo {
-	margin-inline-end: var(--spacing-md);
-
-	width: 115px;
 	height: 58px;
+	margin-inline-end: var(--spacing-md);
+	width: 115px;
 
 	img {
 		border-radius: var(--rounding-md);
@@ -38,10 +36,9 @@
 }
 
 #AppToInstall {
+	align-items: center;
 	border: none;
 	padding: 0;
-
-	align-items: center;
 }
 
 #AppsToInstall {
@@ -50,22 +47,20 @@
 }
 
 #CreateShortcuts {
+	flex-direction: column;
 	gap: var(--spacing-xxs);
 	margin: 0;
-
-	flex-direction: column;
 }
 
 #FolderOption {
 	@include controls.radio($active: "&#Active");
 
+	align-items: start;
 	background-color: var(--color--bg-hl);
 	color: var(--color--fg-main);
+	flex-direction: column;
 	gap: 0;
 	margin: 0;
-
-	flex-direction: column;
-	align-items: start;
 	position: relative;
 
 	svg {
@@ -107,30 +102,28 @@
 	padding: 0;
 
 	#Header {
+		align-items: end;
 		color: var(--color--fg-main);
 		font: var(--text--body-lg);
+		justify-content: space-between;
 		letter-spacing: 0;
 		text-transform: none;
-
-		align-items: end;
-		justify-content: space-between;
 	}
 }
 
 #FolderSettings {
 	@include controls.icon-button($w: 36px, $child: "svg", $name: "settings");
 
-	width: unset;
 	height: unset;
+	width: unset;
 }
 
 #NoticeInstallFolder:not(:has(> span:empty)) {
 	@include style.alert;
 
-	text-transform: none;
-
 	justify-content: start;
 	min-height: 1lh;
+	text-transform: none;
 
 	#FolderFlag {
 		display: none;

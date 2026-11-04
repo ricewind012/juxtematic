@@ -12,27 +12,24 @@
 
 	@include web.store--capsule-icon;
 
-	color: var(--color--accent-red);
-	font: var(--text--body-md);
-	letter-spacing: 0;
-	box-shadow: none;
-	gap: var(--spacing-xxs);
-	padding: var(--spacing-xxs);
-
-	display: flex;
 	align-items: center;
+	box-shadow: none;
+	color: var(--color--accent-red);
+	display: flex;
+	font: var(--text--body-md);
+	gap: var(--spacing-xxs);
 	inset-block-start: var(--offset);
 	inset-inline-start: var(--offset);
+	letter-spacing: 0;
+	padding: var(--spacing-xxs);
 
 	&::before {
-		content: "";
-
-		display: block;
-		width: var(--circle-size);
-		height: var(--circle-size);
-
 		background-color: currentColor;
 		border-radius: 100%;
+		content: "";
+		display: block;
+		height: var(--circle-size);
+		width: var(--circle-size);
 	}
 }
 
@@ -69,9 +66,7 @@
 
 	.carousel_thumbs[style="visibility: hidden;"] ~ .arrow {
 		color: var(--color--fg-dim);
-
 		height: 100%;
-
 		pointer-events: none;
 	}
 
@@ -83,9 +78,8 @@
 		}
 
 		&:not(.no_paging) > * {
-			transition: opacity var(--transition);
-
 			justify-content: space-between;
+			transition: opacity var(--transition);
 			width: var(--carousel--item-width);
 		}
 
@@ -98,12 +92,11 @@
 	}
 
 	.carousel_thumbs {
-		gap: var(--spacing-sm);
-		padding-block: var(--carousel--section-spacing) 0;
-
 		display: flex;
+		gap: var(--spacing-sm);
 		justify-content: center;
 		min-height: unset;
+		padding-block: var(--carousel--section-spacing) 0;
 
 		// Used in #module_top_new_releases
 		&[style="visibility: hidden;"] {
@@ -144,13 +137,12 @@
 	@include carousel.button($child: "& > div", $icon: "settings");
 	@include web.store--capsule-icon;
 
-	opacity: 1;
-	font: var(--text--heading-lg);
-	padding: 0;
-
 	display: none;
+	font: var(--text--heading-lg);
 	inset-block-start: var(--offset);
 	inset-inline-end: var(--offset);
+	opacity: 1;
+	padding: 0;
 
 	&.ds_hover,
 	:hover > & {
@@ -159,7 +151,6 @@
 
 	& > div {
 		background-image: none;
-
 		position: unset;
 	}
 }
@@ -185,9 +176,8 @@
 .main_cap_price {
 	@include web.store--capsule-icon;
 
-	padding: var(--spacing-sm);
-
 	inset-block-end: 0;
+	padding: var(--spacing-sm);
 
 	.discount_original_price {
 		color: var(--color--fg-dim);
@@ -224,6 +214,5 @@
 .review_anomaly_icon {
 	color: inherit;
 	font: inherit;
-
 	vertical-align: text-top;
 }

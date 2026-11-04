@@ -3,9 +3,9 @@
 #ActivityCommentThread {
 	background-color: var(--color--bg-main-20);
 	border-radius: var(--rounding-lg);
-	padding: var(--spacing-md);
 	margin-block-start: var(--spacing-sm);
 	margin-inline-start: calc(var(--steamavatar--size) + var(--spacing-sm));
+	padding: var(--spacing-md);
 }
 
 #AddReply {
@@ -18,9 +18,9 @@
 }
 
 #Comment {
-	padding: 0;
 	margin: 0;
 	margin-block-start: var(--spacing-lg);
+	padding: 0;
 
 	#CommentBody {
 		margin-block-start: var(--spacing-sm);
@@ -28,10 +28,9 @@
 	}
 
 	#CommenterandTime {
-		margin: 0;
-
 		align-items: center;
 		height: var(--steamavatar--size);
+		margin: 0;
 
 		#ActorName {
 			margin: 0;
@@ -84,8 +83,8 @@
 }
 
 #RatingBar {
-	opacity: 1;
 	margin-block-start: var(--spacing-sm);
+	opacity: 1;
 }
 
 #Reactions {

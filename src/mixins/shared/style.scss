@@ -3,9 +3,9 @@
 /// @param {String} $color ["yellow"] - Text color from --color--accent vars.
 @mixin alert($color: "yellow") {
 	background: color-mix(in srgb, currentColor 20%, transparent);
+	border-radius: var(--rounding-lg);
 	color: var(--color--accent-#{$color});
 	font: var(--text--heading-sm);
-	border-radius: var(--rounding-lg);
 	padding: var(--spacing-md);
 }
 
@@ -28,19 +28,18 @@
 // TODO: maybe use "container-type: inline-size" then "@container (min-width: 500px)"
 // to apply padding
 @mixin notification-dot {
-	display: flex;
 	align-items: center;
+	background-color: var(--color--primary);
+	border-radius: 1337px;
+	color: var(--color--bg-main);
+	font: var(--text--body-sm);
+	display: flex;
 	justify-content: center;
-	position: absolute;
-	min-width: var(--icon-size-sm);
 	height: var(--icon-size-sm);
 	inset-block-start: -2px;
 	inset-inline-end: -3px;
-
-	background-color: var(--color--primary);
-	color: var(--color--bg-main);
-	font: var(--text--body-sm);
-	border-radius: 1337px;
+	min-width: var(--icon-size-sm);
+	position: absolute;
 }
 
 /// Shit for text like "Live Now", etc.
@@ -60,9 +59,6 @@
 	--spacing: 26px;
 
 	content: "";
-
-	pointer-events: none;
-
 	background-image:
 		repeating-linear-gradient(
 			0deg,
@@ -77,6 +73,7 @@
 			var(--color) calc(var(--spacing) + var(--line-size))
 		),
 		radial-gradient(farthest-corner at 50% 0%, var(--color), transparent);
-	mask: radial-gradient(farthest-corner at 50% 0%, black, transparent);
 	image-rendering: pixelated;
+	mask: radial-gradient(farthest-corner at 50% 0%, black, transparent);
+	pointer-events: none;
 }

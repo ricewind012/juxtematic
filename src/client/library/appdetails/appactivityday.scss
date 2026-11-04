@@ -3,10 +3,10 @@
 // TODO: Maybe remove the images and unify non-featured events this way...
 
 %-event {
-	transition: var(--transition);
 	background: none;
 	border: none;
 	box-shadow: none;
+	transition: var(--transition);
 }
 
 %-event-image {
@@ -30,13 +30,13 @@
 }
 
 #AppActivityDate {
+	border-block-end: var(--border-md) solid var(--color--secondary);
 	color: var(--color--primary);
 	font: var(--text--body-lg);
 	letter-spacing: 0;
-	border-block-end: var(--border-md) solid var(--color--secondary);
-	text-transform: none;
-	padding-block-end: 4px;
 	margin-block-end: var(--spacing-sm);
+	padding-block-end: 4px;
+	text-transform: none;
 
 	#Rule {
 		display: none;
@@ -45,8 +45,8 @@
 
 #AppActivityDay {
 	border: none;
-	padding: 0;
 	margin-block-end: var(--spacing-lg);
+	padding: 0;
 
 	& > :not(:first-child) > #Event,
 	& > div > :not(:first-child) > #Event {
@@ -63,15 +63,15 @@
 	--steamavatar--size: var(--avatar--size-sm);
 
 	#EventActorAvatar {
-		width: unset;
 		height: unset;
+		width: unset;
 	}
 
 	#EventHeadline {
 		color: var(--color--fg-main);
 		font: var(--text--body-md);
-		padding: 0;
 		margin-block-end: var(--spacing-sm);
+		padding: 0;
 
 		#SpanEvent {
 			margin-inline: var(--spacing-sm);
@@ -92,13 +92,13 @@
 
 	#ActivityPublishedScreenshot {
 		#CarouselThumb {
-			opacity: 1;
-			transform: none;
 			background-color: transparent;
 			border: var(--border-md) solid transparent;
 			border-radius: var(--rounding-lg);
 			margin-block-end: var(--spacing-xxs);
 			margin-inline-end: var(--spacing-xxs);
+			opacity: 1;
+			transform: none;
 
 			&#Active {
 				border-color: var(--color--secondary);
@@ -114,16 +114,16 @@
 		}
 
 		#ScreenshotCaption#HasCaption {
-			background: var(--color--bg-main-50);
 			backdrop-filter: var(--blur);
-			color: var(--color--primary);
+			background: var(--color--bg-main-50);
 			border-radius: 0;
 			border-end-start-radius: var(--rounding-lg);
+			color: var(--color--primary);
 			margin-block-end: 24px;
 
 			#CaptionQuote {
-				opacity: var(--dim-opacity);
 				color: var(--color--primary);
+				opacity: var(--dim-opacity);
 			}
 		}
 
@@ -164,12 +164,11 @@
 #PartnerEventFeaturedHeader {
 	background: none;
 	font: var(--text--body-lg);
-	letter-spacing: 0;
-	text-transform: none;
-	padding: 0;
-	margin-block-end: var(--spacing-sm);
-
 	height: var(--spacing-xxl);
+	letter-spacing: 0;
+	margin-block-end: var(--spacing-sm);
+	padding: 0;
+	text-transform: none;
 }
 
 #PartnerEventLargeUpdate {
@@ -177,8 +176,8 @@
 	@extend %-event-image;
 
 	#ImageContainer {
-		padding: 0;
 		margin-inline-end: var(--spacing-sm);
+		padding: 0;
 	}
 
 	#LeftSideMajorUpdateBar {
@@ -205,8 +204,8 @@
 	&_Summary {
 		color: var(--color--fg-dim);
 		font: var(--text--body-md);
-		text-shadow: none;
 		padding: 0;
+		text-shadow: none;
 	}
 
 	&_TextColumn {
@@ -220,11 +219,10 @@
 	}
 
 	&_TextColumn {
+		flex-direction: column;
+		display: flex;
 		padding: 0;
 		margin: 0;
-
-		display: flex;
-		flex-direction: column;
 
 		#PartnerEventType {
 			text-shadow: none;
@@ -260,10 +258,9 @@
 	&_Icon {
 		--icon-size-lg: 40px;
 
-		margin: 0;
-
-		width: var(--icon-size-lg);
 		height: var(--icon-size-lg);
+		margin: 0;
+		width: var(--icon-size-lg);
 
 		svg {
 			@include utils.icon($remove: true, $size: "lg");

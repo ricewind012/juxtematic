@@ -1,10 +1,9 @@
 #Container {
+	align-items: center;
 	background-image: none;
 	border: none;
-	gap: var(--spacing-sm);
-
 	flex-direction: row-reverse;
-	align-items: center;
+	gap: var(--spacing-sm);
 
 	&#Selected,
 	&:hover {
@@ -14,11 +13,10 @@
 }
 
 #SectionCount {
-	font: inherit;
 	color: var(--color--fg-dim);
-	margin: 0;
-
+	font: inherit;
 	height: unset;
+	margin: 0;
 }
 
 #SectionHeaderContent {
@@ -31,7 +29,6 @@
 #SectionName {
 	color: inherit;
 	font: inherit;
-	letter-spacing: 0;
-
 	height: unset;
+	letter-spacing: 0;
 }

@@ -7,30 +7,27 @@
 
 #AchievementContainer {
 	background-color: var(--color--bg-main);
-	color: var(--color--fg-dim);
 	border-radius: var(--rounding-md);
+	color: var(--color--fg-dim);
 	gap: var(--spacing-lg);
 	padding: var(--spacing-md);
-	padding-left: calc(var(--spacing-md) + var(--icon-size-lg) + 16px);
-
+	padding-inline-start: calc(var(--spacing-md) + var(--icon-size-lg) + 16px);
 	position: relative;
 
 	&::before {
-		content: "";
-
-		position: absolute;
-		// TODO: XDDDDDD just make it flex holy shit
-		top: calc(var(--spacing-md) + 8px - 0.25em);
-		left: var(--spacing-md);
-
 		@include utils.icon($name: "achievements", $size: "lg");
+
+		content: "";
+		// TODO: XDDDDDD just make it flex holy shit
+		inset-block-start: calc(var(--spacing-md) + 8px - 0.25em);
+		inset-inline-start: var(--spacing-md);
+		position: absolute;
 	}
 }
 
 #AchievementsFraction {
 	font: var(--text--body-sm);
-	margin-top: 0.125em;
-
+	margin-block-start: 0.125em;
 	min-width: 3rem;
 }
 
@@ -52,12 +49,10 @@
 	font-size: 0;
 
 	&::before {
-		content: "";
-
 		@include utils.icon($name: "clock");
 
 		color: color-mix(in srgb, var(--color--fg-dim) 50%, transparent);
-
+		content: "";
 		display: block;
 	}
 }
@@ -67,10 +62,9 @@
 }
 
 #GameLinksButton {
-	padding: 2px;
-
-	width: var(--icon-size-md);
 	height: var(--icon-size-md);
+	padding: 2px;
+	width: var(--icon-size-md);
 }
 
 #GameName {
@@ -97,24 +91,23 @@
 #LastPlayed {
 	--offset: calc(var(--spacing-md) * 4 + var(--spacing-xl));
 
+	align-items: center;
 	color: var(--color--fg-main);
+	flex-direction: row;
 	font: var(--text--body-sm);
 	gap: var(--spacing-sm);
-
+	inset-block-start: var(--spacing-md);
+	inset-inline-end: var(--offset);
 	position: absolute;
-	top: var(--spacing-md);
-	right: var(--offset);
-	align-items: center;
-	flex-direction: row;
 }
 
 #Hours2weeks,
 #LastPlayed {
-	right: calc(var(--offset) + 130px);
+	inset-inline-end: calc(var(--offset) + 130px);
 }
 
 #List {
-	margin-top: var(--spacing-sm);
+	margin-block-start: var(--spacing-sm);
 }
 
 #NavButton {

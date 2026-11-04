@@ -4,14 +4,13 @@
 @use "web";
 
 #AuthorInfo {
-	opacity: 1;
-	gap: var(--spacing-sm);
-
 	flex: unset;
+	gap: var(--spacing-sm);
+	opacity: 1;
 
 	#AuthorNameAndCounts {
-		flex-direction: row;
 		align-items: center;
+		flex-direction: row;
 
 		#Count {
 			color: var(--color--fg-dim);
@@ -34,8 +33,8 @@
 		--avatar--border-size: 0px;
 		--steamavatar--size: var(--icon-size-md);
 
-		width: var(--steamavatar--size);
 		height: var(--steamavatar--size);
+		width: var(--steamavatar--size);
 	}
 }
 
@@ -47,17 +46,17 @@
 	}
 
 	#PostedDateAndSource {
-		position: absolute;
 		inset-block-start: var(--spacing-md);
 		inset-inline-end: var(--spacing-md);
+		position: absolute;
 
 		#PostedDate,
 		#ReviewSource {
-			opacity: 1;
 			color: var(--color--fg-dim);
 			font: var(--text--body-sm);
-			text-transform: none;
 			margin-block: calc(var(--text--body-md-size) - var(--text--body-sm-size));
+			text-transform: none;
+			opacity: 1;
 		}
 	}
 
@@ -94,10 +93,10 @@
 		gap: var(--spacing-xl);
 
 		#Text {
-			opacity: 1;
+			border-block-start: var(--border-sm) solid var(--color--border);
 			color: var(--color--fg-dim);
 			font: var(--text--body-sm);
-			border-block-start: var(--border-sm) solid var(--color--border);
+			opacity: 1;
 			padding-block-start: var(--spacing-sm);
 		}
 	}
@@ -106,9 +105,9 @@
 #Disclaimer {
 	@include style.text-tag($size: "sm");
 
+	border: none;
 	color: var(--color--secondary);
 	text-transform: none;
-	border: none;
 }
 
 #ReviewDetails#Short {
@@ -138,15 +137,13 @@
 	background: var(--color--bg-main);
 	border-radius: var(--rounding-md);
 	gap: var(--spacing-sm);
-	padding: var(--spacing-xxs);
-	margin: 0;
-
 	height: unset;
+	margin: 0;
+	padding: var(--spacing-xxs);
 
 	#CountedIcon {
-		color: var(--color--fg-dim);
-
 		align-self: start;
+		color: var(--color--fg-dim);
 		height: unset;
 
 		#ReviewCountedIcon {
@@ -171,9 +168,8 @@
 
 	#ThumbIcon {
 		border-radius: var(--rounding-sm);
-
-		width: var(--thumb-size);
 		height: var(--thumb-size);
+		width: var(--thumb-size);
 	}
 }
 
@@ -220,9 +216,8 @@
 #Top {
 	background: var(--color--bg-main-50);
 	border-radius: var(--rounding-lg);
-	padding: var(--spacing-md);
-	gap: var(--spacing-xl);
-
 	flex-direction: column;
+	gap: var(--spacing-xl);
+	padding: var(--spacing-md);
 	position: relative;
 }

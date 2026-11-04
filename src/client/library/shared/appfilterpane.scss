@@ -1,10 +1,9 @@
 @use "shared/controls";
 
 %-menu-item {
-	font: var(--text--body-sm);
 	border-radius: var(--rounding-md);
+	font: var(--text--body-sm);
 	padding: 6.5px 13px;
-
 	width: 100%;
 
 	&:hover {
@@ -39,9 +38,8 @@
 		@extend %-menu-item;
 
 		background-color: transparent;
-		font: inherit;
 		border: none;
-
+		font: inherit;
 		max-width: unset;
 	}
 }
@@ -50,8 +48,8 @@
 	align-items: center;
 
 	svg {
-		width: var(--icon-size-md);
 		height: var(--icon-size-md);
+		width: var(--icon-size-md);
 	}
 }
 
@@ -65,7 +63,6 @@
 
 #FilterArea {
 	gap: var(--spacing-lg);
-
 	flex-grow: 1;
 }
 
@@ -76,8 +73,8 @@
 		#LanguageAndGenre,
 		#LanguageAndGenre > &:not(#Genre)
 	) {
-		border-top: var(--border-sm) solid var(--color--bg-hl);
-		padding-top: var(--spacing-sm);
+		border-block-start: var(--border-sm) solid var(--color--bg-hl);
+		padding-block-start: var(--spacing-sm);
 	}
 }
 
@@ -88,8 +85,8 @@
 #FilterBucketLabel {
 	color: var(--color--fg-main);
 	font: var(--text--body-lg);
+	margin-block-end: var(--spacing-sm);
 	text-transform: unset;
-	margin-bottom: var(--spacing-sm);
 }
 
 #Filters {
@@ -102,7 +99,7 @@
 
 #Row {
 	&:not(:last-child) {
-		margin-bottom: var(--spacing-xs);
+		margin-block-end: var(--spacing-xs);
 	}
 
 	& > .tool-tip-source {

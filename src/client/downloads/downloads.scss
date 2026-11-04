@@ -4,8 +4,8 @@
 #DownloadItemName > #Name {
 	color: var(--color--fg-main);
 	font: var(--text--heading-sm);
-	padding-block: var(--spacing-sm) 0;
 	margin: 0;
+	padding-block: var(--spacing-sm) 0;
 }
 
 #DownloadsPage {
@@ -14,7 +14,7 @@
 	);
 
 	background: none;
-	margin-top: calc(var(--button-height) + var(--spacing-xl));
+	margin-block-start: calc(var(--button-height) + var(--spacing-xl));
 
 	.DialogButton {
 		// Assume download as this doesn't have a distinguishing class name lol
@@ -35,7 +35,6 @@
 
 #DownloadSectionActiveItem {
 	gap: var(--spacing-lg);
-
 	position: unset;
 
 	.DialogButton {
@@ -44,9 +43,9 @@
 }
 
 #ItemLists {
-	margin-left: var(--spacing-xl);
+	margin-inline-start: var(--spacing-xl);
 	// 16px = scrollbar for now
-	margin-right: calc(var(--spacing-xl) - 16px);
+	margin-inline-end: calc(var(--spacing-xl) - 16px);
 }
 
 #Progress {
@@ -56,8 +55,8 @@
 }
 
 #Section {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 
 	&#EmptyQueue {
 		display: none;
@@ -66,12 +65,11 @@
 
 #SectionItem {
 	background-color: var(--color--bg-main);
-	padding: var(--spacing-sm);
-	padding-left: calc(var(--icon-size-lg) + var(--spacing-sm) * 2);
-	margin-bottom: var(--spacing-md);
 	border-radius: var(--rounding-lg);
-
 	height: unset;
+	margin-block-end: var(--spacing-md);
+	padding: var(--spacing-sm);
+	padding-inline-start: calc(var(--icon-size-lg) + var(--spacing-sm) * 2);
 
 	#ActiveItemProgressBar #Label {
 		color: inherit;
@@ -82,10 +80,9 @@
 	}
 
 	#ButtonWrapper {
-		margin: 0;
-
-		width: unset;
 		height: unset;
+		margin: 0;
+		width: unset;
 
 		path {
 			display: none;
@@ -93,24 +90,23 @@
 	}
 
 	#DetailsAndType {
-		margin-block-start: var(--spacing-sm);
-
-		flex-direction: column;
 		align-items: start;
+		flex-direction: column;
 		height: unset;
+		margin-block-start: var(--spacing-sm);
 	}
 
 	#DragHandle {
 		@include utils.icon($name: "drag-handle");
 
-		opacity: 1;
+		inset-inline-start: var(--spacing-sm);
 		margin: 0;
-
-		left: var(--spacing-sm);
+		opacity: 1;
 	}
 
 	#ProgressDetails {
 		all: unset;
+
 		color: var(--color--fg-dim);
 		font: var(--text--body-sm);
 
@@ -135,7 +131,6 @@
 
 #SectionItemCenter {
 	gap: var(--spacing-lg);
-
 	height: 100%;
 }
 
@@ -149,10 +144,10 @@
 
 #SectionItemStatus {
 	all: unset;
-	color: var(--color--fg-dim);
-	font: var(--text--body-md);
 
+	color: var(--color--fg-dim);
 	flex-grow: 1;
+	font: var(--text--body-md);
 
 	#Denominator {
 		color: inherit;
@@ -164,8 +159,8 @@
 }
 
 #SectionList {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 #SectionTitle {
@@ -173,17 +168,15 @@
 }
 
 #SettingsButton {
-	gap: var(--spacing-sm);
-
-	display: flex;
 	align-items: center;
-	top: var(--spacing-xl);
-	left: var(--spacing-xl);
+	display: flex;
+	gap: var(--spacing-sm);
+	inset-block-start: var(--spacing-xl);
+	inset-inline-start: var(--spacing-xl);
 
 	// TODO(localization):
 	&::before {
 		content: "Downloads Manager";
-
 		font: var(--text--heading-md);
 	}
 
@@ -196,21 +189,20 @@
 }
 
 #TopSection {
-	margin: var(--spacing-xl);
-	margin-bottom: 0;
-
 	height: unset;
+	margin: var(--spacing-xl);
+	margin-block-end: 0;
 
 	#DetailsAndType {
-		margin: 0;
-
-		position: fixed;
-		top: var(--downloads--top-bar-height);
-		right: var(--spacing-xl);
+		inset-block-start: var(--downloads--top-bar-height);
+		inset-inline-end: var(--spacing-xl);
 		height: 44px;
+		margin: 0;
+		position: fixed;
 
 		#Throttle {
 			all: unset;
+
 			color: var(--color--fg-dim);
 			font: var(--text--body-lg);
 		}

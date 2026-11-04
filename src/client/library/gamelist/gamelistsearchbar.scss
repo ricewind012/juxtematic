@@ -27,9 +27,8 @@
 	background-color: var(--color--bg-main);
 	border-radius: var(--rounding-lg);
 	box-shadow: none;
-
-	top: 100%;
-	left: 0;
+	inset-block-start: 100%;
+	inset-inline-start: 0;
 }
 
 #AdvancedSearchPaneContainer {
@@ -43,20 +42,18 @@
 
 	@include client.gamelist--part-container;
 
+	anchor-name: --gamelistsearchbar;
 	border-radius: 0;
+	inset-block-start: anchor(start);
+	inset-inline-start: anchor(end);
 	margin: 0;
-
 	position: absolute;
 	position-anchor: --gamelisthomeandsearch;
-	anchor-name: --gamelistsearchbar;
-	top: anchor(top);
-	left: anchor(right);
 
 	.DialogInput {
 		@include controls.text-field($variant: "search");
 
 		background-image: none;
-
 		height: unset;
 	}
 
@@ -74,9 +71,9 @@
 		}
 
 		&::after {
-			content: "";
-
 			@include controls.text-field-icon($name: "search");
+
+			content: "";
 		}
 	}
 }
@@ -84,10 +81,9 @@
 #FilterTag {
 	@include web.store--tag;
 
-	margin: -6.5px 0;
-
 	align-items: center;
 	height: unset;
+	margin: -6.5px 0;
 
 	// Fix some bullshit CSS behavior (see above), but this time make it
 	// centered
@@ -98,8 +94,8 @@
 	svg {
 		@include utils.icon($name: "close", $remove: true, $size: "sm");
 
+		margin-inline-start: var(--spacing-xxs);
 		opacity: 1;
-		margin-left: var(--spacing-xxs);
 
 		&:hover {
 			color: var(--color--fg-main);
@@ -116,9 +112,8 @@
 #SearchFilterInput {
 	@include controls.text-field($variant: "search");
 
-	gap: var(--spacing-xxs);
-
 	align-items: center;
+	gap: var(--spacing-xxs);
 	width: var(--text-field--width);
 
 	// In appfilterpane

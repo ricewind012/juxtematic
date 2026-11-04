@@ -9,8 +9,8 @@
 #ReminderDefault {
 	@include controls.dropdown($variant: "primary", $size: "sm");
 
-	width: unset;
 	height: unset;
+	width: unset;
 }
 
 #ReminderOptions:not(#ReminderDialog) {

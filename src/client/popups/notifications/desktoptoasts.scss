@@ -1,11 +1,10 @@
 #DesktopToastBackground {
-	opacity: 1;
 	color: color-mix(in srgb, var(--color--primary) 20%, transparent);
+	opacity: 1;
 }
 
 #DesktopToastPopup {
 	background: var(--color--bg-main);
-
 	height: 70px;
 
 	&:hover {
@@ -14,7 +13,7 @@
 
 	// I think v*lve fucked up this one a bit
 	&#Top #DesktopToastBackground {
-		top: -7px;
+		inset-block-start: -7px;
 	}
 
 	&::before {

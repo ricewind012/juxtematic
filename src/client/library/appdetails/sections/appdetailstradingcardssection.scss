@@ -1,11 +1,10 @@
 #Badge {
 	--size: 64px;
 
+	height: var(--size);
 	margin: 0;
 	margin-inline-end: var(--spacing-md);
-
 	width: var(--size);
-	height: var(--size);
 
 	&#EmptyCircle {
 		border-color: var(--color--fg-dim);

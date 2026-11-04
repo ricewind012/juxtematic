@@ -9,33 +9,28 @@
 	@include client.gamelist--part-container;
 
 	anchor-name: --gamelistdropdown;
-
+	inset-block-start: anchor(start);
+	inset-inline-start: anchor(end);
 	position: fixed;
 	position-anchor: --gamelistsearchbar;
-	top: anchor(top);
-	left: anchor(right);
 
 	&::before {
+		background-color: var(--color--bg-tertiary);
 		content: "";
-
+		inset-block: anchor(start) anchor(end);
+		inset-inline-start: anchor(end);
 		position: fixed;
 		position-anchor: --gamelistdropdown;
-		top: anchor(top);
-		bottom: anchor(bottom);
-		left: anchor(right);
 		width: 100%;
-
-		background-color: var(--color--bg-tertiary);
 	}
 }
 
 #CheckboxWithImage {
 	@include client.gamelist--icon-button($active-selector: "&#Active");
 
-	margin: 0;
-
-	width: unset;
 	height: unset;
+	margin: 0;
+	width: unset;
 }
 
 #Filters {
@@ -46,9 +41,8 @@
 	@include controls.dropdown;
 
 	font: var(--text--body-md);
-
-	width: unset;
 	height: unset;
+	width: unset;
 }
 
 #ScrollToTop {

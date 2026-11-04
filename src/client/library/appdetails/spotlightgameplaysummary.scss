@@ -1,14 +1,12 @@
 #EventDaySeparator {
 	background: var(--color--border);
 	margin: 0 var(--spacing-xxl);
-
 	width: var(--border-lg);
 }
 
 #EventHeaderBlock {
 	color: var(--color--fg-dim);
 	font: var(--text--body-sm);
-
 	height: calc(1lh + var(--spacing-xs));
 }
 
@@ -19,20 +17,18 @@
 #GamePlaySummaryHeader {
 	color: var(--color--fg-main);
 	font: var(--text--body-lg);
-	letter-spacing: 0;
-	text-transform: none;
-	margin-block-end: var(--spacing-sm);
-
 	height: var(--spacing-xxl);
+	letter-spacing: 0;
+	margin-block-end: var(--spacing-sm);
+	text-transform: none;
 }
 
 #SummaryCarouselContainer {
 	background: none;
 	box-shadow: none;
-	padding: 0;
-	margin-inline: var(--carousel--arrow-size);
-
 	height: unset;
+	margin-inline: var(--carousel--arrow-size);
+	padding: 0;
 
 	// Shadow
 	&::after {
@@ -46,7 +42,6 @@
 
 #SummaryContainer {
 	height: unset;
-
 	margin: 0;
 }
 

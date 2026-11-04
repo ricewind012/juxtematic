@@ -5,11 +5,10 @@
 
 	background-image: var(--icon-link);
 	background-size: var(--icon-size);
-	padding: 0;
-	margin-inline-end: var(--spacing-sm);
-
-	width: var(--icon-size);
 	height: var(--icon-size);
+	margin-inline-end: var(--spacing-sm);
+	padding: 0;
+	width: var(--icon-size);
 
 	* {
 		display: none;
@@ -20,9 +19,9 @@
 	gap: 0;
 
 	#Button {
-		transition: var(--transition);
 		border: none;
 		border-radius: var(--rounding-lg);
+		transition: var(--transition);
 
 		&:hover {
 			background-color: var(--color--bg-hover);
@@ -66,10 +65,10 @@
 
 #Footer {
 	& > :first-child {
-		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		display: flex;
 		flex-grow: 1;
+		justify-content: space-between;
 	}
 
 	#BalanceAmount {
@@ -90,8 +89,8 @@
 
 #FooterLink {
 	font: inherit;
-	text-decoration: none;
 	padding: 0;
+	text-decoration: none;
 }
 
 #GrantAwardModal {

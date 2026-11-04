@@ -3,16 +3,15 @@
 }
 
 #FocusBar {
-	opacity: 0;
 	background-image: linear-gradient(
 		to right,
 		transparent,
 		var(--color--primary),
 		transparent
 	);
-	transition: var(--transition);
-
 	display: block;
+	opacity: 0;
+	transition: var(--transition);
 	z-index: 1500;
 
 	&#Focused {
@@ -20,7 +19,6 @@
 		// --color-20: color-mix(in srgb, var(--color) 20%, transparent);
 		// --height: 67px;
 
-		opacity: 1;
 		// background-image:
 		// 	linear-gradient(to right, transparent, var(--color), transparent),
 		// 	radial-gradient(farthest-corner at 50% 0%, var(--color-20), transparent);
@@ -28,43 +26,39 @@
 		// background-size:
 		// 	100% var(--border-sm),
 		// 	100% 100%;
-		// mask: linear-gradient(black, transparent);
-
 		// height: var(--height);
+		// mask: linear-gradient(black, transparent);
+		opacity: 1;
 	}
 }
 
 #SuperNavBar {
-	padding: 0;
-
 	flex: 1 0 auto;
 	height: unset;
 	min-height: unset;
+	padding: 0;
 }
 
 #TitleBar {
-	gap: var(--dialog--window-control-spacing);
-
 	align-items: center;
-	justify-content: end;
+	gap: var(--dialog--window-control-spacing);
 	height: unset;
+	justify-content: end;
 }
 
 #TitleBarControls {
-	order: -1;
-	margin-top: 0;
-	margin-right: 40px;
-
 	anchor-name: --titlebarcontrols;
+	margin-block-start: 0;
+	margin-inline-end: 40px;
+	order: -1;
 }
 
 #TopBar {
+	align-items: center;
 	background-color: var(--color--bg-main);
 	box-shadow: none;
-	padding: var(--spacing-sm) var(--spacing-lg);
-
 	flex-direction: row-reverse;
-	align-items: center;
+	padding: var(--spacing-sm) var(--spacing-lg);
 }
 
 // TODO
@@ -88,9 +82,8 @@
 	}
 
 	.title-area {
-		padding: 0;
-
 		height: var(--dialog--window-control-size);
+		padding: 0;
 	}
 }
 

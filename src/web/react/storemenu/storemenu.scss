@@ -3,8 +3,8 @@
 @use "shared/utils";
 
 #Backdrop {
-	background-color: var(--color--bg-main-50);
 	backdrop-filter: var(--blur);
+	background-color: var(--color--bg-main-50);
 
 	@media (prefers-reduced-motion: no-preference) {
 		transition-duration: 250ms;
@@ -41,8 +41,8 @@
 
 #RightButtons {
 	gap: var(--header--button-spacing);
-	padding: 0;
 	margin: 0;
+	padding: 0;
 
 	#CartButton {
 		margin: 0;
@@ -66,16 +66,15 @@
 	animation: none;
 	background-image: none;
 	box-shadow: none;
-
 	// When hidden
 	height: unset;
 
 	#Content {
-		width: unset;
 		height: unset;
+		width: unset;
 	}
 }
 
 #StoreMenuContainer {
-	top: var(--global-header-height);
+	inset-block-start: var(--global-header-height);
 }

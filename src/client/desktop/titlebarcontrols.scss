@@ -7,10 +7,9 @@
 
 	font: var(--text--body-md);
 	gap: 8px;
-	padding: 4px;
 	margin: 0;
-
 	max-height: unset;
+	padding: 4px;
 
 	.avatarHolder {
 		--avatar--border-size: 0px;
@@ -22,8 +21,7 @@
 		--icon-name: icon("arrow");
 
 		color: var(--color--fg-main);
-		margin-right: var(--spacing-xxs);
-
+		margin-inline-end: var(--spacing-xxs);
 		order: 1;
 	}
 
@@ -42,7 +40,7 @@
 	--icon-name: icon("notifications");
 	--icon-size-lg: var(--dialog--window-control-size);
 
-	margin-right: var(--spacing-sm);
+	margin-inline-end: var(--spacing-sm);
 }
 
 #NotificationsButton {

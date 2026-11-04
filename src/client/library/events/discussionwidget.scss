@@ -2,22 +2,20 @@
 @use "web";
 
 %-section {
-	background: none;
-	padding: 0;
-	gap: var(--spacing-sm);
-
 	align-items: center;
+	background: none;
+	gap: var(--spacing-sm);
+	padding: 0;
 }
 
 %-section-count {
+	align-items: center;
 	color: var(--color--fg-main);
 	font: var(--text--body-sm);
 	gap: var(--spacing-xxs);
-	padding: 0;
-	margin: 0;
-
-	align-items: center;
 	height: unset;
+	margin: 0;
+	padding: 0;
 
 	& > svg {
 		@include utils.icon($size: "sm", $remove: true);
@@ -32,9 +30,8 @@
 		color-mix(in srgb, var(--color--primary) 20%, transparent) 10%,
 		transparent 80%
 	);
-	padding: var(--dialog--spacing-container);
-
 	justify-content: start;
+	padding: var(--dialog--spacing-container);
 }
 
 #DiscussionButton {

@@ -29,12 +29,11 @@
 }
 
 #StatusLine {
-	color: var(--color--fg-dim);
 	border: none;
-	padding: 0;
-	margin-block-end: var(--carousel--section-spacing);
-
+	color: var(--color--fg-dim);
 	height: unset;
+	margin-block-end: var(--carousel--section-spacing);
+	padding: 0;
 
 	#ReviewCount {
 		font: var(--text--body-md);

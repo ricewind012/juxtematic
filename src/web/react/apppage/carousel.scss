@@ -1,11 +1,10 @@
 @use "shared/carousel";
 
 %-thumb-base {
-	transition: var(--transition);
 	border-radius: 40px;
-
-	inset-block: 0;
 	height: inherit;
+	inset-block: 0;
+	transition: var(--transition);
 }
 
 #carouselBody {
@@ -26,8 +25,8 @@
 	@include carousel.arrow($left: "&#left", $right: "&#right", $child: "svg");
 
 	svg {
-		opacity: 1;
 		color: var(--color--fg-main);
+		opacity: 1;
 
 		* {
 			display: none;
@@ -36,10 +35,9 @@
 }
 
 #pipScrollerContainer {
+	height: var(--carousel--thumb-height);
 	margin: 0;
 	margin-block-start: var(--carousel--section-spacing);
-
-	height: var(--carousel--thumb-height);
 
 	#scrollBackground {
 		@extend %-thumb-base;

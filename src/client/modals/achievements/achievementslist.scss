@@ -74,19 +74,17 @@
 }
 
 #ListTitle {
-	opacity: 1;
 	color: var(--color--fg-main);
 	font: var(--text--heading-sm);
-	letter-spacing: 0;
-	text-transform: none;
-
 	height: unset;
+	letter-spacing: 0;
+	opacity: 1;
+	text-transform: none;
 }
 
 #UnlockContainer {
 	color: var(--color--primary);
 	padding: 0;
-
 	width: calc(var(--icon-size-md) + var(--spacing-xxs) * 2);
 
 	svg {

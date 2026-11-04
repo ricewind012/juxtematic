@@ -1,9 +1,8 @@
 #ShortLogoDimensions,
 #StandardLogoDimensions {
 	border-radius: var(--rounding-md);
-
-	width: var(--avatar--size-md);
 	height: var(--avatar--size-md);
+	width: var(--avatar--size-md);
 }
 
 #StandardNotificationDescription {
@@ -14,10 +13,9 @@
 #StandardTemplate {
 	background: none;
 	color: var(--color--fg-main);
+	height: inherit;
 	padding-block: var(--popup--spacing-block);
 	padding-inline: var(--popup--spacing-inline);
-
-	height: inherit;
 
 	#Content {
 		margin-inline-start: var(--spacing-sm);
@@ -28,9 +26,9 @@
 	}
 
 	#Timestamp {
-		opacity: var(--dim-opacity);
 		color: var(--color--primary);
 		font: var(--text--body-sm);
+		opacity: var(--dim-opacity);
 	}
 
 	#Title {

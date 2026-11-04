@@ -35,8 +35,8 @@
 #ExitGameBtn {
 	filter: none;
 	letter-spacing: 0;
-	text-transform: none;
 	margin-block-start: var(--spacing-sm);
+	text-transform: none;
 }
 
 #NetworkStatus {
@@ -77,15 +77,13 @@
 
 #Toolbar {
 	gap: var(--spacing-xxs);
-
 	height: unset;
 }
 
 #ToolbarButton {
 	gap: var(--spacing-sm);
-
-	justify-content: start;
 	height: unset;
+	justify-content: start;
 
 	#ToolbarContainer#LocationBottom & {
 		--button--spacing-inline: var(--spacing-md);
@@ -96,11 +94,10 @@
 	}
 
 	svg {
-		margin: 0;
-
 		flex-shrink: 0;
-		width: var(--icon-size-md);
 		height: var(--icon-size-md);
+		margin: 0;
+		width: var(--icon-size-md);
 	}
 }
 
@@ -214,7 +211,6 @@
 	background: none;
 	padding: var(--dialog--spacing-container);
 	padding-block-start: 0;
-
 	z-index: 2;
 }
 
@@ -234,8 +230,8 @@
 
 	background-color: transparent;
 	letter-spacing: 0;
-	text-transform: none;
 	padding: 0;
+	text-transform: none;
 
 	& > svg {
 		display: none;
@@ -269,9 +265,8 @@
 #OverviewTitle {
 	color: var(--color--fg-main);
 	font: var(--text--heading-lg);
-	margin-inline-start: var(--dialog--spacing-container);
 	margin-block-end: var(--spacing-sm);
-
+	margin-inline-start: var(--dialog--spacing-container);
 	z-index: 2;
 }
 
@@ -279,8 +274,8 @@
 	color: var(--color--fg-main);
 	font: var(--text--body-md);
 	gap: var(--spacing-xs);
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 // #endregion
 

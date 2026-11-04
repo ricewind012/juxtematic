@@ -1,8 +1,7 @@
 @mixin container {
 	background-color: var(--color--bg-hl);
-	box-shadow: var(--popup--container-shadow);
 	border-radius: var(--rounding-md);
-
+	box-shadow: var(--popup--container-shadow);
 	// For rounding
 	overflow: hidden;
 }
@@ -40,7 +39,6 @@
 	all: unset;
 
 	background-color: var(--color--border);
-
 	display: block;
 	height: var(--border-sm);
 }

@@ -34,8 +34,8 @@
 	#Title {
 		color: var(--color--fg-main);
 		font: var(--text--body-md);
-		text-transform: none;
 		margin-block-start: var(--spacing-sm);
+		text-transform: none;
 	}
 
 	#TopSection {
@@ -56,8 +56,8 @@
 
 	#Count {
 		color: inherit;
-		padding: 0;
 		margin-inline-start: var(--spacing-xxs);
+		padding: 0;
 	}
 
 	#Icon16 {
@@ -92,11 +92,11 @@
 
 #GuideTitle {
 	background: var(--color--bg-main-50);
+	border-radius: var(--rounding-md) var(--rounding-md) 0 0;
 	color: var(--color--fg-main);
 	font: var(--text--body-md);
-	text-transform: none;
-	border-radius: var(--rounding-md) var(--rounding-md) 0 0;
 	padding: var(--spacing-sm);
+	text-transform: none;
 }
 
 #HeaderStyles {
@@ -111,9 +111,9 @@
 #MenuButton {
 	@include controls.icon-button($w: 44px, $child: "svg", $size: "lg");
 
+	align-items: center;
 	// TODO(controls):
 	display: flex;
-	align-items: center;
 	justify-content: center;
 
 	svg {
@@ -125,16 +125,14 @@
 	--size: 58px;
 
 	&::before {
-		content: "";
-
-		position: absolute;
-		inset-block-start: calc(50% - var(--size) / 2);
-		inset-inline-start: calc(50% - var(--size) / 2);
-		width: var(--size);
-		height: var(--size);
-
 		background: var(--color--bg-main-50);
 		border-radius: var(--rounding-md);
+		content: "";
+		height: var(--size);
+		inset-block-start: calc(50% - var(--size) / 2);
+		inset-inline-start: calc(50% - var(--size) / 2);
+		position: absolute;
+		width: var(--size);
 	}
 
 	&:hover::before {

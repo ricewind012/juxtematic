@@ -3,9 +3,8 @@
 @use "web";
 
 .apphub_ContentGuides {
-	padding: 0;
-
 	max-width: calc(100% - var(--content--sidebar-width) - var(--spacing-lg));
+	padding: 0;
 
 	.workshopItemCollectionContainer:nth-last-of-type(2) > a {
 		margin: 0;
@@ -14,9 +13,8 @@
 
 .apphub_Guides {
 	.category_blocks_ctn {
-		gap: var(--spacing-sm);
-
 		display: grid;
+		gap: var(--spacing-sm);
 		grid-template-columns: repeat(4, 1fr);
 	}
 
@@ -42,16 +40,15 @@
 .guide_category_tags_title {
 	@include web.sidebar--header;
 
+	align-items: center;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 
 	&::after {
-		content: "";
-
-		display: block;
-
 		@include utils.icon($name: "arrow", $size: "sm");
+
+		content: "";
+		display: block;
 	}
 
 	.rightSectionBrowseBarArrow {
@@ -75,11 +72,10 @@
 .guidePreviewImage {
 	--image-size: 128px;
 
+	height: var(--image-size);
 	margin: 0;
 	margin-inline-end: var(--spacing-md);
-
 	width: var(--image-size);
-	height: var(--image-size);
 
 	img {
 		all: unset;
@@ -88,7 +84,6 @@
 
 .guide_categories.collapsed {
 	font: var(--text--heading-sm);
-
 	height: calc(
 		var(--spacing-xl) + var(--spacing-xxl) + var(--spacing-sm) + 1lh + 56px
 	);
@@ -99,10 +94,9 @@
 
 	&.highlightState {
 		border-radius: var(--rounding-md) 0 0 var(--rounding-md);
+		display: initial;
 		margin: -4px -13px;
 		margin-inline-end: var(--spacing-sm);
-
-		display: initial;
 	}
 }
 
@@ -112,14 +106,13 @@
 
 .guide_home_category_name {
 	color: var(--color--fg-main);
+	display: -webkit-box;
 	font: var(--text--heading-sm);
-	padding: 0;
-
 	// Some names are too large for ~200px
 	overflow: hidden;
-	display: -webkit-box;
-	-webkit-line-clamp: 1;
+	padding: 0;
 	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
 }
 
 .guide_home_category_selection {
@@ -127,7 +120,6 @@
 
 	border: none;
 	margin: 0;
-
 	width: unset;
 
 	&:not(:hover) {
@@ -154,8 +146,8 @@
 
 	a {
 		font: var(--text--heading-sm);
-		text-transform: none;
 		padding: 0;
+		text-transform: none;
 	}
 }
 
@@ -165,20 +157,18 @@
 
 .guideSubSectionSelectionLink {
 	color: inherit;
-	padding: 0;
-
 	// Remove whitespace
 	display: flex;
+	padding: 0;
 
 	& > span {
 		@include web.sidebar--list-item;
-
-		width: 100%;
 
 		// Move text overflow from the span's parent, as it's broken by flex
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
+		width: 100%;
 
 		.guideSubSectionSelection.selected > & {
 			@include web.sidebar--list-item-primary;
@@ -187,8 +177,8 @@
 }
 
 #rightContents #GuideTableOfContents.fixed_in_scroll {
+	inset-block-start: calc(var(--global-header-height) + var(--spacing-lg));
 	position: fixed;
-	top: calc(var(--global-header-height) + var(--spacing-lg));
 	width: var(--content--sidebar-width);
 }
 
@@ -211,7 +201,6 @@
 	.workshopItemControls {
 		background-color: transparent;
 		box-shadow: none;
-
 		max-width: unset;
 	}
 
@@ -231,16 +220,16 @@
 .guideTopDescription {
 	color: var(--color--fg-main);
 	font: var(--text--body-lg);
-	padding: 0;
 	margin-block-start: var(--spacing-md);
+	padding: 0;
 }
 
 .searchText {
 	@include controls.text-field($variant: "search");
 
-	position: unset;
-	max-width: unset;
 	height: unset;
+	max-width: unset;
+	position: unset;
 
 	&.defaultText {
 		color: var(--color--secondary);
@@ -249,12 +238,11 @@
 
 .searchTextContainer {
 	background: none;
-	margin: 0;
-
-	position: relative;
-	inset: 0;
-	max-width: unset;
 	height: unset;
+	inset: 0;
+	margin: 0;
+	max-width: unset;
+	position: relative;
 }
 
 .searchTextSubmitImg {

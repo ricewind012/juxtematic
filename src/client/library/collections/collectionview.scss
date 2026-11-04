@@ -24,10 +24,9 @@
 }
 
 #DynamicCollectionSubHeader {
+	align-items: center;
 	gap: var(--spacing-sm);
 	margin-block-start: var(--spacing-sm);
-
-	align-items: center;
 
 	#FreezeButton {
 		@include controls.button;
@@ -45,14 +44,13 @@
 
 	@include controls.icon-button($w: 44px, $child: "svg");
 
+	align-items: center;
 	background: color-mix(in srgb, currentColor 10%, transparent);
 	color: var(--color--fg-dim);
-	margin: 0;
-
 	// TODO(controls): unify icon-button with button
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	margin: 0;
 
 	#DynamicCollectionLabelAndButton & {
 		all: unset;
@@ -80,13 +78,11 @@
 	color: var(--color--fg-main);
 	font: var(--text--heading-sm);
 	gap: 9px;
-
 	height: unset;
 
 	#CollectionName {
 		font: inherit;
 		letter-spacing: 0;
-
 		order: -2;
 	}
 
@@ -98,7 +94,6 @@
 		color: inherit;
 		font: inherit;
 		margin: 0;
-
 		order: -1;
 	}
 
@@ -108,7 +103,6 @@
 
 	.DialogInput_Wrapper {
 		margin: 0;
-
 		order: -2;
 	}
 }

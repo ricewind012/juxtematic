@@ -35,11 +35,10 @@
 
 		color: var(--color--accent-green);
 		font: var(--text--body-md);
-		letter-spacing: 0;
-		padding: var(--spacing-xxs);
-
 		inset-block-start: var(--badge-offset);
 		inset-inline-end: var(--badge-offset);
+		letter-spacing: 0;
+		padding: var(--spacing-xxs);
 	}
 
 	#RightColumn {
@@ -53,8 +52,8 @@
 			svg {
 				@include utils.icon($name: "arrow");
 
-				transform: rotate(-90deg);
 				fill: currentColor;
+				transform: rotate(-90deg);
 			}
 
 			#ButtonText {

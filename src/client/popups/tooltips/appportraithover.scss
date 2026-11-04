@@ -11,12 +11,11 @@
 #AppStatus {
 	color: var(--color--primary);
 	font: var(--text--body-lg);
-	text-transform: none;
-	padding: 0;
 	margin: 0;
 	margin-block-end: var(--spacing-sm);
-
 	min-height: unset;
+	padding: 0;
+	text-transform: none;
 
 	&:empty {
 		height: 0;
@@ -26,13 +25,13 @@
 #AppTitle {
 	color: var(--color--fg-main);
 	font: var(--text--heading-sm);
-	text-shadow: none;
 	margin: 0;
+	text-shadow: none;
 }
 
 #AppTitleContainer {
-	padding: 0;
 	margin-block-end: var(--spacing-sm);
+	padding: 0;
 }
 
 #CapsuleBackgroundContainer {
@@ -43,9 +42,8 @@
 	color: var(--color--fg-dim);
 	font: var(--text--body-md);
 	letter-spacing: 0;
-	padding: 0;
 	margin: 0;
-
+	padding: 0;
 	width: calc(var(--width) - var(--popup--spacing-inline) * 2);
 
 	#Header {

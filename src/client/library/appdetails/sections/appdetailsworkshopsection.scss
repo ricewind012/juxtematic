@@ -18,12 +18,11 @@
 
 	#FeaturedItemHideButton {
 		color: var(--color--fg-dim);
-		padding: 0;
-
+		height: var(--icon-size-md);
 		inset-block-start: 0;
 		inset-inline-end: 0;
+		padding: 0;
 		width: var(--icon-size-md);
-		height: var(--icon-size-md);
 
 		&:hover {
 			color: var(--color--fg-main);
@@ -38,10 +37,9 @@
 		--size: 160px;
 
 		border-radius: var(--rounding-md);
-		margin-inline-end: var(--spacing-md);
-
-		width: var(--size);
 		height: var(--size);
+		margin-inline-end: var(--spacing-md);
+		width: var(--size);
 	}
 
 	#FeaturedItemLink {

@@ -8,10 +8,9 @@
 	);
 
 	box-shadow: none;
-
-	max-width: unset;
 	// its width / 1.5
 	max-height: 149px;
+	max-width: unset;
 
 	#CategoryTileImage {
 		filter: none;
@@ -34,8 +33,8 @@
 	border-block-start: var(--border-sm) solid;
 	border-image: var(--storemenu--border-gradient) 1;
 	gap: var(--spacing-sm);
-	padding-block-start: var(--spacing-xxs);
 	margin-block-start: var(--spacing-xxs);
+	padding-block-start: var(--spacing-xxs);
 }
 
 #TagLink {
@@ -46,19 +45,16 @@
 
 #TagLinks {
 	gap: var(--spacing-xxs);
-
 	height: unset;
 }
 
 #TagLinksContainer {
+	align-items: center;
 	gap: var(--spacing-lg);
 	margin-block-end: var(--spacing-lg);
-
-	align-items: center;
 }
 
 #TopCategories {
-	padding-block-end: var(--spacing-sm);
-
 	max-height: unset;
+	padding-block-end: var(--spacing-sm);
 }

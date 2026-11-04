@@ -18,8 +18,8 @@
 			color: var(--color--fg-main);
 			font: var(--text--heading-md);
 			letter-spacing: 0;
-			text-transform: none;
 			padding: 0;
+			text-transform: none;
 		}
 
 		&:last-child {
@@ -29,17 +29,16 @@
 		// #CopyContainer
 		& > div:has(> button) {
 			background-color: var(--color--bg-main-50);
-			padding: var(--spacing-xxs);
-			margin-block: var(--spacing-sm);
-
 			justify-content: space-between;
+			margin-block: var(--spacing-sm);
+			padding: var(--spacing-xxs);
 
 			// #Text
 			& > h1 {
 				color: var(--color--primary);
 				letter-spacing: 0;
-				padding: 0;
 				margin: 0 var(--spacing-md);
+				padding: 0;
 			}
 		}
 	}
@@ -63,17 +62,16 @@
 }
 
 .friend_block_v2 {
+	align-items: center;
 	background-color: var(--color--bg-main-50);
 	border: none;
 	border-radius: var(--rounding-md);
+	display: flex;
 	gap: var(--spacing-md);
+	height: var(--avatar--size-xl);
 	margin-block-end: var(--spacing-sm);
 	margin-inline-end: var(--spacing-sm);
-
-	display: flex;
-	align-items: center;
 	width: 315px;
-	height: var(--avatar--size-xl);
 
 	&:hover {
 		background-color: var(--color--bg-main);
@@ -95,12 +93,11 @@
 }
 
 .friend_block_content {
-	font: var(--text--body-lg);
-	padding: 0;
-	margin: 0;
-
 	display: flex;
 	flex-direction: column;
+	font: var(--text--body-lg);
+	margin: 0;
+	padding: 0;
 
 	& > br {
 		display: none;
@@ -109,15 +106,13 @@
 
 .friend_block_link_overlay {
 	border-inline-end: var(--border-lg) solid;
-	margin: 0;
-
 	display: flex;
+	margin: 0;
 
 	img {
 		border-radius: var(--rounding-sm);
-
-		width: var(--avatar--size-xl);
 		height: var(--avatar--size-xl);
+		width: var(--avatar--size-xl);
 	}
 }
 
@@ -143,9 +138,8 @@
 
 		background-image: none;
 		box-shadow: none;
-		margin: 0;
-
 		height: unset;
+		margin: 0;
 	}
 
 	.search_results {
@@ -159,12 +153,11 @@
 	}
 
 	.searchBarContainer {
+		inset-block-start: anchor(start);
+		inset-inline-end: calc(anchor(start) + var(--spacing-sm));
 		margin: 0;
-
 		position: absolute;
 		position-anchor: --manage-friends-button;
-		inset-block-start: anchor(top);
-		inset-inline-end: calc(anchor(left) + var(--spacing-sm));
 
 		&::after {
 			content: "";
@@ -181,17 +174,16 @@
 		color: var(--color--fg-main);
 		font: var(--text--heading-sm);
 		letter-spacing: 0;
-		text-transform: none;
 		padding-block: var(--spacing-lg) var(--spacing-xxs);
+		text-transform: none;
 	}
 
 	.title {
 		color: var(--color--fg-main);
+		flex-grow: 1;
 		font: var(--text--body-lg);
 		letter-spacing: 0;
 		text-transform: none;
-
-		flex-grow: 1;
 
 		span {
 			font: inherit;
@@ -221,9 +213,8 @@
 
 		border-radius: var(--rounding-lg);
 		box-shadow: none;
-
-		width: var(--avatar-size);
 		height: var(--avatar-size);
+		width: var(--avatar-size);
 	}
 
 	img {
@@ -237,21 +228,19 @@
 
 .friends_header_bg {
 	background: none;
-	margin-block: var(--content--spacing-block-start);
-
 	height: unset;
+	margin-block: var(--content--spacing-block-start);
 }
 
 .friends_header_ctn {
-	margin: 0;
-
 	align-items: center;
+	margin: 0;
 }
 
 .friends_header_name {
 	font: var(--text--heading-lg);
-	padding: 0;
 	margin-inline-start: var(--spacing-md);
+	padding: 0;
 }
 
 .friends_nav {
@@ -293,8 +282,8 @@
 
 		&:first-child {
 			border: none;
-			padding: 0;
 			margin-block-start: 0;
+			padding: 0;
 		}
 	}
 

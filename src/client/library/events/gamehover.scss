@@ -9,12 +9,11 @@
 	);
 
 	background-image: none;
-	font: var(--text--heading-md);
 	box-shadow: none;
-
-	overflow: visible;
 	display: block;
+	font: var(--text--heading-md);
 	inset-inline-end: 0;
+	overflow: visible;
 
 	svg {
 		margin: 5px;
@@ -24,12 +23,12 @@
 #WishlistButtonText {
 	@include controls.tooltip;
 
-	overflow: visible;
-	position: absolute;
+	height: unset;
 	inset-block-end: calc(100% + var(--spacing-sm));
 	inset-inline-end: 0;
 	min-width: 150px;
-	height: unset;
+	overflow: visible;
+	position: absolute;
 
 	#WishlistButton:not(:hover) & {
 		display: none;

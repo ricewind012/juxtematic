@@ -10,10 +10,9 @@
 		background: var(--color--bg-main);
 		border: none;
 		box-shadow: none;
-		padding: 8px;
-
 		inset-block-start: var(--dialog--spacing-container);
 		inset-inline-end: var(--dialog--spacing-container);
+		padding: 8px;
 	}
 }
 
@@ -40,7 +39,7 @@
 		var(--color--bg-hover) 1.6%,
 		var(--color--bg-hl) 89.87%
 	);
-	margin-top: var(--header--height);
+	margin-block-start: var(--header--height);
 }
 
 #LeftListSizableContainer {
@@ -52,6 +51,5 @@
 
 	background-color: transparent;
 	margin-inline-end: calc(var(--size) * -1);
-
 	width: var(--size);
 }

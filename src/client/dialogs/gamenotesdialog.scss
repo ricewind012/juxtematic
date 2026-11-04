@@ -15,9 +15,8 @@
 	gap: var(--spacing-sm);
 
 	.DialogButton {
-		opacity: 1;
-
 		height: unset;
+		opacity: 1;
 
 		&:not(#CloseWindowButton) {
 			@include controls.icon-button($w: 44px, $child: "svg", $name: "delete");

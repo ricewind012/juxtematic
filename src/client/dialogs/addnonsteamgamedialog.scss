@@ -2,14 +2,12 @@
 @use "shared/utils";
 
 %-row {
-	padding: 0;
-
 	display: grid;
 	grid-template-columns: repeat(2, var(--icon-column-size)) repeat(2, 1fr);
+	padding: 0;
 
 	& > * {
 		padding: var(--spacing-xxs) var(--spacing-sm);
-
 		width: unset;
 	}
 }
@@ -28,9 +26,9 @@
 	}
 
 	#ExePath {
-		opacity: 1;
 		color: var(--color--fg-dim);
 		font: var(--text--body-lg);
+		opacity: 1;
 	}
 }
 
@@ -45,9 +43,9 @@
 
 #GameList {
 	background-color: var(--color--bg-hl);
-	box-shadow: none;
 	border: none;
 	border-radius: 0 0 var(--rounding-lg) var(--rounding-lg);
+	box-shadow: none;
 }
 
 #GameRow {
@@ -59,8 +57,8 @@
 		margin: 0;
 
 		img {
-			width: var(--icon-size-lg);
 			height: var(--icon-size-lg);
+			width: var(--icon-size-lg);
 		}
 	}
 }
@@ -72,9 +70,9 @@
 	border: none;
 	border-block-end: var(--border-sm) solid var(--table-border-color);
 	border-radius: var(--rounding-lg) var(--rounding-lg) 0 0;
+	margin-block-start: var(--spacing-sm);
 	// For scrollbar
 	padding-inline-end: 14px;
-	margin-block-start: var(--spacing-sm);
 
 	& > * {
 		text-transform: none;

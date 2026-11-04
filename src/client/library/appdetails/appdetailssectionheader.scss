@@ -1,16 +1,14 @@
 #Label {
-	gap: var(--spacing-sm);
-
 	align-items: start;
+	gap: var(--spacing-sm);
 }
 
 #SectionHeader {
 	color: var(--appdetailssectionheader--color);
 	font: var(--text--body-lg);
-	letter-spacing: 0;
-	text-transform: none;
-	padding: 0;
-	margin-block-end: var(--spacing-sm);
-
 	height: var(--spacing-xxl);
+	letter-spacing: 0;
+	margin-block-end: var(--spacing-sm);
+	padding: 0;
+	text-transform: none;
 }

@@ -7,13 +7,12 @@
 	@include controls.button($variant: "primary");
 
 	&#StreamingSelector {
-		padding-inline: var(--spacing-sm);
-		margin-inline-start: var(--spacing-xxs);
-
-		display: flex;
 		align-items: center;
-		width: unset;
+		display: flex;
+		margin-inline-start: var(--spacing-xxs);
 		min-width: unset;
+		padding-inline: var(--spacing-sm);
+		width: unset;
 
 		svg {
 			transform: none;

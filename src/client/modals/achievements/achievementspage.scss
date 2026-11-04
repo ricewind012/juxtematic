@@ -13,14 +13,13 @@
 	backdrop-filter: var(--blur);
 	padding: var(--dialog--spacing-container);
 	position: absolute;
-
 	width: 100%;
 	z-index: 11;
 }
 
 #HeaderImage {
-	overflow: hidden;
 	height: 210px;
+	overflow: hidden;
 }
 
 #MyAchievementsHeader {

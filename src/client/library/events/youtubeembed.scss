@@ -1,9 +1,8 @@
 #DynamicLink_Author {
 	color: var(--color--fg-dim);
 	font: var(--text--body-sm);
-	margin: 0;
-
 	height: unset;
+	margin: 0;
 
 	span {
 		color: inherit;
@@ -12,11 +11,11 @@
 
 #DynamicLinkBox {
 	background: var(--color--bg-hl);
+	border-radius: var(--rounding-lg);
 	color: var(--color--fg-dim);
 	font: var(--text--body-sm);
-	border-radius: var(--rounding-lg);
-	padding: var(--spacing-md);
 	margin-block: var(--spacing-sm);
+	padding: var(--spacing-md);
 
 	&:hover {
 		background: var(--color--bg-hover);

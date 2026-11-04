@@ -2,15 +2,14 @@
 @use "shared/utils";
 
 .customization_controls {
+	align-items: center;
 	background-color: var(--color--bg-main);
 	border-radius: var(--rounding-lg) var(--rounding-lg) 0 0;
-	padding: var(--spacing-lg);
-	margin: 0;
-
 	display: flex;
-	align-items: center;
 	flex-direction: row-reverse;
 	justify-content: space-between;
+	margin: 0;
+	padding: var(--spacing-lg);
 
 	select {
 		@include controls.dropdown;
@@ -23,14 +22,13 @@
 }
 
 .customization_controls_nextprev {
-	gap: var(--spacing-sm);
-
 	display: flex;
+	gap: var(--spacing-sm);
 }
 
 .customization_edit_area {
 	background: transparent;
-	margin-bottom: var(--spacing-md);
+	margin-block-end: var(--spacing-md);
 
 	#{controls.button-web-selector(".btn_grey_black")} {
 		@include controls.button;
@@ -41,7 +39,7 @@
 	}
 
 	.profile_customization {
-		margin-bottom: 0;
+		margin-block-end: 0;
 	}
 
 	.profile_customization_block {
@@ -54,7 +52,7 @@
 	}
 
 	[style="text-align: right;"] {
-		margin-top: var(--spacing-sm);
+		margin-block-start: var(--spacing-sm);
 	}
 
 	// This looks much better
@@ -77,8 +75,8 @@
 	);
 	font: var(--text--body-lg);
 	color: var(--color--fg-main);
-	padding: var(--spacing-sm);
 	margin: 0;
+	padding: var(--spacing-sm);
 }
 
 .profile_showcase_drag_and_drop_highlight {
@@ -101,29 +99,27 @@
 
 .profile_showcase_selection_options_ctn {
 	gap: var(--spacing-sm);
-
-	position: relative;
 	max-width: unset;
+	position: relative;
 
 	&::before {
 		--lh: calc(var(--text--line-height) - (var(--text--line-height) - 1) / 2);
 
-		content: "";
+		@include utils.icon($name: "arrow");
 
-		position: absolute;
+		content: "";
 		inset-block-start: calc(var(--button--spacing-block-md) * var(--lh));
 		inset-inline-start: calc(469px - var(--button--spacing-inline) * 2);
+		position: absolute;
 		z-index: 1;
-
-		@include utils.icon($name: "arrow");
 	}
 }
 
 .profile_showcase_selector {
 	background: none;
 	border: none;
+	margin-block-end: var(--spacing-lg);
 	padding: 0;
-	margin-bottom: var(--spacing-lg);
 }
 
 .profile_showcase_sort_btn {
@@ -138,9 +134,8 @@
 }
 
 .profile_showcase_sort_controls {
-	gap: var(--spacing-xxs);
-
 	display: flex;
+	gap: var(--spacing-xxs);
 	position: unset;
 }
 
@@ -152,8 +147,7 @@
 	background-color: var(--color--bg-main);
 	border-radius: 0 0 var(--rounding-lg) var(--rounding-lg);
 	padding: var(--spacing-lg);
-	padding-top: 0;
-
+	padding-block-start: 0;
 	width: unset;
 
 	&:has(> .customization_edit.none_selected:not([style="display: none;"])) {

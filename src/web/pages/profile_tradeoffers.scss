@@ -7,10 +7,9 @@
 		background: none;
 		border: none;
 		box-shadow: none;
-		padding: 0;
-		margin: 0 auto;
-
 		flex-direction: row;
+		margin: 0 auto;
+		padding: 0;
 	}
 
 	.profile_leftcol {
@@ -30,7 +29,6 @@
 
 		#{controls.button-web-selector(".btn_medium")} {
 			margin-block-end: var(--spacing-md);
-
 			width: 100%;
 		}
 	}

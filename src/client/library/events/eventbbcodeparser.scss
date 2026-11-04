@@ -2,11 +2,11 @@
 
 #BlockQuote {
 	background-color: color-mix(in srgb, currentColor 10%, transparent);
-	font: inherit;
 	border: none;
 	border-radius: var(--rounding-md);
-	padding: var(--spacing-sm);
+	font: inherit;
 	margin: var(--spacing-sm) 0;
+	padding: var(--spacing-sm);
 }
 
 #Header1,
@@ -31,7 +31,7 @@
 #LinkButton {
 	@include controls.button($variant: "primary");
 
-	text-decoration: none;
 	box-shadow: none;
 	margin: 0;
+	text-decoration: none;
 }

@@ -14,9 +14,8 @@
 	@include controls.radio-container;
 
 	background-color: var(--color--bg-hl);
-	gap: 0;
-
 	flex-basis: unset;
+	gap: 0;
 
 	:where(& > [role="radio"]) {
 		@include controls.radio($active: "&[aria-checked='true']");

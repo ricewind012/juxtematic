@@ -2,9 +2,9 @@
 @use "shared/utils";
 
 #Controls {
-	padding: 0;
 	margin: 0;
 	margin-block-start: var(--spacing-sm);
+	padding: 0;
 
 	#EmoticonButton {
 		@include controls.button;
@@ -25,6 +25,5 @@
 	@include controls.text-field;
 
 	box-shadow: none;
-
 	width: 100%;
 }

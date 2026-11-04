@@ -15,19 +15,18 @@
 		}
 
 		#Label {
-			transition: var(--transition);
 			background-color: rgba(0, 0, 0, 0.5);
+			transition: var(--transition);
 		}
 	}
 
 	#Label {
 		background-color: transparent;
-		text-transform: none;
 		box-shadow: none;
-
-		inset: var(--border-sm);
-		width: var(--label-size);
 		height: var(--label-size);
+		inset: var(--border-sm);
+		text-transform: none;
+		width: var(--label-size);
 	}
 }
 
@@ -43,16 +42,15 @@
 	background: var(--color--bg-main-20);
 	border-radius: var(--rounding-lg);
 	gap: 0;
-	padding: 0;
-
 	// for border-radius
 	overflow: hidden;
+	padding: 0;
 }
 
 #StoreLinkWithPadding {
+	border: none;
 	color: var(--color--fg-main);
 	font: var(--text--body-md);
-	border: none;
 	padding: var(--spacing-md);
 
 	&:hover {

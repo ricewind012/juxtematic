@@ -1,9 +1,9 @@
 #Container {
-	color: var(--color--fg-dim);
-	font: var(--text--body-md);
-	box-shadow: none;
 	border: none;
 	border-radius: var(--rounding-md);
+	box-shadow: none;
+	color: var(--color--fg-dim);
+	font: var(--text--body-md);
 
 	&#Selected,
 	&:hover {
@@ -29,10 +29,9 @@
 	--size: 21px;
 
 	border-radius: var(--rounding-md);
-	margin-inline-end: 12px;
-
-	width: var(--size);
 	height: var(--size);
+	margin-inline-end: 12px;
+	width: var(--size);
 }
 
 #GameListEntryContainer {

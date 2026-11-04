@@ -6,20 +6,19 @@ $-others: ":where(#StandaloneFieldSeparator, .DialogControlsSection)";
 	--controls-child-max-width: 100%;
 	--controls-list-spacing: 0px;
 
-	gap: var(--gamepaddialog--field-spacing-block);
-
 	flex-direction: column;
+	gap: var(--gamepaddialog--field-spacing-block);
 }
 
 #Field {
 	--field-row-children-spacing: 0px;
 
 	background-color: var(--color--bg-main-50);
-	padding-block: var(--gamepaddialog--field-spacing-block);
-	padding-inline: var(--gamepaddialog--field-spacing-inline);
 	margin-inline-start: calc(
 		var(--gamepaddialog--field-spacing-inline) * var(--indent-level)
 	);
+	padding-block: var(--gamepaddialog--field-spacing-block);
+	padding-inline: var(--gamepaddialog--field-spacing-inline);
 
 	&:nth-child(-n + 1 of &) {
 		border-radius: var(--rounding-lg) var(--rounding-lg) 0 0;
@@ -49,14 +48,12 @@ $-others: ":where(#StandaloneFieldSeparator, .DialogControlsSection)";
 		}
 
 		#FieldLabel::after {
-			content: "";
-
-			display: inline-block;
-			vertical-align: text-top;
-
-			margin-inline-start: var(--spacing-sm);
-
 			@include utils.icon($name: "info");
+
+			content: "";
+			display: inline-block;
+			margin-inline-start: var(--spacing-sm);
+			vertical-align: text-top;
 		}
 	}
 
@@ -78,13 +75,12 @@ $-others: ":where(#StandaloneFieldSeparator, .DialogControlsSection)";
 
 #FieldLabel {
 	color: var(--color--fg-main);
+	display: unset;
 	// Originally HeadingSmall, but it doesn't fit everywhere on the original
 	// settings dialog size.
 	font: var(--text--body-lg);
-
 	// For #accountsettings_EntryValue
 	overflow: hidden;
-	display: unset;
 }
 
 #FieldLabelRow {

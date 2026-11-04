@@ -15,11 +15,10 @@
 }
 
 #LabelHolder {
-	padding: 0;
+	height: min-content;
 	margin-block: auto;
 	margin-inline: var(--spacing-sm);
-
-	height: min-content;
+	padding: 0;
 
 	#PlaytimeStatus {
 		color: inherit;
@@ -31,8 +30,8 @@
 }
 
 #Subsection {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 
 	&#InGame,
 	&#Recent {

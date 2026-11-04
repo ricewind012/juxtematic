@@ -15,11 +15,10 @@
 }
 
 #PlaybackButton {
-	filter: drop-shadow(0px 1px 1px black);
 	color: var(--color--fg-main);
-
-	width: var(--icon-size-lg);
+	filter: drop-shadow(0px 1px 1px black);
 	height: var(--icon-size-lg);
+	width: var(--icon-size-lg);
 }
 
 #PlaybackTime {
@@ -58,7 +57,6 @@
 
 	#HoverTick {
 		background: var(--color--fg-main);
-
 		width: var(--border-lg);
 	}
 

@@ -24,10 +24,9 @@
 		background: var(--color--fg-main);
 		border-radius: 1337px;
 		box-shadow: 0 0 6px var(--color--bg-main);
-		margin-block-start: -4px;
-
-		width: var(--icon-size-sm);
 		height: var(--icon-size-sm);
+		margin-block-start: -4px;
+		width: var(--icon-size-sm);
 	}
 
 	.ui-widget-header {
@@ -92,19 +91,18 @@
 	background-color: var(--color--bg-main);
 	border-radius: 0 var(--rounding-lg) var(--rounding-lg) 0;
 	box-shadow: none;
-
 	// 765px = left side width
 	width: calc(100% - 765px);
 }
 
 .review_recent_events {
 	background-color: var(--color--bg-main-50);
-	font: var(--text--body-md);
 	border-radius: var(--rounding-lg);
+	font: var(--text--body-md);
 	gap: var(--spacing-sm);
-	padding: var(--spacing-lg);
 	margin-block: var(--carousel--section-spacing) var(--spacing-lg);
 	margin-inline-start: calc(var(--content--sidebar-width) + var(--spacing-lg));
+	padding: var(--spacing-lg);
 
 	.outlier_subtitle {
 		color: var(--color--fg-dim);
@@ -145,10 +143,9 @@
 
 	.title:where(#reviews_filter_title) {
 		color: var(--color--fg-main);
+		display: block;
 		font: var(--text--heading-sm);
 		padding-block-end: var(--spacing-lg);
-
-		display: block;
 	}
 }
 
@@ -163,11 +160,11 @@
 .user_reviews_date_range_explanation,
 .user_reviews_offtopic_activity_explanation,
 .user_reviews_display_explanation {
+	border: none;
 	color: var(--color--fg-dim);
 	font: var(--text--body-sm);
-	border: none;
-	padding: 0;
 	margin-block: var(--spacing-sm);
+	padding: 0;
 }
 
 .user_reviews_display_uninformative,
@@ -175,9 +172,8 @@
 .user_reviews_playtime_filter_explanation,
 .user_reviews_playtime_type {
 	border: none;
-	padding: 0;
-
 	min-width: unset;
+	padding: 0;
 }
 
 .user_reviews_display_uninformative {
@@ -190,33 +186,29 @@
 	}
 
 	label {
+		align-items: start;
 		background-color: transparent;
+		gap: var(--spacing-xs);
 		padding: 0;
 		// Fix the whitespace
 		text-indent: -4px;
-		gap: var(--spacing-xs);
-
-		align-items: start;
 	}
 }
 
 .user_reviews_filter_menu {
 	background-color: transparent;
 	padding: 0;
-
 	width: 100%;
 
 	.title {
 		@include web.sidebar--header;
 
 		background: none;
+		cursor: initial;
+		margin-block-end: var(--spacing-xs);
 		padding-inline: 0;
 		padding-block-end: 0;
-		margin-block-end: var(--spacing-xs);
-
 		width: 100%;
-
-		cursor: initial;
 	}
 }
 
@@ -237,16 +229,14 @@
 	:where(& label) {
 		@include web.sidebar--list-item;
 
-		gap: var(--spacing-xxs);
-
-		display: flex;
 		align-items: center;
+		display: flex;
+		gap: var(--spacing-xxs);
 
 		.game_review_summary {
 			margin-inline-start: auto;
-
-			overflow: hidden;
 			order: 1;
+			overflow: hidden;
 		}
 
 		.tooltip {
@@ -270,22 +260,22 @@
 		1lh + var(--button--spacing-block-sm) * 2 + var(--button--border-size) * 2
 	);
 
-	background-color: var(--color--bg-main);
-	font-size: var(--text--body-lg);
-	border-radius: var(--rounding-lg);
-	padding: var(--spacing-md);
-
 	align-items: start;
+	background-color: var(--color--bg-main);
+	border-radius: var(--rounding-lg);
 	flex-direction: column;
+	font-size: var(--text--body-lg);
+	inset-block-start: calc(
+		var(--button-height) + var(--carousel--section-spacing)
+	);
+	padding: var(--spacing-md);
 	position: absolute;
-	top: calc(var(--button-height) + var(--carousel--section-spacing));
 	width: var(--content--sidebar-width);
 
 	&::before {
 		content: attr(aria-label);
-
-		text-transform: uppercase;
 		margin-block-end: var(--spacing-md);
+		text-transform: uppercase;
 	}
 }
 

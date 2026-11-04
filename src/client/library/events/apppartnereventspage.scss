@@ -3,19 +3,17 @@
 #ControlSection {
 	background-color: color-mix(in srgb, var(--color--bg-hl) 2%, transparent);
 	backdrop-filter: var(--blur);
+	height: max-content;
+	inset: 0;
 	// TODO(vars): scrollbar width
 	padding-inline-end: 14px;
-
 	position: absolute;
-	inset: 0;
-	height: max-content;
 }
 
 #ControlSectionRightSide {
+	flex-direction: row-reverse;
 	gap: var(--spacing-sm);
 	margin: var(--spacing-xxs) var(--dialog--spacing-container);
-
-	flex-direction: row-reverse;
 
 	#CloseButton,
 	#ScrollButton {
@@ -24,8 +22,8 @@
 		background: var(--color--bg-main-50);
 		border: none;
 		box-shadow: none;
-		padding: 8px;
 		margin: 0;
+		padding: 8px;
 	}
 
 	#GameArt > img {
@@ -53,8 +51,8 @@
 
 	&#WithReminder {
 		background: none;
-		padding: 0;
 		margin: 0;
+		padding: 0;
 	}
 }
 

@@ -12,30 +12,28 @@
 }
 
 .achievement_icons {
-	gap: 8px;
-	margin-left: 8px;
-
 	display: flex;
+	gap: 8px;
+	margin-inline-start: 8px;
 	width: unset;
 }
 
 .achievement_progress_bar_ctn {
+	@include controls.progress_bar($inner: ".progress_bar");
+
 	border: none;
 	box-shadow: none;
-	margin: 0;
-
-	width: var(--ach-progress-bar-width);
 	height: unset;
-
-	@include controls.progress_bar($inner: ".progress_bar");
+	margin: 0;
+	width: var(--ach-progress-bar-width);
 }
 
 .customization_edit_instructions {
 	padding: var(--spacing-sm) var(--spacing-lg);
 
 	.profile_customization_header {
-		font: var(--text--heading-sm);
 		color: var(--color--fg-main);
+		font: var(--text--heading-sm);
 		padding: 0;
 	}
 }
@@ -46,16 +44,14 @@
 }
 
 .favoritegame_showcase .showcase_content_bg {
-	margin: 0;
-
-	display: flex;
 	align-items: center;
+	display: flex;
+	margin: 0;
 }
 
 .favoritegame_showcase_game {
-	margin: 0;
-
 	flex-grow: 1;
+	margin: 0;
 }
 
 .favoritegroup_name {
@@ -63,8 +59,8 @@
 }
 
 .favoritegroup_namerow {
-	font: var(--text--body-lg);
 	color: var(--color--fg-dim);
+	font: var(--text--body-lg);
 }
 
 .favoritegroup_showcase_group {
@@ -85,18 +81,17 @@
 .game_info_achievement {
 	--size: 30px;
 
+	height: var(--size);
 	margin: 0;
-
 	min-width: var(--size);
 	width: unset;
-	height: var(--size);
 
 	&.plus_more {
 		background-color: var(--color--bg-hl);
-		color: var(--color--fg-main);
 		border: none;
 		border-radius: var(--rounding-sm);
 		box-shadow: none;
+		color: var(--color--fg-main);
 
 		&:hover {
 			background-color: var(--color--bg-hover);
@@ -105,9 +100,8 @@
 
 	img {
 		border-radius: var(--rounding-sm);
-
-		width: var(--size);
 		height: var(--size);
+		width: var(--size);
 	}
 }
 
@@ -115,38 +109,35 @@
 	--ach-progress-bar-width: 200px;
 	--ach-progress-width: 85px;
 
-	gap: 8px;
-
-	float: unset;
-	display: flex;
 	align-items: center;
+	display: flex;
+	float: unset;
+	gap: 8px;
 	width: unset;
 
 	.ellipsis {
-		width: var(--ach-progress-width);
 		display: inline-flex;
+		width: var(--ach-progress-width);
 	}
 }
 
 .game_info_achievement_summary {
+	align-items: center;
+	display: flex;
 	gap: var(--spacing-xxs);
 	margin: 0;
-
-	display: flex;
-	align-items: center;
 
 	.whiteLink {
 		@include utils.icon($name: "achievements");
 
-		font-size: 0;
-
 		display: inline-block;
+		font-size: 0;
 	}
 }
 
 .game_info_achievements_summary_area {
-	display: flex;
 	align-items: center;
+	display: flex;
 	width: calc(
 		160px + var(--ach-progress-bar-width) + var(--ach-progress-width)
 	);
@@ -157,8 +148,7 @@
 }
 
 .game_info_cap {
-	margin-right: var(--cap-gutter);
-
+	margin-inline-end: var(--cap-gutter);
 	width: var(--cap-width);
 }
 
@@ -167,33 +157,33 @@
 
 	&::before,
 	&::after {
-		content: "";
-
 		@include utils.icon;
 
 		color: color-mix(in srgb, var(--color--fg-dim) 50%, transparent);
-
+		content: "";
 		display: block;
+		inset-inline-start: calc(var(--icon-size-md) * -1 - var(--spacing-xxs));
 		position: absolute;
-		left: calc(var(--icon-size-md) * -1 - var(--spacing-xxs));
 	}
 
 	&::before {
 		--icon-name: icon("calendar");
-		top: -1px;
+
+		inset-block-start: -1px;
 	}
 
 	&::after {
 		--icon-name: icon("clock");
-		top: 20px;
+
+		inset-block-start: 20px;
 	}
 }
 
 .game_info_stats {
 	background-color: var(--color--bg-main);
 	border-radius: var(--rounding-md);
+	margin-block-start: var(--spacing-sm);
 	padding: var(--spacing-md);
-	margin-top: var(--spacing-sm);
 }
 
 .game_info_stats_publishedfilecounts {
@@ -210,9 +200,8 @@
 .game_info_stats_rule {
 	background-color: var(--color--border);
 	border: none;
-	margin-block: var(--spacing-sm);
-
 	height: var(--border-sm);
+	margin-block: var(--spacing-sm);
 
 	.game_info_badge_only_ctn + & {
 		display: none;
@@ -220,18 +209,16 @@
 }
 
 .game_name {
+	align-items: center;
+	display: flex;
+	flex-grow: 1;
 	font: var(--text--body-lg);
 	padding: 0;
-
-	display: flex;
-	align-items: center;
-	flex-grow: 1;
 }
 
 .item_count_stat {
-	padding: 0;
-
 	align-self: center;
+	padding: 0;
 }
 
 .item_showcase {
@@ -262,7 +249,7 @@
 
 .profile_awards,
 .profile_badges {
-	margin-bottom: 6px;
+	margin-block-end: 6px;
 }
 
 .profile_item_links,
@@ -277,16 +264,15 @@
 	img {
 		--size: 45px;
 
-		width: var(--size);
 		height: var(--size);
+		width: var(--size);
 	}
 }
 
 .profile_ban_status {
 	color: var(--color--accent-red);
 	font: var(--text--body-md);
-	margin-top: var(--spacing-sm);
-	margin-bottom: 0;
+	margin-block: var(--spacing-sm) 0;
 }
 
 .profile_ban_info {
@@ -296,40 +282,37 @@
 .profile_content {
 	font: var(--text--body-md);
 	padding: 40px;
-	padding-top: 0;
-
+	padding-block-start: 0;
 	width: var(--content--width-sm);
 }
 
 .profile_content_inner {
-	gap: var(--spacing-xxl);
-
 	display: flex;
 	flex-direction: row-reverse;
+	gap: var(--spacing-xxl);
 }
 
 .profile_comment_area,
 .profile_customization {
 	background-color: var(--color--bg-main-20);
-	font: var(--text--body-md);
 	border-radius: var(--rounding-md);
+	font: var(--text--body-md);
+	margin-block-end: 23px;
 	padding: 0;
-	margin-bottom: 23px;
 }
 
 .profile_comment_area {
-	margin-top: 0;
+	margin-block-start: 0;
 }
 
 .profile_count_link {
 	background-color: var(--color--bg-main);
 	border-radius: var(--rounding-md);
-	margin-bottom: 0;
+	margin-block-end: 0;
 
 	a {
-		padding: var(--spacing-sm);
-
 		display: flex;
+		padding: var(--spacing-sm);
 	}
 
 	span {
@@ -337,9 +320,8 @@
 	}
 
 	.count_link_label {
-		text-decoration: none;
-
 		flex-grow: 1;
+		text-decoration: none;
 	}
 
 	.profile_count_link_total {
@@ -348,13 +330,12 @@
 }
 
 .profile_count_link_preview {
-	padding: var(--spacing-sm);
-	padding-block-start: 0;
-	gap: 6px;
-
 	display: flex;
 	flex-direction: column;
+	gap: 6px;
 	justify-content: space-between;
+	padding: var(--spacing-sm);
+	padding-block-start: 0;
 
 	.profile_awards &,
 	.profile_badges & {
@@ -368,11 +349,11 @@
 
 	.profile_count_link {
 		padding: var(--spacing-sm);
-		padding-bottom: 0;
+		padding-block-end: 0;
 
 		a {
 			margin: calc(var(--spacing-sm) * -1);
-			margin-bottom: 0;
+			margin-block-end: 0;
 		}
 	}
 }
@@ -388,13 +369,13 @@
 }
 
 .profile_customization_block {
-	font: var(--text--body-md);
 	border-radius: 0;
+	font: var(--text--body-md);
 	padding: var(--spacing-sm);
 
 	& > .badge_showcase {
-		display: flex;
 		flex-direction: column;
+		display: flex;
 	}
 
 	& > div > .recentgame_quicklinks {
@@ -404,12 +385,11 @@
 }
 
 .profile_customization_editlink {
+	display: block;
 	font: var(--text--body-lg);
+	inset-inline-end: 0;
 	line-height: inherit;
 	padding: var(--spacing-sm);
-
-	display: block;
-	right: 0;
 }
 
 .profile_customization_editlink_text {
@@ -424,10 +404,10 @@
  * but primary is better for contrast. */
 .commentthread_header,
 .profile_customization_header {
-	font: var(--text--body-lg);
 	color: var(--color--fg-main);
-	padding: var(--spacing-sm);
+	font: var(--text--body-lg);
 	margin: 0;
+	padding: var(--spacing-sm);
 }
 
 .profile_friend_links,
@@ -437,8 +417,7 @@
 	.profile_count_link {
 		background-color: transparent;
 		margin: calc(var(--spacing-md) * -1);
-		margin-bottom: 0;
-
+		margin-block-end: 0;
 		overflow: visible;
 
 		a {
@@ -457,20 +436,19 @@
 
 .profile_group {
 	font: var(--text--body-lg);
-
 	height: unset;
 
 	&.profile_primary_group {
+		margin: 0;
 		// Align with 64px image
 		padding-block: 11px;
-		margin: 0;
 	}
 
 	&:not(.profile_primary_group) {
-		padding-top: 0;
+		padding-block-start: 0;
 
 		.profile_group_avatar {
-			top: 6px;
+			inset-block-start: 6px;
 		}
 	}
 }
@@ -492,11 +470,10 @@
 	--avatar-gap: 33px;
 	--avatar-size: 220px;
 
-	padding: 40px;
-	padding-bottom: 31px;
 	margin: 0;
-
 	max-width: unset;
+	padding: 40px;
+	padding-block-end: 31px;
 
 	.header_real_name_spacer {
 		height: 59px;
@@ -524,19 +501,17 @@
 }
 
 .profile_header_actions {
-	gap: 6px;
-
 	display: flex;
 	flex-wrap: wrap;
+	gap: 6px;
 }
 
 .profile_header_badge {
 	background-color: transparent;
 	border-radius: 0;
-	padding: 0;
-	margin: 0;
-
 	height: unset;
+	margin: 0;
+	padding: 0;
 }
 
 .profile_header_badge_instructions {
@@ -556,7 +531,6 @@
 
 	background-color: var(--color--bg-main-20);
 	border-radius: var(--rounding-lg);
-
 	// For rounding
 	overflow: hidden;
 
@@ -564,8 +538,8 @@
 		@extend %-badge-info;
 
 		img {
-			width: var(--badge-size);
 			height: var(--badge-size);
+			width: var(--badge-size);
 		}
 
 		.name {
@@ -573,33 +547,31 @@
 		}
 
 		.xp {
-			font: var(--text--body-sm);
 			color: var(--color--fg-dim);
+			font: var(--text--body-sm);
 		}
 	}
 
 	.persona_level {
 		@extend %-badge-info;
 
+		align-items: center;
 		color: var(--color--fg-main);
-		font: var(--text--body-lg);
-		margin: 0;
-
 		display: flex;
 		flex-direction: row-reverse;
-		align-items: center;
+		font: var(--text--body-lg);
 		justify-content: start;
+		margin: 0;
 
 		.friendPlayerLevel {
-			width: var(--badge-size);
 			height: var(--badge-size);
+			width: var(--badge-size);
 		}
 	}
 }
 
 .profile_header_bg {
-	padding-top: 51px;
-
+	padding-block-start: 51px;
 	max-width: var(--content--width-sm);
 }
 
@@ -613,10 +585,9 @@
 }
 
 .profile_header_centered_col {
-	padding-inline: var(--avatar-gap) var(--spacing-xxl);
-
 	display: flex;
 	flex-direction: column;
+	padding-inline: var(--avatar-gap) var(--spacing-xxl);
 
 	.persona_name {
 		color: var(--color--fg-main);
@@ -631,9 +602,8 @@
 .profile_header_content {
 	color: var(--color--fg-main);
 	font: var(--text--body-lg);
-	padding: 0;
-
 	grid-template-columns: auto 1fr var(--content--sidebar-width);
+	padding: 0;
 }
 
 .profile_header_valve_employee {
@@ -687,10 +657,9 @@
 }
 
 .profile_item_links {
-	gap: 6px;
-
 	display: flex;
 	flex-direction: column;
+	gap: 6px;
 }
 
 .profile_leftcol {
@@ -713,7 +682,7 @@
 	}
 
 	&:where(div) {
-		padding-bottom: 187px;
+		padding-block-end: 187px;
 
 		&.has_profile_background {
 			background-attachment: fixed;
@@ -739,37 +708,35 @@
 }
 
 .profile_rightcol {
-	background-color: transparent;
 	backdrop-filter: none;
-	padding: 0;
-
+	background-color: transparent;
 	flex-shrink: 0;
+	padding: 0;
 	width: var(--content--sidebar-width);
 
 	& > * {
-		background-color: var(--color--bg-main-50);
 		backdrop-filter: var(--blur);
+		background-color: var(--color--bg-main-50);
 		border-radius: var(--rounding-lg);
+		margin-block-end: var(--spacing-lg);
 		padding: var(--spacing-md);
-		margin-bottom: var(--spacing-lg);
 	}
 }
 
 .profile_summary {
 	font: var(--text--body-lg);
-
 	height: 4lh;
 }
 
 .profile_summary_footer {
 	font: var(--text--body-md);
-	margin-top: 13px;
+	margin-block-start: 13px;
 }
 
 .recent_game {
 	background-color: var(--color--bg-main-50);
 	border-radius: var(--rounding-md);
-	margin-bottom: 11px;
+	margin-block-end: 11px;
 
 	.game_capsule {
 		// Restrict height in case the image fails to load and goes OOB
@@ -783,17 +750,16 @@
 
 .screenshot_showcase_primary {
 	margin-inline-end: var(--spacing-sm);
-
-	width: calc(100% - var(--spacing-sm) - 102px);
 	max-width: unset;
+	width: calc(100% - var(--spacing-sm) - 102px);
 }
 
 .screenshot_showcase_screenshot {
-	transition: var(--transition);
 	background-color: var(--color--bg-main-20);
 	border: none;
 	border-radius: var(--rounding-lg);
 	margin-block-end: var(--spacing-xs);
+	transition: var(--transition);
 
 	&:hover {
 		background-color: var(--color--bg-main-50);
@@ -809,22 +775,19 @@
 }
 
 .screenshot_showcase_stat {
+	align-items: center;
 	color: var(--color--primary);
+	display: inline-flex;
 	font: var(--text--body-sm);
 	gap: var(--spacing-xxs);
 	margin-inline-end: var(--spacing-lg);
 
-	display: inline-flex;
-	align-items: center;
-
 	&::before {
-		content: "";
-
 		@include utils.icon($size: "sm");
 
-		display: block;
-
 		color: var(--color--fg-dim);
+		content: "";
+		display: block;
 	}
 }
 
@@ -855,9 +818,9 @@
 }
 
 .showcase_bodylabel {
-	font: var(--text--heading-sm);
 	color: var(--color--fg-main);
 	display: none;
+	font: var(--text--heading-sm);
 }
 
 .showcase_content_bg {
@@ -875,18 +838,16 @@
 }
 
 .showcase_gamecollector_games {
-	gap: var(--spacing-sm);
-
 	display: flex;
 	flex-wrap: wrap;
+	gap: var(--spacing-sm);
 	justify-content: center;
 }
 
 .showcase_item_detail_title {
 	font: var(--text--heading-lg);
-	padding-top: 0;
-
 	max-height: 69px;
+	padding-block-start: 0;
 }
 
 .showcase_notes {
@@ -894,11 +855,10 @@
 }
 
 .showcase_slot_row {
-	gap: var(--spacing-sm);
-	margin-block-end: var(--spacing-sm);
-
 	display: flex;
 	flex-wrap: wrap;
+	gap: var(--spacing-sm);
+	margin-block-end: var(--spacing-sm);
 }
 
 .item_count_stat,
@@ -910,8 +870,8 @@
 	}
 
 	.label {
-		font: var(--text--body-lg);
 		color: var(--color--fg-dim);
+		font: var(--text--body-lg);
 		padding: 0;
 	}
 }
@@ -934,5 +894,5 @@
 }
 
 .workshop_showcase_item_image {
-	margin-right: var(--spacing-md);
+	margin-inline-end: var(--spacing-md);
 }

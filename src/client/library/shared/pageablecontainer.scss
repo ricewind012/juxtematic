@@ -14,17 +14,15 @@
 #Name {
 	color: var(--color--fg-main);
 	font: var(--text--heading-sm);
-
-	position: absolute;
 	inset-block-start: calc(var(--pageablecontainer--header-offset) * -1);
 	inset-inline-start: 0;
+	position: absolute;
 }
 
 #PageableContainer {
 	@include carousel.container;
 
 	margin-block-start: var(--pageablecontainer--header-offset);
-
 	position: relative;
 
 	// In app details
@@ -49,22 +47,20 @@
 
 	@include controls.icon-button($w: 44px, $child: "svg", $name: "close");
 
+	align-items: center;
 	// TODO(controls):
 	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	position: absolute;
 	inset-block-start: 0;
 	inset-inline-end: 0;
+	justify-content: center;
+	position: absolute;
 }
 
 #PageClickContainer {
-	justify-content: space-between;
-	position: absolute;
 	inset: 0;
-
+	justify-content: space-between;
 	pointer-events: none;
+	position: absolute;
 
 	&:empty {
 		--inset-inline: 0;
@@ -76,9 +72,8 @@
 		);
 
 		color: var(--color--fg-dim);
-
-		width: 100%;
 		height: 100%;
+		width: 100%;
 
 		&::before,
 		&::after {
@@ -95,14 +90,12 @@
 			$child: "svg"
 		);
 
-		opacity: 1;
 		margin: 0;
-
+		opacity: 1;
 		pointer-events: all;
 
 		&#Disabled {
 			opacity: var(--dim-opacity);
-
 			pointer-events: none;
 		}
 	}

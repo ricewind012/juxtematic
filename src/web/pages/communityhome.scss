@@ -5,31 +5,28 @@
 	border: none;
 	border-radius: var(--rounding-lg);
 	margin-block-start: var(--content--spacing-block-start);
-
 	min-height: 220px;
 }
 
 %-container {
-	padding-inline: 0;
-
-	width: var(--content--width-sm);
 	max-width: unset;
+	padding-inline: 0;
+	width: var(--content--width-sm);
 }
 
 .community_home_app_shortcuts {
 	@extend %-box;
 
 	.appHubShortcut {
-		margin-bottom: var(--spacing-xxs);
-
 		height: unset;
+		margin-block-end: var(--spacing-xxs);
 	}
 
 	.appHubShortcut_Icon {
 		--size: calc(var(--icon-size-sm) * 2);
 
-		width: var(--size);
 		height: var(--size);
+		width: var(--size);
 	}
 
 	.appHubShortcut_Title {
@@ -93,15 +90,15 @@
 
 .community_home_search_divider {
 	background-color: transparent;
-	border-top-color: transparent;
+	border-block-start-color: transparent;
 	margin-block: var(--spacing-sm);
 }
 
 .community_home_search_title {
 	color: var(--color--fg-main);
 	font: var(--text--body-md);
+	padding-block-end: var(--spacing-xxs);
 	text-transform: none;
-	padding-bottom: var(--spacing-xxs);
 }
 
 .community_home_shortcut_content {
@@ -111,12 +108,11 @@
 .community_home_sort_buttons {
 	@include controls.tabs-container;
 
+	align-items: center;
 	color: var(--color--fg-dim);
 	padding-inline-start: calc(
 		var(--tab--container-spacing) + var(--tab--container-controls-offset)
 	);
-
-	align-items: center;
 	width: 100%;
 
 	#{controls.button-web-selector(".btn_small")} {

@@ -3,9 +3,8 @@
 #AchievementProgressContainer {
 	@include controls.progress-bar($inner: "#AchievementProgress");
 
-	margin-block: var(--spacing-xs) 0;
-
 	height: unset;
+	margin-block: var(--spacing-xs) 0;
 }
 
 #Additional {
@@ -30,16 +29,15 @@
 #Remainder {
 	background-color: var(--color--bg-hl);
 	border-radius: var(--rounding-md);
-
-	width: var(--achievementiconbase--size);
 	height: var(--achievementiconbase--size);
+	width: var(--achievementiconbase--size);
 }
 
 #RemainderText {
 	color: var(--color--fg-main);
 	font: var(--text--body-lg);
-	line-height: var(--achievementiconbase--size);
 	letter-spacing: 0;
+	line-height: var(--achievementiconbase--size);
 	text-shadow: none;
 }
 

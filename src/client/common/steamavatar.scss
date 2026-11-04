@@ -2,18 +2,16 @@
 	border: var(--avatar--border-size) solid;
 	border-radius: var(--avatar--border-radius);
 	box-shadow: none;
-
-	width: 100%;
 	height: 100%;
+	width: 100%;
 }
 
 #avatarHolder {
-	transform: none;
 	border-radius: var(--avatar--border-radius);
-
-	position: relative;
-	width: var(--steamavatar--size);
 	height: var(--steamavatar--size);
+	position: relative;
+	transform: none;
+	width: var(--steamavatar--size);
 
 	&:where(.X-Small) {
 		--avatar--border-radius: var(--rounding-sm);

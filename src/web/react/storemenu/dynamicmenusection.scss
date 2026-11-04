@@ -2,9 +2,9 @@
 @use "shared/utils";
 
 #HorizontalRule {
-	opacity: 1;
 	background-image: var(--storemenu--border-gradient);
 	margin-block: var(--spacing-xxs);
+	opacity: 1;
 }
 
 #Link {
@@ -28,12 +28,11 @@
 #ViewAllLink {
 	@include style.link;
 
+	align-items: center;
+	display: flex;
 	font: var(--text--body-md);
 	gap: var(--spacing-xxs);
 	margin: 0;
-
-	display: flex;
-	align-items: center;
 
 	svg {
 		@include utils.icon($name: "arrow", $remove: true);

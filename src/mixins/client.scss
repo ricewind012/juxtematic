@@ -17,8 +17,8 @@
 @mixin appdetails--section {
 	background: rgba(49, 56, 67, 0.5);
 	border-radius: var(--rounding-lg);
-	padding: var(--spacing-xl);
 	margin-block-end: 16px;
+	padding: var(--spacing-xl);
 }
 
 @mixin gamelist--icon-button($icon: "name", $active-selector) {
@@ -30,8 +30,8 @@
 		currentColor var(--percentage),
 		transparent
 	);
-	color: var(--color--fg-dim);
 	border-radius: var(--rounding-md);
+	color: var(--color--fg-dim);
 	padding: var(--spacing-xs);
 
 	&:hover {
@@ -65,18 +65,15 @@
 	font: var(--text--body-md);
 	margin-block-end: var(--spacing-sm);
 	margin-inline-start: var(--offset);
-
 	position: relative;
 
 	&::before {
-		content: "";
-
 		@include utils.icon($name: "info", $size: "lg");
 
-		position: absolute;
-
 		color: var(--color--fg-dim);
+		content: "";
 		margin-inline-start: calc(var(--offset) * -1);
+		position: absolute;
 	}
 }
 
@@ -84,16 +81,15 @@
 	color: var(--color--fg-dim);
 	font: var(--text--heading-md);
 	letter-spacing: 0;
-	text-transform: none;
-
 	min-height: 50px;
+	text-transform: none;
 }
 
 @mixin settings--section {
 	background-color: var(--color--bg-main-50);
 	border-radius: var(--rounding-lg);
-	padding: var(--spacing-lg);
 	margin-block-start: var(--spacing-lg);
+	padding: var(--spacing-lg);
 }
 
 @mixin titlebarcontrols--button {

@@ -10,8 +10,8 @@
 #EventDetailsSubTitle {
 	color: var(--color--fg-dim);
 	font: var(--text--body-md);
-	padding-block-end: var(--spacing-sm);
 	margin: 0;
+	padding-block-end: var(--spacing-sm);
 }
 
 #EventDetailTitle {
@@ -25,10 +25,9 @@
 		color-mix(in srgb, var(--color--primary) 20%, transparent) 10%,
 		transparent 80%
 	);
-	padding: var(--dialog--spacing-container);
-
 	display: flex;
 	flex-direction: column;
+	padding: var(--dialog--spacing-container);
 
 	#EventDetailTimeInfo {
 		color: var(--color--fg-main);

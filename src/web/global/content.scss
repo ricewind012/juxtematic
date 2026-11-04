@@ -10,9 +10,9 @@ h2 {
 	color: var(--color--fg-main);
 	font: var(--text--heading-md);
 	letter-spacing: 0;
-	text-transform: none;
-	padding: 0;
 	margin: 0;
+	padding: 0;
+	text-transform: none;
 
 	// TODO: tab stuff in the home page has this, but some aren't supposed to be
 	// seen
@@ -38,17 +38,17 @@ h3 {
 
 .bb_blockquote {
 	background-color: var(--color--bg-main-50);
-	font: inherit;
 	border: none;
 	border-radius: var(--rounding-md);
-	padding: var(--spacing-sm);
+	font: inherit;
 	margin: 0;
-	margin-bottom: var(--spacing-sm);
+	margin-block-end: var(--spacing-sm);
+	padding: var(--spacing-sm);
 
 	.bb_quoteauthor {
 		color: var(--color--fg-dim);
 		font: inherit;
-		margin-bottom: var(--spacing-xxs);
+		margin-block-end: var(--spacing-xxs);
 	}
 }
 
@@ -60,9 +60,8 @@ h3 {
 .bb_link_host {
 	color: var(--color--fg-dim);
 	font: var(--text--body-sm);
-
-	position: relative;
 	inset-block-start: -1px;
+	position: relative;
 }
 
 // TODO: style in forums
@@ -126,10 +125,9 @@ h3 {
 }
 
 .maincontent {
-	gap: var(--spacing-lg);
-
 	display: flex;
 	flex-direction: row-reverse;
+	gap: var(--spacing-lg);
 	width: var(--content--width-sm);
 
 	& > br {
@@ -140,17 +138,16 @@ h3 {
 #mainContents {
 	color: var(--color--fg-main);
 	gap: var(--spacing-md);
-	padding: 0;
-	margin-top: var(--spacing-lg);
-
+	margin-block-start: var(--spacing-lg);
 	max-width: var(--content--width-lg);
+	padding: 0;
 }
 
 .page_content {
+	max-width: unset;
 	width: calc(
 		var(--content--sidebar-width) + var(--spacing-md) + var(--content--width-sm)
 	);
-	max-width: unset;
 }
 
 .pagecontent {
@@ -161,16 +158,16 @@ h3 {
 	color: var(--color--fg-main);
 	font: var(--text--heading-lg);
 	letter-spacing: 0;
+	padding: 0;
 	text-shadow: none;
 	text-transform: none;
-	padding: 0;
 }
 
 .page_header_ctn {
 	background: none;
+	margin-block-start: var(--content--spacing-block-start);
+	margin-block-end: var(--spacing-xxl);
 	padding: 0;
-	margin-top: var(--content--spacing-block-start);
-	margin-bottom: var(--spacing-xxl);
 
 	.page_content {
 		flex-direction: column;
@@ -196,11 +193,10 @@ h3 {
 
 .rightbox {
 	background: none;
-	gap: var(--spacing-sm);
-	padding: 0;
-
 	display: flex;
 	flex-direction: column;
+	gap: var(--spacing-sm);
+	padding: 0;
 
 	.content {
 		padding: 0;
@@ -232,8 +228,8 @@ h3 {
 	// TODO: unify
 	@include web.sidebar--header;
 
-	padding-inline: 0;
 	padding-block-end: 0;
+	padding-inline: 0;
 }
 
 .rightbox_footer,
@@ -244,13 +240,12 @@ h3 {
 body:not(.game_bg) .rightcol {
 	background: var(--color--bg-main);
 	border-radius: var(--rounding-lg);
-	gap: var(--spacing-sm);
-	padding: var(--spacing-md);
-	margin: 0;
-
-	flex-shrink: 0;
 	display: flex;
 	flex-direction: column;
+	flex-shrink: 0;
+	gap: var(--spacing-sm);
+	margin: 0;
+	padding: var(--spacing-md);
 	width: var(--content--sidebar-width);
 	z-index: 0;
 }
@@ -274,28 +269,25 @@ body:not(.game_bg) .rightcol {
 }
 
 .review_award_ctn {
-	gap: var(--spacing-sm);
-
 	display: flex;
+	gap: var(--spacing-sm);
 }
 
 .review_award_icon {
-	width: var(--icon-size-sm);
 	height: var(--icon-size-sm);
+	width: var(--icon-size-sm);
 }
 
 .shared_autocollapse_fade {
 	background: none;
 
 	&::after {
+		background: linear-gradient(transparent, var(--color--bg-main));
 		content: "";
-
-		position: absolute;
 		inset-block-end: 44px;
 		inset-inline: 0;
 		height: 100px;
-
-		background: linear-gradient(transparent, var(--color--bg-main));
+		position: absolute;
 	}
 
 	.shared_autocollapse_readmore {

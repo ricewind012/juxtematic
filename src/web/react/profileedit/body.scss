@@ -3,11 +3,10 @@
 
 #HTMLErrorBox {
 	background: var(--color--accent-red);
-	color: var(--color--fg-main);
 	border-radius: var(--rounding-lg);
+	color: var(--color--fg-main);
+	margin-block: 0 var(--spacing-lg);
 	padding: var(--spacing-sm);
-	margin-top: 0;
-	margin-bottom: var(--spacing-lg);
 }
 
 #ItemPickerCtn {
@@ -30,10 +29,10 @@
 #ProfileBoxTitle {
 	@include web.section--header;
 
-	letter-spacing: 0;
-	text-transform: none;
 	border: none;
+	letter-spacing: 0;
 	padding: 0;
+	text-transform: none;
 }
 
 #SaveCancelButtons {

@@ -37,7 +37,6 @@
 	.reaction_award_info {
 		padding: 0;
 		padding-block-start: var(--spacing-lg);
-
 		text-align: start;
 	}
 
@@ -130,13 +129,12 @@
 }
 
 .hover_tag_row {
-	font: var(--text--body-sm);
-	gap: var(--spacing-xxs);
-	margin: 0;
-
 	display: flex;
 	flex-wrap: wrap;
+	font: var(--text--body-sm);
+	gap: var(--spacing-xxs);
 	height: calc(1lh + 6.5px * 2);
+	margin: 0;
 }
 
 .hover_screenshots {

@@ -1,14 +1,13 @@
 #FatButton {
+	align-items: start;
 	border: none;
 	border-radius: 0;
+	flex-direction: column;
 	gap: 0;
-	padding-inline: var(--gamepaddialog--field-spacing-inline);
+	justify-content: start;
 	margin-block: calc(var(--spacing-xxs) * -1);
 	margin-inline: calc(var(--gamepaddialog--field-spacing-inline) * -1);
-
-	flex-direction: column;
-	align-items: start;
-	justify-content: start;
+	padding-inline: var(--gamepaddialog--field-spacing-inline);
 	position: relative;
 	width: calc(100% + var(--gamepaddialog--field-spacing-inline) * 2);
 
@@ -18,12 +17,11 @@
 
 	svg {
 		color: inherit;
-		margin: 12px 0;
-
-		position: absolute;
-		inset-inline-end: var(--gamepaddialog--field-spacing-inline);
-		width: var(--icon-size-md);
 		height: var(--icon-size-md);
+		inset-inline-end: var(--gamepaddialog--field-spacing-inline);
+		margin: 12px 0;
+		position: absolute;
+		width: var(--icon-size-md);
 	}
 
 	#Label {

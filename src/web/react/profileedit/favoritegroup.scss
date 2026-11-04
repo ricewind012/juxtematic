@@ -4,15 +4,14 @@
 }
 
 #Group {
-	margin: 0;
-
 	// V*lve forgot about that
 	align-items: center;
+	margin: 0;
 }
 
 #FavoriteGroup {
+	margin-block-end: var(--spacing-lg);
 	padding: 0;
-	margin-bottom: var(--spacing-lg);
 
 	& + div {
 		--columns: 3;

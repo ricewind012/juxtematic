@@ -3,14 +3,13 @@
 #FooterBlurImage {
 	filter: var(--blur);
 	opacity: 1;
-
 	position: relative;
 	z-index: -1;
 }
 
 #FooterBlurImageContainer {
-	filter: none;
 	background-color: var(--color--bg-main-50);
+	filter: none;
 }
 
 #LibraryItemActionButton {
@@ -18,16 +17,15 @@
 	--icon-size-lg: 50px;
 
 	background: color-mix(in srgb, currentColor 20%, transparent);
-	color: var(--color--primary);
 	border: none;
 	border-radius: var(--rounding-md);
 	box-shadow: none;
-	padding: var(--spacing-xxs);
-
+	color: var(--color--primary);
+	height: var(--action-button-size);
 	inset: var(--spacing-sm);
 	inset-block-start: unset;
+	padding: var(--spacing-xxs);
 	width: var(--action-button-size);
-	height: var(--action-button-size);
 
 	&:hover {
 		background: color-mix(in srgb, currentColor 50%, transparent);
@@ -55,19 +53,15 @@
 	&#InCollection,
 	&#InRecentGames {
 		border-radius: var(--rounding-lg);
-
-		// width: var(--appportrait--portrait-width);
-		// height: var(--appportrait--portrait-height);
 	}
 
 	&#InDownloads {
 		border-radius: var(--rounding-md);
-
-		width: var(--appportrait--landscape-width);
 		height: var(--appportrait--landscape-height);
+		width: var(--appportrait--landscape-width);
 
 		#PortraitImage {
-			padding-top: var(--appportrait--landscape-height);
+			padding-block-start: var(--appportrait--landscape-height);
 		}
 	}
 
@@ -81,22 +75,20 @@
 }
 
 #PlaytimeDetails {
+	align-items: center;
 	color: var(--color--fg-main);
+	flex-direction: row;
 	font: var(--text--body-lg);
 	gap: var(--spacing-xxs);
 	padding: 0;
 
-	flex-direction: row;
-	align-items: center;
-
 	#RecentGameFooter > & {
+		align-items: start;
+		flex-direction: column;
+		justify-content: center;
 		margin-inline-start: calc(
 			var(--action-button-size) + var(--spacing-sm) * 2
 		);
-
-		flex-direction: column;
-		align-items: start;
-		justify-content: center;
 
 		&::before {
 			display: none;
@@ -116,16 +108,14 @@
 	}
 
 	&::before {
-		content: "";
-
 		@include utils.icon;
 
 		color: var(--color--fg-dim);
+		content: "";
 	}
 }
 
 #RecentGameFooter {
 	background-color: var(--color--bg-hl);
-
 	height: calc(var(--action-button-size) + var(--spacing-sm) * 2);
 }

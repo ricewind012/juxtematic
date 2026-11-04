@@ -71,8 +71,8 @@ $-bar-colors: (
 	}
 
 	#NoCheckboxSpacer {
-		width: var(--icon-size-lg);
 		height: var(--icon-size-lg);
+		width: var(--icon-size-lg);
 	}
 }
 
@@ -92,7 +92,6 @@ $-bar-colors: (
 
 #AppHeaderValue {
 	color: inherit;
-
 	display: flex;
 
 	&::before {
@@ -111,11 +110,9 @@ $-bar-colors: (
 	padding-block-end: 0;
 
 	&::after {
-		content: "";
-
-		width: 100%;
-
 		border-block-end: var(--border-sm) solid var(--color--bg-hl);
+		content: "";
+		width: 100%;
 	}
 }
 
@@ -126,7 +123,6 @@ $-bar-colors: (
 #ContentManagement {
 	mask: none;
 	padding-block-start: 0;
-
 	position: relative;
 }
 
@@ -156,10 +152,9 @@ $-bar-colors: (
 	);
 
 	margin: 0;
-
-	position: absolute;
 	inset-block-start: 0;
 	inset-inline-end: var(--dialog--spacing-container);
+	position: absolute;
 
 	&:not(:hover) {
 		background-color: var(--color--bg-main-50);
@@ -174,14 +169,12 @@ $-bar-colors: (
 
 #DriveUsageDot {
 	font: var(--text--body-sm);
-
-	width: 1em;
 	height: 1em;
+	width: 1em;
 }
 
 #DriveUsageIndicator {
 	background: var(--color--bg-main);
-
 	min-height: 4px;
 }
 
@@ -210,12 +203,11 @@ $-bar-colors: (
 	}
 
 	svg {
-		margin-inline-end: var(--spacing-sm);
-
 		display: var(--svg-display, none);
 		flex-shrink: 0;
-		width: 1em;
 		height: 1em;
+		margin-inline-end: var(--spacing-sm);
+		width: 1em;
 	}
 
 	#DriveName {

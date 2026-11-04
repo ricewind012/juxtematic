@@ -8,17 +8,16 @@
 // https://shared.steamstatic.com/store_item_assets/steam/apps/2052410/page_bg_raw.jpg?t=1753952335
 
 %-container {
-	padding-inline: 0;
-
-	width: var(--content--width-sm);
 	max-width: unset;
+	padding-inline: 0;
+	width: var(--content--width-sm);
 }
 
 %-content-type {
 	background: var(--color--bg-main-50);
+	border-radius: 0 0 var(--rounding-lg) var(--rounding-lg);
 	color: var(--color--fg-main);
 	font: inherit;
-	border-radius: 0 0 var(--rounding-lg) var(--rounding-lg);
 	padding: var(--spacing-sm);
 }
 
@@ -41,10 +40,9 @@
 }
 
 .apphub_CardRow {
-	gap: 20px;
-
 	display: flex;
 	flex-wrap: wrap;
+	gap: 20px;
 }
 
 .apphub_Card {
@@ -55,16 +53,15 @@
 	background: var(--color--bg-main-50);
 	border: none;
 	border-radius: var(--rounding-lg);
-	gap: var(--spacing-lg);
-	padding: var(--card-spacing);
-	padding-bottom: calc(var(--card-spacing) + var(--card-footer-height));
-	margin: 0;
-
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
+	gap: var(--spacing-lg);
 	height: unset;
+	margin: 0;
 	max-height: 50vh;
+	padding: var(--card-spacing);
+	padding-block-end: calc(var(--card-spacing) + var(--card-footer-height));
 
 	.review_award_aggregated {
 		@include web.apphub--card-metadata($icon: "military-tech");
@@ -86,10 +83,9 @@
 
 .apphub_Cards {
 	& > div {
-		gap: 20px;
-
 		display: flex;
 		flex-direction: column;
+		gap: 20px;
 	}
 
 	& > form {
@@ -101,20 +97,18 @@
 	@include web.apphub--card-metadata($icon: "chat-bubble");
 
 	&.alignDiscussion {
-		margin-top: var(--spacing-sm);
-
 		height: var(--card-avatar-size);
+		margin-block-start: var(--spacing-sm);
 	}
 }
 
 .apphub_CardContentAuthorBlock {
 	all: unset;
 
-	gap: var(--spacing-sm);
-
-	order: -1;
-	display: flex;
 	align-items: center;
+	display: flex;
+	gap: var(--spacing-sm);
+	order: -1;
 
 	.apphub_Card:not(.Announcement_Card) & {
 		justify-content: space-between;
@@ -135,14 +129,14 @@
 	}
 
 	.apphub_friend_block {
-		display: flex;
 		align-items: center;
+		display: flex;
 		height: var(--card-avatar-size);
 	}
 
 	.apphub_friend_block_container {
-		max-width: unset;
 		height: unset;
+		max-width: unset;
 	}
 }
 
@@ -159,16 +153,15 @@
 }
 
 .apphub_CardContentDiscussionAuthorBlock {
-	padding: 0;
-	padding-top: var(--spacing-sm);
-
 	height: unset;
+	padding: 0;
+	padding-block-start: var(--spacing-sm);
 }
 
 .apphub_CardContentDiscussionDate {
 	color: var(--color--fg-dim);
 	font: var(--text--body-sm);
-	padding-left: calc(var(--card-avatar-size) + var(--spacing-sm));
+	padding-inline-start: calc(var(--card-avatar-size) + var(--spacing-sm));
 }
 
 .apphub_CardContentDiscussionText {
@@ -181,47 +174,45 @@
 .apphub_CardContentDiscussionTitle {
 	color: var(--color--fg-main);
 	font: var(--text--heading-sm);
+	margin-block-end: var(--spacing-sm);
 	padding: 0;
-	margin-bottom: var(--spacing-sm);
 }
 
 .apphub_CardContentDiscussionType {
 	@extend %-content-type;
 
 	border: none;
-
 	height: unset;
 }
 
 .apphub_CardContentGuideDesc {
 	color: var(--color--fg-main);
 	font: var(--text--body-lg);
-	padding: 0;
-	margin-top: var(--spacing-lg);
-
 	height: unset;
+	margin-block-start: var(--spacing-lg);
+	padding: 0;
 }
 
 .apphub_CardContentGuideImage {
-	padding: 0;
 	margin-inline-end: var(--spacing-sm);
+	padding: 0;
 }
 
 .apphub_CardContentGuideTitle {
 	background-color: transparent;
+	border: none;
 	color: var(--color--fg-main);
 	font: var(--text--heading-sm);
-	border: none;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 .apphub_CardContentMain {
 	position: unset;
 
 	& > .apphub_CardContentType {
+		inset-block-end: 0;
 		position: absolute;
-		bottom: 0;
 		width: 100%;
 	}
 }
@@ -236,23 +227,20 @@
 	--speech-bubble-size: 1.25em;
 
 	color: var(--color--fg-main);
+	margin-block-end: var(--speech-bubble-size);
 	padding: 0;
-	margin-bottom: var(--speech-bubble-size);
-
 	position: relative;
 
 	&::after {
-		content: "";
-
-		position: absolute;
-		bottom: 0;
-		left: calc(var(--card-avatar-size) / 2 + var(--spacing-xxs));
-
 		border: var(--speech-bubble-size) solid transparent;
-		border-top-color: var(--color--bg-main-50);
-		border-bottom: none;
-		border-left: none;
-		margin-bottom: calc(var(--speech-bubble-size) * -1);
+		border-block-start-color: var(--color--bg-main-50);
+		border-block-end: none;
+		border-image-slice: none;
+		content: "";
+		inset-block-end: 0;
+		inset-inline-start: calc(var(--card-avatar-size) / 2 + var(--spacing-xxs));
+		margin-block-end: calc(var(--speech-bubble-size) * -1);
+		position: absolute;
 	}
 
 	p {
@@ -267,13 +255,12 @@
 .apphub_CardContentNewsTitle {
 	color: var(--color--fg-main);
 	font: var(--text--heading-sm);
-	padding: 0;
-
 	max-width: unset;
+	padding: 0;
 }
 
 .apphub_CardContentPreviewImage {
-	top: 0;
+	inset-block-start: 0;
 }
 
 .apphub_CardContentPreviewImageBorder {
@@ -293,19 +280,18 @@
 .apphub_CardContentType {
 	@extend %-content-type;
 
-	visibility: visible;
 	margin: 0 calc(var(--card-spacing) * -1);
+	visibility: visible;
 }
 
 .apphub_CardContentTypeContainer {
+	inset-block-end: 0;
 	width: calc(100% - var(--card-spacing) * 2);
-	bottom: 0;
 }
 
 .apphub_CardControls {
-	gap: var(--spacing-sm);
-
 	align-items: center;
+	gap: var(--spacing-sm);
 
 	.apphub_CardRating {
 		@include web.apphub--card-metadata($icon: "thumb-up");
@@ -319,10 +305,9 @@
 .apphub_CardMetaData {
 	all: unset;
 
-	gap: var(--spacing-sm);
-
 	display: flex;
 	flex-direction: column-reverse;
+	gap: var(--spacing-sm);
 
 	#{controls.button-web-selector(".btn_grey_grey")} {
 		@include web.apphub--card-metadata-button;
@@ -342,9 +327,9 @@
 		}
 
 		&::before {
-			content: "";
-
 			@include utils.icon($size: "sm");
+
+			content: "";
 		}
 	}
 }
@@ -355,11 +340,10 @@
 }
 
 .apphub_CardRatingButtons {
-	gap: var(--spacing-sm);
-	padding: 0;
-
 	display: flex;
+	gap: var(--spacing-sm);
 	height: unset;
+	padding: 0;
 }
 
 .apphub_friend_block {
@@ -368,15 +352,14 @@
 	}
 
 	.appHubIconHolder {
-		position: absolute;
 		inset: 0;
+		position: absolute;
 	}
 }
 
 .apphub_friend_block_row {
-	padding: 0;
-
 	display: flex;
+	padding: 0;
 }
 
 .apphub_friends_who_played_recently_title {
@@ -388,7 +371,6 @@
 	all: unset;
 
 	margin: var(--spacing-lg) auto;
-
 	text-align: center;
 	width: var(--content--width-sm);
 
@@ -398,15 +380,14 @@
 }
 
 .apphub_HeaderBottom {
+	align-items: center;
 	background-color: var(--color--bg-main);
 	border-radius: var(--rounding-lg);
-	padding: var(--spacing-sm);
-
 	display: flex;
 	flex-direction: row-reverse;
-	align-items: center;
 	justify-content: space-between;
 	min-height: unset;
+	padding: var(--spacing-sm);
 }
 
 .apphub_HeaderBottomBG_ctn {
@@ -421,17 +402,17 @@
 .apphub_HomeHeader {
 	@extend %-container;
 
-	margin-bottom: var(--spacing-lg);
+	margin-block-end: var(--spacing-lg);
 }
 
 .apphub_HomeHeaderContent {
 	@extend %-container;
 
-	padding-top: var(--content--spacing-block-start);
+	padding-block-start: var(--content--spacing-block-start);
 
 	.apphub_HeaderStandardTop {
-		display: flex;
 		align-items: center;
+		display: flex;
 		flex-direction: row-reverse;
 		justify-content: space-between;
 		min-height: unset;
@@ -448,7 +429,6 @@
 	--size: var(--card-avatar-size);
 
 	margin: 0;
-
 	position: unset;
 
 	&.greyOverlay {
@@ -458,16 +438,16 @@
 
 .apphub_more_friends_who_play {
 	all: unset;
+	box-sizing: border-box;
+
+	--size: 32px;
 
 	@include controls.button;
 
-	padding: 6px 3px;
-
-	--size: 32px;
-	box-sizing: border-box;
 	display: block;
-	min-width: var(--size);
+	padding: 6px 3px;
 	min-height: var(--size);
+	min-width: var(--size);
 }
 
 .apphub_NewsCardStats {
@@ -496,9 +476,8 @@
 	@include controls.tab($active: "&.active");
 
 	background-image: none;
-	margin: 0;
-
 	height: unset;
+	margin: 0;
 
 	span {
 		all: unset;
@@ -517,12 +496,11 @@
 }
 
 .apphub_Stats {
+	align-items: center;
+	display: flex;
 	font: var(--text--body-md);
 	gap: var(--spacing-md);
 	padding: 0;
-
-	display: flex;
-	align-items: center;
 
 	.apphub_Chat {
 		color: var(--color--fg-dim);
@@ -539,10 +517,9 @@
 	}
 
 	.responsive_hidden {
-		gap: var(--spacing-sm);
-
-		display: flex;
 		align-items: center;
+		display: flex;
+		gap: var(--spacing-sm);
 	}
 
 	.statsselect {
@@ -564,16 +541,15 @@
 .apphub_StoreInfoHeader {
 	background-color: var(--color--bg-main);
 	border-radius: var(--rounding-lg);
-	padding: var(--spacing-sm);
 	// XXX(units): keep in sync with .apphub_sectionTabs
 	margin-block: 24px 48px;
+	padding: var(--spacing-sm);
 }
 
 .apphub_UserReviewCardContent {
-	padding: 0;
-
 	display: flex;
 	flex-direction: column;
+	padding: 0;
 	position: unset;
 
 	.apphub_CardTextContent {
@@ -582,24 +558,22 @@
 	}
 
 	.date_posted {
-		color: var(--color--fg-dim);
-		font: var(--text--body-sm);
-
-		display: flex;
 		align-items: center;
-		position: absolute;
+		color: var(--color--fg-dim);
+		display: flex;
+		font: var(--text--body-sm);
+		height: var(--card-avatar-size);
 		inset-block-start: var(--card-spacing);
 		inset-inline-end: var(--card-spacing);
-		height: var(--card-avatar-size);
+		position: absolute;
 	}
 
 	.found_helpful {
 		color: var(--color--fg-dim);
 		font: var(--text--body-md);
-		margin: 0;
-
-		position: absolute;
 		inset-block-end: calc(var(--card-footer-height) + var(--card-spacing));
+		margin: 0;
+		position: absolute;
 	}
 
 	// TODO: is this shared ?
@@ -634,11 +608,10 @@
 }
 
 .apphub_UserReviewCardStats {
-	padding: 0;
-
-	position: absolute;
 	inset-block-end: calc(var(--card-footer-height) + var(--card-spacing));
 	inset-inline-end: var(--card-spacing);
+	padding: 0;
+	position: absolute;
 }
 
 .apphub_WorkshopPistonHolder {

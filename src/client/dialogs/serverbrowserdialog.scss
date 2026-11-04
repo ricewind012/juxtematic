@@ -15,10 +15,9 @@
 	#ToggleShowFilterDetailsButton {
 		@include controls.icon-button($w: 44px, $child: "svg", $name: "arrow");
 
+		flex-shrink: 0;
 		font-size: 0;
 		gap: 0;
-
-		flex-shrink: 0;
 
 		&#Selected svg {
 			transform: rotate(180deg);

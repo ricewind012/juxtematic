@@ -5,7 +5,7 @@
 }
 
 #AvatarCollectionHeader {
-	margin-bottom: var(--spacing-lg);
+	margin-block-end: var(--spacing-lg);
 }
 
 #AvatarCollectionName {
@@ -14,14 +14,13 @@
 }
 
 #CollectionGroup {
-	margin-bottom: 0;
+	margin-block-end: 0;
 
 	&#Primary {
-		gap: var(--spacing-xxl);
-		margin-bottom: var(--spacing-xxl);
-
 		display: grid;
+		gap: var(--spacing-xxl);
 		grid-template-columns: repeat(2, 1fr);
+		margin-block-end: var(--spacing-xxl);
 
 		& > #Title {
 			display: none;
@@ -32,14 +31,14 @@
 		#Title {
 			color: var(--color--fg-main);
 			font: var(--text--heading-sm);
-			margin-bottom: var(--spacing-xxs);
+			margin-block-end: var(--spacing-xxs);
 		}
 	}
 }
 
 #AvatarPreview {
-	margin-right: var(--spacing-sm);
-	margin-bottom: var(--spacing-sm);
+	margin-block-end: var(--spacing-sm);
+	margin-inline-end: var(--spacing-sm);
 
 	img {
 		border-radius: var(--avatar--border-radius);

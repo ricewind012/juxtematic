@@ -5,26 +5,23 @@
 }
 
 #ReminderCalendarOptions {
+	flex-direction: column;
 	padding: 0;
 
-	flex-direction: column;
-
 	&::before {
-		@include menu.separator;
-
 		content: "";
+
+		@include menu.separator;
 	}
 
 	#ReminderOption {
-		text-decoration: none;
-
 		text-align: start;
+		text-decoration: none;
 	}
 }
 
 #ReminderDialog {
 	box-shadow: none;
-
 	overflow: visible;
 }
 

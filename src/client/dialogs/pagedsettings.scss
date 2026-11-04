@@ -57,10 +57,9 @@
 	}
 
 	.DialogHeader {
-		visibility: hidden;
-		margin: 0;
-
 		height: calc(var(--dialog--window-control-size) + var(--spacing-md) * 2);
+		margin: 0;
+		visibility: hidden;
 
 		html[browsertype="DirectHWND"] & {
 			height: 0;
@@ -75,9 +74,8 @@
 #PagedSettingsDialog_PageListColumn {
 	background-color: var(--color--bg-main);
 	border-radius: 0;
-	padding: 0;
-
 	min-width: 299px;
+	padding: 0;
 }
 
 #PagedSettingsDialog_PageListItem {
@@ -90,9 +88,8 @@
 #PagedSettingsDialog_Title {
 	color: var(--color--fg-main);
 	font: var(--text--heading-lg);
-	text-transform: none;
-	padding: 0;
 	margin: var(--spacing-md);
-
+	padding: 0;
 	text-align: center;
+	text-transform: none;
 }

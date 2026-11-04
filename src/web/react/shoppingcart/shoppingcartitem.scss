@@ -4,16 +4,14 @@
 %-icon-button {
 	@include controls.icon-button($w: 44px, $child: "&::before");
 
-	font-size: 0;
-
+	align-items: center;
 	// TODO(controls):
 	display: flex;
-	align-items: center;
+	font-size: 0;
 	justify-content: center;
 
 	&::before {
 		content: "";
-
 		display: block;
 	}
 }
@@ -49,9 +47,8 @@
 }
 
 #LineItemDetailsCtn {
-	gap: var(--spacing-sm);
-
 	display: flex;
+	gap: var(--spacing-sm);
 }
 
 #LineItemDetailsRow {
@@ -79,7 +76,7 @@
 
 	// OS
 	&:nth-child(3) {
-		margin-right: auto;
+		margin-inline-end: auto;
 	}
 }
 

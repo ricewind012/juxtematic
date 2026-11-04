@@ -22,13 +22,12 @@
 }
 
 .commentthread_comment {
+	display: flex;
+	margin-block-end: var(--spacing-sm);
 	padding: var(--spacing-sm);
-	padding-left: calc(
+	padding-inline-start: calc(
 		var(--avatar-size) + var(--avatar-gutter) + var(--spacing-sm)
 	);
-	margin-bottom: var(--spacing-sm);
-
-	display: flex;
 }
 
 .commentthread_comment_actions {
@@ -56,12 +55,12 @@
 }
 
 .commentthread_comment_avatar {
-	left: var(--spacing-sm);
+	inset-inline-start: var(--spacing-sm);
 }
 
 .commentthread_comment_container {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 .commentthread_comment_content {
@@ -72,19 +71,18 @@
 	@include utils.icon($name: "user", $remove: true);
 
 	background-image: none;
-
-	inset-inline-start: calc(var(--avatar-size) - var(--icon-size-md) / 3);
 	inset-block-start: calc(var(--avatar-size) - var(--icon-size-md) / 3);
+	inset-inline-start: calc(var(--avatar-size) - var(--icon-size-md) / 3);
 }
 
 .commentthread_comment_text {
-	font: var(--text--body-md);
 	color: var(--color--fg-main);
+	font: var(--text--body-md);
 }
 
 .commentthread_comment_timestamp {
-	font: inherit;
 	color: var(--color--fg-dim);
+	font: inherit;
 }
 
 .commentthread_count {
@@ -97,17 +95,16 @@
 
 .commentthread_entry {
 	background-color: transparent;
-	padding: 0;
 	margin: var(--spacing-sm);
-	margin-bottom: 0;
-
+	margin-block-end: 0;
 	min-height: unset;
+	padding: 0;
 }
 
 .commentthread_entry_error {
 	color: var(--color--accent-red);
 	/* + 6px from top */
-	padding-bottom: 18px;
+	padding-block-end: 18px;
 }
 
 .commentthread_entry_quotebox {
@@ -122,15 +119,14 @@
 
 .commentthread_footer {
 	border: none;
-	padding: var(--spacing-lg) 0;
 	margin: 0;
+	padding: var(--spacing-lg) 0;
 }
 
 .commentthread_header_and_count {
+	align-items: center;
 	background-image: none;
 	padding: 0;
-
-	align-items: center;
 	width: 100%;
 }
 
@@ -171,17 +167,15 @@
 }
 
 .commentthread_subscribe_checkbox_ctn {
-	gap: var(--spacing-xs);
-
 	align-items: center;
+	gap: var(--spacing-xs);
 }
 
 .commentthread_subscribe_ctn {
+	align-items: center;
+	display: flex;
 	font: var(--text--body-md);
 	gap: var(--spacing-xs);
-
-	display: flex;
-	align-items: center;
 
 	&.checked .commentthread_subscribe_checkbox {
 		--icon-name: icon("checkbox-checked");
@@ -195,16 +189,16 @@
 }
 
 .commentthread_textarea {
-	font: var(--text--body-md);
 	color: var(--color--fg-main);
-	padding: 0;
+	font: var(--text--body-md);
 	margin: 0;
+	padding: 0;
 }
 
 .commentthread_user_avatar {
 	// Align with text field
 	margin-block-start: calc(var(--avatar--border-size) * -1);
-	margin-right: var(--avatar-gutter);
+	margin-inline-end: var(--avatar-gutter);
 }
 
 .commentthread_workshop_authorbadge {
@@ -218,17 +212,15 @@
 		$child: "&::before"
 	);
 
-	background-image: none;
-	margin: 0;
-
-	vertical-align: center;
-	display: inline-flex;
 	align-items: center;
+	background-image: none;
+	display: inline-flex;
 	justify-content: center;
+	margin: 0;
+	vertical-align: center;
 
 	&::before {
 		content: "";
-
 		display: block;
 	}
 }

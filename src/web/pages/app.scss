@@ -7,8 +7,8 @@
 %-section {
 	background-color: var(--color--bg-main-50);
 	border-radius: var(--rounding-lg);
-	padding: var(--spacing-xl);
 	margin-block-start: 12px;
+	padding: var(--spacing-xl);
 }
 
 body.game_bg {
@@ -53,7 +53,6 @@ body.game_bg {
 
 .package_contents {
 	color: var(--color--fg-dim);
-
 	width: 50%;
 }
 
@@ -68,10 +67,9 @@ body.game_bg {
 
 .bundle_contents_preview_position,
 .package_contents_capsules {
-	gap: var(--spacing-sm);
-
 	display: flex;
 	flex-wrap: wrap;
+	gap: var(--spacing-sm);
 }
 
 .bundle_contents_preview,
@@ -83,12 +81,11 @@ body.game_bg {
 }
 
 .bundle_label {
+	align-items: center;
 	color: var(--color--primary);
+	display: inline-flex;
 	font: inherit;
 	gap: var(--spacing-xxs);
-
-	display: inline-flex;
-	align-items: center;
 }
 
 .bundle_label_tooltip {
@@ -135,19 +132,17 @@ body.game_bg {
 .early_access_banner {
 	@extend %-section;
 
+	align-items: center;
 	background-image: none;
-	margin-block-end: 0;
-
 	display: flex;
 	flex-direction: row-reverse;
-	align-items: center;
 	justify-content: space-between;
 	height: unset;
+	margin-block-end: 0;
 
 	p {
 		color: var(--color--fg-main);
 		font: inherit;
-
 		width: unset;
 	}
 
@@ -163,8 +158,8 @@ body.game_bg {
 }
 
 .franchise_notice {
-	font: var(--text--body-lg);
 	border-radius: var(--rounding-lg);
+	font: var(--text--body-lg);
 }
 
 .game_area_bubble {
@@ -185,12 +180,11 @@ body.game_bg {
 }
 
 .game_area_comingsoon {
-	box-shadow: none;
-	margin-block-end: 0;
-
-	display: flex;
 	align-items: center;
+	box-shadow: none;
+	display: flex;
 	justify-content: space-between;
+	margin-block-end: 0;
 
 	.not_yet,
 	.wishlist_note {
@@ -235,9 +229,8 @@ body.game_bg {
 	}
 
 	.icon {
-		padding: 0;
-
 		align-items: center;
+		padding: 0;
 
 		/* Not enough icons, maybe one day
 
@@ -268,10 +261,10 @@ body.game_bg {
 	.label {
 		all: unset;
 
-		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		display: flex;
 		flex-grow: 1;
+		justify-content: space-between;
 	}
 }
 
@@ -279,15 +272,14 @@ body.game_bg {
 	margin: 0;
 
 	#dlc_footer {
+		align-items: center;
 		color: var(--color--fg-dim);
+		display: flex;
+		flex-direction: row-reverse;
 		font: var(--text--body-sm);
-		text-transform: none;
 		gap: var(--spacing-sm);
 		margin-block-start: var(--spacing-xs);
-
-		display: flex;
-		align-items: center;
-		flex-direction: row-reverse;
+		text-transform: none;
 	}
 
 	.dlc_footer_element {
@@ -305,10 +297,9 @@ body.game_bg {
 	}
 
 	.game_purchase_action {
-		margin-block-start: var(--spacing-xs);
-
 		float: unset;
 		justify-content: end;
+		margin-block-start: var(--spacing-xs);
 	}
 }
 
@@ -346,8 +337,8 @@ body.game_bg {
 	@extend %-section;
 
 	h2 {
-		display: flex;
 		align-items: center;
+		display: flex;
 		justify-content: space-between;
 	}
 
@@ -405,10 +396,9 @@ body.game_bg {
 	& > a {
 		/* Content width too big to notice
 		
-		text-align: end;
-
-		width: 100%;
 		display: block;
+		text-align: end;
+		width: 100%;
 
 		*/
 	}
@@ -442,7 +432,6 @@ body.game_bg {
 .game_area_purchase_game {
 	color: var(--color--fg-dim);
 	font: var(--text--body-md);
-
 	min-height: calc(
 		var(--button--spacing-block-md) * 2 + var(--text--body-lg-size) *
 			var(--text--line-height) + var(--spacing-xl) * 2
@@ -474,7 +463,6 @@ body.game_bg {
 		color: var(--color--fg-main);
 		font: var(--text--heading-md);
 		margin-block-end: 0;
-
 		width: 50%;
 	}
 }
@@ -505,7 +493,6 @@ body.game_bg {
 	color: var(--color--fg-dim);
 	font: var(--text--body-lg);
 	margin-block-start: var(--spacing-sm);
-
 	width: unset;
 
 	// #region shared
@@ -577,7 +564,6 @@ body.game_bg {
 
 			strong::before {
 				content: "•";
-
 				margin-inline: 0.5em;
 			}
 		}
@@ -585,16 +571,15 @@ body.game_bg {
 		strong {
 			color: var(--color--fg-dim);
 			font: var(--text--body-lg);
-			text-transform: none;
 			margin: 0;
+			text-transform: none;
 		}
 
 		ul {
-			font: inherit;
-			gap: var(--spacing-xxs);
-
-			display: flex;
 			flex-direction: column;
+			font: inherit;
+			display: flex;
+			gap: var(--spacing-xxs);
 		}
 
 		ul > strong {
@@ -606,8 +591,8 @@ body.game_bg {
 		@include controls.tab($active: "&.active");
 
 		background-color: var(--color--bg-main-50);
-		padding-block: var(--spacing-sm);
 		margin-inline: 18px 0;
+		padding-block: var(--spacing-sm);
 
 		&.active {
 			background-color: var(--color--bg-hl);
@@ -616,12 +601,11 @@ body.game_bg {
 
 	.sysreq_tabs {
 		background: transparent;
-		padding: 0;
-		margin: 0;
-
-		position: absolute;
 		inset-block-start: var(--spacing-xl);
 		inset-inline-end: var(--spacing-xl);
+		margin: 0;
+		padding: 0;
+		position: absolute;
 	}
 }
 
@@ -637,19 +621,17 @@ body.game_bg {
 
 .game_header_image_full {
 	border-radius: var(--rounding-md);
-
 	width: 416px;
 }
 
 #game_highlights {
-	background: var(--color--bg-main-50);
 	backdrop-filter: none;
+	background: var(--color--bg-main-50);
 	border-radius: var(--rounding-lg);
 	gap: var(--spacing-sm);
-	padding: var(--spacing-xl);
-	margin-block-start: var(--spacing-sm);
-
 	justify-content: space-between;
+	margin-block-start: var(--spacing-sm);
+	padding: var(--spacing-xl);
 
 	.dev_row,
 	.release_date,
@@ -663,12 +645,11 @@ body.game_bg {
 	}
 
 	.glance_ctn_responsive_left {
-		gap: var(--spacing-sm);
-
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		flex-grow: 1;
+		gap: var(--spacing-sm);
+		justify-content: center;
 
 		.release_date .date {
 			color: inherit;
@@ -688,10 +669,9 @@ body.game_bg {
 	}
 
 	.glance_tags {
-		gap: var(--spacing-xxs);
-
 		display: flex;
 		flex-wrap: wrap;
+		gap: var(--spacing-xxs);
 		height: unset;
 	}
 
@@ -712,8 +692,8 @@ body.game_bg {
 	.subtitle {
 		color: var(--color--fg-dim);
 		font: var(--text--body-lg);
-		text-transform: none;
 		padding-inline-end: var(--spacing-md);
+		text-transform: none;
 	}
 }
 
@@ -734,10 +714,9 @@ body.game_bg {
 	tr:not([style="display: none;"]) {
 		@include web.sidebar--list-item;
 
-		border: none;
-
-		display: grid;
 		align-items: center;
+		border: none;
+		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 
 		&:first-child {
@@ -761,9 +740,8 @@ body.game_bg {
 			@include utils.icon($name: "check", $size: "lg");
 
 			color: var(--color--primary);
-			margin: auto;
-
 			display: block;
+			margin: auto;
 		}
 	}
 }
@@ -771,21 +749,19 @@ body.game_bg {
 .game_meta_data {
 	margin-block-start: var(--spacing-sm);
 	margin-inline-start: var(--spacing-sm);
-
 	width: 451px;
 
 	.block {
 		background: var(--color--bg-main);
+		border-radius: var(--rounding-lg);
 		color: var(--color--fg-main);
 		font: var(--text--body-lg);
-		border-radius: var(--rounding-lg);
-		padding: var(--spacing-xl);
 		margin-block-end: var(--spacing-sm);
+		padding: var(--spacing-xl);
 
 		&#shareEmbedRow {
-			gap: var(--spacing-sm);
-
 			display: grid;
+			gap: var(--spacing-sm);
 			grid-template-columns: repeat(2, 1fr);
 		}
 
@@ -806,8 +782,8 @@ body.game_bg {
 		.linkbar {
 			@include web.sidebar--list-item;
 
-			display: flex;
 			align-items: center;
+			display: flex;
 			justify-content: space-between;
 
 			&[href^="steam://openurl_external"] {
@@ -819,9 +795,9 @@ body.game_bg {
 			}
 
 			&::after {
-				content: "";
-
 				@include utils.icon;
+
+				content: "";
 			}
 
 			img,
@@ -832,10 +808,10 @@ body.game_bg {
 	}
 
 	.block.heading {
-		color: var(--color--fg-dim);
 		border-radius: var(--rounding-lg) var(--rounding-lg) 0 0;
-		padding-block-end: 0;
+		color: var(--color--fg-dim);
 		margin: 0;
+		padding-block-end: 0;
 	}
 
 	.block.heading + .block {
@@ -874,13 +850,12 @@ body.game_bg {
 		}
 
 		.reason {
+			align-items: center;
 			color: var(--color--fg-main);
+			display: flex;
 			font: var(--text--body-lg);
 			gap: var(--spacing-xxs);
 			margin-block-end: var(--spacing-xs);
-
-			display: flex;
-			align-items: center;
 
 			&.against {
 				--icon-color: var(--color--accent-red);
@@ -900,11 +875,10 @@ body.game_bg {
 			&::before {
 				@include utils.icon;
 
-				position: unset;
-
 				background-image: none;
 				color: var(--icon-color);
 				margin: 0;
+				position: unset;
 			}
 		}
 
@@ -961,14 +935,12 @@ body.game_bg {
 	background: none;
 
 	&::after {
+		background: linear-gradient(transparent, var(--color--bg-main));
 		content: "";
-
-		position: absolute;
+		height: 100px;
 		inset-block-end: 44px;
 		inset-inline: 0;
-		height: 100px;
-
-		background: linear-gradient(transparent, var(--color--bg-main));
+		position: absolute;
 	}
 
 	.game_page_autocollapse_readmore {
@@ -979,8 +951,8 @@ body.game_bg {
 }
 
 .game_page_background_ctn {
-	mask: none;
 	background: none;
+	mask: none;
 
 	.gameColor {
 		display: none;
@@ -993,9 +965,8 @@ body.game_bg {
 }
 
 .game_purchase_action {
-	gap: 13px;
-
 	display: flex;
+	gap: 13px;
 	inset: auto;
 	inset-block-start: calc(var(--spacing-xl) + var(--center-offset, 0px));
 	inset-inline-end: var(--spacing-xl);
@@ -1010,13 +981,12 @@ body.game_bg {
 }
 
 .game_purchase_action_bg {
-	background-color: transparent;
-	gap: 13px;
-	padding: 0;
-
-	display: flex;
 	align-items: center;
+	background-color: transparent;
+	display: flex;
+	gap: 13px;
 	height: unset;
+	padding: 0;
 
 	& > * {
 		margin: 0;
@@ -1034,20 +1004,18 @@ body.game_bg {
 	height: unset;
 
 	&.no_discount {
-		gap: 0;
-
 		flex-direction: column-reverse;
+		gap: 0;
 	}
 
 	.bundle_base_discount {
+		align-self: center;
+		border: none;
 		color: var(--color--fg-dim);
 		font: inherit;
-		line-height: var(--right-side-line-height);
-		border: none;
-		padding: 0;
-
-		align-self: center;
 		height: unset;
+		line-height: var(--right-side-line-height);
+		padding: 0;
 	}
 
 	.discount_pct {
@@ -1067,10 +1035,9 @@ body.game_bg {
 .game_purchase_options_editions_header {
 	@extend %-section;
 
+	align-items: center;
 	background-image: none;
 	margin-block: 0 12px;
-
-	align-items: center;
 }
 
 .game_purchase_options_editions_header_compare_button {
@@ -1088,9 +1055,8 @@ body.game_bg {
 	background-color: transparent;
 	color: var(--color--fg-main);
 	font: var(--text--heading-sm);
-	padding: 0;
-
 	height: unset;
+	padding: 0;
 }
 
 .game_title_area {
@@ -1131,9 +1097,8 @@ body.game_bg {
 
 .queue_actions_ctn {
 	gap: var(--spacing-sm);
-	padding: var(--spacing-md);
-
 	justify-content: end;
+	padding: var(--spacing-md);
 
 	.expand_to_fill,
 	img {
@@ -1160,9 +1125,8 @@ body.game_bg {
 .queue_btn_menu > #{controls.button-web-selector(".queue_menu_arrow")} {
 	@include controls.button-vars($variant: "tertiary", $size: "sm");
 
-	padding-inline: 0;
-
 	min-width: calc(var(--spacing-sm) * 2 + var(--icon-size-md));
+	padding-inline: 0;
 
 	& > span {
 		@include utils.icon($name: "arrow");
@@ -1174,13 +1138,12 @@ body.game_bg {
 
 .queue_ctn {
 	background-color: transparent;
-
-	position: absolute;
 	inset-block-start: calc(
 		var(--header--height) + var(--content--spacing-block-start)
 	);
 	inset-inline: calc((100vw - var(--store-page-width)) / 2 - var(--spacing-xs));
 	max-width: var(--store-page-width);
+	position: absolute;
 
 	#{controls.button-web-selector(".btnv6_blue_hoverfade")} {
 		img {
@@ -1194,7 +1157,6 @@ body.game_bg {
 
 	background-image: none;
 	margin: 0;
-
 	z-index: 999;
 }
 
@@ -1221,8 +1183,8 @@ body.game_bg {
 
 .related_items_ctn {
 	background: none;
-	padding: 0;
 	margin-block-start: 100px;
+	padding: 0;
 
 	.page_content {
 		flex-direction: column;

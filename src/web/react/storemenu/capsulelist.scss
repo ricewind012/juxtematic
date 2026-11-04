@@ -6,10 +6,9 @@
 	background: var(--color--bg-main-20);
 	border-radius: var(--rounding-md);
 	gap: 0;
-
+	height: unset;
 	// For border-radius
 	overflow: hidden;
-	height: unset;
 
 	&:hover {
 		background: var(--color--bg-main-50);

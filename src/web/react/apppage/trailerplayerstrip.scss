@@ -9,9 +9,8 @@
 
 	img {
 		border-radius: var(--rounding-md);
-
-		width: 231px;
 		height: 111px;
+		width: 231px;
 	}
 }
 
@@ -21,9 +20,8 @@
 
 	background: var(--color--bg-main-50);
 	border-radius: var(--rounding-md);
-
-	width: var(--size);
 	height: var(--size);
+	width: var(--size);
 
 	svg {
 		@include utils.icon($name: "play", $remove: true, $size: "lg");
@@ -38,19 +36,18 @@
 
 #StripItems {
 	gap: var(--spacing-xs);
-	padding-block: var(--border-lg);
 	margin-block-start: var(--spacing-lg);
 	margin-block-end: calc(var(--spacing-sm) + var(--carousel--thumb-height));
 	margin-inline: calc(var(--arrow-size) + var(--spacing-md));
+	padding-block: var(--border-lg);
 }
 
 #StripScrollbar {
 	color: var(--color--fg-main);
-
+	height: unset;
+	inset: 0;
 	justify-content: space-between;
 	position: absolute;
-	inset: 0;
-	height: unset;
 
 	svg {
 		@include utils.icon($name: "arrow", $remove: true, $size: "lg");
@@ -60,7 +57,6 @@
 
 	#Arrow {
 		background: none;
-
 		flex-basis: var(--arrow-size);
 
 		&:first-child {
@@ -79,19 +75,18 @@
 	#Thumb {
 		@include carousel.thumb($active: "&");
 
-		transition: none;
 		background-image: none;
 		border: none;
+		transition: none;
 	}
 
 	#Track {
 		background-color: var(--color--bg-main-50);
 		border-radius: 40px;
-
-		position: absolute;
 		inset-block-end: calc(
 			var(--spacing-sm) * -1 - var(--carousel--thumb-height)
 		);
+		position: absolute;
 		width: 100%;
 	}
 }

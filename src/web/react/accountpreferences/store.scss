@@ -1,8 +1,8 @@
 @use "shared/controls";
 
 .account_manage_checkbox {
-	display: flex;
 	align-items: center;
+	display: flex;
 
 	& + br {
 		display: none;
@@ -20,23 +20,22 @@
 
 	.word_form {
 		& > form > div {
-			display: flex;
 			flex-direction: row-reverse;
+			display: flex;
 			justify-content: start;
 		}
 
 		& > [data-panel] {
-			margin-top: var(--spacing-lg);
-			gap: var(--spacing-lg);
-
 			display: flex;
 			flex-direction: column;
+			gap: var(--spacing-lg);
+			margin-block-start: var(--spacing-lg);
 		}
 	}
 }
 
 .preference_row {
-	border-bottom: var(--border-md) solid var(--color--bg-hl);
+	border-block-end: var(--border-md) solid var(--color--bg-hl);
 
 	&:first-of-type {
 		margin-block: var(--spacing-lg);
@@ -46,19 +45,19 @@
 .sub_text {
 	color: var(--color--fg-dim);
 	font: var(--text--body-sm);
-	margin-top: var(--spacing-xxs);
+	margin-block-start: var(--spacing-xxs);
 }
 
 .tag_form {
 	.app_tag_form_ctn {
+		align-items: center;
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: start;
-		align-items: center;
 	}
 
 	button {
-		margin-left: var(--spacing-sm);
+		margin-inline-start: var(--spacing-sm);
 	}
 }
 

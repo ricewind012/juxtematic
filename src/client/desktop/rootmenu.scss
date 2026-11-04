@@ -2,8 +2,8 @@
 
 #RootMenuBar {
 	gap: var(--dialog--window-control-spacing);
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 #RootMenuButton {
@@ -21,8 +21,8 @@
 	}
 
 	&::after {
-		content: "";
-
 		@include utils.icon($name: "arrow");
+
+		content: "";
 	}
 }

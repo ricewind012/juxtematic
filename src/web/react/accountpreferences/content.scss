@@ -23,29 +23,27 @@ body:is(.account, .account_preferences) {
 	&.left {
 		background-color: var(--color--bg-main);
 		border-radius: var(--rounding-lg);
-		padding: var(--spacing-md);
-
 		min-width: var(--content--sidebar-width);
+		padding: var(--spacing-md);
 	}
 
 	&.right {
-		margin-left: var(--spacing-md);
+		margin-inline-start: var(--spacing-md);
 	}
 }
 
 .accountData {
 	--color--fg-main: var(--color--primary);
-	font: var(--text--heading-sm);
 
+	font: var(--text--heading-sm);
 	position: unset;
 }
 
 .accountRow {
 	color: var(--color--fg-main);
 	font: var(--text--heading-sm);
-	margin: 0;
-
 	height: unset;
+	margin: 0;
 }
 
 .account_data_field {
@@ -59,13 +57,12 @@ body:is(.account, .account_preferences) {
 
 .account_header_line {
 	background-color: var(--color--bg-main);
+	border-radius: var(--rounding-lg) var(--rounding-lg) 0 0;
 	color: var(--color--fg-dim);
 	font: var(--text--heading-md);
-	border-radius: var(--rounding-lg) var(--rounding-lg) 0 0;
-	padding: var(--spacing-lg);
-	padding-bottom: 0;
-
 	height: unset;
+	padding: var(--spacing-lg);
+	padding-block-end: 0;
 
 	img,
 	svg {
@@ -103,11 +100,10 @@ body:is(.account, .account_preferences) {
 .account_setting_block_short,
 .account_setting_block {
 	background-color: var(--color--bg-main);
-	padding: var(--spacing-lg);
-	margin-bottom: var(--spacing-md);
-
 	display: flex;
 	flex-direction: column;
+	margin-block-end: var(--spacing-md);
+	padding: var(--spacing-lg);
 }
 
 .account_settings_container {
@@ -125,7 +121,7 @@ body:is(.account, .account_preferences) {
 
 	blockquote {
 		margin: 0;
-		margin-top: var(--spacing-sm);
+		margin-block-start: var(--spacing-sm);
 	}
 
 	h3 {
@@ -145,23 +141,16 @@ body:is(.account, .account_preferences) {
 
 .account_setting_sub_block_long,
 .account_setting_sub_block {
+	align-items: center;
 	color: var(--color--fg-main);
+	display: flex;
+	flex-wrap: wrap;
 	gap: var(--spacing-lg);
 	padding: 0;
-
 	width: 100%;
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
 }
 
 .gray_bevel {
-	background-color: transparent;
-	border: none;
-	border-radius: 0;
-	box-shadow: none;
-	padding: 0;
-	margin: 0;
 	all: unset;
 
 	input[type="text"],
@@ -175,7 +164,7 @@ body:is(.account, .account_preferences) {
 }
 
 .inner_rule {
-	border-top: var(--border-md) solid var(--color--bg-hl);
+	border-block-start: var(--border-md) solid var(--color--bg-hl);
 	margin-block: var(--spacing-lg);
 }
 

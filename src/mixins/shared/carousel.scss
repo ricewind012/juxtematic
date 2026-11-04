@@ -2,15 +2,14 @@
 
 /// All args are selectors.
 @mixin arrow($left, $right, $child) {
-	border-radius: var(--rounding-md);
-	padding: 0 var(--spacing-sm);
-
-	display: flex;
 	align-items: center;
+	border-radius: var(--rounding-md);
+	display: flex;
+	height: var(--carousel--arrow-container-height);
 	inset-block-start: 0;
 	inset-inline: var(--inset-inline);
+	padding: 0 var(--spacing-sm);
 	width: unset;
-	height: var(--carousel--arrow-container-height);
 
 	&:hover {
 		background-color: var(--color--bg-main-20);
@@ -38,11 +37,10 @@
 @mixin button($child, $icon) {
 	--size: 1lh;
 
-	font: var(--text--heading-sm);
 	border-radius: var(--rounding-md);
-
-	width: var(--size);
+	font: var(--text--heading-sm);
 	height: var(--size);
+	width: var(--size);
 
 	&:hover {
 		background-color: var(--color--bg-hover);
@@ -58,20 +56,19 @@
 
 @mixin container {
 	background-color: var(--color--bg-main-20);
-	font: var(--text--heading-sm);
 	border-radius: var(--rounding-lg);
+	font: var(--text--heading-sm);
 	padding-block: var(--spacing-lg);
 	padding-inline: var(--carousel--arrow-size);
 }
 
 /// All args are selectors.
 @mixin thumb($active) {
-	transition: var(--transition);
 	background-color: var(--color--bg-main);
 	border-radius: 40px;
-
-	width: 36px;
 	height: var(--carousel--thumb-height);
+	transition: var(--transition);
+	width: 36px;
 
 	#{$active} {
 		background-color: var(--color--secondary);

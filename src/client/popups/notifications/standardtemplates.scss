@@ -5,7 +5,6 @@
 
 	background-color: transparent;
 	border-radius: 0;
-
 	height: unset;
 }
 
@@ -21,17 +20,15 @@
 
 #DesktopToastTemplate {
 	color: var(--color--fg-main);
+	height: inherit;
 	padding-block: var(--popup--spacing-block);
 	padding-inline: var(--popup--spacing-inline);
-
-	height: inherit;
 
 	#AvatarStatus {
 		background: currentColor;
 		box-shadow: none;
-
-		width: var(--border-lg);
 		height: var(--avatar--size-md);
+		width: var(--border-lg);
 	}
 
 	// TODO: unify?
@@ -47,7 +44,6 @@
 	#ShortLogoDimensions,
 	#StandardLogoDimensions {
 		margin: 0;
-
 		order: -1;
 	}
 }
@@ -69,11 +65,10 @@
 #ShortLogoDimensions,
 #StandardLogoDimensions {
 	border-radius: var(--rounding-md);
+	height: var(--avatar--size-md);
 	margin-inline-start: var(--spacing-sm);
-
 	order: 1;
 	width: var(--avatar--size-md);
-	height: var(--avatar--size-md);
 }
 
 #StandardTemplateDesktop {

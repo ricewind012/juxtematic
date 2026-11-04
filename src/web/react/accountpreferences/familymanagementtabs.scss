@@ -4,13 +4,13 @@
 	@include controls.tabs-container;
 
 	border: none;
-	margin-bottom: var(--spacing-lg);
+	margin-block-end: var(--spacing-lg);
 }
 
 #GraphicalAssetsTab {
 	@include controls.tab($active: "&#Active");
 
+	border: none;
 	letter-spacing: 0;
 	text-transform: unset;
-	border: none;
 }

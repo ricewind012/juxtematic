@@ -16,18 +16,16 @@
 #GameIconAndName {
 	@include style.link;
 
+	align-items: center;
 	background-color: transparent;
 	font: var(--text--body-md);
 	margin-block-start: var(--spacing-xxs);
 
-	align-items: center;
-
 	#GameIcon {
 		border-radius: var(--rounding-md);
-		margin-inline-end: var(--spacing-xxs);
-
-		width: var(--icon-size-lg);
 		height: var(--icon-size-lg);
+		margin-inline-end: var(--spacing-xxs);
+		width: var(--icon-size-lg);
 	}
 
 	#GameName {
@@ -49,10 +47,9 @@
 }
 
 #PartnerEventRowCapsule_TextCtn {
+	cursor: pointer;
 	padding: 0;
 	padding-block-start: 8px;
-
-	cursor: pointer;
 }
 
 #PartnerEventRowCapsule_TextTitle {
@@ -60,7 +57,6 @@
 
 	color: var(--color--fg-main);
 	font: var(--text--body-lg);
-
 	max-height: var(--height);
 	min-height: var(--height);
 }
@@ -69,8 +65,7 @@
 	@include carousel.button($child: "svg", $icon: "settings");
 
 	margin: 0;
-
-	position: absolute;
 	inset-block-start: calc(-1lh - var(--carousel--section-spacing));
 	inset-inline-end: 0;
+	position: absolute;
 }

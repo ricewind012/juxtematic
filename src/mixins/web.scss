@@ -2,9 +2,9 @@
 
 @mixin apphub--card-metadata-button {
 	background: var(--color--bg-main);
+	border-radius: var(--rounding-md);
 	color: var(--color--primary);
 	font: var(--text--body-sm);
-	border-radius: var(--rounding-md);
 	padding: 8px;
 
 	&:hover {
@@ -16,26 +16,24 @@
 @mixin apphub--card-metadata($icon: "name") {
 	@include apphub--card-metadata-button;
 
+	align-items: center;
+	display: inline-flex;
 	gap: var(--spacing-xxs);
 	margin: 0;
 
-	display: inline-flex;
-	align-items: center;
-
 	&::before {
-		content: "";
-
 		@include utils.icon($name: #{$icon}, $size: "sm");
 
 		color: var(--color--fg-dim);
+		content: "";
 	}
 }
 
 @mixin layout--sidebar-item($active) {
 	background: transparent;
 	border-radius: var(--rounding-md);
+	margin-block-end: var(--spacing-sm);
 	padding: 8px 13px;
-	margin-bottom: var(--spacing-sm);
 
 	#{$active},
 	&:hover {
@@ -47,10 +45,9 @@
 	@include paging--link($selected: "&.hack");
 
 	border: none;
-	padding: 0;
-
-	width: 70px;
 	height: 30px;
+	padding: 0;
+	width: 70px;
 
 	#{$disabled} {
 		opacity: var(--dim-opacity);
@@ -58,24 +55,22 @@
 }
 
 @mixin paging--container {
-	gap: 24px;
-	padding: 0;
-	margin: 0;
-
 	display: flex;
+	gap: 24px;
+	margin: 0;
+	padding: 0;
 }
 
 @mixin paging--link($selected) {
-	background-color: var(--color--bg-hl);
-	font: var(--text--body-md);
-	color: inherit;
-	text-decoration: none;
-	border-radius: var(--rounding-md);
-	padding: 5px var(--spacing-xs);
-
-	display: flex;
 	align-items: center;
+	background-color: var(--color--bg-hl);
+	border-radius: var(--rounding-md);
+	display: flex;
+	color: inherit;
+	font: var(--text--body-md);
 	justify-content: center;
+	text-decoration: none;
+	padding: 5px var(--spacing-xs);
 
 	#{$selected},
 	&:hover {
@@ -84,17 +79,16 @@
 }
 
 @mixin paging--links-container {
-	gap: var(--spacing-xxs);
-
-	display: flex;
 	align-items: center;
+	display: flex;
+	gap: var(--spacing-xxs);
 }
 
 @mixin section--container {
 	background: var(--color--bg-main-50);
 	border-radius: var(--rounding-lg);
-	padding: var(--spacing-xl);
 	margin-block-end: var(--spacing-md);
+	padding: var(--spacing-xl);
 }
 
 @mixin section--header {
@@ -107,26 +101,25 @@
 	background-color: var(--color--bg-main);
 	border-radius: var(--rounding-lg);
 	padding: var(--spacing-md);
-
 	width: var(--content--sidebar-width);
 }
 
 @mixin sidebar--header {
+	border-block-start: var(--border-sm) solid var(--color--bg-hl);
 	color: var(--color--fg-dim);
 	font: var(--text--body-md);
-	text-transform: uppercase;
-	border-block-start: var(--border-sm) solid var(--color--bg-hl);
-	padding-block-start: var(--spacing-sm);
 	margin-block: var(--spacing-sm) var(--spacing-xs);
+	padding-block-start: var(--spacing-sm);
+	text-transform: uppercase;
 }
 
 @mixin sidebar--list-item {
 	background-color: color-mix(in srgb, var(--color--bg-hl) 39%, transparent);
-	font: var(--text--body-sm);
 	border-radius: var(--rounding-md);
+	font: var(--text--body-sm);
 	gap: var(--spacing-sm);
-	padding: 4px 13px;
 	margin-block-end: var(--spacing-xs);
+	padding: 4px 13px;
 
 	&:hover {
 		background: var(--color--bg-hover);
@@ -144,8 +137,8 @@
 }
 
 @mixin store--capsule-icon {
-	background-color: var(--color--bg-main-50);
 	backdrop-filter: var(--blur);
+	background-color: var(--color--bg-main-50);
 	border-radius: var(--rounding-md);
 }
 
@@ -186,27 +179,26 @@
 	}
 
 	#{$gradient} {
-		transition: var(--transition);
+		backdrop-filter: blur(1px);
 		background: linear-gradient(
 			180deg,
 			color-mix(in srgb, var(--bg) 45%, transparent) 0%,
 			color-mix(in srgb, var(--bg) 80%, transparent) 100%
 		);
-		backdrop-filter: blur(1px);
+		transition: var(--transition);
 	}
 
 	#{$label} {
-		transform: none;
+		align-items: center;
 		color: var(--color--fg-main);
+		display: flex;
 		font: var(--text--heading-md);
+		inset: 0;
+		justify-content: center;
+		padding: var(--spacing-lg);
 		// Not in the original design, but a bit of visibility...
 		text-shadow: 0 1px 4px black;
-		padding: var(--spacing-lg);
-
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		inset: 0;
+		transform: none;
 	}
 }
 
@@ -228,14 +220,13 @@
 
 	font: var(--text--heading-sm);
 	gap: var(--spacing-sm);
-
 	height: calc(1lh + var(--discount-pct-padding-block) * 2);
 
 	#{$discount-pct} {
 		background-color: var(--color--accent-green);
+		border-radius: var(--rounding-md);
 		color: var(--color--bg-main);
 		font: inherit;
-		border-radius: var(--rounding-md);
 		padding: var(--discount-pct-padding-block) 12px;
 	}
 
@@ -261,21 +252,20 @@
 	}
 
 	#{$prices-container} {
-		line-height: var(--right-side-line-height);
-		gap: 0;
-		padding: 0;
-
-		flex-direction: column;
 		align-items: start;
+		flex-direction: column;
+		gap: 0;
 		justify-content: space-between;
+		line-height: var(--right-side-line-height);
+		padding: 0;
 	}
 }
 
 @mixin store--tag {
 	background: var(--color--bg-hl);
+	border-radius: var(--rounding-md);
 	color: var(--color--fg-dim);
 	font: var(--text--body-sm);
-	border-radius: var(--rounding-md);
 	padding: 6.5px 13px;
 
 	&:hover {

@@ -4,12 +4,10 @@
 	@include utils.icon($name: "arrow", $remove: true, $size: "lg");
 
 	color: var(--color--fg-main);
-
 	transition: var(--transition);
 
 	&#Collapsed {
 		transform: rotate(-90deg);
-
 		transition: var(--transition);
 	}
 }

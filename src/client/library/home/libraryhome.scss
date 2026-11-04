@@ -13,8 +13,7 @@
 
 #UpdatesContainer {
 	background-image: none;
-	padding: var(--spacing-lg);
-	margin-block-end: calc(70px / 2 - var(--spacing-lg));
-
 	height: unset;
+	margin-block-end: calc(70px / 2 - var(--spacing-lg));
+	padding: var(--spacing-lg);
 }

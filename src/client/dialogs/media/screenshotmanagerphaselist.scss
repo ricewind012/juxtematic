@@ -48,9 +48,9 @@
 	input {
 		@include controls.text-field($variant: "search");
 
-		transition: var(--transition);
 		// Align with buttons
 		padding-block: var(--spacing-xxs);
+		transition: var(--transition);
 
 		&:focus {
 			background-color: var(--color--bg-tertiary);
@@ -68,10 +68,10 @@
 
 #PhaseList {
 	gap: var(--spacing-xs);
-	padding: var(--dialog--spacing-container);
 	margin-block-start: calc(
 		var(--stickyHeaderHeight) + var(--dialog--spacing-container)
 	);
+	padding: var(--dialog--spacing-container);
 }
 
 #PhaseMediaList {
@@ -79,7 +79,6 @@
 
 	#DurationBar {
 		background-color: var(--color);
-
 		height: 4px;
 	}
 

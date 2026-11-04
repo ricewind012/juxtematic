@@ -1,10 +1,9 @@
 #CommandButton {
 	svg {
-		padding: 0;
-
 		flex-shrink: 0;
-		width: var(--icon-size-md);
 		height: var(--icon-size-md);
+		padding: 0;
+		width: var(--icon-size-md);
 	}
 }
 
