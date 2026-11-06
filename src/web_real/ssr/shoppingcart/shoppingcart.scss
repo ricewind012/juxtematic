@@ -1,9 +1,6 @@
-body.ShoppingCart {
-	background: linear-gradient(77.55deg, #14344b 12.47%, #0e141b 96.75%);
-}
-
 #BackgroundImage {
-	display: none;
+	background: linear-gradient(77.55deg, #14344b 12.47%, #0e141b 96.75%);
+	opacity: 1;
 }
 
 #CartNoteText {
@@ -49,10 +46,6 @@ body.ShoppingCart {
 	margin-block-end: var(--spacing-sm);
 }
 
-#ShoppingCartBreadcrumbs {
-	display: none;
-}
-
 #ShoppingCartCtn {
 	gap: var(--spacing-xl);
 }
@@ -66,6 +59,11 @@ body.ShoppingCart {
 #ShoppingCartLeftCol {
 	gap: var(--spacing-sm);
 	max-width: 1090px;
+
+	// "Recommendations for you"
+	& > :last-child {
+		display: none;
+	}
 }
 
 #ShoppingCartPage {

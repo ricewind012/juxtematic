@@ -1,7 +1,0 @@
-@use "shared/controls";
-
-#LinkButton {
-	@include controls.button;
-
-	text-decoration: none;
-}

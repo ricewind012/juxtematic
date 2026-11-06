@@ -1,6 +1,7 @@
 #Avatar {
 	border: var(--avatar--border-size) solid;
 	border-radius: var(--avatar--border-radius);
+	box-shadow: none;
 	height: 100%;
 	width: 100%;
 }
@@ -49,4 +50,8 @@
 	&:where(#Online) {
 		color: var(--color--primary);
 	}
+}
+
+#AvatarStatus {
+	display: none;
 }

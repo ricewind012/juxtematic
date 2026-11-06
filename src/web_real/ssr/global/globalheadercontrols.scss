@@ -3,8 +3,10 @@
 @use "shared/utils";
 @use "web";
 
-// It's in the account dropdown anyway
-#AccountBalance {
+// It's in the account dropdown anyway, who cares about the other ones
+#AccountBalance,
+#InstallSteamButton,
+#InstallSteamButtonLoggedOut {
 	display: none;
 }
 
@@ -31,11 +33,13 @@
 }
 
 #Avatar {
-	--size: var(--avatar--size-xs);
-
 	inset-inline-start: var(--button--spacing-inline);
 	margin: 0;
 	position: absolute;
+
+	& > div {
+		--steamavatar--size: var(--avatar--size-xs);
+	}
 }
 
 #Container {
@@ -59,4 +63,8 @@
 		// Align with the account dropdown
 		margin-block: 1px;
 	}
+}
+
+#GreenEnvelopeFallback {
+	display: contents;
 }

@@ -1,0 +1,200 @@
+@use "shared/controls";
+@use "shared/style";
+@use "shared/utils";
+@use "web";
+
+#Backdrop {
+	backdrop-filter: var(--blur);
+	background-color: var(--color--bg-main-50);
+	min-height: unset;
+
+	@media (prefers-reduced-motion: no-preference) {
+		transition-duration: 250ms;
+	}
+}
+
+#DynamicMenuButtons {
+	gap: var(--header--button-spacing);
+}
+
+#MenuButton {
+	@include controls.dropdown;
+
+	text-shadow: none;
+
+	&:not(#FlyoutButton) {
+		&::after {
+			display: none;
+		}
+	}
+
+	&[aria-expanded="true"] {
+		background-color: var(--color--secondary);
+
+		#MenuUnderscoreCtn {
+			display: none;
+		}
+	}
+
+	svg {
+		display: none;
+	}
+}
+
+#RightButtons {
+	gap: var(--header--button-spacing);
+	margin: 0;
+	padding: 0;
+
+	#CartButton {
+		margin: 0;
+
+		&:hover {
+			box-shadow: none;
+		}
+	}
+
+	#ItemCount {
+		color: var(--color--fg-dim);
+		font: inherit;
+		margin: 0;
+	}
+}
+
+#StoreMenu {
+	@include style.header;
+
+	// When hidden
+	animation: none;
+	background-image: none;
+	box-shadow: none;
+	// When hidden
+	height: unset;
+
+	#Content {
+		height: unset;
+		width: unset;
+	}
+}
+
+#StoreMenuContainer {
+	inset-block-start: var(--global-header-height);
+}
+
+/** capsulelist.scss **/
+#CapsuleList {
+	gap: var(--spacing-xxs);
+}
+
+#ItemCapsule {
+	background: var(--color--bg-main-20);
+	border-radius: var(--rounding-md);
+	gap: 0;
+	height: unset;
+	// For border-radius
+	overflow: hidden;
+
+	&:hover {
+		background: var(--color--bg-main-50);
+	}
+
+	#Capsule {
+		width: 242px;
+	}
+
+	#Content {
+		margin: var(--spacing-sm);
+	}
+
+	#DiscountCtn {
+		color: var(--color--fg-dim);
+		font: var(--text--body-lg);
+	}
+
+	#Title {
+		color: var(--color--fg-main);
+		font: var(--text--heading-sm);
+		margin-block-end: var(--spacing-xxs);
+	}
+}
+
+/** discount.scss **/
+#DiscountBlock {
+	@include web.store--discount(
+		$discount-pct: "#DiscountPct",
+		$final-price: "#FinalPrice",
+		// Done elsewhere I forgot where
+		$no-discount: "&.hack",
+		$original-price: "#OriginalPrice",
+		$prices-container: "#Prices"
+	);
+}
+
+/** dynamicmenubrowsesection.scss **/
+
+// ??? you guys maybe wanna unify this into one component ?
+#BrowseLinkButton {
+	// lmfao, the gradient is replaced by a border of itself, leaving it as is
+	--label-size: calc(100% - var(--border-sm) * 2);
+
+	@include web.store--category($gradient: "&", $label: "#Label");
+
+	&:hover {
+		opacity: 1;
+
+		img {
+			transform: none;
+		}
+
+		#Label {
+			background-color: rgba(0, 0, 0, 0.5);
+			transition: var(--transition);
+		}
+	}
+
+	#Label {
+		background-color: transparent;
+		box-shadow: none;
+		height: var(--label-size);
+		inset: var(--border-sm);
+		text-transform: none;
+		width: var(--label-size);
+	}
+}
+
+#BrowseLinkGrid {
+	padding: var(--spacing-md);
+}
+
+#BrowseLinkStoreLinks {
+	gap: 0;
+}
+
+#BrowseTopDestContainer {
+	background: var(--color--bg-main-20);
+	border-radius: var(--rounding-lg);
+	gap: 0;
+	// for border-radius
+	overflow: hidden;
+	padding: 0;
+}
+
+#StoreLinkWithPadding {
+	border: none;
+	color: var(--color--fg-main);
+	font: var(--text--body-md);
+	padding: var(--spacing-md);
+
+	&:hover {
+		background-image: linear-gradient(
+			90deg,
+			var(--color--bg-main-50),
+			transparent
+		);
+	}
+
+	#ButtonDescription {
+		color: var(--color--fg-dim);
+		font: var(--text--body-sm);
+	}
+}

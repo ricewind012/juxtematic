@@ -1,34 +1,10 @@
 @use "shared/utils";
 
-.rFPyDezD-xE- {
-	box-shadow: var(--dialog--shadow);
-	color: var(--color--fg-main);
-
-	&::backdrop {
-		backdrop-filter: var(--blur);
-		background: var(--color--bg-main-50);
-		// For the top line
-		inset-block-start: var(--border-sm);
-	}
-}
-
-.cdNyC6dv2kE- {
-	background: var(--color--bg-main);
-	font: var(--text--body-md);
-
-	&::before {
-		backdrop-filter: var(--blur);
-		background-image: var(--dialog--top-bar);
-		height: var(--border-sm);
-		transition: var(--transition);
-	}
-}
-
-.UA90o-oI90s- {
+#SimpleModalDialog {
 	padding: var(--dialog--spacing-container);
 }
 
-.sb69a-gt7Fs- {
+#SimpleModalDialogTitle {
 	color: var(--color--fg-main);
 	font: var(--text--heading-lg);
 	margin-block-end: var(--spacing-sm);
@@ -42,6 +18,10 @@
 	color: var(--color--fg-dim);
 	flex-basis: unset;
 	padding: 0;
+
+	&:hover {
+		color: var(--color--fg-main);
+	}
 
 	svg {
 		display: none;
