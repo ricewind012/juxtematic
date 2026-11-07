@@ -1,0 +1,12 @@
+@use "web";
+
+#DiscountBlock {
+	@include web.store--discount(
+		$discount-pct: "#DiscountPct",
+		$final-price: "#FinalPrice",
+		// Done elsewhere I forgot where
+		$no-discount: "&.hack",
+		$original-price: "#OriginalPrice",
+		$prices-container: "#Prices"
+	);
+}

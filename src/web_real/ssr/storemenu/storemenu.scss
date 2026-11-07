@@ -81,55 +81,6 @@
 	inset-block-start: var(--global-header-height);
 }
 
-/** capsulelist.scss **/
-#CapsuleList {
-	gap: var(--spacing-xxs);
-}
-
-#ItemCapsule {
-	background: var(--color--bg-main-20);
-	border-radius: var(--rounding-md);
-	gap: 0;
-	height: unset;
-	// For border-radius
-	overflow: hidden;
-
-	&:hover {
-		background: var(--color--bg-main-50);
-	}
-
-	#Capsule {
-		width: 242px;
-	}
-
-	#Content {
-		margin: var(--spacing-sm);
-	}
-
-	#DiscountCtn {
-		color: var(--color--fg-dim);
-		font: var(--text--body-lg);
-	}
-
-	#Title {
-		color: var(--color--fg-main);
-		font: var(--text--heading-sm);
-		margin-block-end: var(--spacing-xxs);
-	}
-}
-
-/** discount.scss **/
-#DiscountBlock {
-	@include web.store--discount(
-		$discount-pct: "#DiscountPct",
-		$final-price: "#FinalPrice",
-		// Done elsewhere I forgot where
-		$no-discount: "&.hack",
-		$original-price: "#OriginalPrice",
-		$prices-container: "#Prices"
-	);
-}
-
 /** dynamicmenubrowsesection.scss **/
 
 // ??? you guys maybe wanna unify this into one component ?
