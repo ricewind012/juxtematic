@@ -23,6 +23,7 @@
 }
 
 #account_pulldown {
+	margin-inline-end: var(--header--button-spacing);
 	padding-inline-start: calc(
 		var(--button--spacing-inline) + var(--avatar--size-xs) + var(--spacing-xxs)
 	);
@@ -72,7 +73,6 @@
 	display: flex;
 	// Remove signed out separator
 	font-size: 0;
-	gap: var(--header--button-spacing);
 }
 
 #global_actions {

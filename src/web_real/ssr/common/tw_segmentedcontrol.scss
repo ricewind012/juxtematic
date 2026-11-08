@@ -1,0 +1,22 @@
+@use "shared/controls";
+
+:where(#IndicatorPosition) {
+	display: none;
+}
+
+:where(#Item) {
+	@include controls.tab($active: "&[data-selected='true']");
+}
+
+:where(#SegmentedControl) {
+	gap: inherit;
+	padding: 0;
+}
+
+:where(#SegmentedControlBox) {
+	@include controls.tabs-container;
+
+	& > div {
+		gap: inherit;
+	}
+}

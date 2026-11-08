@@ -1,0 +1,8 @@
+@use "shared/controls";
+
+#Checkbox {
+	@include controls.checkbox(
+		$checked: "#Root[aria-checked='true'] > &",
+		$disabled: "#Root[aria-disabled='true'] > &"
+	);
+}

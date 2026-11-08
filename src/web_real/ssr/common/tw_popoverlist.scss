@@ -1,0 +1,19 @@
+@use "shared/menu";
+
+#Item {
+	@include menu.item;
+
+	&:where([aria-disabled="true"]) {
+		@include menu.item--disabled;
+	}
+
+	&:where([data-focused="true"], [data-selected="true"]) {
+		@include menu.item--active;
+	}
+}
+
+#Root {
+	@include menu.container;
+
+	filter: none;
+}

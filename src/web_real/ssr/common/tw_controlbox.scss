@@ -7,7 +7,7 @@
 		@include controls.button;
 	}
 
-	&:where(:not([role="combobox"])) {
+	&:where(:not([role="combobox"], [tabindex="0"])) {
 		//  TODO: lol
 		@include controls.text-field($variant: "transparent");
 	}

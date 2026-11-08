@@ -176,6 +176,15 @@ h3 {
 	}
 }
 
+// ssr
+body > [data-react-nav-root] {
+	--global-header-height: 0px;
+
+	:root:not([data-millennium-plugin]) > & {
+		--global-header-height: var(--header--height);
+	}
+}
+
 .responsive_page_template_content {
 	--store-menu-overlap-height: var(--header--height);
 	--store-menu-floating-height: var(--header--height);
