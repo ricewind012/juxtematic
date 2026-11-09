@@ -1,0 +1,26 @@
+@use "shared/controls";
+
+#Container {
+	h1 {
+		color: var(--color--fg-main);
+		font: var(--text--heading-lg);
+	}
+
+	// bruh
+	& > :first-child > div > a {
+		@include controls.button-vars($size: "sm", $variant: "tertiary");
+	}
+}
+
+#Tab {
+	@include controls.tab($active: "&#Active");
+
+	border: none;
+	margin: 0;
+}
+
+#Tabs {
+	@include controls.tabs-container;
+
+	margin-block: 24px 48px;
+}

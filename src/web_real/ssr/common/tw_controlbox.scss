@@ -4,7 +4,12 @@
 	box-shadow: none;
 
 	&:where([role="combobox"]) {
-		@include controls.button;
+		@include controls.dropdown;
+
+		// caret
+		& > :last-child {
+			display: none;
+		}
 	}
 
 	&:where(:not([role="combobox"], [tabindex="0"])) {

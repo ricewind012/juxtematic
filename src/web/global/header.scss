@@ -110,9 +110,6 @@
 
 	svg {
 		@include utils.icon($name: "notifications");
-
-		// Align with the account dropdown
-		margin-block: 1px;
 	}
 }
 

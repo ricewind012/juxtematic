@@ -1,0 +1,48 @@
+#GridItem {
+	--image-size: 179px;
+
+	background: var(--color--bg-main-50);
+	border-radius: var(--rounding-lg);
+	box-shadow: none;
+	padding: var(--spacing-md);
+	width: calc(var(--image-size) + var(--spacing-md) * 2);
+
+	&:hover {
+		transform: none;
+	}
+
+	img {
+		border-radius: var(--rounding-sm);
+	}
+}
+
+#GridItemAuthor {
+	font: var(--text--body-sm);
+	margin-inline-end: var(--icon-size);
+
+	a:not(:hover) {
+		color: var(--color--fg-dim);
+	}
+}
+
+#GridItemContent {
+	gap: 0;
+	padding: 0;
+}
+
+#GridItemHeader {
+	border: none;
+	color: var(--color--fg-main);
+	font: var(--text--heading-sm);
+	margin-block-start: var(--spacing-sm);
+}
+
+#GridItemStars {
+	display: none;
+}
+
+#SearchButtonCtn {
+	inset-block-end: 0;
+	inset-inline-end: 0;
+	opacity: 1;
+}

@@ -118,32 +118,6 @@ body.apphub_blue.v6 {
 	}
 }
 
-.filterOption {
-	@include web.sidebar--list-item;
-
-	align-items: center;
-	display: flex;
-	margin-inline: 0;
-
-	&.checked {
-		@include web.sidebar--list-item-primary;
-
-		background-image: none;
-	}
-
-	input[type="checkbox"] {
-		margin: 0;
-	}
-
-	label {
-		all: unset;
-
-		align-items: center;
-		display: flex;
-		gap: var(--spacing-xxs);
-	}
-}
-
 .flags_incompatible_desc {
 	color: var(--color--fg-dim);
 	font: var(--text--body-md);
@@ -438,17 +412,9 @@ body.apphub_blue.v6 {
 .rightDetailsBlock {
 	padding: 0;
 
-	.workshop_item_header & {
-		display: flex;
-	}
-
 	// "clear" hack
 	& > :last-child {
 		display: block;
-	}
-
-	hr {
-		display: none;
 	}
 }
 
@@ -468,19 +434,6 @@ body.apphub_blue.v6 {
 
 .rightSectionTopTitle {
 	@include web.sidebar--header;
-}
-
-.searchedForTerm {
-	all: unset;
-
-	@include web.store--tag;
-}
-
-.searchedTermsContainer {
-	@include web.section--header;
-
-	gap: var(--spacing-xxs);
-	margin: 0;
 }
 
 #sharedfiles_content_ctn {
@@ -609,28 +562,6 @@ body.apphub_blue.v6 {
 	}
 }
 
-.tag_category_desc {
-	@include web.sidebar--header;
-}
-
-.tag_filter_control_not {
-	--icon-name: icon("filter");
-
-	@include utils.icon($remove: true);
-
-	color: var(--color--fg-dim);
-	margin: 0;
-	margin-inline-start: auto;
-
-	&:hover {
-		color: var(--color--fg-main);
-	}
-
-	&.checked {
-		--icon-name: icon("filter-off");
-	}
-}
-
 .user_action_history_icon {
 	&[style="display: none"] {
 		display: none;
@@ -715,43 +646,6 @@ body.apphub_blue.v6 {
 
 .workshop_browsing_section {
 	all: unset;
-}
-
-.workshop_header {
-	background-image: none;
-	box-shadow: none;
-	height: unset;
-	margin: auto;
-	max-width: var(--content--width-sm);
-
-	&::before {
-		@include -workshop-bg;
-	}
-
-	.browseAppDetails {
-		display: block;
-		height: 0;
-	}
-
-	#{controls.button-web-selector(".btnv6_blue_blue_innerfade")} {
-		@include controls.button-vars($variant: "primary", $size: "sm");
-
-		inset-block-start: anchor(start);
-		inset-inline-end: anchor(start);
-		margin: 0;
-		margin-inline-end: var(--spacing-sm);
-		position: fixed;
-		position-anchor: --apphub-top-right-buttons;
-	}
-
-	.customBrowseText {
-		font: 0/0 sans;
-	}
-
-	.customBrowseLink,
-	.customBrowseTitle {
-		display: none;
-	}
 }
 
 .workshop_home_content {
@@ -904,62 +798,6 @@ body.apphub_blue.v6 {
 	color: var(--color--fg-main);
 	font: var(--text--heading-md);
 	padding: 0;
-}
-
-.workshopBrowseItems {
-	gap: var(--spacing-md);
-	grid-template-columns: repeat(4, 1fr);
-}
-
-.workshopBrowsePaging {
-	align-items: center;
-	color: var(--color--fg-dim);
-	font: var(--text--body-lg);
-	justify-content: space-between;
-	padding: 0;
-
-	.pagination_space {
-		display: none;
-	}
-}
-
-.workshopBrowsePagingControls {
-	@include web.paging--links-container;
-
-	margin: 0;
-
-	.pagelink {
-		@include web.paging--link($selected: "&.active");
-
-		margin: 0;
-	}
-}
-
-.workshopBrowsePagingInfo {
-	color: inherit;
-	font: inherit;
-}
-
-.workshopBrowsePagingWithBG {
-	align-items: center;
-	background-color: transparent;
-	color: var(--color--fg-dim);
-	font: var(--text--body-md);
-	justify-content: space-between;
-	margin-block: var(--spacing-sm) var(--spacing-xxl);
-	padding: 0;
-
-	.dropdown {
-		@include controls.dropdown;
-
-		margin: 0;
-	}
-}
-
-.workshopBrowseSortingControls {
-	align-items: center;
-	display: flex;
-	gap: var(--spacing-xxs);
 }
 
 .workshopBrowseItems .workshopItem {

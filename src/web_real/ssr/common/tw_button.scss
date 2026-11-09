@@ -16,7 +16,7 @@
 	}
 
 	// lol
-	&:where(#Variant-basic:not([data-accent-color="dull"])) {
+	&:where([data-accent-color="blue"]) {
 		@include controls.button-vars($variant: "primary");
 	}
 

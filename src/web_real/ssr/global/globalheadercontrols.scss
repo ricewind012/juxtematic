@@ -53,21 +53,6 @@
 	position: relative;
 }
 
-[id="green_envelope_menu_root"] {
-	@include controls.button;
-
-	height: unset;
-	position: unset;
-	width: unset;
-
-	svg {
-		@include utils.icon($name: "notifications");
-
-		// Align with the account dropdown
-		margin-block: 1px;
-	}
-}
-
 #GreenEnvelopeFallback {
 	display: contents;
 }

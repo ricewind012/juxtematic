@@ -1,0 +1,41 @@
+@use "shared/controls";
+@use "shared/menu";
+@use "shared/utils";
+
+#AppHeader {
+	display: none;
+}
+
+#Tab {
+	@include controls.tab($active: "&#Selected");
+
+	border: none;
+	box-shadow: none;
+	gap: var(--spacing-xxs);
+	height: unset;
+	margin: 0;
+
+	&:where(div)::after {
+		content: "";
+
+		@include utils.icon($name: "arrow");
+	}
+
+	svg {
+		display: none;
+	}
+}
+
+#Tabs {
+	@include controls.tabs-container;
+}
+
+// --- popup ---
+
+#Menu {
+	@include menu.container;
+}
+
+#MenuItem {
+	@include menu.item;
+}

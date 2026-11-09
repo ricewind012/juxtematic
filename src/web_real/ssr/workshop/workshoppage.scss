@@ -1,0 +1,139 @@
+@use "shared/controls";
+@use "shared/menu";
+@use "web";
+
+%-sidebar-spacing {
+	margin-inline-start: calc(var(--content--sidebar-width) + var(--spacing-lg));
+	width: calc(100% - var(--content--sidebar-width) - var(--spacing-lg));
+}
+
+#Content {
+	@include web.section--container;
+
+	grid-template-columns: repeat(4, 1fr);
+	margin: 0;
+	// bg
+	z-index: 0;
+}
+
+#InfoCtn {
+	@extend %-sidebar-spacing;
+
+	margin-block-end: var(--spacing-sm);
+
+	h2 {
+		font: var(--text--heading-sm);
+
+		& > div {
+			gap: var(--spacing-sm);
+			margin: 0;
+		}
+	}
+}
+
+#InfoHeaderSecondary {
+	color: var(--color--fg-dim);
+	font: inherit;
+	opacity: 1;
+}
+
+#InfoSortOptionsButton {
+	@include controls.dropdown;
+}
+
+#InfoSortOptionsButtonCaretIcon,
+#InfoSortOptionsButtonIcon {
+	display: none;
+}
+
+// TODO: ?
+#InfoSortOptionsMenuHeader {
+	#Sidebar & {
+		@include web.sidebar--header;
+	}
+
+	#InfoSortOptionsMenu & {
+		all: unset;
+
+		@include menu.item;
+		@include menu.description;
+	}
+}
+
+#Pagination {
+	@extend %-sidebar-spacing;
+
+	align-items: center;
+	color: var(--color--fg-dim);
+	font: var(--text--body-lg);
+	justify-content: space-between;
+	padding: 0;
+
+	button {
+		@include web.paging--arrow($disabled: "&:disabled");
+
+		&:first-child::before {
+			content: "<";
+		}
+
+		&:last-child::before {
+			content: ">";
+		}
+
+		svg {
+			display: none;
+		}
+	}
+
+	[style="--direction:row;--gap:var(--spacing-2)"] {
+		@include web.paging--links-container;
+
+		margin: 0;
+	}
+
+	.raCyHuynzKo- {
+		@include web.paging--link($selected: "&.EJXx0Du9tCY-");
+
+		margin: 0;
+	}
+}
+
+#Sidebar {
+	@include web.sidebar--container;
+
+	backdrop-filter: none;
+	background-image: none;
+	flex-shrink: 0;
+	// bg
+	z-index: 0;
+
+	body:has(&) {
+		--page-width: var(--content--width-sm);
+	}
+}
+
+#SidebarSection {
+	gap: 0;
+}
+
+// --- popup ---
+
+#InfoSortOptionsMenu {
+	@include menu.container;
+
+	padding: 0;
+
+	[role="radio"] {
+		@include menu.item;
+	}
+
+	[role="radiogroup"] {
+		gap: 0;
+	}
+}
+
+#InfoSortOptionsMenuItemsCtn {
+	flex-direction: column;
+	gap: 0;
+	max-height: unset;
+}
