@@ -20,6 +20,10 @@
 		@include controls.button-vars($variant: "primary");
 	}
 
+	&:where([data-accent-color="green"]) {
+		@include controls.button-vars($variant: "green");
+	}
+
 	&:where(#Variant-outline) {
 		@include controls.button-vars($variant: "tertiary");
 	}

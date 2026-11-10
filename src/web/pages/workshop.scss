@@ -244,28 +244,6 @@ body.apphub_blue.v6 {
 	width: unset;
 }
 
-.home_tab {
-	@include controls.tab($active: "&.active");
-
-	background: none;
-	box-shadow: none;
-	margin: 0;
-
-	.tab_content {
-		all: unset;
-	}
-}
-
-.home_tab_bg {
-	display: none;
-}
-
-.home_tabs_row {
-	@include controls.tabs-container;
-
-	margin-block: var(--spacing-lg) var(--spacing-sm);
-}
-
 #ig_bottom {
 	max-width: var(--content--width-sm);
 
@@ -359,6 +337,7 @@ body.apphub_blue.v6 {
 	@include web.section--header;
 }
 
+// TODO: removed?
 #profileBlock {
 	flex-grow: 1;
 	margin: 0;
@@ -411,6 +390,10 @@ body.apphub_blue.v6 {
 
 .rightDetailsBlock {
 	padding: 0;
+
+	.workshop_item_header & {
+		display: flex;
+	}
 
 	// "clear" hack
 	& > :last-child {
@@ -469,87 +452,6 @@ body.apphub_blue.v6 {
 				margin-block-start: 0;
 				text-transform: none;
 			}
-		}
-	}
-}
-
-.slider_container {
-	height: var(--carousel--thumb-height);
-	margin-block-start: var(--spacing-sm);
-
-	.handle {
-		background: var(--color--secondary);
-		border-radius: 40px;
-		height: var(--carousel--thumb-height);
-		width: 36px;
-	}
-
-	.slider {
-		background-color: var(--color--bg-main);
-		inset: 0;
-	}
-
-	.slider_left,
-	.slider_right {
-		display: none;
-	}
-}
-
-.slideshow_content {
-	--item-margin: var(--spacing-sm);
-	// Max image size
-	--item-size-lg: 512px;
-	--item-size-sm: 216.5px;
-	--slideshow-item-width: calc(
-		var(--item-size-lg) + var(--item-size-sm) + var(--item-margin)
-	);
-
-	max-width: var(--slideshow-item-width);
-
-	.slideshow_item {
-		width: var(--slideshow-item-width);
-	}
-
-	.workshop_item.square {
-		background-color: var(--color--bg-main-50);
-		border-radius: var(--rounding-md);
-		// 69px = footer height
-		height: calc(var(--image-size) + 69px);
-		width: var(--image-size);
-
-		&:hover {
-			background-color: var(--color--bg-main);
-		}
-
-		&.large {
-			--image-size: var(--item-size-lg);
-
-			margin-inline-end: var(--item-margin);
-		}
-
-		&.small {
-			--image-size: var(--item-size-sm);
-
-			&:nth-child(2n) {
-				margin-block-end: var(--item-margin);
-			}
-		}
-
-		.preview_image {
-			border: none;
-			border-radius: var(--rounding-md) var(--rounding-md) 0 0;
-			height: var(--image-size);
-			width: var(--image-size);
-		}
-
-		.workshop_item_info {
-			display: flex;
-			flex-direction: column-reverse;
-			padding: var(--spacing-sm);
-		}
-
-		.workshop_item_title {
-			font: var(--text--heading-sm);
 		}
 	}
 }
@@ -648,108 +550,6 @@ body.apphub_blue.v6 {
 	all: unset;
 }
 
-.workshop_home_content {
-	margin: auto;
-	width: var(--content--width-sm);
-
-	& > div {
-		display: flex;
-		gap: var(--spacing-md);
-	}
-
-	.left_column {
-		padding: 0;
-		width: unset;
-	}
-
-	.panel,
-	.primary_panel_border {
-		all: unset;
-	}
-
-	.primary_panel {
-		background: none;
-
-		.avatar_ctn,
-		.current_player_workshop_title {
-			display: none;
-		}
-
-		.browse_option {
-			all: unset;
-
-			a {
-				@include web.sidebar--list-item;
-			}
-		}
-
-		.current_player_files_ctn {
-			display: flex;
-		}
-
-		.current_player_workshop_link {
-			padding: 0;
-
-			a {
-				@include controls.dropdown;
-			}
-		}
-
-		.current_player_workshop_title a {
-			color: var(--color--fg-main);
-			font: var(--text--heading-sm);
-			padding: 0;
-		}
-
-		.menu_panel {
-			padding: 0;
-		}
-	}
-
-	.right_column {
-		@include web.sidebar--container;
-
-		br {
-			display: none;
-		}
-
-		.browseTitle,
-		.title {
-			@include web.sidebar--header;
-		}
-
-		.tag_count {
-			color: var(--color--fg-dim);
-		}
-
-		.tag_label {
-			justify-content: space-between;
-			width: 100%;
-		}
-	}
-
-	.section {
-		&.announcements_row h2 {
-			@include web.section--header;
-		}
-
-		&.popular_items_row {
-			@include web.section--container;
-		}
-	}
-
-	.section_bottom_bar,
-	.section_subtitle,
-	.section_title,
-	.section_title a {
-		all: unset;
-	}
-
-	.section_title_ctn {
-		@include web.section--header;
-	}
-}
-
 .workshop_item_header {
 	@include web.section--container;
 
@@ -800,7 +600,8 @@ body.apphub_blue.v6 {
 	padding: 0;
 }
 
-.workshopBrowseItems .workshopItem {
+// TODO: removed?
+.workshopItem {
 	--image-size: 179px;
 
 	background-color: var(--color--bg-main-50);
@@ -853,6 +654,7 @@ body.apphub_blue.v6 {
 	margin-block-start: var(--spacing-xxs);
 }
 
+// TODO: removed?
 .workshopItemCollection {
 	@include -row;
 

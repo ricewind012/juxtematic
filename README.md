@@ -44,7 +44,7 @@ If you like my work, consider supporting me by [donating your Steam items](https
   - [x] Store menu
   - [ ] Store search
   - [ ] Wishlist
-  - [ ] Workshop
+  - [x] Workshop
 
 ### Problems
 
@@ -54,7 +54,6 @@ If you like my work, consider supporting me by [donating your Steam items](https
 | Web -> Points shop          | idgaf                                       |
 | Web -> Profile -> Inventory | Item info is not themed                     |
 | Web -> Market (beta)        | New filter dialog & item info not yet done. |
-| Web -> Workshop (partial)   | New page is not themed                      |
 
 Some things like the store menu appear only on new pages, since on the old ones the class names do not match, and require Valve to rewrite the old pages entirely in React to be themed.
 

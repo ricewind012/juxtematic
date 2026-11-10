@@ -1,4 +1,4 @@
-#GridItem {
+%-item {
 	--image-size: 179px;
 
 	background: var(--color--bg-main-50);
@@ -14,6 +14,10 @@
 	img {
 		border-radius: var(--rounding-sm);
 	}
+}
+
+#GridItem {
+	@extend %-item;
 }
 
 #GridItemAuthor {
@@ -39,6 +43,10 @@
 
 #GridItemStars {
 	display: none;
+}
+
+#HorizontalItem {
+	@extend %-item;
 }
 
 #SearchButtonCtn {
