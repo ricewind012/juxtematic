@@ -1,11 +1,12 @@
-%-item {
-	--image-size: 179px;
+@use "shared/controls";
+@use "web";
 
+%-item {
 	background: var(--color--bg-main-50);
 	border-radius: var(--rounding-lg);
 	box-shadow: none;
+	gap: var(--spacing-sm);
 	padding: var(--spacing-md);
-	width: calc(var(--image-size) + var(--spacing-md) * 2);
 
 	&:hover {
 		transform: none;
@@ -18,6 +19,9 @@
 
 #GridItem {
 	@extend %-item;
+
+	display: flex;
+	flex-direction: column;
 }
 
 #GridItemAuthor {
@@ -31,6 +35,7 @@
 
 #GridItemContent {
 	gap: 0;
+	justify-content: space-between;
 	padding: 0;
 }
 
@@ -38,7 +43,6 @@
 	border: none;
 	color: var(--color--fg-main);
 	font: var(--text--heading-sm);
-	margin-block-start: var(--spacing-sm);
 }
 
 #GridItemStars {
@@ -47,10 +51,63 @@
 
 #HorizontalItem {
 	@extend %-item;
+
+	height: 100%;
+
+	& > :first-child {
+		background: var(--color--bg-main-20);
+		width: 40%;
+	}
+
+	#GridItemAuthor {
+		display: none;
+	}
+}
+
+#HorizontalItemStats {
+	display: none;
+}
+
+#HorizontalItemTags {
+	padding-block-start: var(--spacing-xxs);
+
+	button {
+		all: unset;
+
+		@include web.store--tag;
+	}
 }
 
 #SearchButtonCtn {
-	inset-block-end: 0;
-	inset-inline-end: 0;
+	--button-size: 32px;
+
+	gap: var(--spacing-xxs);
+	justify-content: end;
+	margin-block-start: var(--spacing-xxs);
 	opacity: 1;
+	position: unset;
+
+	#SubscribeButton {
+		padding: 0;
+	}
+
+	// Quick view button, remove it since it's not styled
+	& > [role="button"] {
+		display: none;
+	}
+
+	button {
+		block-size: var(--button-size);
+		inline-size: var(--button-size);
+		padding: 0;
+	}
+}
+
+#StatusIcons {
+	inset-block-start: calc(var(--spacing-sm) * -1);
+	inset-inline-end: 0;
+
+	#GridItem:has(&) img {
+		border-end-end-radius: 0;
+	}
 }

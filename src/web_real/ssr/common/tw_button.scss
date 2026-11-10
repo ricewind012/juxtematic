@@ -8,7 +8,7 @@
 	}
 
 	&:where(#Icon) {
-		//@include controls.icon-button;
+		@include controls.icon-button($w: "var(--button-size)", $child: "svg");
 	}
 
 	&:where(#Size-1) {

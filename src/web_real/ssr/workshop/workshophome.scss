@@ -2,21 +2,43 @@
 @use "shared/controls";
 @use "web";
 
+#Content {
+	gap: var(--spacing-lg);
+}
+
 #PastWeekItemCarousel {
 	background: none;
 	margin-block-end: var(--spacing-lg);
 	padding: 0;
 
 	#CarouselButtonCtn {
-		@include carousel.arrow($left: "&#Left", $right: "&#Right", $child: "svg");
-
-		inset-block-start: calc(
+		--section-spacing: var(--spacing-xl);
+		--inset-block-start: calc(
 			(var(--text--heading-sm-size) + var(--text--body-md-size)) *
-				var(--text--line-height)
+				var(--text--line-height) + var(--section-spacing) +
+				var(--carousel--section-spacing)
 		);
 
+		@include carousel.arrow($left: "&#Left", $right: "&#Right", $child: "svg");
+
+		backdrop-filter: var(--blur);
+		// prettier-ignore
+		height: calc(
+            100%
+			- var(--inset-block-start)
+			- var(--section-spacing)
+			- var(--spacing-md)
+		);
+		inset-block-start: var(--inset-block-start);
+		margin-inline: var(--section-spacing);
+		padding: 0;
+		z-index: 1;
+
 		button {
-			display: contents;
+			background: none;
+			block-size: 100%;
+			inline-size: 100%;
+			padding: 0 var(--spacing-sm);
 		}
 	}
 
@@ -27,6 +49,7 @@
 		margin: 0;
 		margin-block-start: var(--carousel--section-spacing);
 		max-width: 100%;
+		overflow: hidden;
 	}
 }
 
@@ -46,19 +69,13 @@
 		margin-block-start: var(--spacing-xxl);
 		padding: 0;
 	}
+}
 
-	#Title {
-		&:not(:has(> #Tabs)) {
-			display: none;
-		}
-
-		& + div {
-			@include web.section--header;
-
-			margin-block-end: var(--spacing-xs);
-			order: -1;
-		}
-	}
+// lol
+// TODO also because they used Flex for it wtf are they doing
+#SectionEvents,
+#SectionVotingQueue {
+	display: none;
 }
 
 #SectionItems {
@@ -88,6 +105,11 @@
 		margin-block-start: 0;
 		padding-block-start: 0;
 	}
+}
+
+#SidebarAndSearch {
+	gap: var(--spacing-sm);
+	width: var(--content--width-sm);
 }
 
 #SidebarSectionHeader {

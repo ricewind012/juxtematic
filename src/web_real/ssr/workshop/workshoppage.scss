@@ -17,9 +17,12 @@
 }
 
 #InfoCtn {
-	@extend %-sidebar-spacing;
-
 	margin-block-end: var(--spacing-sm);
+	position: relative;
+
+	& > :not(:last-child) {
+		@extend %-sidebar-spacing;
+	}
 
 	h2 {
 		font: var(--text--heading-sm);
@@ -113,6 +116,11 @@
 	}
 }
 
+#SidebarSearchCtn {
+	inset-block-start: 0;
+	position: absolute;
+}
+
 #SidebarSection {
 	gap: 0;
 }
@@ -121,16 +129,6 @@
 
 #InfoSortOptionsMenu {
 	@include menu.container;
-
-	padding: 0;
-
-	[role="radio"] {
-		@include menu.item;
-	}
-
-	[role="radiogroup"] {
-		gap: 0;
-	}
 }
 
 #InfoSortOptionsMenuItemsCtn {
