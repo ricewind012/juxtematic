@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name           Juxtematic
-@namespace      github.com/ricewind012/juxtopposed-steam-redesign
-@version        1.0.0
+@namespace      github.com/ricewind012/juxtematic
+@version        1.1.0
 @description    The redesign from Juxtopposed
 @author         ricewind
 ==/UserStyle== */
 
 @-moz-document domain("steamcommunity.com"), domain("steampowered.com") {
-@import url("https://rawcdn.githack.com/ricewind012/juxtopposed-steam-redesign/a0fc2ddaa1ee31a19e67074d6d11738fb6ed66bb/dist/shared.css");
-@import url("https://rawcdn.githack.com/ricewind012/juxtopposed-steam-redesign/a0fc2ddaa1ee31a19e67074d6d11738fb6ed66bb/dist/web.css");
-@import url("https://rawcdn.githack.com/ricewind012/juxtopposed-steam-redesign/a0fc2ddaa1ee31a19e67074d6d11738fb6ed66bb/dist/web_shared.css");
+@import url("https://rawcdn.githack.com/ricewind012/juxtematic/d3049ce98ce3188811b585abf23bdf32a1476e2d/dist/shared.css");
+@import url("https://rawcdn.githack.com/ricewind012/juxtematic/d3049ce98ce3188811b585abf23bdf32a1476e2d/dist/web.css");
+@import url("https://rawcdn.githack.com/ricewind012/juxtematic/d3049ce98ce3188811b585abf23bdf32a1476e2d/dist/web_shared.css");
 }
