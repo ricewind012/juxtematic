@@ -4,6 +4,11 @@
 
 #Content {
 	gap: var(--spacing-lg);
+
+	// voting section
+	& > [style="--width:100%;--direction:column"] {
+		display: none;
+	}
 }
 
 #PastWeekItemCarousel {
@@ -71,15 +76,15 @@
 	}
 }
 
+#SectionItems {
+	margin-block: var(--spacing-xxl);
+}
+
 // lol
 // TODO also because they used Flex for it wtf are they doing
 #SectionEvents,
 #SectionVotingQueue {
 	display: none;
-}
-
-#SectionItems {
-	margin-block: var(--spacing-xxl);
 }
 
 #Sidebar {

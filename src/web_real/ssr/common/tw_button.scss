@@ -1,14 +1,22 @@
 @use "shared/controls";
+@use "shared/utils";
 
 :where(#Button) {
 	@include controls.button;
 
 	&:where(:disabled, [aria-disabled="true"]) {
-		// do I really not have a disabled variant?
+		// TODO(controls): disabled button state
+		opacity: var(--dim-opacity);
 	}
 
 	&:where(#Icon) {
-		@include controls.icon-button($w: "var(--button-size)", $child: "svg");
+		// This doesn't actually guarantee this is an icon button... ty valve
+		--button--spacing-inline: var(--button--spacing-block-md);
+
+		// ...but style the icons anyway
+		svg {
+			@include utils.icon;
+		}
 	}
 
 	&:where(#Size-1) {

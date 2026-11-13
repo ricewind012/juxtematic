@@ -11,8 +11,8 @@
 	--spacing-5: var(--spacing-lg);
 	--spacing-6: var(--spacing-xl);
 	--spacing-7: var(--spacing-xxl);
-	--spacing-8: 48px;
-	--spacing-9: 64px;
+	--spacing-8: var(--spacing-xxl);
+	--spacing-9: var(--spacing-xxl);
 
 	--control-height-1: unset;
 	--control-height-2: unset;
@@ -20,4 +20,8 @@
 
 	--default-font-size: var(--color--fg-main);
 	--default-line-height: var(--text--line-height);
+}
+
+[data-body-text-color] {
+	--color-text-body-body: var(--color--fg-main);
 }

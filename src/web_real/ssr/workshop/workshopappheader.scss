@@ -1,6 +1,6 @@
 @use "shared/controls";
-@use "shared/menu";
 @use "shared/utils";
+@use "web";
 
 #AppHeader {
 	display: none;
@@ -33,9 +33,16 @@
 // --- popup ---
 
 #Menu {
-	@include menu.container;
+	@include web.workshop--menu-container;
+}
+
+#MenuHeader {
+	color: var(--color--fg-main);
+	font: var(--text--heading-sm);
+	letter-spacing: 0;
+	text-transform: none;
 }
 
 #MenuItem {
-	@include menu.item;
+	@include controls.button($size: "sm");
 }

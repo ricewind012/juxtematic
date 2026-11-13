@@ -1,6 +1,15 @@
 @use "shared/controls";
-@use "shared/menu";
+@use "shared/utils";
 @use "web";
+
+%-filter-button {
+	--button-fill: var(--button--secondary-bg);
+	--button-symbol: var(--color--fg-main);
+
+	&:hover {
+		--button-fill: var(--button--secondary-bg-hover);
+	}
+}
 
 %-sidebar-spacing {
 	margin-inline-start: calc(var(--content--sidebar-width) + var(--spacing-lg));
@@ -16,14 +25,27 @@
 	z-index: 0;
 }
 
-#InfoCtn {
-	margin-block-end: var(--spacing-sm);
-	position: relative;
+#FilterBtnExclude {
+	@extend %-filter-button;
 
-	& > :not(:last-child) {
-		@extend %-sidebar-spacing;
+	&#FilterBtnEnabled {
+		--button-fill: var(--color--accent-yellow);
+		--button-symbol: var(--button--secondary-bg);
+		--button-stroke: var(--color--accent-yellow);
 	}
+}
 
+#FilterBtnInclude {
+	@extend %-filter-button;
+
+	&#FilterBtnEnabled {
+		--button-fill: var(--color--accent-green);
+		--button-symbol: var(--button--secondary-bg);
+		--button-stroke: var(--color--accent-green);
+	}
+}
+
+#InfoCtn {
 	h2 {
 		font: var(--text--heading-sm);
 
@@ -34,10 +56,64 @@
 	}
 }
 
-#InfoHeaderSecondary {
+#InfoFilterContent {
+	gap: var(--spacing-xs);
+	min-height: unset;
+
+	button[data-accent-color] {
+		@include controls.button-vars($size: "md");
+	}
+
+	& > button:first-of-type {
+		margin-inline-start: auto;
+	}
+}
+
+#InfoFilterStatus {
+	align-items: center;
 	color: var(--color--fg-dim);
-	font: inherit;
-	opacity: 1;
+	display: flex;
+	min-height: calc(
+		var(--text--body-lg-size) * var(--text--line-height) +
+			var(--button--border-size) * 2 + var(--button--spacing-block-md) * 2
+	);
+}
+
+#InfoFilterTagCloseBtn {
+	@include utils.icon($name: "close");
+
+	color: inherit;
+	transform: none;
+}
+
+#InfoFilterTagCtn {
+	#FilterBtnExclude,
+	#FilterBtnInclude {
+		display: none;
+	}
+
+	button {
+		&:has(> #FilterBtnExclude) {
+			@include controls.button-vars($variant: "yellow");
+		}
+
+		&:has(> #FilterBtnInclude) {
+			@include controls.button-vars($variant: "green");
+		}
+	}
+}
+
+// "Subscribe to add to your game". Yeah dude I know
+#InfoHeaderSecondary {
+	display: none;
+}
+
+#InfoHeaderSecondaryCtn {
+	margin-block-end: var(--spacing-sm);
+
+	& + div {
+		align-items: center;
+	}
 }
 
 #InfoSortOptionsButton {
@@ -58,9 +134,21 @@
 	#InfoSortOptionsMenu & {
 		all: unset;
 
-		@include menu.item;
-		@include menu.description;
+		color: var(--color--fg-main);
+		font: var(--text--heading-sm);
+		margin: var(--spacing-md);
+		margin-block: 0 var(--spacing-xs);
 	}
+}
+
+#InfoSortOptionsMenu {
+	@include web.workshop--menu-container;
+}
+
+#InfoSortOptionsMenuItemsCtn {
+	flex-direction: column;
+	gap: var(--spacing-xs);
+	max-height: unset;
 }
 
 #Pagination {
@@ -107,6 +195,7 @@
 	backdrop-filter: none;
 	background-image: none;
 	flex-shrink: 0;
+	font: inherit;
 	gap: 0;
 	// bg
 	z-index: 0;
@@ -116,23 +205,25 @@
 	}
 }
 
-#SidebarSearchCtn {
-	inset-block-start: 0;
-	position: absolute;
+#SidebarDateFilters {
+	gap: 0;
+	margin: 0;
+
+	& > div {
+		gap: var(--spacing-xxs);
+	}
+}
+
+#SidebarDateFilters {
+	margin: 0;
 }
 
 #SidebarSection {
 	gap: 0;
-}
 
-// --- popup ---
-
-#InfoSortOptionsMenu {
-	@include menu.container;
-}
-
-#InfoSortOptionsMenuItemsCtn {
-	flex-direction: column;
-	gap: 0;
-	max-height: unset;
+	&:first-child #InfoSortOptionsMenuHeader {
+		border-block-start: none;
+		margin-block-start: 0;
+		padding-block-start: 0;
+	}
 }

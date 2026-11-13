@@ -1,4 +1,4 @@
-@use "shared/utils";
+@use 'shared/menu';@use "shared/utils";
 
 @mixin apphub--card-metadata-button {
 	background: var(--color--bg-main);
@@ -296,4 +296,13 @@
 			display: none;
 		}
 	}
+}
+
+@mixin workshop--menu-container {
+
+	@include menu.container;
+
+	// For a bit more visible buttons
+	backdrop-filter: var(--blur);
+	background: color-mix(in srgb, var(--color--bg-hl) 75%, transparent);
 }

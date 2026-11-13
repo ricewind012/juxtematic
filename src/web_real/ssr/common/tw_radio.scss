@@ -13,6 +13,7 @@
 
 		// Too big compared to the client radio component, since it's used for
 		// mostly like 4 items there
+		font: var(--text--body-md);
 		padding-block: var(--spacing-xs);
 	}
 }
