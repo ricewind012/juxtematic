@@ -47,6 +47,25 @@
 
 	&#Downloading {
 		--icon-name: icon("download");
+
+		// ty valve for this amazing layout
+		block-size: fit-content;
+		display: grid;
+		grid-template-areas:
+			"icon title"
+			"icon description";
+
+		&::before {
+			grid-area: icon;
+		}
+
+		#PlayBarDetailLabel {
+			grid-area: description;
+		}
+
+		#PlayBarLabel {
+			grid-area: title;
+		}
 	}
 
 	&::before {

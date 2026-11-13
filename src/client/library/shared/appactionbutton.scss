@@ -35,6 +35,7 @@
 
 #PlayButtonContainer {
 	min-width: 151px;
+	height: unset;
 
 	&#Green > #ButtonChild {
 		@include controls.button-vars($variant: "green");
