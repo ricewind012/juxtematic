@@ -75,7 +75,7 @@ git commit -m "$commit_msg" || :
 # "Files are cached permanently based on the URL". The caveat is that the
 # default theme will flash for a bit...
 last_dist_commit=$(git rev-parse HEAD)
-git push -u origin "$DIST_BRANCH"
+git push -u origin "$DIST_BRANCH" -f
 
 # Bump the version, then push said version.
 git checkout master
