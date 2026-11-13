@@ -92,7 +92,7 @@
 	padding: var(--spacing-lg);
 }
 
-@mixin titlebarcontrols--button {
+@mixin titlebarcontrols--button($icon) {
 	background-color: var(--color--bg-hl);
 	border-radius: var(--rounding-md);
 	padding: var(--spacing-xs) 15px;
@@ -101,7 +101,7 @@
 		background-color: var(--color--bg-hover);
 	}
 
-	svg {
+	#{$icon} {
 		@include utils.icon($remove: true, $size: "lg");
 	}
 }

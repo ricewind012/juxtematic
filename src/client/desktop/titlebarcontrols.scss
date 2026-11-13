@@ -3,7 +3,7 @@
 @use "shared/utils";
 
 #AccountMenu {
-	@include client.titlebarcontrols--button;
+	@include client.titlebarcontrols--button($icon: "#Chevron");
 
 	font: var(--text--body-md);
 	gap: 8px;
@@ -31,7 +31,7 @@
 }
 
 #Button {
-	@include client.titlebarcontrols--button;
+	@include client.titlebarcontrols--button($icon: "#Icon");
 
 	color: inherit;
 }

@@ -5,7 +5,7 @@
 	--icon-name: var(--icon-#{$icon});
 	--icon-size-lg: var(--dialog--window-control-size);
 
-	@include client.titlebarcontrols--button;
+	@include client.titlebarcontrols--button($icon: "svg");
 }
 
 #AddGameButton {
