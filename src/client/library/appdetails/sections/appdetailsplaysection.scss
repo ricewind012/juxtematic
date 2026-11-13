@@ -30,7 +30,7 @@
 	@include controls.progress-bar($inner: "#DetailsProgressBar");
 
 	height: unset;
-	margin-inline-start: var(--spacing-xxs);
+	margin-block-start: var(--spacing-xxs);
 
 	&#DownloadProgressBar {
 		display: none;
