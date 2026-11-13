@@ -16,4 +16,9 @@
 	@include menu.container;
 
 	filter: none;
+
+	[role="separator"] {
+		background: var(--color--border);
+		block-size: var(--border-sm);
+	}
 }

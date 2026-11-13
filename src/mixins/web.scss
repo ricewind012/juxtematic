@@ -1,4 +1,5 @@
-@use 'shared/menu';@use "shared/utils";
+@use "shared/menu";
+@use "shared/utils";
 
 @mixin apphub--card-metadata-button {
 	background: var(--color--bg-main);
@@ -299,7 +300,6 @@
 }
 
 @mixin workshop--menu-container {
-
 	@include menu.container;
 
 	// For a bit more visible buttons
