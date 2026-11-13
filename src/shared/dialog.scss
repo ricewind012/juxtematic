@@ -211,6 +211,8 @@
 
 .SettingsDialogSubHeader {
 	@include client.settings--header;
+
+	margin: 0;
 }
 
 .title-area {
@@ -218,9 +220,7 @@
 
 	gap: var(--dialog--window-control-spacing);
 	height: min-content;
-	inset-inline-start: unset;
-	padding-block-start: var(--spacing-md);
-	padding-inline-end: var(--spacing-md);
+	padding: var(--spacing-md);
 	z-index: 1500;
 
 	html[browsertype="DirectHWND"] & {

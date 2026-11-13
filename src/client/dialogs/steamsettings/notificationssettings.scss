@@ -1,56 +1,12 @@
-@use "shared/controls";
-@use "client";
-
-#FriendsDescription {
-	@include client.settings--info;
-}
-
-#NotificationFeedToggle {
-	margin-inline-end: var(--spacing-sm);
-}
-
-#NotificationGroup {
-	background-color: transparent;
-	border: none;
-	margin-block-end: var(--spacing-sm);
-}
-
-#NotificationPrefDetails {
-	background-color: transparent;
-	box-shadow: none;
-	flex-direction: column;
-	gap: var(--spacing-sm);
-	padding: 0;
-	margin-inline-start: calc(var(--toggle--switch-size) + var(--spacing-sm));
-}
-
-#NotificationSection {
-	padding: 0;
-}
-
-#PrefDetailsToggle {
-	@include controls.icon-button(
-		$w: 47px,
-		$h: 44px,
-		$child: "svg",
-		$name: "arrow",
-		$size: "lg"
-	);
-
-	&#Selected svg {
-		transform: rotate(180deg);
-	}
-}
-
-#ToggleHeader {
+#Toggles {
 	color: var(--color--fg-dim);
 	font: var(--text--body-sm);
 	letter-spacing: 0;
-	padding-block-end: 0;
-}
+	text-transform: none;
 
-#Toggles {
 	#Sound {
-		width: calc(var(--toggle--switch-size) + 80px);
+		margin-inline-start: 80px;
+		margin-inline-end: var(--gamepaddialog--field-spacing-inline);
+		width: var(--toggle--switch-size);
 	}
 }

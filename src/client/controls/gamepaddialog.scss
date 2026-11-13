@@ -2,6 +2,8 @@
 
 #Toggle {
 	@include controls.toggle($checked: "&#On", $disabled: "&#Disabled");
+
+	margin: 0;
 }
 
 #ToggleRail,

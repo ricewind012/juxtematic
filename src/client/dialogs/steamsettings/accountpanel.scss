@@ -4,12 +4,9 @@
 	border-radius: 0;
 	flex-direction: column;
 	gap: 0;
-	justify-content: start;
-	margin-block: calc(var(--spacing-xxs) * -1);
-	margin-inline: calc(var(--gamepaddialog--field-spacing-inline) * -1);
+	max-width: unset;
 	padding-inline: var(--gamepaddialog--field-spacing-inline);
-	position: relative;
-	width: calc(100% + var(--gamepaddialog--field-spacing-inline) * 2);
+	text-align: start;
 
 	&:not(:hover) {
 		background-color: transparent;
@@ -33,6 +30,11 @@
 		color: var(--color--fg-dim);
 		font: var(--text--body-sm);
 	}
+}
+
+#FatButtonRow {
+	flex-direction: column;
+	gap: 0;
 }
 
 #Highlight {

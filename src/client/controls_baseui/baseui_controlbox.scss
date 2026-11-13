@@ -1,0 +1,18 @@
+@use "shared/controls";
+
+// TODO
+:where([role="combobox"][data-has-value]) {
+	@include controls.dropdown;
+
+	box-shadow: none;
+
+	// caret
+	& > :last-child {
+		display: none;
+	}
+
+	span {
+		color: inherit;
+		font: inherit;
+	}
+}

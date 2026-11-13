@@ -7,8 +7,8 @@
 
 #PageListSeparator {
 	background-color: var(--color--border);
-	margin-block: var(--spacing-sm);
-	margin-inline: 0;
+	block-size: var(--border-sm);
+	margin: 0;
 }
 
 #PagedSettingsDialog {
@@ -68,6 +68,7 @@
 }
 
 #PagedSettingsDialog_PageList {
+	gap: var(--spacing-sm);
 	padding: var(--spacing-md);
 }
 
@@ -83,11 +84,15 @@
 
 	color: var(--color--fg-main);
 	font: var(--text--body-lg);
+	// Remove margin from the mixin
+	margin: 0;
 }
 
 #PagedSettingsDialog_Title {
 	color: var(--color--fg-main);
 	font: var(--text--heading-lg);
+	// Align with titlebar
+	line-height: 1;
 	margin: var(--spacing-md);
 	padding: 0;
 	text-align: center;

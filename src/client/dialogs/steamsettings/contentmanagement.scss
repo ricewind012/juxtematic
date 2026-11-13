@@ -77,7 +77,7 @@ $-bar-colors: (
 }
 
 #AppBodyInfo {
-	margin: 0;
+	margin-inline-start: var(--spacing-md);
 }
 
 #AppHeader {

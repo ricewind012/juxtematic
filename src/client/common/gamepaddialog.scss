@@ -14,6 +14,7 @@ $-others: ":where(#StandaloneFieldSeparator, .DialogControlsSection)";
 	--field-row-children-spacing: 0px;
 
 	background-color: var(--color--bg-main-50);
+	margin: 0;
 	margin-inline-start: calc(
 		var(--gamepaddialog--field-spacing-inline) * var(--indent-level)
 	);
@@ -42,9 +43,13 @@ $-others: ":where(#StandaloneFieldSeparator, .DialogControlsSection)";
 		border-radius: var(--rounding-lg);
 	}
 
-	&#WithDescription {
+	&:has(#FieldDescription) {
 		&:not(:hover) #FieldDescription {
 			display: none;
+		}
+
+		&:hover #FieldRightColumn {
+			align-items: start;
 		}
 
 		#FieldLabel::after {
@@ -88,6 +93,12 @@ $-others: ":where(#StandaloneFieldSeparator, .DialogControlsSection)";
 	&:not(:has(> #FieldLabel:empty)) {
 		min-height: 44px;
 	}
+}
+
+#FieldRightColumn {
+	align-items: center;
+	display: flex;
+	justify-content: end;
 }
 
 #LabelFieldValue {
