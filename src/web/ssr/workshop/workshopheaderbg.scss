@@ -1,0 +1,22 @@
+@use "shared/style";
+
+#Grid {
+	@include style.workshop-bg;
+
+	background-size: unset;
+	opacity: 1;
+	z-index: 0;
+
+	// hell yeah dude
+	:where(& ~ * *) {
+		z-index: 0;
+	}
+
+	& + div {
+		padding-block-start: var(--content--spacing-block-start);
+	}
+}
+
+#ImgBlur {
+	display: none;
+}

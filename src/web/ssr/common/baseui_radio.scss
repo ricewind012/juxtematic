@@ -1,0 +1,23 @@
+@use "shared/controls";
+
+// to be extra sure
+:where(
+	[role="radiogroup"][style="--direction: column; --gap: var(--spacing-2);"]
+) {
+	@include controls.radio-container;
+
+	gap: 0;
+
+	:where([role="radio"]) {
+		@include controls.radio($active: "&[aria-checked='true']");
+
+		// Too big compared to the client radio component, since it's used for
+		// mostly like 4 items there
+		font: var(--text--body-md);
+		padding-block: var(--spacing-xs);
+	}
+}
+
+#Radio {
+	display: none;
+}

@@ -1,0 +1,122 @@
+@use "shared/controls";
+@use "web";
+
+%-item {
+	background: var(--color--bg-main-50);
+	border-radius: var(--rounding-lg);
+	box-shadow: none;
+	gap: var(--spacing-sm);
+	padding: var(--spacing-md);
+
+	&:hover {
+		transform: none;
+	}
+
+	img {
+		border-radius: var(--rounding-sm);
+	}
+}
+
+#ActionButtonsCtn {
+	--button-size: 32px;
+
+	gap: var(--spacing-xxs);
+	justify-content: end;
+	margin-block-start: var(--spacing-xxs);
+	opacity: 1;
+	position: unset;
+
+	&:has(> [role="button"]:only-child) {
+		display: none;
+	}
+
+	#SubscribeButton {
+		padding: 0;
+	}
+
+	// Quick view button, remove it since it's not styled
+	& > [role="button"] {
+		display: none;
+	}
+
+	button {
+		block-size: var(--button-size);
+		inline-size: var(--button-size);
+		padding: 0;
+	}
+}
+
+#GridItem {
+	@extend %-item;
+
+	display: flex;
+	flex-direction: column;
+}
+
+#ItemAuthor {
+	font: var(--text--body-sm);
+	margin-inline-end: var(--icon-size);
+
+	a:not(:hover) {
+		color: var(--color--fg-dim);
+	}
+}
+
+#ItemContent {
+	gap: 0;
+	justify-content: space-between;
+	padding: 0;
+}
+
+#ItemStars {
+	display: none;
+}
+
+#ItemTitle {
+	border: none;
+	color: var(--color--fg-main);
+	font: var(--text--heading-sm);
+}
+
+#HorizontalItem {
+	@extend %-item;
+
+	height: 100%;
+
+	& > :first-child {
+		background: var(--color--bg-main-20);
+		width: 40%;
+
+		&.aspectratio_square {
+			width: 30%;
+		}
+	}
+
+	#ItemAuthor {
+		display: none;
+	}
+}
+
+#HorizontalItemStats {
+	display: none;
+}
+
+#HorizontalItemTags {
+	flex-wrap: wrap;
+	padding-block-start: var(--spacing-xxs);
+
+	button {
+		all: unset;
+
+		@include web.store--tag;
+	}
+}
+
+#StatusIcons {
+	inset-block-start: calc(var(--spacing-sm) * -1);
+	inset-inline-end: 0;
+
+	#GridItem:has(&) img {
+		border-end-end-radius: 0;
+	}
+}

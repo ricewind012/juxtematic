@@ -1,3 +1,4 @@
+@use "shared/menu";
 @use "shared/utils";
 
 @mixin apphub--card-metadata-button {
@@ -27,6 +28,17 @@
 		color: var(--color--fg-dim);
 		content: "";
 	}
+}
+
+@mixin global--global-header-dropdown-menu {
+	// For "top" property calculation
+	font: var(--text--body-lg);
+	// TODO: 4px
+	inset-block-start: calc(
+		var(--header--spacing-block) + var(--button--spacing-block-md) * 2 + 1lh -
+			4px
+	);
+	position: absolute;
 }
 
 @mixin layout--sidebar-item($active) {
@@ -218,6 +230,7 @@
 		var(--text--line-height) - (var(--text--line-height) - 1) / 2
 	);
 
+	align-items: center;
 	font: var(--text--heading-sm);
 	gap: var(--spacing-sm);
 	height: calc(1lh + var(--discount-pct-padding-block) * 2);
@@ -284,4 +297,12 @@
 			display: none;
 		}
 	}
+}
+
+@mixin workshop--menu-container {
+	@include menu.container;
+
+	// For a bit more visible buttons
+	backdrop-filter: var(--blur);
+	background: color-mix(in srgb, var(--color--bg-hl) 75%, transparent);
 }

@@ -1,0 +1,23 @@
+@use "shared/menu";
+
+// Client-specific contextmenu rules, ones in ../popups/contextmenus are
+// symlinked with SSR
+
+#contextMenuContents {
+	#ContextMenuPopup & {
+		background-color: transparent;
+		padding: 0;
+	}
+}
+
+#IconContainer {
+	display: none;
+}
+
+#ContextMenuPosition {
+	margin: 0;
+}
+
+#ContextMenuHRSeparator {
+	@include menu.separator;
+}

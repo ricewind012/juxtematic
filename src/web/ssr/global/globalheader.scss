@@ -1,0 +1,75 @@
+@use "shared/controls";
+@use "shared/menu";
+@use "shared/style";
+@use "web";
+
+#Container {
+	@include style.header;
+
+	inset-block-start: 0;
+	position: sticky;
+	z-index: 999;
+}
+
+#Content {
+	justify-content: space-between;
+	height: unset;
+	max-width: unset;
+}
+
+#Logo {
+	display: none;
+}
+
+// Use the mobile header for the notifications count
+.responsive_header {
+	display: block;
+	inset-block-start: -9999px;
+	overflow: visible;
+	z-index: 1000;
+}
+
+.responsive_header_notification_badge {
+	@include style.notification-dot;
+
+	margin-block-start: var(--header--spacing-block);
+	margin-inline-end: var(--header--spacing-inline);
+	position: fixed;
+
+	&.no_notifications {
+		display: none;
+	}
+}
+
+#SuperNavItem {
+	@include controls.button;
+
+	// For ::first-letter
+	display: block;
+	text-transform: lowercase;
+
+	&[aria-current="page"] {
+		@include controls.button-vars($variant: "primary");
+	}
+
+	&:not(#SuperNavUserName)::first-letter {
+		text-transform: uppercase;
+	}
+
+	&::after {
+		display: none;
+	}
+}
+
+#SuperNavList {
+	gap: var(--header--button-spacing);
+}
+
+#SuperNavMenu {
+	@include menu.container;
+	@include web.global--global-header-dropdown-menu;
+}
+
+#SuperNavMenuItem {
+	@include menu.item;
+}

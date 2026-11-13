@@ -21,10 +21,10 @@ The redesign from Juxtopposed. Check out the original [video][design-video] & [d
     - [ ] Options (maybe)
     - [x] Change Window Params (only system titlebar)
 - [ ] Web
-  - [x] Account preferences
+  - [ ] Account preferences
   - [x] App hub
   - [x] App page
-  - [ ] Dialogs/modals
+  - [x] Dialogs/modals
   - [x] Forum
   - [x] Friend activity
   - [x] Group
@@ -34,24 +34,26 @@ The redesign from Juxtopposed. Check out the original [video][design-video] & [d
   - [x] Profile
     - [x] Friends
     - [ ] Games
-    - [x] Inventory
+    - [ ] Inventory
     - [x] Settings
     - [x] Trade offers
   - [x] Shopping cart
   - [x] Store home
+  - [x] Store menu
   - [ ] Store search
   - [ ] Wishlist
   - [x] Workshop
 
 ### Problems
 
-| Where                   | Why                                         |
-| ----------------------- | ------------------------------------------- |
-| Web -> Dialogs/modals   | Does anyone even use any of these?          |
-| Web -> Points shop      | idgaf                                       |
-| Web -> Profile -> Games | Broken, unable to theme with current method |
-| Web -> Market           | New filter dialog & item info not yet done. |
-| Web -> Wishlist         | Broken, unable to theme with current method |
+| Where                       | Why                                         |
+| --------------------------- | ------------------------------------------- |
+| Web -> Account preferences  | Only old pages                              |
+| Web -> Points shop          | idgaf                                       |
+| Web -> Profile -> Inventory | Item info is not themed                     |
+| Web -> Market (beta)        | New filter dialog & item info not yet done. |
+
+Some things like the store menu appear only on new pages, since on the old ones the class names do not match, and require Valve to rewrite the old pages entirely in React to be themed.
 
 [design-figma]: https://www.figma.com/community/file/1302616100790619521/steam-redesign
 [design-video]: https://www.youtube.com/watch?v=cDY2p1CTkPo

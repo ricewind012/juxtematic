@@ -1,0 +1,31 @@
+@use "shared/controls";
+@use "shared/menu";
+@use "web";
+
+#Container {
+	@include web.sidebar--container;
+
+	// it's set here for some reason, gg valve
+	--control-height-2: unset;
+	gap: var(--spacing-sm);
+	height: unset;
+
+	& > form > div {
+		@include controls.text-field($variant: "search");
+	}
+
+	input {
+		background: none;
+		color: inherit;
+		height: unset;
+		padding: 0;
+	}
+}
+
+#Menu {
+	@include menu.container;
+}
+
+#SettingsButton {
+	@include controls.icon-button($w: 45px, $child: "svg", $name: "settings");
+}

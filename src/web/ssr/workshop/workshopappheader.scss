@@ -1,0 +1,48 @@
+@use "shared/controls";
+@use "shared/utils";
+@use "web";
+
+#AppHeader {
+	display: none;
+}
+
+#Tab {
+	@include controls.tab($active: "&#Selected");
+
+	border: none;
+	box-shadow: none;
+	gap: var(--spacing-xxs);
+	height: unset;
+	margin: 0;
+
+	&:where(div)::after {
+		content: "";
+
+		@include utils.icon($name: "arrow");
+	}
+
+	svg {
+		display: none;
+	}
+}
+
+#Tabs {
+	@include controls.tabs-container;
+}
+
+// --- popup ---
+
+#Menu {
+	@include web.workshop--menu-container;
+}
+
+#MenuHeader {
+	color: var(--color--fg-main);
+	font: var(--text--heading-sm);
+	letter-spacing: 0;
+	text-transform: none;
+}
+
+#MenuItem {
+	@include controls.button($size: "sm");
+}

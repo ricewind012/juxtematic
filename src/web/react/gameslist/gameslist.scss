@@ -16,30 +16,3 @@
 	margin-block-start: var(--content--spacing-block-start);
 	max-width: var(--content--width-sm);
 }
-
-.migrated_profile_page {
-	.responsive_tab_baseline {
-		display: none;
-	}
-
-	.sectionTab {
-		@include controls.tab($active: "&.active");
-
-		background: none;
-		height: unset;
-		margin: 0;
-		// wishlist
-		position: unset;
-		transform: none;
-
-		& > span {
-			all: unset;
-		}
-	}
-
-	.sectionTabs {
-		@include controls.tabs-container;
-
-		margin: 0;
-	}
-}

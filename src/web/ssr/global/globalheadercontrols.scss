@@ -1,0 +1,58 @@
+@use "shared/controls";
+@use "shared/menu";
+@use "shared/utils";
+@use "web";
+
+// It's in the account dropdown anyway, who cares about the other ones
+#AccountBalance,
+#InstallSteamButton,
+#InstallSteamButtonLoggedOut {
+	display: none;
+}
+
+#AccountInfoContainer {
+	margin-inline-end: var(--header--button-spacing);
+}
+
+#AccountMenu {
+	@include menu.container;
+	@include web.global--global-header-dropdown-menu;
+}
+
+#AccountMenuButton {
+	@include controls.dropdown;
+
+	height: unset;
+	padding-inline-start: calc(
+		var(--button--spacing-inline) + var(--avatar--size-xs) + var(--spacing-xxs)
+	);
+}
+
+#AccountMenuItem {
+	@include menu.item;
+}
+
+#AccountMenuItemTextHighlight {
+	color: var(--color--primary);
+}
+
+#Avatar {
+	inset-inline-start: var(--button--spacing-inline);
+	margin: 0;
+	position: absolute;
+
+	& > div {
+		--steamavatar--size: var(--avatar--size-xs);
+	}
+}
+
+#Container {
+	align-items: center;
+	flex-direction: row-reverse;
+	inset: 0;
+	position: relative;
+}
+
+#GreenEnvelopeFallback {
+	display: contents;
+}

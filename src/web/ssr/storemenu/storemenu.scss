@@ -1,4 +1,87 @@
+@use "shared/controls";
+@use "shared/style";
+@use "shared/utils";
 @use "web";
+
+#Backdrop {
+	backdrop-filter: var(--blur);
+	background-color: var(--color--bg-main-50);
+	min-height: unset;
+
+	@media (prefers-reduced-motion: no-preference) {
+		transition-duration: 250ms;
+	}
+}
+
+#DynamicMenuButtons {
+	gap: var(--header--button-spacing);
+}
+
+#MenuButton {
+	@include controls.dropdown;
+
+	text-shadow: none;
+
+	&:not(#FlyoutButton) {
+		&::after {
+			display: none;
+		}
+	}
+
+	&[aria-expanded="true"] {
+		background-color: var(--color--secondary);
+
+		#MenuUnderscoreCtn {
+			display: none;
+		}
+	}
+
+	svg {
+		display: none;
+	}
+}
+
+#RightButtons {
+	gap: var(--header--button-spacing);
+	margin: 0;
+	padding: 0;
+
+	#CartButton {
+		margin: 0;
+
+		&:hover {
+			box-shadow: none;
+		}
+	}
+
+	#ItemCount {
+		color: var(--color--fg-dim);
+		font: inherit;
+		margin: 0;
+	}
+}
+
+#StoreMenu {
+	@include style.header;
+
+	// When hidden
+	animation: none;
+	background-image: none;
+	box-shadow: none;
+	// When hidden
+	height: unset;
+
+	#Content {
+		height: unset;
+		width: unset;
+	}
+}
+
+#StoreMenuContainer {
+	inset-block-start: var(--global-header-height);
+}
+
+/** dynamicmenubrowsesection.scss **/
 
 // ??? you guys maybe wanna unify this into one component ?
 #BrowseLinkButton {

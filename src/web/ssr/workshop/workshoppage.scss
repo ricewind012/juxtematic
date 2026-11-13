@@ -1,0 +1,229 @@
+@use "shared/controls";
+@use "shared/utils";
+@use "web";
+
+%-filter-button {
+	--button-fill: var(--button--secondary-bg);
+	--button-symbol: var(--color--fg-main);
+
+	&:hover {
+		--button-fill: var(--button--secondary-bg-hover);
+	}
+}
+
+%-sidebar-spacing {
+	margin-inline-start: calc(var(--content--sidebar-width) + var(--spacing-lg));
+	width: calc(100% - var(--content--sidebar-width) - var(--spacing-lg));
+}
+
+#Content {
+	@include web.section--container;
+
+	grid-template-columns: repeat(4, 1fr);
+	margin: 0;
+	// bg
+	z-index: 0;
+}
+
+#FilterBtnExclude {
+	@extend %-filter-button;
+
+	&#FilterBtnEnabled {
+		--button-fill: var(--color--accent-yellow);
+		--button-symbol: var(--button--secondary-bg);
+		--button-stroke: var(--color--accent-yellow);
+	}
+}
+
+#FilterBtnInclude {
+	@extend %-filter-button;
+
+	&#FilterBtnEnabled {
+		--button-fill: var(--color--accent-green);
+		--button-symbol: var(--button--secondary-bg);
+		--button-stroke: var(--color--accent-green);
+	}
+}
+
+#InfoCtn {
+	h2 {
+		font: var(--text--heading-sm);
+
+		& > div {
+			gap: var(--spacing-sm);
+			margin: 0;
+		}
+	}
+}
+
+#InfoFilterContent {
+	gap: var(--spacing-xs);
+	min-height: unset;
+
+	button[data-accent-color] {
+		@include controls.button-vars($size: "md");
+	}
+
+	& > button:first-of-type {
+		margin-inline-start: auto;
+	}
+}
+
+#InfoFilterStatus {
+	align-items: center;
+	color: var(--color--fg-dim);
+	display: flex;
+	min-height: calc(
+		var(--text--body-lg-size) * var(--text--line-height) +
+			var(--button--border-size) * 2 + var(--button--spacing-block-md) * 2
+	);
+}
+
+#InfoFilterTagCloseBtn {
+	@include utils.icon($name: "close");
+
+	color: inherit;
+	transform: none;
+}
+
+#InfoFilterTagCtn {
+	#FilterBtnExclude,
+	#FilterBtnInclude {
+		display: none;
+	}
+
+	button {
+		&:has(> #FilterBtnExclude) {
+			@include controls.button-vars($variant: "yellow");
+		}
+
+		&:has(> #FilterBtnInclude) {
+			@include controls.button-vars($variant: "green");
+		}
+	}
+}
+
+// "Subscribe to add to your game". Yeah dude I know
+#InfoHeaderSecondary {
+	display: none;
+}
+
+#InfoHeaderSecondaryCtn {
+	margin-block-end: var(--spacing-sm);
+
+	& + div {
+		align-items: center;
+	}
+}
+
+#InfoSortOptionsButton {
+	@include controls.dropdown;
+}
+
+#InfoSortOptionsButtonCaretIcon,
+#InfoSortOptionsButtonIcon {
+	display: none;
+}
+
+// TODO: ?
+#InfoSortOptionsMenuHeader {
+	#Sidebar & {
+		@include web.sidebar--header;
+	}
+
+	#InfoSortOptionsMenu & {
+		all: unset;
+
+		color: var(--color--fg-main);
+		font: var(--text--heading-sm);
+		margin: var(--spacing-md);
+		margin-block: 0 var(--spacing-xs);
+	}
+}
+
+#InfoSortOptionsMenu {
+	@include web.workshop--menu-container;
+}
+
+#InfoSortOptionsMenuItemsCtn {
+	flex-direction: column;
+	gap: var(--spacing-xs);
+	max-height: unset;
+}
+
+#Pagination {
+	@extend %-sidebar-spacing;
+
+	align-items: center;
+	color: var(--color--fg-dim);
+	font: var(--text--body-lg);
+	justify-content: space-between;
+	padding: 0;
+
+	button {
+		@include web.paging--arrow($disabled: "&:disabled");
+
+		&:first-child::before {
+			content: "<";
+		}
+
+		&:last-child::before {
+			content: ">";
+		}
+
+		svg {
+			display: none;
+		}
+	}
+
+	[style="--direction:row;--gap:var(--spacing-2)"] {
+		@include web.paging--links-container;
+
+		margin: 0;
+	}
+
+	.raCyHuynzKo- {
+		@include web.paging--link($selected: "&.EJXx0Du9tCY-");
+
+		margin: 0;
+	}
+}
+
+#Sidebar {
+	@include web.sidebar--container;
+
+	backdrop-filter: none;
+	background-image: none;
+	flex-shrink: 0;
+	font: inherit;
+	gap: 0;
+	// bg
+	z-index: 0;
+
+	body:has(&) {
+		--page-width: var(--content--width-sm);
+	}
+}
+
+#SidebarDateFilters {
+	gap: 0;
+	margin: 0;
+
+	& > div {
+		gap: var(--spacing-xxs);
+	}
+}
+
+#SidebarDateFilters {
+	margin: 0;
+}
+
+#SidebarSection {
+	gap: 0;
+
+	&:first-child #InfoSortOptionsMenuHeader {
+		border-block-start: none;
+		margin-block-start: 0;
+		padding-block-start: 0;
+	}
+}

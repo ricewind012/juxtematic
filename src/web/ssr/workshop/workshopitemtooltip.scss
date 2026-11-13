@@ -1,0 +1,38 @@
+@use "shared/controls";
+@use "web";
+
+#Description {
+	font: var(--text--body-md);
+}
+
+#FriendsWhoFavorited {
+	border-block-start: var(--border-sm) solid var(--color--border);
+	margin-block-start: var(--spacing-sm);
+	padding-block-start: var(--spacing-sm);
+}
+
+#Header {
+	color: var(--color--fg-main);
+	font: var(--text--heading-sm);
+	margin: 0;
+}
+
+#ItemTooltip {
+	--color-text-body-body: var(--color--fg-dim);
+}
+
+#MoreItems {
+	@include controls.button($size: "sm");
+
+	font: var(--text--body-sm);
+}
+
+#Tag {
+	@include web.store--tag;
+}
+
+#Timestamp {
+	font: var(--text--body-sm);
+	margin-block: var(--spacing-sm);
+	opacity: 1;
+}

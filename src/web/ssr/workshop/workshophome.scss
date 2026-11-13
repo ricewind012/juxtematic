@@ -1,0 +1,164 @@
+@use "shared/carousel";
+@use "shared/controls";
+@use "web";
+
+#Content {
+	gap: var(--spacing-lg);
+
+	// voting section
+	& > [style="--width:100%;--direction:column"] {
+		display: none;
+	}
+}
+
+#PastWeekItemCarousel {
+	background: none;
+	margin-block-end: var(--spacing-lg);
+	padding: 0;
+
+	#CarouselButtonCtn {
+		--section-spacing: var(--spacing-xl);
+		--inset-block-start: calc(
+			(var(--text--heading-sm-size) + var(--text--body-md-size)) *
+				var(--text--line-height) + var(--section-spacing) +
+				var(--carousel--section-spacing)
+		);
+
+		@include carousel.arrow($left: "&#Left", $right: "&#Right", $child: "svg");
+
+		backdrop-filter: var(--blur);
+		// prettier-ignore
+		height: calc(
+            100%
+			- var(--inset-block-start)
+			- var(--section-spacing)
+			- var(--spacing-md)
+		);
+		inset-block-start: var(--inset-block-start);
+		margin-inline: var(--section-spacing);
+		padding: 0;
+		z-index: 1;
+
+		button {
+			background: none;
+			block-size: 100%;
+			inline-size: 100%;
+			padding: 0 var(--spacing-sm);
+		}
+	}
+
+	#ItemGridSix {
+		@include carousel.container;
+
+		background: var(--color--bg-main-50);
+		margin: 0;
+		margin-block-start: var(--carousel--section-spacing);
+		max-width: 100%;
+		overflow: hidden;
+	}
+}
+
+#Section {
+	@include web.section--container;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+
+	& > button {
+		margin-inline-start: auto;
+	}
+
+	#ItemGridFive {
+		margin: 0;
+		margin-block-start: var(--spacing-xxl);
+		padding: 0;
+	}
+}
+
+#SectionItems {
+	margin-block: var(--spacing-xxl);
+}
+
+// lol
+// TODO also because they used Flex for it wtf are they doing
+#SectionEvents,
+#SectionVotingQueue {
+	display: none;
+}
+
+#Sidebar {
+	@include web.sidebar--container;
+
+	backdrop-filter: none;
+	background-image: none;
+	flex-shrink: 0;
+	gap: 0;
+	// bg
+	z-index: 0;
+
+	body:has(&) {
+		--page-width: var(--content--width-sm);
+	}
+
+	& > div {
+		gap: 0;
+	}
+
+	& > :first-child > #SidebarSectionHeader {
+		border-block-start: none;
+		margin-block-start: 0;
+		padding-block-start: 0;
+	}
+}
+
+#SidebarAndSearch {
+	gap: var(--spacing-sm);
+	width: var(--content--width-sm);
+}
+
+#SidebarSectionHeader {
+	@include web.sidebar--header;
+}
+
+#SidebarSectionItem,
+#SidebarSectionItem2 {
+	@include web.sidebar--list-item;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+
+#SidebarSectionItems,
+#SidebarSectionItems2 {
+	gap: 0;
+}
+
+#SidebarSectionItemSecondary {
+	color: var(--color--fg-dim);
+}
+
+#Tab {
+	@include controls.tab($active: "&#Active");
+
+	border: none;
+	opacity: 1;
+}
+
+#Tabs {
+	@include controls.tabs-container;
+
+	margin: 0;
+}
+
+#Title {
+	color: var(--color--fg-main);
+	font: var(--text--heading-sm);
+
+	& + div {
+		color: var(--color--fg-dim);
+		font: var(--text--body-md);
+		margin: 0;
+	}
+}

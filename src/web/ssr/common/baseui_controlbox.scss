@@ -1,0 +1,32 @@
+@use "shared/controls";
+
+:where(#ControlBox) {
+	box-shadow: none;
+
+	&:where([role="combobox"]) {
+		@include controls.dropdown;
+
+		// caret
+		& > :last-child {
+			display: none;
+		}
+	}
+
+	&:where(:not([role="combobox"], [tabindex="0"])) {
+		//  TODO: lol
+		@include controls.text-field($variant: "transparent");
+	}
+
+	&:where(#Disabled) {
+		// do I really not have a disabled variant?
+	}
+
+	&:where(#Size-1) {
+		@include controls.button-vars($size: "sm");
+	}
+
+	// lol
+	&:where(#Variant-highlight) {
+		@include controls.button-vars($variant: "primary");
+	}
+}

@@ -15,13 +15,6 @@
 	padding: 0;
 }
 
-#contextMenuContents {
-	#ContextMenuPopup & {
-		background-color: transparent;
-		padding: 0;
-	}
-}
-
 #contextMenuItem {
 	@include menu.item;
 
@@ -44,15 +37,6 @@
 	}
 }
 
-#ContextMenuPosition {
-	margin: 0;
-}
-
-#ContextMenuHRSeparator,
 #ContextMenuSeparator {
 	@include menu.separator;
-}
-
-#IconContainer {
-	display: none;
 }

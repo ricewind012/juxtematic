@@ -1,0 +1,29 @@
+@use "shared/utils";
+
+#SimpleModalDialog {
+	padding: var(--dialog--spacing-container);
+}
+
+#SimpleModalDialogTitle {
+	color: var(--color--fg-main);
+	font: var(--text--heading-lg);
+	margin-block-end: var(--spacing-sm);
+}
+
+#XButton {
+	--icon-size-lg: var(--dialog--window-control-size);
+
+	@include utils.icon($name: "close", $size: "lg");
+
+	color: var(--color--fg-dim);
+	flex-basis: unset;
+	padding: 0;
+
+	&:hover {
+		color: var(--color--fg-main);
+	}
+
+	svg {
+		display: none;
+	}
+}

@@ -69,12 +69,6 @@ h3 {
 	display: none;
 }
 
-// Ugly bitch
-#footer,
-#footer_spacer {
-	display: none;
-}
-
 .ico16 {
 	@include utils.icon;
 
@@ -178,6 +172,15 @@ h3 {
 	--global-header-height: 0px;
 
 	html:not(.client) &.with_header {
+		--global-header-height: var(--header--height);
+	}
+}
+
+// ssr
+body > [data-react-nav-root] {
+	--global-header-height: 0px;
+
+	:root:not([data-millennium-plugin]) > & {
 		--global-header-height: var(--header--height);
 	}
 }
